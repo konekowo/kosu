@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="error.error.404" xml:space="preserve">
+    <value>табылмады</value>
+  </data>
+  <data name="error.error.403" xml:space="preserve">
+    <value>тыйым салынған</value>
+  </data>
+  <data name="error.error.405" xml:space="preserve">
+    <value>табылмады</value>
+  </data>
+  <data name="main.beatmap_packs_controller._" xml:space="preserve">
+    <value>карталар жинағы</value>
+  </data>
+  <data name="main.beatmapsets_controller.index" xml:space="preserve">
+    <value>карталар тізімі</value>
+  </data>
+  <data name="main.chat_controller._" xml:space="preserve">
+    <value>чат</value>
+  </data>
+  <data name="main.contests_controller._" xml:space="preserve">
+    <value>сайыстар</value>
+  </data>
+  <data name="main.groups_controller.show" xml:space="preserve">
+    <value>группалар</value>
+  </data>
+  <data name="main.home_controller.get_download" xml:space="preserve">
+    <value>жүктеу</value>
+  </data>
+  <data name="main.home_controller.search" xml:space="preserve">
+    <value>іздеу</value>
+  </data>
+  <data name="main.home_controller.support_the_game" xml:space="preserve">
+    <value>ойынды қолдаңыз </value>
+  </data>
+  <data name="main.matches_controller._" xml:space="preserve">
+    <value>матчтар</value>
+  </data>
+  <data name="main.news_controller._" xml:space="preserve">
+    <value>жаңалықтар</value>
+  </data>
+  <data name="main.scores_controller._" xml:space="preserve">
+    <value>өнімділік</value>
+  </data>
+  <data name="main.tournaments_controller._" xml:space="preserve">
+    <value>жарыстар</value>
+  </data>
+  <data name="main.users_controller._" xml:space="preserve">
+    <value>ойыншы туралы ақпарат</value>
+  </data>
+  <data name="main.wiki_controller._" xml:space="preserve">
+    <value>wiki</value>
+  </data>
+  <data name="store._" xml:space="preserve">
+    <value>дүкен</value>
+  </data>
+</root>

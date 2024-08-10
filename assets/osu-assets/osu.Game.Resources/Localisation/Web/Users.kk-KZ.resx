@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="deleted" xml:space="preserve">
+    <value>[жойылған қолданушы]</value>
+  </data>
+  <data name="beatmapset_activities.title" xml:space="preserve">
+    <value>{0} Модтау Тарихы</value>
+  </data>
+  <data name="beatmapset_activities.title_compact" xml:space="preserve">
+    <value>Модтау</value>
+  </data>
+  <data name="beatmapset_activities.discussions.title_recent" xml:space="preserve">
+    <value>Жақында басталған пікірталастар</value>
+  </data>
+  <data name="beatmapset_activities.events.title_recent" xml:space="preserve">
+    <value>Жуырдағы оқиғалар</value>
+  </data>
+  <data name="beatmapset_activities.posts.title_recent" xml:space="preserve">
+    <value>Жуырдағы жазбалар</value>
+  </data>
+  <data name="blocks.banner_text" xml:space="preserve">
+    <value>Сіз бұл қолданушыны бұғаттадыңыз.</value>
+  </data>
+  <data name="blocks.comment_text" xml:space="preserve">
+    <value>Бұл пікір жасырылған.</value>
+  </data>
+  <data name="blocks.blocked_count" xml:space="preserve">
+    <value>бұғатталған қолданушылар ({0})</value>
+  </data>
+  <data name="blocks.hide_profile" xml:space="preserve">
+    <value>Профильді жасыру</value>
+  </data>
+  <data name="blocks.hide_comment" xml:space="preserve">
+    <value>жасыру</value>
+  </data>
+  <data name="blocks.forum_post_text" xml:space="preserve">
+    <value>Бұл пост жасырылған.</value>
+  </data>
+  <data name="blocks.not_blocked" xml:space="preserve">
+    <value>Бұл қолданушы бұғатталмаған.</value>
+  </data>
+  <data name="blocks.show_profile" xml:space="preserve">
+    <value>Профильді көрсету</value>
+  </data>
+  <data name="blocks.show_comment" xml:space="preserve">
+    <value>көрсету</value>
+  </data>
+  <data name="blocks.too_many" xml:space="preserve">
+    <value>Бұғаттау саны шегіне жетті.</value>
+  </data>
+  <data name="blocks.button.block" xml:space="preserve">
+    <value>Бұғаттау</value>
+  </data>
+  <data name="blocks.button.unblock" xml:space="preserve">
+    <value>Бұғаттан шығару</value>
+  </data>
+  <data name="card.gift_supporter" xml:space="preserve">
+    <value>Osu! supporter тегін сыйлау</value>
+  </data>
+  <data name="card.loading" xml:space="preserve">
+    <value>Жүктеуде...</value>
+  </data>
+  <data name="card.send_message" xml:space="preserve">
+    <value>Хат жіберу</value>
+  </data>
+  <data name="create.form.password" xml:space="preserve">
+    <value>құпиясөз</value>
+  </data>
+  <data name="create.form.password_confirmation" xml:space="preserve">
+    <value>құпиясөз растау</value>
+  </data>
+  <data name="create.form.submit" xml:space="preserve">
+    <value>аккаунт ашу</value>
+  </data>
+  <data name="create.form.user_email" xml:space="preserve">
+    <value>пошта</value>
+  </data>
+  <data name="create.form.user_email_confirmation" xml:space="preserve">
+    <value>пошта растау</value>
+  </data>
+  <data name="create.form.username" xml:space="preserve">
+    <value>пайдаланушы аты</value>
+  </data>
+  <data name="create.form.tos_notice._" xml:space="preserve">
+    <value>сіз аккаунт ашу арқылы {0}пен келісесіз</value>
+  </data>
+  <data name="login._" xml:space="preserve">
+    <value>Кіру</value>
+  </data>
+  <data name="login.button" xml:space="preserve">
+    <value>Кіру</value>
+  </data>
+  <data name="login.button_posting" xml:space="preserve">
+    <value>Кіруде...</value>
+  </data>
+  <data name="login.info" xml:space="preserve">
+    <value>Жалғастыру үшін аккаунтыңызға кіріңіз</value>
+  </data>
+  <data name="login.password" xml:space="preserve">
+    <value>Құпиясөз</value>
+  </data>
+  <data name="login.title" xml:space="preserve">
+    <value>Жалғастыру үшін аккаунтыңызға кіріңіз</value>
+  </data>
+  <data name="login.username" xml:space="preserve">
+    <value>Пайдаланушы аты</value>
+  </data>
+  <data name="anonymous.login_link" xml:space="preserve">
+    <value>аккаунтқа кіру үшін басыңыз</value>
+  </data>
+  <data name="anonymous.login_text" xml:space="preserve">
+    <value>кіру</value>
+  </data>
+  <data name="anonymous.username" xml:space="preserve">
+    <value>Қонақ</value>
+  </data>
+  <data name="anonymous.error" xml:space="preserve">
+    <value>Жалғастыру үшін аккаунтыңызға кіріңіз.</value>
+  </data>
+  <data name="show.is_developer" xml:space="preserve">
+    <value>osu!developer</value>
+  </data>
+  <data name="show.is_supporter" xml:space="preserve">
+    <value>osu!supporter</value>
+  </data>
+  <data name="show.lastvisit_online" xml:space="preserve">
+    <value>Қазір онлайн</value>
+  </data>
+  <data name="show.extra.none" xml:space="preserve">
+    <value>жоқ</value>
+  </data>
+  <data name="show.extra.historical.monthly_playcounts.count_label" xml:space="preserve">
+    <value>Ойындар</value>
+  </data>
+  <data name="show.extra.kudosu.title" xml:space="preserve">
+    <value>Kudosu!</value>
+  </data>
+  <data name="show.extra.kudosu.entry.amount" xml:space="preserve">
+    <value>{0} кудосу</value>
+  </data>
+  <data name="show.extra.me.title" xml:space="preserve">
+    <value>мен!</value>
+  </data>
+  <data name="show.extra.top_ranks.best.title" xml:space="preserve">
+    <value>Үздік Өнімділік</value>
+  </data>
+  <data name="show.extra.top_ranks.pin.to_0" xml:space="preserve">
+    <value>Шешу</value>
+  </data>
+  <data name="show.extra.top_ranks.pin.to_1" xml:space="preserve">
+    <value>Бекіту</value>
+  </data>
+  <data name="show.extra.votes.title" xml:space="preserve">
+    <value>Дауыс</value>
+  </data>
+  <data name="show.extra.votes.title_longer" xml:space="preserve">
+    <value>Соңғы дауыстар</value>
+  </data>
+  <data name="show.extra.votes.vote_count" xml:space="preserve">
+    <value>{0} дауыс</value>
+  </data>
+  <data name="show.extra.account_standing.recent_infringements.action" xml:space="preserve">
+    <value>әрекет</value>
+  </data>
+  <data name="show.extra.account_standing.recent_infringements.length" xml:space="preserve">
+    <value>ұзақтығы</value>
+  </data>
+  <data name="show.extra.account_standing.recent_infringements.length_indefinite" xml:space="preserve">
+    <value>Мерзімсіз</value>
+  </data>
+  <data name="show.extra.account_standing.recent_infringements.actor" xml:space="preserve">
+    <value>{0} жасады</value>
+  </data>
+  <data name="show.info.interests" xml:space="preserve">
+    <value>Қызығушылықтары</value>
+  </data>
+  <data name="show.not_found.title" xml:space="preserve">
+    <value>Ойыншы табылмады! ;_;</value>
+  </data>
+  <data name="show.page.edit_big" xml:space="preserve">
+    <value>Мені өзгерт!</value>
+  </data>
+  <data name="show.stats.play_count" xml:space="preserve">
+    <value>Ойын саны</value>
+  </data>
+  <data name="status.all" xml:space="preserve">
+    <value>Бәрі</value>
+  </data>
+  <data name="status.online" xml:space="preserve">
+    <value>Онлайн</value>
+  </data>
+  <data name="status.offline" xml:space="preserve">
+    <value>Офлайн</value>
+  </data>
+</root>

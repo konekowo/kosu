@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="beatmap_setup" xml:space="preserve">
+    <value>إعداد الخريطة</value>
+  </data>
+  <data name="beatmap_setup_description" xml:space="preserve">
+    <value>تغيير إعدادات الخريطة العامة</value>
+  </data>
+  <data name="colours_header" xml:space="preserve">
+    <value>الألوان</value>
+  </data>
+  <data name="hit_circle_slider_combos" xml:space="preserve">
+    <value>كومبو الدوائر \ السلايدرات</value>
+  </data>
+  <data name="design_header" xml:space="preserve">
+    <value>التصميم</value>
+  </data>
+  <data name="enable_countdown" xml:space="preserve">
+    <value>تمكين العد التنازلي</value>
+  </data>
+  <data name="countdown_description" xml:space="preserve">
+    <value>في حالة تمكينه، سيُوضع عد تنازلي كـ"جاهز؟ 3، 2، 1، العب!" في بداية الخريطة بشرط وجود مجال كافٍ.</value>
+  </data>
+  <data name="countdown_speed" xml:space="preserve">
+    <value>سرعة العد التنازلي</value>
+  </data>
+  <data name="countdown_offset_description" xml:space="preserve">
+    <value>إذا بدا العد التنازلي خارج عن الوقت، استخدم هذا لتبكيره بنبضة أو اثنتين.</value>
+  </data>
+  <data name="countdown_offset" xml:space="preserve">
+    <value>إزاحة العد التنازلي</value>
+  </data>
+  <data name="widescreen_support" xml:space="preserve">
+    <value>دعم الشاشة الواسعة</value>
+  </data>
+  <data name="widescreen_support_description" xml:space="preserve">
+    <value>يسمح للقصص المصورة باستخدام مساحة الشاشة كاملة بدل حصرها في مساحة 4:3.</value>
+  </data>
+  <data name="epilepsy_warning" xml:space="preserve">
+    <value>تحذير الصرع</value>
+  </data>
+  <data name="epilepsy_warning_description" xml:space="preserve">
+    <value>مستحسن إذا كانت القصة المصورة أو الفيديو يحتويان على مشاهد بألوان سريعة الوميض.</value>
+  </data>
+  <data name="letterbox_during_breaks" xml:space="preserve">
+    <value>تأثير صندوق الرسائل خلال الاستراحات</value>
+  </data>
+  <data name="letterbox_during_breaks_description" xml:space="preserve">
+    <value>يضيف تأثير صندوق الرسائل لإضفاء لمحة سينمائية خلال الاستراحات.</value>
+  </data>
+  <data name="samples_match_playback_rate" xml:space="preserve">
+    <value>تطبيق معدَّل التشغيل على العينات</value>
+  </data>
+  <data name="samples_match_playback_rate_description" xml:space="preserve">
+    <value>في حالة تمكينه، ستسرَّع جميع العينات أو تبَطَّأ بمودات تغيير السرعة.</value>
+  </data>
+  <data name="circle_size_description" xml:space="preserve">
+    <value>حجم جميع الكائنات</value>
+  </data>
+  <data name="drain_rate_description" xml:space="preserve">
+    <value>معدل استنزاف شريط الحياة خلال اللعب</value>
+  </data>
+  <data name="approach_rate_description" xml:space="preserve">
+    <value>سرعة ظهور الكائنات للّاعب</value>
+  </data>
+  <data name="overall_difficulty_description" xml:space="preserve">
+    <value>صرامة الدقة المطلوبة لنقْر الكائنات وصعوبة الكائنات الخاصة (مثل السْبِنَر)</value>
+  </data>
+  <data name="tick_rate" xml:space="preserve">
+    <value>معدَّل الدقَّات</value>
+  </data>
+  <data name="tick_rate_description" xml:space="preserve">
+    <value>يحدد عدد الدقَّات داخل الكائنات الطويلة. معدل دقَّات 1 سيُوَلّد دقّة لكل نبضة موسيقية، ومعدّل 2 يولّد دقّتين لكل نبضة وهكذا.</value>
+  </data>
+  <data name="base_velocity" xml:space="preserve">
+    <value>السرعة المبدئية</value>
+  </data>
+  <data name="base_velocity_description" xml:space="preserve">
+    <value>السرعة المبدئية للخريطة، وتؤثّر على أشياء مثل سرعة السلايدرات وسرعة الإنزال في بعض أنماط اللعبة.</value>
+  </data>
+  <data name="metadata_header" xml:space="preserve">
+    <value>البيانات التعريفية</value>
+  </data>
+  <data name="romanised_artist" xml:space="preserve">
+    <value>اسم الفنان بالأحرف الرومانية</value>
+  </data>
+  <data name="romanised_title" xml:space="preserve">
+    <value>العنوان بالأحرف الرومانية</value>
+  </data>
+  <data name="creator" xml:space="preserve">
+    <value>المُنشِئ</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>المصدر</value>
+  </data>
+  <data name="difficulty_name" xml:space="preserve">
+    <value>اسم المستوى</value>
+  </data>
+  <data name="resources_header" xml:space="preserve">
+    <value>الموارد</value>
+  </data>
+  <data name="audio_track" xml:space="preserve">
+    <value>المقطع الصوتي</value>
+  </data>
+  <data name="click_to_select_track" xml:space="preserve">
+    <value>اضغط لاختيار مقطع</value>
+  </data>
+  <data name="click_to_select_background" xml:space="preserve">
+    <value>اضغط لاختيار صورة خلفية</value>
+  </data>
+  <data name="ruleset" xml:space="preserve">
+    <value>نمط اللعبة ({0})</value>
+  </data>
+  <data name="combo_colour_prefix" xml:space="preserve">
+    <value>كومبو</value>
+  </data>
+  <data name="artist" xml:space="preserve">
+    <value>اسم الفنان</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="difficulty_header" xml:space="preserve">
+    <value>المستوى</value>
+  </data>
+  <data name="drag_to_set_background" xml:space="preserve">
+    <value>اسحب صورة هنا لتعيينها كخلفية للخريطة!</value>
+  </data>
+</root>
