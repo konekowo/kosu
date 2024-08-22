@@ -12,5 +12,4 @@ export class Renderer extends DropdownSetting {
         super({name: "Renderer", category: SettingsCategory.Graphics});
         this.value = this.defaultValue;
     }
-
 }

@@ -1,12 +1,16 @@
 import {Settings} from "./Settings";
 
-export class Setting {
-    public constructor(SettingData: SettingData) {
-        Settings.register({setting: this, data: SettingData});
+export abstract class Setting {
+    public constructor(SettingData: SettingInfo) {
+        Settings.register({setting: this, info: SettingData});
     }
+
+    public abstract getValue(): any;
+
+    public abstract setValue(value: any): void;
 }
 
-export interface SettingData {
+export interface SettingInfo {
     name: string;
     category: SettingsCategory;
 }

@@ -7,7 +7,7 @@ export abstract class RangeSetting extends Setting {
     public abstract readonly defaultValue: number;
     protected value: number = 0;
 
-    public getValue() {
+    public getValue(): number {
         return this.value;
     }
     public setValue(value: number) {

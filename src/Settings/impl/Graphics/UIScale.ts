@@ -11,5 +11,4 @@ export class UIScale extends RangeSetting {
         super({name: "UI scaling", category: SettingsCategory.Graphics});
         this.value = this.defaultValue;
     }
-
 }

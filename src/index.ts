@@ -2,16 +2,15 @@ import "./style.css";
 import {Application, EventSystem} from "pixi.js";
 import {Main} from "./main";
 import {Settings} from "./Settings/Settings";
-
+import {Renderer} from "./Settings/impl/Graphics/Renderer";
+Settings.registerAll();
 const gameWidth = window.innerWidth;
 const gameHeight = window.innerHeight;
 
 const app = new Application();
-
 window.onload = async (): Promise<void> => {
-    new Settings();
     // @ts-ignore
-    let renderer: "webgl" | "webgpu" = Settings.getDropDownSetting("Renderer").getValue().value;
+    const renderer = Settings.getSetting(Renderer).getValue().value as "webgl" | "webgpu";
     app.init({
         backgroundColor: "black",
         width: gameWidth,
