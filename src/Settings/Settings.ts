@@ -8,13 +8,58 @@ export class Settings {
     public static registerAll() {
         new UIScale();
         new Renderer();
-
-        this.save();
     }
 
     public static load() {
-        let settingSaveData: SettingSaveData[] = window.localStorage.getItem("settings") as unknown as SettingSaveData[];
-        
+        let settingSaveDataString = window.localStorage.getItem("settings");
+        if (settingSaveDataString == null) {
+            return;
+        }
+        let settings = this.getList();
+        try {
+            let settingSaveData: SettingSaveData[] = JSON.parse(settingSaveDataString) as SettingSaveData[];
+            settingSaveData.forEach((setting) => {
+                let corrupt = false;
+                try {
+                    if (!setting.value) {
+                        console.warn("Setting '" + JSON.stringify(setting) + "' may be corrupted, skipping!");
+                        corrupt = true;
+                    }
+                    if (setting.info) {
+                        if (!setting.info.name) {
+                            console.warn("Setting '" + JSON.stringify(setting) + "' may be corrupted, skipping!");
+                            corrupt = true;
+                        }
+                        if (!setting.info.category) {
+                            console.warn("Setting '" + JSON.stringify(setting) + "' may be corrupted, skipping!");
+                            corrupt = true;
+                        }
+                    }
+                    else {
+                        console.warn("Setting '" + JSON.stringify(setting) + "' may be corrupted, skipping!");
+                        corrupt = true;
+                    }
+                }
+                catch (e) {
+                    console.warn("Something went wrong when validating saved settings!", e);
+                    console.warn("The setting may be REALLY corrupted, skipping!");
+                    corrupt = true;
+                }
+                if (!corrupt) {
+                    let settingObj = settings.filter((_settingObj) => (_settingObj.info.name == setting.info.name) &&
+                        _settingObj.info.category == setting.info.category)[0];
+                    if (settingObj) {
+                        settingObj.setting.loadFromSaveValue(setting.value);
+                    } else {
+                        console.warn("Could not find setting object '" + setting.info.name + "', maybe it has been removed in this version of kosu?, skipping setting")
+                    }
+                }
+            });
+        }
+        catch (e) {
+            console.warn("Failed to load settings! Resetting Settings due to corrupted save!", e);
+            this.reset();
+        }
     }
 
     public static save() {
@@ -24,6 +69,11 @@ export class Settings {
             settingSaveData.push({info: setting.info, value: setting.setting.getValue()});
         });
         window.localStorage.setItem("settings", JSON.stringify(settingSaveData));
+    }
+
+    public static reset() {
+        console.warn("Resetting Settings!");
+        window.localStorage.removeItem("settings");
     }
 
     public static register(setting: SettingData) {

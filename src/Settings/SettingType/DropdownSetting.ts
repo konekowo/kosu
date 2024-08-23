@@ -1,4 +1,5 @@
 import {Setting} from "../Setting";
+import {Settings} from "../Settings";
 
 export abstract class DropdownSetting extends Setting {
     public abstract readonly list: DropDownOption[];
@@ -12,6 +13,11 @@ export abstract class DropdownSetting extends Setting {
     }
 
     public setValue(value: DropDownOption) {
+        this.value = value;
+        Settings.save();
+    }
+
+    public loadFromSaveValue(value: DropDownOption) {
         this.value = value;
     }
 }

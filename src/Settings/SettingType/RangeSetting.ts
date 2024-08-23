@@ -1,4 +1,5 @@
 import {Setting} from "../Setting";
+import {Settings} from "../Settings";
 
 export abstract class RangeSetting extends Setting {
     public abstract readonly minValue: number;
@@ -12,7 +13,10 @@ export abstract class RangeSetting extends Setting {
     }
     public setValue(value: number) {
         this.value = value;
+        Settings.save();
     }
 
-
+    public loadFromSaveValue(value: number) {
+        this.value = value;
+    }
 }
