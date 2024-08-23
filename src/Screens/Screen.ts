@@ -14,15 +14,21 @@ export abstract class Screen extends PIXI.Container {
         return ((((window.innerWidth / 1920) + (window.innerHeight / 1080)) / 2)) * uiScale
     }
 
-    // Called once before any frame is drawn
+    /**
+     * Called once before the first frame is drawn
+     */
     public abstract start(): void;
 
-    // Called when screen will be closed, but has to return a promise to clean up after, for example, the screen's close animations are done.
 
-    // Called every frame
+    /**
+     * Called every frame
+     */
     public abstract draw(deltaTime: PIXI.Ticker): void;
 
-    // Make sure you also pass in 'this' into the promise's resolve.
+    /**
+     * Called when screen will be closed, but has to return a promise to clean up after, for example, the screen's close animations are done.
+     * Make sure you also pass in `this` into the promise's resolve.
+     */
     public abstract onClose(): Promise<Screen>;
 
     public abstract onResize(): void;
