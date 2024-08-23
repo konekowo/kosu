@@ -7,6 +7,7 @@ import {Loader} from "./Loader";
 import {MenuCursor} from "./Elements/MenuCursor/MenuCursor";
 import {AudioEngine} from "./Audio/AudioEngine";
 import * as TWEEN from "@tweenjs/tween.js";
+import {SettingsPane} from "./Elements/Settings/SettingsPane";
 
 export class Main {
     public static app: Application;
@@ -18,11 +19,23 @@ export class Main {
     private static allScreens: Screen[] = [];
     private static clickArea: PIXI.Graphics = new PIXI.Graphics();
     private static doPointerLock: boolean = false;
+    private static settingsPane: SettingsPane;
 
     public constructor(app: Application) {
         Main.app = app;
         // @ts-ignore
         document.body.appendChild(Main.app.canvas);
+
+        Main.settingsPane = new SettingsPane();
+        Main.settingsPane.zIndex = 999998;
+        Main.app.stage.addChild(Main.settingsPane);
+
+        document.addEventListener("keyup", (e: KeyboardEvent) => {
+            if (e.ctrlKey && e.code == "KeyO"){
+                Main.settingsPane.toggle();
+            }
+        });
+
         this.doResize();
         window.addEventListener("resize", this.doResize);
         Main.app.ticker.add(() => {
@@ -45,6 +58,19 @@ export class Main {
             let introTrack = Loader.Get("introTrianglesTrack");
             Main.switchScreen(new InteractScreen(introTrack, dialogOk));
         });
+    }
+
+    public static lockKeyboard() {
+        // @ts-ignore
+        if (navigator.keyboard) {
+            // @ts-ignore
+            navigator.keyboard.lock([]).then(() => {
+                console.log("Locked keyboard!");
+                if (!document.fullscreenElement) {
+                    console.warn("Keyboard lock won't work unless the user is in fullscreen (as requested by the game, not if the user just presses F11)!");
+                }
+            });
+        }
     }
 
     public static pointerLock() {
@@ -101,6 +127,7 @@ export class Main {
         Main.allScreens.forEach((screen) => {
             screen.onResize();
         })
+        Main.settingsPane.resize();
     }
 
     private pointerLockChanged(): void {

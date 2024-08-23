@@ -70,6 +70,7 @@ export class InteractScreen extends Screen {
             Main.switchScreen(new IntroScreen(this.introTrack));
             document.body.style.cursor = "none";
             Main.pointerLock();
+            Main.lockKeyboard();
         }
 
         this.clickArea.onclick = () => {

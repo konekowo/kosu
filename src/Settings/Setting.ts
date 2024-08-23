@@ -1,7 +1,10 @@
 import {Settings} from "./Settings";
 
 export abstract class Setting {
+    public readonly info: Settings;
+
     public constructor(SettingData: SettingInfo) {
+        this.info = SettingData;
         Settings.register({setting: this, info: SettingData});
     }
 

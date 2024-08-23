@@ -4,6 +4,7 @@ import {Main} from "./main";
 import {Settings} from "./Settings/Settings";
 import {Renderer} from "./Settings/impl/Graphics/Renderer";
 Settings.registerAll();
+Settings.load();
 const gameWidth = window.innerWidth;
 const gameHeight = window.innerHeight;
 
@@ -25,5 +26,5 @@ window.onload = async (): Promise<void> => {
 };
 
 Object.defineProperty(window, "setSensitivity", {value: (sensitivity: number) => {
-        EventSystem.cursorSensitivity = sensitivity;
+    EventSystem.cursorSensitivity = sensitivity;
 }});
