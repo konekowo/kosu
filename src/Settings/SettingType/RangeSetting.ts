@@ -1,5 +1,6 @@
 import {Setting} from "../Setting";
 import {Settings} from "../Settings";
+import {MathUtil} from "../../Util/MathUtil";
 
 export abstract class RangeSetting extends Setting {
     public abstract readonly minValue: number;
@@ -11,12 +12,17 @@ export abstract class RangeSetting extends Setting {
     public getValue(): number {
         return this.value;
     }
+
+    public getDefaultValue(): number {
+        return this.defaultValue;
+    }
+
     public setValue(value: number) {
-        this.value = value;
+        this.value = MathUtil.clamp(this.minValue, this.maxValue, value);
         Settings.save();
     }
 
     public loadFromSaveValue(value: number) {
-        this.value = value;
+        this.value = MathUtil.clamp(this.minValue, this.maxValue, value);
     }
 }

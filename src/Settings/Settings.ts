@@ -66,7 +66,10 @@ export class Settings {
         let settings = this.getList();
         let settingSaveData: SettingSaveData[] = [];
         settings.forEach((setting: SettingData) => {
-            settingSaveData.push({info: setting.info, value: setting.setting.getValue()});
+            // only save if setting is different from default value
+            if (setting.setting.getValue() != setting.setting.getDefaultValue()) {
+                settingSaveData.push({info: setting.info, value: setting.setting.getValue()});
+            }
         });
         window.localStorage.setItem("settings", JSON.stringify(settingSaveData));
     }

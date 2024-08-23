@@ -12,13 +12,25 @@ export abstract class DropdownSetting extends Setting {
         return this.value;
     }
 
+    public getDefaultValue(): DropDownOption {
+        return this.defaultValue;
+    }
+
     public setValue(value: DropDownOption) {
-        this.value = value;
-        Settings.save();
+        if (this.list.find((option) => option.value == value.value && option.displayName == value.displayName )) {
+            this.value = value;
+            Settings.save();
+        } else {
+            console.warn('The value provided to this DropDownSetting does not exist in the option list! Ignoring value provided.');
+        }
     }
 
     public loadFromSaveValue(value: DropDownOption) {
-        this.value = value;
+        if (this.list.find((option) => option.value == value.value && option.displayName == value.displayName)) {
+            this.value = value;
+        } else {
+            console.warn('The value provided to this DropDownSetting does not exist in the option list! Ignoring value provided.');
+        }
     }
 }
 
