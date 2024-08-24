@@ -10,6 +10,8 @@ const gameWidth = window.innerWidth;
 const gameHeight = window.innerHeight;
 
 const app = new Application();
+// @ts-ignore
+globalThis.__PIXI_APP__ = app;
 window.onload = async (): Promise<void> => {
     // @ts-ignore
     const renderer = Settings.getSetting(Renderer).getValue().value as "webgl" | "webgpu";

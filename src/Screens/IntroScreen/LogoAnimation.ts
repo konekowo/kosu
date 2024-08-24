@@ -10,13 +10,25 @@ export class LogoAnimation extends PIXI.Container {
         this.texture = texture
         const frag = Loader.GetString("webgl:shaders/logoAnimation.frag");
         const vert = Loader.GetString("webgl:shaders/logoAnimation.vert");
+        const wgpu = Loader.GetString("wgpu:shaders/logoAnimation");
         this.shader = PIXI.Shader.from({
             gl: {
                 vertex: vert,
                 fragment: frag,
             },
+            gpu: {
+                vertex: {
+                    entryPoint: 'mainVert',
+                    source: wgpu
+                },
+                fragment: {
+                    entryPoint: 'mainFrag',
+                    source: wgpu
+                }
+            },
             resources: {
                 uTexture: this.texture.source,
+                uSampler: this.texture.source.style,
                 uProgress: {
                     progress: {value: 0.0, type: 'f32'},
                 },
