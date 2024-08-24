@@ -1,0 +1,1 @@
+{"version":3,"file":"main.a37e724502caaf4a68ea.css","mappings":"AAAA,KAGI,qBAAuB,CADvB,aAAc,CADd,eAGJ","sources":["webpack://kosu/./src/style.css"],"sourcesContent":["body {\n    overflow: hidden;\n    margin: 0 auto;\n    background-color: black;\n}\n"],"names":[],"sourceRoot":""}
