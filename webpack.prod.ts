@@ -12,7 +12,7 @@ const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "package.json"), "ut
 module.exports = () => {
     return {
         mode: "production",
-
+        devtool: "source-map",
         module: {
             rules: [
                 {
