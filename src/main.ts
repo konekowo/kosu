@@ -30,7 +30,7 @@ export class Main {
         Main.settingsPane.zIndex = 999998;
         Main.app.stage.addChild(Main.settingsPane);
 
-        document.addEventListener("keyup", (e: KeyboardEvent) => {
+        document.addEventListener("keydown", (e: KeyboardEvent) => {
             if (e.ctrlKey && e.code == "KeyO"){
                 Main.settingsPane.toggle();
             }
