@@ -31,3 +31,9 @@ window.onload = async (): Promise<void> => {
 Object.defineProperty(window, "setSensitivity", {value: (sensitivity: number) => {
     Settings.getSetting(MouseSensitivity).setValue(sensitivity);
 }});
+
+Object.defineProperty(window, "setRenderer", {value: (renderer: string) => {
+    let rendererSetting = Settings.getSetting(Renderer);
+    rendererSetting.setValue(renderer == "webgl" ? rendererSetting.webglOption : rendererSetting.webGpuOption);
+    window.location.reload();
+}});
