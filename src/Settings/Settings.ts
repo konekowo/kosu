@@ -1,6 +1,7 @@
 import {Setting, SettingInfo} from "./Setting";
 import {UIScale} from "./impl/Graphics/UIScale";
 import {Renderer} from "./impl/Graphics/Renderer";
+import {MouseSensitivity} from "./impl/Input/MouseSensitivity";
 
 export class Settings {
     private static settingsList: SettingData[] = [];
@@ -8,6 +9,7 @@ export class Settings {
     public static registerAll() {
         new UIScale();
         new Renderer();
+        new MouseSensitivity();
     }
 
     public static load() {

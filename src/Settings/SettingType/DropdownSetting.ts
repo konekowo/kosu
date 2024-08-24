@@ -20,6 +20,7 @@ export abstract class DropdownSetting extends Setting {
         if (this.list.find((option) => option.value == value.value && option.displayName == value.displayName )) {
             this.value = value;
             Settings.save();
+            this.onValueChanged();
         } else {
             console.warn('The value provided to this DropDownSetting does not exist in the option list! Ignoring value provided.');
         }
@@ -28,6 +29,7 @@ export abstract class DropdownSetting extends Setting {
     public loadFromSaveValue(value: DropDownOption) {
         if (this.list.find((option) => option.value == value.value && option.displayName == value.displayName)) {
             this.value = value;
+            this.onValueChanged();
         } else {
             console.warn('The value provided to this DropDownSetting does not exist in the option list! Ignoring value provided.');
         }

@@ -20,9 +20,11 @@ export abstract class RangeSetting extends Setting {
     public setValue(value: number) {
         this.value = MathUtil.clamp(this.minValue, this.maxValue, value);
         Settings.save();
+        this.onValueChanged();
     }
 
     public loadFromSaveValue(value: number) {
         this.value = MathUtil.clamp(this.minValue, this.maxValue, value);
+        this.onValueChanged();
     }
 }

@@ -3,6 +3,7 @@ import {Application, EventSystem} from "pixi.js";
 import {Main} from "./main";
 import {Settings} from "./Settings/Settings";
 import {Renderer} from "./Settings/impl/Graphics/Renderer";
+import {MouseSensitivity} from "./Settings/impl/Input/MouseSensitivity";
 Settings.registerAll();
 Settings.load();
 const gameWidth = window.innerWidth;
@@ -26,5 +27,5 @@ window.onload = async (): Promise<void> => {
 };
 
 Object.defineProperty(window, "setSensitivity", {value: (sensitivity: number) => {
-    EventSystem.cursorSensitivity = sensitivity;
+    Settings.getSetting(MouseSensitivity).setValue(sensitivity);
 }});
