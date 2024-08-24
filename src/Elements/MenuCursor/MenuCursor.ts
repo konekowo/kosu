@@ -1,9 +1,10 @@
 import * as PIXI from "pixi.js";
 import {Main} from "../../main";
-import {ease, Easing} from "pixi-ease";
 import {Loader} from "../../Loader";
 import {MathUtil} from "../../Util/MathUtil";
 import {Screen} from "../../Screens/Screen";
+import {Ease} from "../../Util/TweenWrapper/Ease";
+import * as TWEEN from "@tweenjs/tween.js";
 
 export class MenuCursor extends PIXI.Container {
     private mouseCursor = PIXI.Sprite.from("menu.cursor");
@@ -11,17 +12,9 @@ export class MenuCursor extends PIXI.Container {
     private mouseContainer = new PIXI.Container();
     private animContainer = new PIXI.Container();
     private animRotationContainer = new PIXI.Container();
-    private mouseDownScaleAnim: Easing | undefined;
-    private mouseDownAdditiveAnim: Easing | undefined;
-    private mouseUpScaleAnim: Easing | undefined;
-    private mouseUpAdditiveAnim: Easing | undefined;
-    private mouseRotationAnim: Easing | undefined;
     private dragRotationState: DragRotationState = DragRotationState.NotDragging;
     private lastDragRotationState: DragRotationState = DragRotationState.NotDragging;
     private mouseHideContainer = new PIXI.Container();
-
-    private hideScaleAnim: Easing | undefined;
-    private hideAlphaAnim: Easing | undefined;
 
     private posMouseDown: { x: number, y: number } = {x: 0, y: 0};
 
@@ -62,42 +55,20 @@ export class MenuCursor extends PIXI.Container {
                 this.posMouseDown = {x: Main.mousePos.x, y: Main.mousePos.y};
                 this.mouseIsDown = true;
                 this.dragRotationState = DragRotationState.DragStarted;
-                if (this.mouseUpScaleAnim && this.mouseUpAdditiveAnim) {
-                    this.mouseUpScaleAnim.remove();
-                    this.mouseUpAdditiveAnim.remove();
-                }
-                this.mouseDownScaleAnim = ease.add(this.animContainer, {scale: 0.9}, {
-                    ease: "easeOutQuint",
-                    duration: 800
-                });
-                this.mouseDownAdditiveAnim = ease.add(this.mouseCursorAdditive, {alpha: 1}, {
-                    ease: "easeOutQuint",
-                    duration: 800
-                });
+                Ease.getEase(this.animContainer).ClearEasings().ScaleTo(0.9, 800, TWEEN.Easing.Quintic.Out);
+                Ease.getEase(this.mouseCursorAdditive).ClearEasings().FadeIn(800, TWEEN.Easing.Quintic.Out);
                 Main.AudioEngine.PlayEffect(this.cursorTapSample);
             }
         });
         Main.app.stage.addEventListener("mouseup", (e) => {
             if (this.visible && e.button == this.mouseButtonClicked) {
                 this.mouseIsDown = false;
-                if (this.mouseDownScaleAnim && this.mouseDownAdditiveAnim) {
-                    this.mouseDownAdditiveAnim.remove();
-                    this.mouseDownScaleAnim.remove();
-                }
-                this.mouseUpScaleAnim = ease.add(this.animContainer, {scale: 1}, {
-                    ease: "easeOutElastic",
-                    duration: 500
-                });
-                this.mouseUpAdditiveAnim = ease.add(this.mouseCursorAdditive, {alpha: 0}, {
-                    ease: "easeOutQuint",
-                    duration: 500
-                });
+                Ease.getEase(this.animContainer).ClearEasings().ScaleTo(1, 500, TWEEN.Easing.Elastic.Out);
+                Ease.getEase(this.mouseCursorAdditive).ClearEasings().FadeOut(500, TWEEN.Easing.Quintic.Out);
                 if (this.dragRotationState != DragRotationState.NotDragging) {
                     if (this.dragRotationState == DragRotationState.Rotating) {
-                        this.mouseRotationAnim = ease.add(this.animRotationContainer, {angle: 0}, {
-                            ease: "easeOutElastic",
-                            duration: 800 * (0.5 + Math.abs(this.animRotationContainer.angle / 960))
-                        });
+                        Ease.getEase(this.animRotationContainer).ClearEasings().createTween({value: this.animRotationContainer.angle},
+                            {value: 0}, true, "angle", 800 * (0.5 + Math.abs(this.animRotationContainer.angle / 960)), TWEEN.Easing.Elastic.Out);
                     }
                     this.dragRotationState = DragRotationState.NotDragging;
                 }
@@ -107,40 +78,18 @@ export class MenuCursor extends PIXI.Container {
     }
 
     public PopIn() {
-        if (this.mouseRotationAnim) {
-            this.mouseRotationAnim.remove();
-        }
-        if (this.hideAlphaAnim && this.hideScaleAnim) {
-            this.hideAlphaAnim.remove();
-            this.hideScaleAnim.remove();
-        }
+        Ease.getEase(this.animRotationContainer).ClearEasings();
         this.visible = true;
-        this.hideAlphaAnim = ease.add(this.mouseHideContainer, {alpha: 1}, {duration: 250, ease: "easeOutQuint"});
-        this.hideScaleAnim = ease.add(this.mouseHideContainer, {scale: 1}, {duration: 400, ease: "easeOutQuint"});
-        this.mouseRotationAnim = ease.add(this.animRotationContainer, {angle: 0}, {
-            duration: 400,
-            ease: "easeOutQuint"
-        });
+        Ease.getEase(this.mouseHideContainer).ClearEasings().FadeIn(250, TWEEN.Easing.Quintic.Out)
+            .ScaleTo(1, 400, TWEEN.Easing.Quintic.Out);
         this.dragRotationState = DragRotationState.NotDragging
     }
 
     public PopOut() {
-        if (this.mouseRotationAnim) {
-            this.mouseRotationAnim.remove();
-        }
-        if (this.hideAlphaAnim && this.hideScaleAnim) {
-            this.hideAlphaAnim.remove();
-            this.hideScaleAnim.remove();
-        }
-        this.hideAlphaAnim = ease.add(this.mouseHideContainer, {alpha: 0}, {duration: 250, ease: "easeOutQuint"});
-        this.hideScaleAnim = ease.add(this.mouseHideContainer, {scale: 0.6}, {duration: 250, ease: "easeOutQuint"});
-        this.mouseRotationAnim = ease.add(this.animRotationContainer, {angle: 0}, {
-            duration: 400,
-            ease: "easeOutQuint"
-        });
-        this.hideAlphaAnim.once("complete", () => {
-            this.visible = false;
-        });
+        Ease.getEase(this.mouseHideContainer).ClearEasings().FadeOut(250, TWEEN.Easing.Quintic.Out)
+            .ScaleTo(0.6, 250, TWEEN.Easing.Quintic.Out);
+        Ease.getEase(this.animRotationContainer).ClearEasings().createTween({value: this.animRotationContainer.angle},
+            {value: 0}, true, "angle", 400, TWEEN.Easing.Quintic.Out);
         this.dragRotationState = DragRotationState.NotDragging;
     }
 
@@ -158,9 +107,6 @@ export class MenuCursor extends PIXI.Container {
             }
 
             if (this.dragRotationState == DragRotationState.Rotating && distance > 0) {
-                if (this.mouseRotationAnim) {
-                    this.mouseRotationAnim.remove();
-                }
                 let offsetX = Main.mousePos.x - this.posMouseDown.x;
                 let offsetY = Main.mousePos.y - this.posMouseDown.y;
                 let degrees = MathUtil.RadiansToDegrees(Math.atan2(-offsetX, offsetY)) + 24.3;
@@ -173,11 +119,9 @@ export class MenuCursor extends PIXI.Container {
                     diff -= 360;
                 }
                 degrees = this.animRotationContainer.angle + diff;
-
-                this.mouseRotationAnim = ease.add(this.animRotationContainer, {angle: degrees}, {
-                    duration: 120,
-                    ease: "easeOutQuint"
-                });
+                this.animRotationContainer.angle = degrees
+                Ease.getEase(this.animRotationContainer).createTween({value: this.animRotationContainer.angle},
+                    {value: degrees}, true, "angle", 120, TWEEN.Easing.Quintic.Out);
             }
         }
         this.lastDragRotationState = this.dragRotationState;
