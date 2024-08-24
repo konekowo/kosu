@@ -10,6 +10,7 @@ export class Renderer extends DropdownSetting {
 
     public constructor() {
         super({name: "Renderer", category: SettingsCategory.Graphics});
+        this.list.push(this.webglOption/*, this.webGpuOption*/);
         this.value = this.defaultValue;
     }
 }
