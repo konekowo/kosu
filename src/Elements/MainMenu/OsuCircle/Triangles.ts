@@ -39,8 +39,6 @@ export class Triangles extends PIXI.Container {
         //this.flash.anchor.set(0.5, 0.5);
         this.flash.alpha = 0;
         this.flash.blendMode = "add";
-
-        this.addChild(this.flash);
     }
 
     public destroy(options?: PIXI.DestroyOptions) {

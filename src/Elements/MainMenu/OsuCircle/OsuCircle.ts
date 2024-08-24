@@ -60,6 +60,9 @@ export class OsuCircle extends PIXI.Container {
         this.flash.blendMode = "add";
         this.flash.alpha = 0;
 
+        this.triangles.flash.anchor.set(0.5, 0.5);
+        this.triangles.flash.scale = scale;
+
         this.outline.scale.set(scale);
         this.triangles.scale.set(scale);
         this.triangles.position.set(-(this.outline.width / 2), -(this.outline.height / 2));
@@ -74,6 +77,7 @@ export class OsuCircle extends PIXI.Container {
         this.rippleContainer.addChild(this.ripple);
         this.logoContainer.addChild(this.visualizer);
         this.logoContainer.addChild(this.triangles);
+        this.logoContainer.addChild(this.triangles.flash);
         this.logoContainer.addChild(mask);
         this.logoContainer.addChild(this.flash);
         this.logoContainer.addChild(this.outline);
