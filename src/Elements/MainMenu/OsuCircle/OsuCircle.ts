@@ -49,8 +49,9 @@ export class OsuCircle extends PIXI.Container {
         this.visualizer.scale.set(scale);
         this.visualizer.alpha = this.defaultVisualizerAlpha;
 
-        let mask = PIXI.Sprite.from("mainMenu.logoMask");
-        mask.anchor.set(0.5, 0.5);
+        let mask = new PIXI.Graphics();
+        mask.circle(0,0,450);
+        mask.fill({color:"white"});
         mask.scale = scale;
 
 
