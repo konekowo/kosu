@@ -34,12 +34,14 @@ export class Ease {
         tween.to(isPrimitive ? {value: 1} : newValue, duration);
         tween.easing(easingFunc);
         tween.onUpdate(() => {
-            if (!isPrimitive) {
-                // @ts-ignore
-                this.obj[property] = value;
-            } else {
-                // @ts-ignore
-                this.obj[property] = (tweenValue.value * (newValue.value - value.value)) + value.value;
+            if (!this.obj.destroyed) {
+                if (!isPrimitive) {
+                    // @ts-ignore
+                    this.obj[property] = value;
+                } else {
+                    // @ts-ignore
+                    this.obj[property] = (tweenValue.value * (newValue.value - value.value)) + value.value;
+                }
             }
             easing.onUpdate();
         });

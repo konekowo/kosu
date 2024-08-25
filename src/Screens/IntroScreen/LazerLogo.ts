@@ -13,11 +13,11 @@ export class LazerLogo extends PIXI.Container {
         super();
         this.highlight = new LogoAnimation(this.textureHighlight, new PIXI.Color("white"));
         this.background = new LogoAnimation(this.textureBackground, new PIXI.Color("rgb(128, 128, 128)"));
+        this.addChild(this.highlight);
+        this.addChild(this.background);
     }
 
     public start() {
-        this.addChild(this.highlight);
-        this.addChild(this.background);
         let dummy = new PIXI.Container();
         dummy.scale.set(0.0, 0.0);
         Ease.getEase(dummy).ScaleTo(1, 920, TWEEN.Easing.Linear.None).OnEach(() => {
