@@ -15,6 +15,9 @@ export class MenuCursor extends PIXI.Container {
     private dragRotationState: DragRotationState = DragRotationState.NotDragging;
     private lastDragRotationState: DragRotationState = DragRotationState.NotDragging;
     private mouseHideContainer = new PIXI.Container();
+    private readonly elastic_const2 = 0.075;
+    private readonly elastic_const = 20.943951023931955;
+    private readonly elastic_offset_quarter = Math.pow(2, -10) * Math.sin((.25 - this.elastic_const2) * this.elastic_const);
 
     private posMouseDown: { x: number, y: number } = {x: 0, y: 0};
 
@@ -68,7 +71,10 @@ export class MenuCursor extends PIXI.Container {
                 if (this.dragRotationState != DragRotationState.NotDragging) {
                     if (this.dragRotationState == DragRotationState.Rotating) {
                         Ease.getEase(this.animRotationContainer).ClearEasings().createTween({value: this.animRotationContainer.angle},
-                            {value: 0}, true, "angle", 800 * (0.5 + Math.abs(this.animRotationContainer.angle / 960)), TWEEN.Easing.Elastic.Out);
+                            {value: 0}, true, "angle", 800 * (0.5 + Math.abs(this.animRotationContainer.angle / 960)), (time: number) => {
+                                return Math.pow(2, -10 * time) * 
+                                    Math.sin((.25 * time - this.elastic_const2) * this.elastic_const) + 1 - this.elastic_offset_quarter * time;
+                            });
                     }
                     this.dragRotationState = DragRotationState.NotDragging;
                 }
