@@ -33,6 +33,9 @@ export class Loader {
             pixiBundleName: "textures"});
         this.loadList.push({id: "menu.cursor.sample.tap", url: "assets/osu-assets/osu.Game.Resources/Samples/UI/cursor-tap.wav", isAudio: true});
         this.loadList.push({id: "menu.kiaiFountains.star", url: "assets/osu-assets/osu.Game.Resources/Textures/Menu/fountain-star.png", pixiBundleName: "textures"});
+        this.loadList.push({id: "webgl:shaders/osuCircleTriangles.frag", url: "assets/shaders/webgl/osuCircleTriangles/osuCircleTriangles.frag", isText: true});
+        this.loadList.push({id: "webgl:shaders/osuCircleTriangles.vert", url: "assets/shaders/webgl/osuCircleTriangles/osuCircleTriangles.vert", isText: true});
+        this.loadList.push({id: "wgpu:shaders/osuCircleTriangles", url: "assets/shaders/webgpu/osuCircleTriangles/osuCircleTriangles.wgsl", isText: true});
     }
 
     public static Get(id: string): Blob {

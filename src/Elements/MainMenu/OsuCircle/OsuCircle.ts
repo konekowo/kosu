@@ -45,8 +45,8 @@ export class OsuCircle extends PIXI.Container {
         this.outline.anchor.set(0.5, 0.5);
         //approximation of size in actual osu!lazer
         let scale = 0.6;
-        this.visualizer.position.set(-LogoVisualizer.size / 3.35, -LogoVisualizer.size / 3.35);
         this.visualizer.scale.set(scale);
+        this.visualizer.pivot.set(LogoVisualizer.size/2, LogoVisualizer.size/2);
         this.visualizer.alpha = this.defaultVisualizerAlpha;
 
         let mask = new PIXI.Graphics();

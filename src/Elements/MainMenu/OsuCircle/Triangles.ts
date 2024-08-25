@@ -1,14 +1,17 @@
 import * as PIXI from "pixi.js";
+import {Loader} from "../../../Loader";
+import {Main} from "../../../main";
 
 export class Triangles extends PIXI.Container {
 
     public flash: PIXI.Sprite;
     public Velocity: number = 1;
-    private bgGradient: PIXI.FillGradient;
+    private readonly bgGradient: PIXI.FillGradient;
     private triangles: Triangle[] = [];
-    private triangleGenInterval: NodeJS.Timeout;
     private graphics: PIXI.Graphics = new PIXI.Graphics();
     private timeSinceLastSpawn = 0;
+    private instancePositionBuffer;
+    private readonly totalTriangles = 15;
 
     public constructor() {
         super();
@@ -20,16 +23,10 @@ export class Triangles extends PIXI.Container {
             this.bgGradient.addColorStop(ratio, number);
         });
 
-
-        for (let i = 0; i < 15; i++) {
+        for (let i = 0; i < this.totalTriangles; i++) {
             this.triangles.push({x: this.random(0, 1024), y: this.random(0, 1024), velocity: this.randVelocity()});
         }
         this.timeSinceLastSpawn = Date.now();
-
-        this.triangleGenInterval = setInterval(() => {
-
-
-        }, 800 / this.Velocity);
 
         this.graphics.rect(0, 0, 1024, 1024);
         this.graphics.fill(this.bgGradient);
@@ -39,6 +36,87 @@ export class Triangles extends PIXI.Container {
         //this.flash.anchor.set(0.5, 0.5);
         this.flash.alpha = 0;
         this.flash.blendMode = "add";
+
+        this.instancePositionBuffer = new PIXI.Buffer({
+            data: new Float32Array(this.totalTriangles * 2),
+            usage: PIXI.BufferUsage.VERTEX | PIXI.BufferUsage.COPY_DST
+        });
+        const color = new PIXI.Color("rgb(182, 52, 111)");
+        const size = 30;
+        const geometry = new PIXI.Geometry({
+            attributes: {
+                aPosition: [
+                    -10*size,
+                    -10*size, // x, y
+                    10*size,
+                    -10*size, // x, y
+                    10*size,
+                    7.5*size, // x, y,
+                    -10*size,
+                    7.5*size, // x, y,
+                ],
+                aUV: [0, 0, 1, 0, 1, 1, 0, 1],
+                aColorTint: [
+                    color.red, color.green, color.blue, 1,
+                    color.red, color.green, color.blue, 1,
+                    color.red, color.green, color.blue, 1,
+                    color.red, color.green, color.blue, 1
+                ],
+                aPositionOffset: {
+                    buffer: this.instancePositionBuffer,
+                    instance: true
+                }
+            },
+            indexBuffer: [0, 1, 2, 0, 2, 3],
+            instanceCount: this.totalTriangles
+        });
+        const gpuSource = Loader.GetString("wgpu:shaders/osuCircleTriangles");
+        const gl = {
+            vertex: Loader.GetString("webgl:shaders/osuCircleTriangles.vert"),
+            fragment: Loader.GetString("webgl:shaders/osuCircleTriangles.frag")
+        };
+
+        const gpu = {
+            vertex: {
+                entryPoint: "mainVert",
+                source: gpuSource
+            },
+            fragment: {
+                entryPoint: "mainFrag",
+                source: gpuSource
+            }
+        };
+
+        const triangleGraphic = new PIXI.Graphics();
+        triangleGraphic.moveTo(0, 0);
+        triangleGraphic.lineTo(-256, 512);
+        triangleGraphic.lineTo(256, 512);
+        triangleGraphic.lineTo(0, 0);
+        triangleGraphic.stroke({color: "white", width: 4});
+
+        const triangleTexture = Main.app.renderer.generateTexture(triangleGraphic);
+
+        const shader = PIXI.Shader.from({
+            gl,
+            gpu,
+            resources: {
+                uTexture: triangleTexture.source,
+                uSampler: triangleTexture.source.style,
+                waveUniforms: {
+                    time: { value: 1, type: "f32" }
+                }
+            }
+        });
+
+        const triangleMesh = new PIXI.Mesh({
+            geometry,
+            shader
+        });
+
+        this.addChild(triangleMesh);
+
+
+
     }
 
     public destroy(options?: PIXI.DestroyOptions) {
@@ -46,34 +124,23 @@ export class Triangles extends PIXI.Container {
     }
 
     public draw(ticker: PIXI.Ticker) {
-        if (!this.destroyed) {
-            if (Date.now() - this.timeSinceLastSpawn > 800 / this.Velocity) {
-                this.triangles.push({x: this.random(0, 1024), y: 1024 - 50, velocity: this.randVelocity()});
-                this.timeSinceLastSpawn = Date.now();
+        const data = this.instancePositionBuffer.data;
+        let count = 0;
+
+        for (let i = 0; i < this.totalTriangles; i++) {
+            const triangle = this.triangles[i];
+
+            triangle.y -= (ticker.deltaTime * this.Velocity * triangle.velocity);
+
+            if (triangle.y + 100 < 0) {
+                triangle.y = 1024 + 250;
             }
-            this.graphics.clear();
-            this.graphics.rect(0, 0, 1024, 1024);
-            this.graphics.fill(this.bgGradient);
-            this.triangles.forEach((triangle, index) => {
-                triangle.y -= (ticker.deltaTime * this.Velocity * triangle.velocity) * 4;
-                this.graphics.moveTo(triangle.x, triangle.y);
-                this.graphics.lineTo(triangle.x - 250, triangle.y + 400);
-                this.graphics.lineTo(triangle.x + 250, triangle.y + 400);
-                this.graphics.lineTo(triangle.x, triangle.y);
-                let alpha = 1;
-                if (triangle.y + 50 < 300) {
-                    alpha = (triangle.y + 50) / 300;
-                }
-                alpha = Math.min(Math.max(alpha, 0), 1);
-                this.graphics.stroke({
-                    color: new PIXI.Color("rgba(182, 52, 111, " + alpha.toFixed(6) + ")"),
-                    width: 4
-                });
-                if (triangle.y + 400 < 0) {
-                    this.triangles.splice(index, 1);
-                }
-            });
+
+            data[count++] = triangle.x;
+            data[count++] = triangle.y;
         }
+
+        this.instancePositionBuffer.update();
     }
 
     private random(min: number, max: number) {
