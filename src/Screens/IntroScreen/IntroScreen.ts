@@ -4,10 +4,11 @@ import {Ticker} from "pixi.js";
 import {unzip} from 'unzipit';
 import {Main} from "../../main";
 import {GlitchingTriangles} from "./GlitchingTriangles";
-import {ease} from "pixi-ease";
 import {MainMenu} from "../MainMenu/MainMenu";
 import {LazerLogo} from "./LazerLogo";
 import {BeatmapParser} from "../../Util/Beatmap/Parser/BeatmapParser";
+import * as TWEEN from "@tweenjs/tween.js";
+import {Ease} from "../../Util/TweenWrapper/Ease";
 
 export class IntroScreen extends Screen {
 
@@ -157,8 +158,7 @@ export class IntroScreen extends Screen {
             this.taiko.position.set(-((spacing) + 25) * Screen.getScaleBasedOffScreenSize(), 0);
             this.ctb.position.set(((spacing) + 25) * Screen.getScaleBasedOffScreenSize(), 0);
             this.mania.position.set(((spacing * 2) + 175) * Screen.getScaleBasedOffScreenSize(), 0);
-
-            ease.add(this.ruleSetContainer, {scale: 0.8}, {duration: 1000, ease: "linear"});
+            Ease.getEase(this.ruleSetContainer).ScaleTo(0.8, 1000, TWEEN.Easing.Linear.None);
         }, 1450);
 
         setTimeout(() => {
@@ -185,8 +185,7 @@ export class IntroScreen extends Screen {
             this.taiko.scale.set(2 * Screen.getScaleBasedOffScreenSize());
             this.ctb.scale.set(2 * Screen.getScaleBasedOffScreenSize());
             this.mania.scale.set(2 * Screen.getScaleBasedOffScreenSize());
-
-            ease.add(this.ruleSetContainer, {scale: 1.3}, {duration: 1000, ease: "linear"});
+            Ease.getEase(this.ruleSetContainer).ScaleTo(1.3, 1000, TWEEN.Easing.Linear.None);
         }, 1850);
 
         setTimeout(() => {
@@ -196,10 +195,10 @@ export class IntroScreen extends Screen {
             this.addChild(this.logoContainerContainer);
 
             this.logoContainerContainer.scale.set(1.2);
-            ease.add(this.logoContainerContainer, {scale: 1.2 - 0.8 * 0.25}, {duration: 920, ease: "easeInQuad"});
+            Ease.getEase(this.logoContainerContainer).ScaleTo(1.2 - 0.8 * 0.25, 920, TWEEN.Easing.Quadratic.In);
 
             setTimeout(() => {
-                ease.add(this.logoContainer, {scale: 1.2 - 0.8}, {duration: 920 * 0.3, ease: "easeInQuint"})
+                Ease.getEase(this.logoContainer).ScaleTo(1.2 - 0.8, 920 * 0.3, TWEEN.Easing.Quintic.In);
             }, 920 * 0.7);
         }, 2080);
 
@@ -208,7 +207,7 @@ export class IntroScreen extends Screen {
             this.flash.eventMode = "none";
             this.flashed = true;
             this.logoContainerContainer.visible = false;
-            ease.add(this.flash, {alpha: 0}, {duration: 1000, ease: "easeOutQuad"});
+            Ease.getEase(this.flash).FadeOut(1000, TWEEN.Easing.Quadratic.Out);
             if (this.mainMenu == null) {
                 this.mainMenu = new MainMenu();
             }

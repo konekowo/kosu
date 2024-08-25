@@ -27,7 +27,6 @@
     "dependencies": {
         "@tweenjs/tween.js": "^23.1.2",
         "core-js": "^3.34.0",
-        "pixi-ease": "^3.0.7",
         "pixi.js": "github:konekowo/pixijs",
         "unzipit": "^1.4.3"
     },

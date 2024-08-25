@@ -3,7 +3,7 @@ import * as PIXI from "pixi.js";
 
 export class Ease {
     private static previousEases: Ease[] = [];
-    private easings: { tween: TWEEN.Tween<any> }[] = [];
+    private easings: Easing[] = [];
     private readonly obj: PIXI.Container;
     private delay: TWEEN.Tween<any> | null = null;
 
@@ -27,11 +27,12 @@ export class Ease {
         return new Ease(obj, dontStore);
     }
 
-    public createTween<T extends Record<string, any>>(value: T, newValue: T, isPrimitive: boolean, property: keyof PIXI.Container, duration: number, easing: (ammount: number) => number) {
+    public createTween<T extends Record<string, any>>(value: T, newValue: T, isPrimitive: boolean, property: keyof PIXI.Container, duration: number, easingFunc: (ammount: number) => number) {
         const tweenValue = {value: 0}
         const tween = new TWEEN.Tween(isPrimitive ? tweenValue : value);
+        const easing = new Easing(tween);
         tween.to(isPrimitive ? {value: 1} : newValue, duration);
-        tween.easing(easing);
+        tween.easing(easingFunc);
         tween.onUpdate(() => {
             if (!isPrimitive) {
                 // @ts-ignore
@@ -40,6 +41,7 @@ export class Ease {
                 // @ts-ignore
                 this.obj[property] = (tweenValue.value * (newValue.value - value.value)) + value.value;
             }
+            easing.onUpdate();
         });
 
         tween.onStart(() => {
@@ -57,7 +59,7 @@ export class Ease {
             this.delay.chain(tween);
             this.delay = null;
         }
-        this.easings.push({tween: tween});
+        this.easings.push(easing);
 
         tween.onStop(() => {
             this.onDone(tween);
@@ -124,5 +126,33 @@ export class Ease {
             }
         }
         return this;
+    }
+
+    public OnEach(cb: () => void) {
+        let largestDuration = this.easings.sort((a, b) => {
+            return a.tween.getDuration() - b.tween.getDuration()
+        });
+        if (largestDuration.length > 0) {
+            largestDuration[0].registerOnUpdate(cb);
+        }
+    }
+}
+
+class Easing {
+    public tween: TWEEN.Tween<any>;
+    private updateEventListeners: (() => void)[] = [];
+    public constructor(tween: TWEEN.Tween<any>) {
+        this.tween = tween;
+    }
+    public onUpdate() {
+        this.updateEventListeners.forEach((eventListener) => {
+            eventListener();
+        })
+    }
+    public registerOnUpdate(cb: () => void) {
+        this.updateEventListeners.push(cb);
+    }
+    public unRegisterOnUpdate(cb: () => void) {
+        this.updateEventListeners = this.updateEventListeners.filter((ev) => {return !(cb === ev);});
     }
 }

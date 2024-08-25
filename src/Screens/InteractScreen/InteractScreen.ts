@@ -3,7 +3,8 @@ import * as PIXI from "pixi.js";
 import {Ticker} from "pixi.js";
 import {Main} from "../../main";
 import {IntroScreen} from "../IntroScreen/IntroScreen";
-import {ease} from 'pixi-ease';
+import * as TWEEN from "@tweenjs/tween.js";
+import {Ease} from "../../Util/TweenWrapper/Ease";
 
 export class InteractScreen extends Screen {
 
@@ -80,12 +81,14 @@ export class InteractScreen extends Screen {
         this.clickArea.ontap = () => {
             clicked();
         }
-        ease.add(this.textContainer, {alpha: 1, scale: 1}, {duration: 400, ease: "easeOutQuad"});
+        Ease.getEase(this.textContainer).FadeIn(400, TWEEN.Easing.Quadratic.Out)
+            .ScaleTo(1, 400, TWEEN.Easing.Quadratic.Out);
     }
 
     public onClose(): Promise<Screen> {
         return new Promise((resolve) => {
-            ease.add(this.textContainer, {alpha: 0, scale: 0.5}, {duration: 200, ease: "easeInOutQuad"});
+            Ease.getEase(this.textContainer).FadeOut(200, TWEEN.Easing.Quadratic.Out)
+                .ScaleTo(0.5, 200, TWEEN.Easing.Quadratic.InOut);
             setTimeout(() => {
                 resolve(this);
             }, 200);

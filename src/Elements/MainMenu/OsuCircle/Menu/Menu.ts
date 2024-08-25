@@ -1,11 +1,11 @@
 import * as PIXI from "pixi.js";
-import {ease, Easing} from "pixi-ease";
+import * as TWEEN from "@tweenjs/tween.js";
+import {Ease} from "../../../../Util/TweenWrapper/Ease";
 
 export class Menu extends PIXI.Container {
 
     private menuBG = new PIXI.Graphics();
     private isOpened = false;
-    private openAnim: Easing | undefined;
 
     public constructor() {
         super();
@@ -19,15 +19,14 @@ export class Menu extends PIXI.Container {
 
     public Open() {
         this.isOpened = true;
-        this.openAnim = ease.add(this.menuBG, {scaleY: 1, alpha: 1}, {duration: 400, ease: "easeOutQuint"});
+        Ease.getEase(this.menuBG).ScaleTo(1, 400, TWEEN.Easing.Quintic.Out)
+            .FadeIn(400, TWEEN.Easing.Quintic.Out);
     }
 
     public Close() {
         this.isOpened = false;
-        if (this.openAnim) {
-            this.openAnim.remove();
-        }
-        ease.add(this.menuBG, {scaleY: 0, alpha: 0}, {duration: 300, ease: "easeInSine"});
+        Ease.getEase(this.menuBG).ClearEasings().ScaleTo({x: 1, y: 0}, 300, TWEEN.Easing.Sinusoidal.In)
+            .FadeOut(300, TWEEN.Easing.Sinusoidal.In);
     }
 
     public isOpen() {

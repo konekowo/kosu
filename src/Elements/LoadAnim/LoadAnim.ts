@@ -1,5 +1,6 @@
 import * as PIXI from "pixi.js";
-import {ease} from 'pixi-ease';
+import * as TWEEN from "@tweenjs/tween.js";
+import {Ease} from "../../Util/TweenWrapper/Ease";
 
 export class LoadAnim extends PIXI.Container {
     private readonly bg: PIXI.Graphics;
@@ -35,7 +36,8 @@ export class LoadAnim extends PIXI.Container {
         this.bgContainer.addChild(this.arcContainer);
         this.container.addChild(this.bgContainer);
         this.addChild(this.container);
-        ease.add(this.container, {alpha: 1, scale: 1}, {duration: 400, ease: 'easeInOutQuad'});
+        Ease.getEase(this.container).ScaleTo(1, 400, TWEEN.Easing.Quadratic.InOut)
+            .FadeIn(400, TWEEN.Easing.Quadratic.InOut)
         this.doAnims();
 
         this.animInterval = setInterval(() => {
@@ -45,7 +47,8 @@ export class LoadAnim extends PIXI.Container {
 
     public doAnims() {
         this.bgRotation += 90;
-        ease.add(this.bgContainer, {angle: this.bgRotation}, {duration: 600, ease: 'easeInOutQuad'});
+        Ease.getEase(this.bgContainer).createTween({value: this.bgContainer.angle},
+            {value: this.bgRotation}, true, "angle", 600, TWEEN.Easing.Quadratic.InOut);
     }
 
     public getWidth() {
@@ -61,7 +64,8 @@ export class LoadAnim extends PIXI.Container {
     }
 
     public destroy(_options?: PIXI.DestroyOptions | boolean) {
-        ease.add(this.container, {alpha: 0, scale: 0.5}, {duration: 400, ease: 'easeInOutQuad'});
+        Ease.getEase(this.container).FadeOut(400, TWEEN.Easing.Quadratic.InOut)
+            .ScaleTo(0.5, 400, TWEEN.Easing.Quadratic.InOut);
         setTimeout(() => {
             clearInterval(this.animInterval);
             super.destroy(_options);

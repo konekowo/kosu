@@ -1,6 +1,7 @@
 import * as PIXI from "pixi.js";
-import {ease} from "pixi-ease";
 import {LogoAnimation} from "./LogoAnimation";
+import * as TWEEN from "@tweenjs/tween.js";
+import {Ease} from "../../Util/TweenWrapper/Ease";
 
 export class LazerLogo extends PIXI.Container {
     private readonly highlight: LogoAnimation;
@@ -19,8 +20,7 @@ export class LazerLogo extends PIXI.Container {
         this.addChild(this.background);
         let dummy = new PIXI.Container();
         dummy.scale.set(0.0, 0.0);
-        let anim = ease.add(dummy, {scale: 1}, {duration: 920, ease: "linear"});
-        anim.on('each', () => {
+        Ease.getEase(dummy).ScaleTo(1, 920, TWEEN.Easing.Linear.None).OnEach(() => {
             this.highlight.setProgress(dummy.scale.x);
             this.background.setProgress(dummy.scale.x);
         });
