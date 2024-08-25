@@ -47,34 +47,32 @@ export class Triangles extends PIXI.Container {
 
     public draw(ticker: PIXI.Ticker) {
         if (!this.destroyed) {
-            if (document.hasFocus()) {
-                if (Date.now() - this.timeSinceLastSpawn > 800 / this.Velocity) {
-                    this.triangles.push({x: this.random(0, 1024), y: 1024 - 50, velocity: this.randVelocity()});
-                    this.timeSinceLastSpawn = Date.now();
-                }
-                this.graphics.clear();
-                this.graphics.rect(0, 0, 1024, 1024);
-                this.graphics.fill(this.bgGradient);
-                this.triangles.forEach((triangle, index) => {
-                    triangle.y -= (ticker.deltaTime * this.Velocity * triangle.velocity) * 4;
-                    this.graphics.moveTo(triangle.x, triangle.y);
-                    this.graphics.lineTo(triangle.x - 250, triangle.y + 400);
-                    this.graphics.lineTo(triangle.x + 250, triangle.y + 400);
-                    this.graphics.lineTo(triangle.x, triangle.y);
-                    let alpha = 1;
-                    if (triangle.y + 50 < 300) {
-                        alpha = (triangle.y + 50) / 300;
-                    }
-                    alpha = Math.min(Math.max(alpha, 0), 1);
-                    this.graphics.stroke({
-                        color: new PIXI.Color("rgba(182, 52, 111, " + alpha.toFixed(6) + ")"),
-                        width: 4
-                    });
-                    if (triangle.y + 400 < 0) {
-                        this.triangles.splice(index, 1);
-                    }
-                });
+            if (Date.now() - this.timeSinceLastSpawn > 800 / this.Velocity) {
+                this.triangles.push({x: this.random(0, 1024), y: 1024 - 50, velocity: this.randVelocity()});
+                this.timeSinceLastSpawn = Date.now();
             }
+            this.graphics.clear();
+            this.graphics.rect(0, 0, 1024, 1024);
+            this.graphics.fill(this.bgGradient);
+            this.triangles.forEach((triangle, index) => {
+                triangle.y -= (ticker.deltaTime * this.Velocity * triangle.velocity) * 4;
+                this.graphics.moveTo(triangle.x, triangle.y);
+                this.graphics.lineTo(triangle.x - 250, triangle.y + 400);
+                this.graphics.lineTo(triangle.x + 250, triangle.y + 400);
+                this.graphics.lineTo(triangle.x, triangle.y);
+                let alpha = 1;
+                if (triangle.y + 50 < 300) {
+                    alpha = (triangle.y + 50) / 300;
+                }
+                alpha = Math.min(Math.max(alpha, 0), 1);
+                this.graphics.stroke({
+                    color: new PIXI.Color("rgba(182, 52, 111, " + alpha.toFixed(6) + ")"),
+                    width: 4
+                });
+                if (triangle.y + 400 < 0) {
+                    this.triangles.splice(index, 1);
+                }
+            });
         }
     }
 
