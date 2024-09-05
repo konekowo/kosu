@@ -78,20 +78,22 @@ export class AudioEngine {
         if (currentPlaying) {
             let analyzerL = currentPlaying.GetNode(AnalyserNode)![1];
             let analyzerR = currentPlaying.GetNode(AnalyserNode)![2];
-            analyzerL.getFloatFrequencyData(currentPlaying.tempArrayL);
-            analyzerR.getFloatFrequencyData(currentPlaying.tempArrayR);
-            let addedL = 0;
+            analyzerL.getByteTimeDomainData(currentPlaying.tempArrayL);
+            analyzerR.getByteTimeDomainData(currentPlaying.tempArrayR);
+            let avgL = 0;
+            let avgR = 0;
             currentPlaying.tempArrayL.forEach((num) => {
-                addedL += num;
+                let value = (num / 128) - 1;
+                avgL += value * value;
             });
-            let avgL = addedL /= currentPlaying.tempArrayL.length;
-            let addedR = 0;
             currentPlaying.tempArrayR.forEach((num) => {
-                addedR += num;
+                let value = (num / 128) - 1;
+                avgR += value * value;
             });
-            let avgR = addedR /= currentPlaying.tempArrayL.length;
-            currentPlaying.LeftChannel = (avgL + 140) / 140;
-            currentPlaying.RightChannel = (avgR + 140) / 140;
+            avgL = Math.sqrt(avgL / currentPlaying.tempArrayL.length);
+            avgR = Math.sqrt(avgR / currentPlaying.tempArrayR.length);
+            currentPlaying.LeftChannel = avgL;
+            currentPlaying.RightChannel = avgR;
         }
     }
 
