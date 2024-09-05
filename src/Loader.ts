@@ -25,17 +25,11 @@ export class Loader {
         this.loadList.push({id: "mainMenu.logoMask", url: "assets/menu/logo-mask.png", pixiBundleName: "textures"});
         this.loadList.push({id: "mainMenu.osuLogo.select", url: "assets/osu-assets/osu.Game.Resources/Samples/Menu/osu-logo-select.wav", isAudio: true});
         this.loadList.push({id: "mainMenu.osuLogo.backToLogo", url: "assets/osu-assets/osu.Game.Resources/Samples/Menu/back-to-logo.wav", isAudio: true});
-        this.loadList.push({id: "webgl:shaders/logoAnimation.frag", url: "assets/shaders/webgl/logoAnimation/logoAnimation.frag", isText: true});
-        this.loadList.push({id: "webgl:shaders/logoAnimation.vert", url: "assets/shaders/webgl/logoAnimation/logoAnimation.vert", isText: true});
-        this.loadList.push({id: "wgpu:shaders/logoAnimation", url: "assets/shaders/webgpu/logoAnimation/logoAnimation.wgsl", isText: true});
         this.loadList.push({id: "menu.cursor", url: "assets/osu-assets/osu.Game.Resources/Textures/Cursor/menu-cursor.png", pixiBundleName: "textures"});
         this.loadList.push({id: "menu.cursor.additive", url: "assets/osu-assets/osu.Game.Resources/Textures/Cursor/menu-cursor-additive.png",
             pixiBundleName: "textures"});
         this.loadList.push({id: "menu.cursor.sample.tap", url: "assets/osu-assets/osu.Game.Resources/Samples/UI/cursor-tap.wav", isAudio: true});
         this.loadList.push({id: "menu.kiaiFountains.star", url: "assets/osu-assets/osu.Game.Resources/Textures/Menu/fountain-star.png", pixiBundleName: "textures"});
-        this.loadList.push({id: "webgl:shaders/osuCircleTriangles.frag", url: "assets/shaders/webgl/osuCircleTriangles/osuCircleTriangles.frag", isText: true});
-        this.loadList.push({id: "webgl:shaders/osuCircleTriangles.vert", url: "assets/shaders/webgl/osuCircleTriangles/osuCircleTriangles.vert", isText: true});
-        this.loadList.push({id: "wgpu:shaders/osuCircleTriangles", url: "assets/shaders/webgpu/osuCircleTriangles/osuCircleTriangles.wgsl", isText: true});
     }
 
     public static Get(id: string): Blob {

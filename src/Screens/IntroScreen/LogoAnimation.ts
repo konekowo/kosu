@@ -1,5 +1,7 @@
 import * as PIXI from "pixi.js"
-import {Loader} from "../../Loader";
+import glVertShader from "./logoAnimation.vert";
+import glFragShader from "./logoAnimation.frag";
+import gpuShader from "./logoAnimation.wgsl";
 
 export class LogoAnimation extends PIXI.Container {
     private shader: PIXI.Shader;
@@ -8,22 +10,19 @@ export class LogoAnimation extends PIXI.Container {
     public constructor(texture: PIXI.Texture, color: PIXI.Color) {
         super();
         this.texture = texture
-        const frag = Loader.GetString("webgl:shaders/logoAnimation.frag");
-        const vert = Loader.GetString("webgl:shaders/logoAnimation.vert");
-        const wgpu = Loader.GetString("wgpu:shaders/logoAnimation");
         this.shader = PIXI.Shader.from({
             gl: {
-                vertex: vert,
-                fragment: frag,
+                vertex: glVertShader,
+                fragment: glFragShader,
             },
             gpu: {
                 vertex: {
                     entryPoint: 'mainVert',
-                    source: wgpu
+                    source: gpuShader
                 },
                 fragment: {
                     entryPoint: 'mainFrag',
-                    source: wgpu
+                    source: gpuShader
                 }
             },
             resources: {

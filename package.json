@@ -50,6 +50,7 @@
         "husky": "^8.0.3",
         "lint-staged": "^15.2.0",
         "mini-css-extract-plugin": "^2.7.6",
+        "raw-loader": "^4.0.2",
         "rimraf": "^5.0.5",
         "terser-webpack-plugin": "^5.3.9",
         "ts-loader": "^9.5.1",

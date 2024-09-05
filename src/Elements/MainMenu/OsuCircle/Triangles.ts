@@ -1,6 +1,8 @@
 import * as PIXI from "pixi.js";
-import {Loader} from "../../../Loader";
 import {Main} from "../../../main";
+import glVertShader from "./osuCircleTriangles.vert";
+import glFragShader from "./osuCircleTriangles.frag";
+import gpuShader from "./osuCircleTriangles.wgsl";
 
 export class Triangles extends PIXI.Container {
 
@@ -70,20 +72,19 @@ export class Triangles extends PIXI.Container {
             indexBuffer: [0, 1, 2, 0, 2, 3],
             instanceCount: this.totalTriangles
         });
-        const gpuSource = Loader.GetString("wgpu:shaders/osuCircleTriangles");
         const gl = {
-            vertex: Loader.GetString("webgl:shaders/osuCircleTriangles.vert"),
-            fragment: Loader.GetString("webgl:shaders/osuCircleTriangles.frag")
+            vertex: glVertShader,
+            fragment: glFragShader
         };
 
         const gpu = {
             vertex: {
                 entryPoint: "mainVert",
-                source: gpuSource
+                source: gpuShader
             },
             fragment: {
                 entryPoint: "mainFrag",
-                source: gpuSource
+                source: gpuShader
             }
         };
 
