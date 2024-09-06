@@ -9,8 +9,8 @@ export class Audio {
     public isPaused: boolean = false;
     public pausedTime: number = 0;
     public nodes: AudioNode[] = [];
-    public tempArrayL = new Uint8Array(16);
-    public tempArrayR = new Uint8Array(16);
+    public tempArrayL = new Float32Array(16);
+    public tempArrayR = new Float32Array(16);
     public LeftChannel: number = 0;
     public RightChannel: number = 0;
     private _connectedToContext = false;
