@@ -211,6 +211,7 @@ export class AudioEngine {
                 if (this._musicQueue[0] == audio) {
                     this._musicQueue.splice(0, 1);
                 }
+                this.UpdateMusicQueue();
             }
             this._playingAudios.audios.forEach((audioInArr, index) => {
                 if (audioInArr === audio) {
@@ -218,7 +219,6 @@ export class AudioEngine {
                     return;
                 }
             });
-            this.UpdateMusicQueue();
         });
     }
 
