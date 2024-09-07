@@ -9,10 +9,12 @@ export class Audio {
     public isPaused: boolean = false;
     public pausedTime: number = 0;
     public nodes: AudioNode[] = [];
-    public tempArrayL = new Float32Array(16);
-    public tempArrayR = new Float32Array(16);
+    public tempArrayMain = new Float32Array(256);
+    public tempArrayL = new Float32Array(64);
+    public tempArrayR = new Float32Array(64);
     public LeftChannel: number = 0;
     public RightChannel: number = 0;
+    public FrequencyAmplitudes = new Float32Array(256);
     private _connectedToContext = false;
 
     public GetMaximumAudioLevel() {

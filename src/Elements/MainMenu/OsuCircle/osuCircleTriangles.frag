@@ -6,7 +6,7 @@ uniform sampler2D uTexture;
 uniform float time;
 
 void main() {
-    float a = ((vPositionOffset.y + vPosition.y)/800.0) - 0.1;
+    float a = ((vPositionOffset.y + vPosition.y)/1200.0) - 0.1;
     vec4 color = texture(uTexture, vUV);
     if (a > 1.0) {
         a = 1.0;

@@ -2,6 +2,8 @@ import {PlayingAudios} from "./PlayingAudios";
 import {Audio, MapAudio} from "./Audio";
 import {BeatmapData} from "../Util/Beatmap/Data/BeatmapData";
 import {Main} from "../main";
+import {UnInheritedTimingPoint} from "../Util/Beatmap/Data/Sections/TimingPoints/UnInheritedTimingPoint";
+import {Effect} from "../Util/Beatmap/Data/Sections/TimingPoints/Effect";
 
 export class AudioEngine {
     public readonly audioContext: AudioContext;
@@ -9,6 +11,8 @@ export class AudioEngine {
     private _musicQueue: MapAudio[] = [];
     private _audioIdTicker: number = 0;
     private _changeCallbacks: (() => void)[] = [];
+    private silentMusic = this.createSilentMusic();
+    public useSilentMusic = true;
 
     public constructor() {
         this.audioContext = new AudioContext();
@@ -31,6 +35,26 @@ export class AudioEngine {
                 }
             }
         }
+        if (!(this._musicQueue.length >= 1)) {
+            this.silentMusic = this.createSilentMusic();
+            this.useSilentMusic = true;
+        }
+        else {
+            this.useSilentMusic = false;
+
+        }
+    }
+
+    public createSilentMusic() {
+        let mapAudio = new MapAudio();
+        mapAudio.timeStarted = Date.now();
+        mapAudio.beatmap = new BeatmapData();
+        let timingPoint = new UnInheritedTimingPoint();
+        timingPoint.time = 0;
+        timingPoint.beatLength = 1000;
+        timingPoint.effects = Effect.None;
+        mapAudio.beatmap.TimingPoints.TimingPoints.push(timingPoint);
+        return mapAudio;
     }
 
     public addMusicChangeEventListener(cb: () => void) {
@@ -41,8 +65,8 @@ export class AudioEngine {
         this._changeCallbacks = this._changeCallbacks.filter(callback => callback != cb);
     }
 
-    public GetCurrentPlayingMusic(): MapAudio | null {
-        return this._musicQueue[0];
+    public GetCurrentPlayingMusic(): MapAudio {
+        return this.useSilentMusic ? this.silentMusic : this._musicQueue[0];
     }
 
     public PlayEffect(audio: AudioBuffer, pitch?: number) {
@@ -75,23 +99,45 @@ export class AudioEngine {
 
     public update() {
         let currentPlaying = this.GetCurrentPlayingMusic();
-        if (currentPlaying) {
+        if (!this.useSilentMusic) {
+            let analyzerMain = currentPlaying.GetNode(AnalyserNode)![0];
             let analyzerL = currentPlaying.GetNode(AnalyserNode)![1];
             let analyzerR = currentPlaying.GetNode(AnalyserNode)![2];
-            analyzerL.getFloatFrequencyData(currentPlaying.tempArrayL);
-            analyzerR.getFloatFrequencyData(currentPlaying.tempArrayR);
-            let addedL = 0;
-            currentPlaying.tempArrayL.forEach((num) => {
-                addedL += num;
+
+            analyzerMain.getFloatFrequencyData(currentPlaying.tempArrayMain);
+            for (let i = 0; i < currentPlaying.FrequencyAmplitudes.length; i++) {
+                currentPlaying.tempArrayMain[i] += 140;
+                currentPlaying.tempArrayMain[i] /= 340;
+                if (i < 3) {
+                    currentPlaying.tempArrayMain[i] *= (12 * currentPlaying.tempArrayMain[i]);
+                } else if (i < 6) {
+                    currentPlaying.tempArrayMain[i] *= (9 * currentPlaying.tempArrayMain[i]);
+                } else if (i < 100) {
+                    currentPlaying.tempArrayMain[i] *= (6 * currentPlaying.tempArrayMain[i]);
+                }
+                currentPlaying.tempArrayMain[i] /= 2;
+                if (currentPlaying.tempArrayMain[i] == Infinity || currentPlaying.tempArrayMain[i] == -Infinity) {
+                    currentPlaying.FrequencyAmplitudes[i] = 0;
+                }
+                else {
+                    currentPlaying.FrequencyAmplitudes[i] = currentPlaying.tempArrayMain[i];
+                }
+            }
+
+            analyzerL.getFloatTimeDomainData(currentPlaying.tempArrayL);
+            analyzerR.getFloatTimeDomainData(currentPlaying.tempArrayR);
+            let avgL = 0;
+            let avgR = 0;
+            currentPlaying.tempArrayL.forEach((value) => {
+               avgL += (value + 1)/2;
             });
-            let avgL = addedL /= currentPlaying.tempArrayL.length;
-            let addedR = 0;
-            currentPlaying.tempArrayR.forEach((num) => {
-                addedR += num;
+            currentPlaying.tempArrayR.forEach((value) => {
+                avgR += (value + 1)/2;
             });
-            let avgR = addedR /= currentPlaying.tempArrayL.length;
-            currentPlaying.LeftChannel = (avgL + 140) / 140;
-            currentPlaying.RightChannel = (avgR + 140) / 140;
+            avgL /= currentPlaying.tempArrayL.length;
+            avgR /= currentPlaying.tempArrayR.length;
+            currentPlaying.LeftChannel = avgL;
+            currentPlaying.RightChannel = avgR;
         }
     }
 
@@ -122,10 +168,10 @@ export class AudioEngine {
             let splitter = this.audioContext.createChannelSplitter(2);
             let analyzerL = this.audioContext.createAnalyser();
             analyzerL.smoothingTimeConstant = 0;
-            analyzerL.fftSize = 32;
+            analyzerL.fftSize = 128;
             let analyzerR = this.audioContext.createAnalyser();
             analyzerR.smoothingTimeConstant = 0;
-            analyzerR.fftSize = 32;
+            analyzerR.fftSize = 128;
             audio.AddAudioNode(gain);
             audio.AddAudioNode(analyzer);
             audio.AddAudioNode(analyzerL);

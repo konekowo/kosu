@@ -8,11 +8,8 @@ import {UnInheritedTimingPoint} from "../../Util/Beatmap/Data/Sections/TimingPoi
 export class LogoVisualizer extends PIXI.Container {
 
     public static readonly size = 900;
-    public amplitudes!: Float32Array;
     public frequencyAmplitudes: Float32Array = new Float32Array(256);
-    protected audio!: MapAudio | null;
-    protected analyzer!: AnalyserNode;
-    protected bufferLength!: number;
+    protected audio!: MapAudio;
     protected temporalAmplitudes: Float32Array = new Float32Array(256);
     protected graphics: PIXI.Graphics = new PIXI.Graphics();
     // The number of bars to jump each update iteration.
@@ -33,7 +30,6 @@ export class LogoVisualizer extends PIXI.Container {
     private firstDraw = true;
 
     public start() {
-        Main.AudioEngine.addMusicChangeEventListener(() => this.initVisualizer());
         this.graphics.blendMode = "add";
         this.addChild(this.graphics);
         this.graphics.eventMode = "none";
@@ -51,7 +47,6 @@ export class LogoVisualizer extends PIXI.Container {
             }
         }
         this.graphics.clear();
-        this.analyzer.getFloatFrequencyData(this.amplitudes);
         let decayFactor = ticker.deltaMS * this.decay_per_millisecond;
         for (let i = 0; i < this.bars_per_visualiser; i++) {
             //3% of extra bar length to make it a little faster when bar is almost at it's minimum
@@ -92,18 +87,11 @@ export class LogoVisualizer extends PIXI.Container {
     }
 
     private updateAmplitudes() {
-        this.updateFrequencyData();
-        for (let i = 0; i < this.amplitudes.length; i++) {
-            this.temporalAmplitudes[i] = this.amplitudes[i];
+        this.audio = Main.AudioEngine.GetCurrentPlayingMusic();
+        for (let i = 0; i < this.audio.FrequencyAmplitudes.length; i++) {
+            this.temporalAmplitudes[i] = this.audio.FrequencyAmplitudes[i];
         }
-        let timingPoint = this.audio ? this.audio.beatmap.TimingPoints.GetCurrentTimingPoints(Date.now() - this.audio.timeStarted)[0] :
-            new UnInheritedTimingPoint();
-        if (!this.audio) {
-            timingPoint.time = 0;
-            if (timingPoint instanceof UnInheritedTimingPoint) {
-                timingPoint.beatLength = 1000;
-            }
-        }
+        let timingPoint = this.audio.beatmap.TimingPoints.GetCurrentTimingPoints(Date.now() - this.audio.timeStarted)[0];
         for (let i = 0; i < this.bars_per_visualiser; i++) {
             let targetAmplitude = (this.temporalAmplitudes[(i + this.indexOffset) % this.bars_per_visualiser]) *
                 (timingPoint.effects == Effect.KiaiTime ? 1 : 0.5);
@@ -112,40 +100,5 @@ export class LogoVisualizer extends PIXI.Container {
             }
         }
         this.indexOffset = (this.indexOffset + this.index_change) % this.bars_per_visualiser;
-    }
-
-    private initVisualizer() {
-        this.audio = Main.AudioEngine.GetCurrentPlayingMusic();
-        if (this.audio) {
-            const analyzerNodes = this.audio.GetNode(AnalyserNode);
-            if (analyzerNodes == null) {
-                throw new Error("Couldn't find any AnalyzerNode on Audio Object!");
-            }
-            this.analyzer = analyzerNodes[0];
-            this.bufferLength = this.analyzer.frequencyBinCount;
-            this.amplitudes = new Float32Array(this.bufferLength);
-        } else {
-            this.analyzer = new AnalyserNode(Main.AudioEngine.audioContext);
-            this.analyzer.fftSize = 512;
-            this.bufferLength = this.analyzer.frequencyBinCount;
-            this.amplitudes = new Float32Array(this.bufferLength);
-        }
-
-
-    }
-
-    private updateFrequencyData() {
-        for (let i = 0; i < this.amplitudes.length; i++) {
-            this.amplitudes[i] += 140;
-            this.amplitudes[i] /= 340;
-            if (i < 3) {
-                this.amplitudes[i] *= (12 * this.amplitudes[i]);
-            } else if (i < 6) {
-                this.amplitudes[i] *= (9 * this.amplitudes[i]);
-            } else if (i < 100) {
-                this.amplitudes[i] *= (6 * this.amplitudes[i]);
-            }
-            this.amplitudes[i] /= 2;
-        }
     }
 }
