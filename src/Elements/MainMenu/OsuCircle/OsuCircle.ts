@@ -29,6 +29,7 @@ export class OsuCircle extends PIXI.Container {
     private readonly early_activation = 60;
     private timeElapsedSinceLastBeat = 0;
     private timeUntilNextBeat = 0;
+    private lastTimeElapasedSinceLastBeat = 0;
 
     private selectSample = Loader.GetAudio("mainMenu.osuLogo.select");
     private backToLogoSample = Loader.GetAudio("mainMenu.osuLogo.backToLogo");
@@ -157,9 +158,11 @@ export class OsuCircle extends PIXI.Container {
             this.logoAmplitudeContainer.scale = 1;
             this.triangles.Velocity = MathUtil.Damp(this.triangles.Velocity, 0.5, 0.9, ticker.deltaMS);
         }
-        if (this.timeElapsedSinceLastBeat < 16) {
+        if (this.lastTimeElapasedSinceLastBeat > this.timeElapsedSinceLastBeat) {
             this.onNewBeat();
         }
+
+        this.lastTimeElapasedSinceLastBeat = this.timeElapsedSinceLastBeat;
 
         if (this.isMouseDown) {
             let change = {x: Main.mousePos.x - this.mouseDownPosition.x, y: Main.mousePos.y - this.mouseDownPosition.y};
