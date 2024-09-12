@@ -131,7 +131,7 @@ export class Triangles extends PIXI.Container {
         for (let i = 0; i < this.totalTriangles; i++) {
             const triangle = this.triangles[i];
 
-            triangle.y -= (ticker.deltaTime * this.Velocity * triangle.velocity);
+            triangle.y -= ((ticker.deltaTime * this.Velocity * triangle.velocity)*1.2);
 
             if (triangle.y + 100 < 0) {
                 triangle.y = 1024 + 250;

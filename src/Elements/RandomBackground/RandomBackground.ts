@@ -1,9 +1,8 @@
 import * as PIXI from "pixi.js";
 import {Loader} from "../../Loader";
 import {Screen} from "../../Screens/Screen";
-import {Ease} from "../../Util/TweenWrapper/Ease";
-import * as TWEEN from "@tweenjs/tween.js";
 import {Main} from "../../main";
+import {Background} from "./Background";
 
 export class RandomBackground extends Screen {
 
@@ -20,23 +19,19 @@ export class RandomBackground extends Screen {
         Main.AudioEngine.addMusicChangeEventListener(() => {
             this.newRandomBG();
         });
+        this.zIndex = -100;
     }
 
-    public setBG(sprite: PIXI.Sprite) {
+    public setBG(texture: PIXI.Texture) {
+        let bgSprite = new Background(texture);
+        this.bgContainer.addChild(bgSprite);
+        bgSprite.show();
         if (this.bgContainer.children?.length == 0) {
-            this.bgContainer.addChild(sprite);
         } else {
-            let previous = this.bgContainer.children[0];
-            sprite.zIndex = -1;
-            this.bgContainer.addChild(sprite);
-            Ease.getEase(previous, true).FadeOut(800, TWEEN.Easing.Linear.None).Then(() => {
-                sprite.zIndex = 0;
-                previous.destroy();
-            });
+            let previous = this.bgContainer.children[0] as Background;
+            previous.destroy();
         }
-        sprite.anchor.set(0.5, 0.5);
         this.onResize();
-
     }
 
     public newRandomBG() {
@@ -46,7 +41,7 @@ export class RandomBackground extends Screen {
 
         let useSeasonalBackgrounds = Loader.seasonalBackgroundsNum > 0;
         let randomNum = random(1, useSeasonalBackgrounds ? Loader.seasonalBackgroundsNum : Loader.defaultBackgroundsNum);
-        this.setBG(PIXI.Sprite.from((useSeasonalBackgrounds ? "seasonal_bg" : "default_bg") + randomNum));
+        this.setBG(PIXI.Texture.from((useSeasonalBackgrounds ? "seasonal_bg" : "default_bg") + randomNum));
     }
 
     public draw(deltaTime: PIXI.Ticker) {
@@ -60,7 +55,7 @@ export class RandomBackground extends Screen {
 
     public onResize() {
         this.bgContainer.children.forEach((sprite) => {
-            if (sprite instanceof PIXI.Sprite) {
+            if (sprite instanceof Background) {
                 let texWidth = sprite.texture.width;
                 let texHeight = sprite.texture.height;
 
