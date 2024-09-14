@@ -183,11 +183,11 @@ export class OsuCircle extends PIXI.Container {
         let beatLength = timingPointUninherited.beatLength;
         let timingPoint = audio.beatmap.TimingPoints.GetCurrentTimingPoints(Date.now() - audio.timeStarted)[0];
         let maxAmplitude = !Main.AudioEngine.useSilentMusic ? audio.GetMaximumAudioLevel() : 0;
-        let amplitudeAdjust = Math.min(1, 0.4 + maxAmplitude);
+        let amplitudeAdjust = Math.min(1, 0.2 + maxAmplitude);
         Ease.getEase(this.logoBeatContainer).ScaleTo(1 - 0.02 * amplitudeAdjust, this.early_activation, TWEEN.Easing.Linear.None).Then()
             .ScaleTo(1, beatLength * 2, TWEEN.Easing.Quintic.Out);
         this.rippleContainer.scale = 1.02;
-        Ease.getEase(this.rippleContainer).ClearEasings().ScaleTo(1.02 * (1 + 0.04 * amplitudeAdjust), beatLength * 2, TWEEN.Easing.Quintic.Out);
+        Ease.getEase(this.rippleContainer).ClearEasings().ScaleTo(1.02 * (1 + 0.04 * amplitudeAdjust), beatLength, TWEEN.Easing.Quintic.Out);
         this.ripple.alpha = 0.15 * amplitudeAdjust;
         Ease.getEase(this.ripple).ClearEasings().FadeOut(beatLength, TWEEN.Easing.Quintic.Out);
 
