@@ -2,8 +2,8 @@ import {RangeSetting} from "../../SettingType/RangeSetting";
 import {SettingsCategory} from "../../Setting";
 
 export class UIScale extends RangeSetting {
-    public readonly maxValue = 0.8;
-    public readonly minValue = 1.6;
+    public readonly maxValue = 1.6;
+    public readonly minValue = 0.8;
     public readonly increment = 0.1;
     public readonly defaultValue = 1;
 
