@@ -4,6 +4,7 @@ import {Main} from "./main";
 import {Settings} from "./Settings/Settings";
 import {Renderer} from "./Settings/impl/Graphics/Renderer";
 import {MouseSensitivity} from "./Settings/impl/Input/MouseSensitivity";
+import {UIScale} from "./Settings/impl/Graphics/UIScale";
 Settings.registerAll();
 Settings.load();
 const gameWidth = window.innerWidth;
@@ -35,5 +36,10 @@ Object.defineProperty(window, "setSensitivity", {value: (sensitivity: number) =>
 Object.defineProperty(window, "setRenderer", {value: (renderer: string) => {
     let rendererSetting = Settings.getSetting(Renderer);
     rendererSetting.setValue(renderer == "webgl" ? rendererSetting.webglOption : rendererSetting.webGpuOption);
+    window.location.reload();
+}});
+
+Object.defineProperty(window, "setUIScale", {value: (scale: number) => {
+    Settings.getSetting(UIScale).setValue(scale);
     window.location.reload();
 }});
