@@ -258,7 +258,7 @@ export class IntroScreen extends Screen {
         if (!this.ruleSetContainer.destroyed) {
             this.ruleSetContainer.position.set(this.getScreenWidth() / 2, this.getScreenHeight() / 2);
         }
-        if (!this.flash.destroyed && this.flashed) {
+        if (!this.flash.destroyed) {
             this.flash.position.set(0, 0);
             this.flash.width = this.getScreenWidth();
             this.flash.height = this.getScreenHeight();
