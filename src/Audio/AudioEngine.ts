@@ -69,6 +69,10 @@ export class AudioEngine {
         return this.useSilentMusic ? this.silentMusic : this._musicQueue[0];
     }
 
+    public GetCurrentPlayingMusicNoSilent(): MapAudio {
+        return this._musicQueue[0];
+    }
+
     public PlayEffect(audio: AudioBuffer, pitch?: number) {
         let audioObj = new Audio();
         audioObj.audio = audio;
@@ -77,9 +81,10 @@ export class AudioEngine {
         this._audioIdTicker++;
     }
 
-    public AddToMusicQueue(mapAudio: AudioBuffer, beatMapData: BeatmapData, musicPlayingCallback?: () => void) {
+    public AddToMusicQueue(mapAudio: string, beatMapData: BeatmapData, musicPlayingCallback?: () => void) {
         let mapAudioObj = new MapAudio();
-        mapAudioObj.audio = mapAudio;
+        mapAudioObj.mediaAudioElement = document.createElement("audio");
+        mapAudioObj.mediaAudioElement.src = mapAudio;
         mapAudioObj.beatmap = beatMapData;
         mapAudioObj.id = this._audioIdTicker;
         if (musicPlayingCallback) {
@@ -91,7 +96,7 @@ export class AudioEngine {
         return mapAudioObj.id;
     }
 
-    public PlayMusicImmediately(mapAudio: AudioBuffer, beatMapData: BeatmapData, musicPlayingCallback?: () => void) {
+    public PlayMusicImmediately(mapAudio: string, beatMapData: BeatmapData, musicPlayingCallback?: () => void) {
         // clear queue
         this._musicQueue = [];
         this.AddToMusicQueue(mapAudio, beatMapData, musicPlayingCallback);
@@ -142,9 +147,9 @@ export class AudioEngine {
     }
 
     private _play(audio: Audio | MapAudio, pitch?: number) {
-        audio.Create(this.audioContext);
         // check if audio is type of MapAudio
         if ("beatmap" in audio && audio.beatmap) {
+            audio.Create(this.audioContext, true);
             this._playingAudios.audios.forEach((audio) => {
                 if ("beatmap" in audio && audio.beatmap) {
                     clearTimeout(audio.fadeOutTimeout);
@@ -189,11 +194,16 @@ export class AudioEngine {
             if (audio.playingCallback) {
                 audio.playingCallback();
             }
+            let timeOffset = Date.now();
+            audio.mediaAudioElement.onloadedmetadata = () => {
+                audio.fadeOutTimeout = setTimeout(() => {
+                    gain.gain.linearRampToValueAtTime(0, this.audioContext.currentTime + 0.4);
+                }, Math.max(0, ((audio.mediaAudioElement.duration - 0.4) * 1000) - (Date.now() - timeOffset)));
+            }
             gain.gain.linearRampToValueAtTime(1, this.audioContext.currentTime + 0.4);
-            audio.fadeOutTimeout = setTimeout(() => {
-                gain.gain.linearRampToValueAtTime(0, this.audioContext.currentTime + 0.4);
-            }, (audio.audio.duration - 0.4) * 1000);
+
         } else {
+            audio.Create(this.audioContext, false);
             audio.ConnectToContext(this.audioContext);
             if (pitch) {
                 if (audio.source) {

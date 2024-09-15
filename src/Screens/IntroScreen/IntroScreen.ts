@@ -86,12 +86,14 @@ export class IntroScreen extends Screen {
                         console.log(beatmapData);
                         for (const [name, entry] of Object.entries(entries)) {
                             if (name == beatmapData.General.AudioFileName) {
-                                entry.arrayBuffer().then(arrBuff => Main.AudioEngine.audioContext.decodeAudioData(arrBuff))
-                                    .then((audioBuff) => {
-                                        Main.AudioEngine.PlayMusicImmediately(audioBuff, beatmapData, () => {
+                                entry.blob().then(blob => {
+                                    let url = URL.createObjectURL(blob);
+                                    setTimeout(() => {
+                                        Main.AudioEngine.PlayMusicImmediately(url, beatmapData, () => {
                                             this.afterAudioPlay();
                                         });
-                                    });
+                                    }, 200);
+                                });
                             }
                         }
 

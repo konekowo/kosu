@@ -142,8 +142,9 @@ export class OsuCircle extends PIXI.Container {
         this.triangles.draw(ticker);
         //this.timeElapsedSinceLastBeat += ticker.deltaMS;
         let audio = Main.AudioEngine.GetCurrentPlayingMusic();
-        let timingPoint = audio.beatmap.TimingPoints.GetCurrentUninheritedTimingPoint(Date.now() - audio.timeStarted);
-        this.timeUntilNextBeat = (timingPoint.time - (Date.now() - audio.timeStarted)) % timingPoint.beatLength;
+        let audioTime = audio.mediaAudioElement ? audio.mediaAudioElement.currentTime * 1000 : Date.now() - audio.timeStarted;
+        let timingPoint = audio.beatmap.TimingPoints.GetCurrentUninheritedTimingPoint(audioTime);
+        this.timeUntilNextBeat = (timingPoint.time - audioTime) % timingPoint.beatLength;
         if (this.timeUntilNextBeat <= 0) {
             this.timeUntilNextBeat += timingPoint.beatLength;
         }
@@ -179,9 +180,10 @@ export class OsuCircle extends PIXI.Container {
 
     private onNewBeat() {
         let audio = Main.AudioEngine.GetCurrentPlayingMusic();
-        let timingPointUninherited = audio.beatmap.TimingPoints.GetCurrentUninheritedTimingPoint(Date.now() - audio.timeStarted);
+        let audioTime = audio.mediaAudioElement ? audio.mediaAudioElement.currentTime * 1000 : Date.now() - audio.timeStarted;
+        let timingPointUninherited = audio.beatmap.TimingPoints.GetCurrentUninheritedTimingPoint(audioTime);
         let beatLength = timingPointUninherited.beatLength;
-        let timingPoint = audio.beatmap.TimingPoints.GetCurrentTimingPoints(Date.now() - audio.timeStarted)[0];
+        let timingPoint = audio.beatmap.TimingPoints.GetCurrentTimingPoints(audioTime)[0];
         let maxAmplitude = !Main.AudioEngine.useSilentMusic ? audio.GetMaximumAudioLevel() : 0;
         let amplitudeAdjust = Math.min(1, 0.2 + maxAmplitude);
         Ease.getEase(this.logoBeatContainer).ScaleTo(1 - 0.02 * amplitudeAdjust, this.early_activation, TWEEN.Easing.Linear.None).Then()

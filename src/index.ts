@@ -29,6 +29,15 @@ window.onload = async (): Promise<void> => {
     });
 };
 
+navigator.mediaSession.setActionHandler('play', () => {Main.AudioEngine.GetCurrentPlayingMusicNoSilent()?.Play();});
+navigator.mediaSession.setActionHandler('pause', () => {Main.AudioEngine.GetCurrentPlayingMusicNoSilent()?.Pause();});
+navigator.mediaSession.setActionHandler('stop', () => {});
+navigator.mediaSession.setActionHandler('seekbackward', () => {});
+navigator.mediaSession.setActionHandler('seekforward', () => {});
+navigator.mediaSession.setActionHandler('seekto', () => {});
+navigator.mediaSession.setActionHandler('previoustrack', () => {});
+navigator.mediaSession.setActionHandler('nexttrack', () => {});
+
 Object.defineProperty(window, "setSensitivity", {value: (sensitivity: number) => {
     Settings.getSetting(MouseSensitivity).setValue(sensitivity);
 }});
