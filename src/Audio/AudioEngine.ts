@@ -24,7 +24,7 @@ export class AudioEngine {
 
     public UpdateMusicQueue() {
         if (this._musicQueue[0]) {
-            if (!this._musicQueue[0].fadingOut && this._musicQueue[0].timeStarted == 0) {
+            if (!this._musicQueue[0].fadingOut && this._musicQueue[0].GetCurrentTime() == 0) {
                 this._play(this._musicQueue[0]);
                 this._changeCallbacks.forEach((cb) => cb());
             }
@@ -41,7 +41,6 @@ export class AudioEngine {
         }
         else {
             this.useSilentMusic = false;
-
         }
     }
 
@@ -104,6 +103,17 @@ export class AudioEngine {
 
     public update() {
         let currentPlaying = this.GetCurrentPlayingMusic();
+        let currentPlayingNoSilent = this.GetCurrentPlayingMusicNoSilent();
+        if (!currentPlayingNoSilent)
+            return;
+        if (currentPlayingNoSilent.isPaused) {
+            this.useSilentMusic = true;
+            return;
+        }
+        else if (this.useSilentMusic) {
+            this.useSilentMusic = false;
+            currentPlaying = this.GetCurrentPlayingMusic();
+        }
         if (!this.useSilentMusic) {
             let analyzerMain = currentPlaying.GetNode(AnalyserNode)![0];
             let analyzerL = currentPlaying.GetNode(AnalyserNode)![1];
@@ -216,7 +226,6 @@ export class AudioEngine {
 
 
         audio.RegisterEndCallBack(() => {
-            audio.isPlaying = false;
             if ("beatmap" in audio && audio.beatmap) {
                 if (this._musicQueue[0] == audio) {
                     this._musicQueue.splice(0, 1);

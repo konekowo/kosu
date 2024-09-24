@@ -4,14 +4,14 @@ import * as TWEEN from "@tweenjs/tween.js";
 import {Ease} from "../../../Util/TweenWrapper/Ease";
 import {Main} from "../../../main";
 import {Loader} from "../../../Loader";
-import {Menu} from "./Menu/Menu";
+import {ButtonSystem} from "./Menu/ButtonSystem";
 import {MenuLogoVisualizer} from "../../AudioVisualizers/impl/MenuLogoVisualizer";
 import {LogoVisualizer} from "../../AudioVisualizers/LogoVisualizer";
 import {Effect} from "../../../Util/Beatmap/Data/Sections/TimingPoints/Effect";
 import {UnInheritedTimingPoint} from "../../../Util/Beatmap/Data/Sections/TimingPoints/UnInheritedTimingPoint";
 import {MathUtil} from "../../../Util/MathUtil";
 
-export class OsuCircle extends PIXI.Container {
+export class OsuLogo extends PIXI.Container {
 
     private readonly outline: PIXI.Sprite;
     private readonly visualizer: MenuLogoVisualizer = new MenuLogoVisualizer();
@@ -24,7 +24,6 @@ export class OsuCircle extends PIXI.Container {
     private readonly logoHoverContainer = new PIXI.Container();
     private readonly rippleContainer = new PIXI.Container();
     private readonly ripple;
-    private readonly menu: Menu = new Menu();
     private readonly defaultVisualizerAlpha = 0.5;
     private readonly early_activation = 60;
     private timeElapsedSinceLastBeat = 0;
@@ -36,6 +35,14 @@ export class OsuCircle extends PIXI.Container {
 
     private isMouseDown = false;
     private mouseDownPosition = {x: 0, y: 0};
+
+    public Action: (() => boolean) | null = null;
+
+    public IsTracking: boolean = false;
+
+    public get SizeForFlow() {
+        return this.outline.width * this.logoBounceContainer.scale.x * this.logoHoverContainer.scale.x;
+    }
 
 
     public constructor() {
@@ -125,6 +132,11 @@ export class OsuCircle extends PIXI.Container {
         this.flash.alpha = 0.4;
         Ease.getEase(this.flash).ClearEasings()
             .FadeOut(1500, TWEEN.Easing.Exponential.Out);
+        if (this.Action) {
+            if(this.Action()){
+                Main.AudioEngine.PlayEffect(Loader.GetAudio("mainMenu.osuLogo.select"));
+            }
+        }
     }
 
     public _onmouseup = (e: PIXI.FederatedMouseEvent) => {
@@ -133,16 +145,12 @@ export class OsuCircle extends PIXI.Container {
             .TransformTo({x: 0, y: 0}, 800, TWEEN.Easing.Elastic.Out);
     }
 
-    public onResize() {
-        this.menu.onResize();
-    }
-
     public draw(ticker: PIXI.Ticker) {
         this.visualizer.draw(ticker);
         this.triangles.draw(ticker);
         //this.timeElapsedSinceLastBeat += ticker.deltaMS;
         let audio = Main.AudioEngine.GetCurrentPlayingMusic();
-        let audioTime = audio.mediaAudioElement ? audio.mediaAudioElement.currentTime * 1000 : Date.now() - audio.timeStarted;
+        let audioTime = audio.GetCurrentTime();
         let timingPoint = audio.beatmap.TimingPoints.GetCurrentUninheritedTimingPoint(audioTime);
         this.timeUntilNextBeat = (timingPoint.time - audioTime) % timingPoint.beatLength;
         if (this.timeUntilNextBeat <= 0) {
@@ -180,7 +188,7 @@ export class OsuCircle extends PIXI.Container {
 
     private onNewBeat() {
         let audio = Main.AudioEngine.GetCurrentPlayingMusic();
-        let audioTime = audio.mediaAudioElement ? audio.mediaAudioElement.currentTime * 1000 : Date.now() - audio.timeStarted;
+        let audioTime = audio.GetCurrentTime();
         let timingPointUninherited = audio.beatmap.TimingPoints.GetCurrentUninheritedTimingPoint(audioTime);
         let beatLength = timingPointUninherited.beatLength;
         let timingPoint = audio.beatmap.TimingPoints.GetCurrentTimingPoints(audioTime)[0];

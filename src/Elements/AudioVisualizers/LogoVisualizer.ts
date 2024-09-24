@@ -91,7 +91,7 @@ export class LogoVisualizer extends PIXI.Container {
         for (let i = 0; i < this.audio.FrequencyAmplitudes.length; i++) {
             this.temporalAmplitudes[i] = this.audio.FrequencyAmplitudes[i];
         }
-        let audioTime = this.audio.mediaAudioElement ? this.audio.mediaAudioElement.currentTime * 1000 : Date.now() - this.audio.timeStarted;
+        let audioTime = this.audio.GetCurrentTime();
         let timingPoint = this.audio.beatmap.TimingPoints.GetCurrentTimingPoints(audioTime)[0];
         for (let i = 0; i < this.bars_per_visualiser; i++) {
             let targetAmplitude = (this.temporalAmplitudes[(i + this.indexOffset) % this.bars_per_visualiser]) *

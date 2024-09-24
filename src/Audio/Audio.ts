@@ -2,14 +2,16 @@ import {BeatmapData} from "../Util/Beatmap/Data/BeatmapData";
 
 export class Audio {
     public audio!: AudioBuffer;
-    public timeStarted: number = 0;
     public source?: AudioBufferSourceNode;
     public mediaSource?: MediaElementAudioSourceNode;
     public mediaAudioElement!: HTMLAudioElement;
     public id!: number;
-    public isPlaying: boolean = false;
-    public isPaused: boolean = false;
-    public pausedTime: number = 0;
+    public get isPaused() {
+        return this._useMediaSource ? this.mediaAudioElement.paused : false;
+    }
+    public get isPlaying() {
+        return this._useMediaSource ? !this.mediaAudioElement.paused : true;
+    }
     public nodes: AudioNode[] = [];
     public tempArrayMain = new Float32Array(256);
     public tempArrayL = new Float32Array(64);
@@ -20,6 +22,8 @@ export class Audio {
     private _connectedToContext = false;
     private _useMediaSource = false;
     private _onEndCallback?: () => void;
+    public timeStarted = 0; // only for silent audio when real music is paused
+    private paused = false; // used to check if music was paused outside of Audio class (i.e. pressing stop media button on the keyboard)
 
     public GetMaximumAudioLevel() {
         return Math.max(this.LeftChannel, this.RightChannel);
@@ -40,6 +44,12 @@ export class Audio {
                 throw new Error("HTML Audio Element was not initialized!")
             }
             this.mediaSource = audioContext.createMediaElementSource(this.mediaAudioElement);
+            this.mediaAudioElement.onpause = () => {
+                console.log(this.mediaAudioElement.ended);
+                if (!this.paused && !this.mediaAudioElement.ended) { // check if music was paused outside of Audio class
+                    this.Play();
+                }
+            }
         }
     }
 
@@ -95,16 +105,13 @@ export class Audio {
         if (!this._connectedToContext) {
             throw new Error("Not connected to audio context yet!");
         }
+        this.paused = false;
         if (!this._useMediaSource) {
-            this.source!.start(0, this.pausedTime);
+            this.source!.start();
         }
         else {
             this.mediaAudioElement!.play();
         }
-        this.isPlaying = true;
-        this.isPaused = false;
-        this.timeStarted = Date.now() - this.pausedTime;
-        this.pausedTime = 0;
     }
 
     public Pause() {
@@ -117,10 +124,8 @@ export class Audio {
         if (!this._useMediaSource) {
             throw new Error("Pause is not supported on AudioSourceBuffer!");
         }
-        this.pausedTime = Date.now() - this.timeStarted;
+        this.paused = true;
         this.mediaAudioElement!.pause();
-        this.isPaused = true;
-        this.isPlaying = false;
     }
 
     public Stop() {
@@ -130,8 +135,9 @@ export class Audio {
         if (!this._connectedToContext) {
             throw new Error("Not connected to audio context yet!");
         }
+        this.paused = true;
         if (!this._useMediaSource) {
-            this.source!.stop(0);
+            this.source!.stop();
         }
         else {
             this.mediaAudioElement!.pause();
@@ -139,7 +145,6 @@ export class Audio {
                 this._onEndCallback();
             }
         }
-        this.isPlaying = false;
     }
 
     public SetTime(timeMS: number) {
@@ -159,6 +164,10 @@ export class Audio {
         return (!this._useMediaSource ? this.audio.duration : this.mediaAudioElement.duration * 1000)
     }
 
+    public GetCurrentTime() {
+        return this._useMediaSource ? this.mediaAudioElement.currentTime * 1000 : (this.timeStarted != 0 ? Date.now() - this.timeStarted : 0);
+    }
+
     public RegisterEndCallBack(callback: () => void) {
         if (!(!this._useMediaSource ? this.source : this.mediaSource)) {
             throw new Error("Source not created yet!");
@@ -167,8 +176,15 @@ export class Audio {
         if (!this._useMediaSource) {
             this.source!.onended = () => {
                 if (!this.isPaused) {
+                    this.paused = true;
                     callback();
                 }
+            }
+        }
+        else {
+            this.mediaAudioElement.onended = () => {
+                this.paused = true;
+                callback();
             }
         }
     }
