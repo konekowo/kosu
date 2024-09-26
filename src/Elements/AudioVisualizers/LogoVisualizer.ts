@@ -29,6 +29,18 @@ export class LogoVisualizer extends PIXI.Container {
     private indexOffset = 0;
     private firstDraw = true;
 
+    public set alpha(number: number) {
+        super.alpha = number * 0.2;
+    }
+    public get alpha() {
+        return super.alpha * 5;
+    }
+
+    public constructor() {
+        super();
+        this.alpha = 1;
+    }
+
     public start() {
         this.graphics.blendMode = "add";
         this.addChild(this.graphics);
@@ -80,7 +92,7 @@ export class LogoVisualizer extends PIXI.Container {
 
                 this.graphics.moveTo(barPosition.x, barPosition.y);
                 this.graphics.lineTo(barPosition.x + amplitudeOffset.x, barPosition.y + amplitudeOffset.y);
-                this.graphics.stroke({color: "rgba(255, 255, 255, 0.2)", width: 14});
+                this.graphics.stroke({color: "rgb(255, 255, 255)", width: 14});
             }
         }
         this.firstDraw = false;
