@@ -25,6 +25,7 @@
     "author": "kone",
     "license": "LGPL-3.0-only",
     "dependencies": {
+        "@pixi/ui": "^2.1.5",
         "@tweenjs/tween.js": "^23.1.2",
         "core-js": "^3.34.0",
         "pixi.js": "github:konekowo/pixijs",

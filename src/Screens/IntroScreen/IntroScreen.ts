@@ -9,6 +9,7 @@ import {LazerLogo} from "./LazerLogo";
 import {BeatmapParser} from "../../Util/Beatmap/Parser/BeatmapParser";
 import * as TWEEN from "@tweenjs/tween.js";
 import {Ease} from "../../Util/TweenWrapper/Ease";
+import {List} from "@pixi/ui";
 
 export class IntroScreen extends Screen {
 
@@ -17,6 +18,7 @@ export class IntroScreen extends Screen {
     private doTextSpacingAnim = false;
     private triangles = new PIXI.Container();
     private ruleSetContainer = new PIXI.Container();
+    private ruleSetList = new List({});
     private flash = new PIXI.Graphics();
 
     private logoContainerContainer = new PIXI.Container();
@@ -145,16 +147,21 @@ export class IntroScreen extends Screen {
 
             this.standard.anchor.set(0.5, 0.5);
             this.standard.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
-            this.ruleSetContainer.addChild(this.standard);
+            this.ruleSetList.addChild(this.standard);
             this.taiko.anchor.set(0.5, 0.5);
             this.taiko.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
-            this.ruleSetContainer.addChild(this.taiko);
+            this.ruleSetList.addChild(this.taiko);
             this.ctb.anchor.set(0.5, 0.5);
             this.ctb.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
-            this.ruleSetContainer.addChild(this.ctb);
+            this.ruleSetList.addChild(this.ctb);
             this.mania.anchor.set(0.5, 0.5);
             this.mania.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
-            this.ruleSetContainer.addChild(this.mania);
+            this.ruleSetList.addChild(this.mania);
+            this.ruleSetList.padding = 0;
+            this.ruleSetList.elementsMargin = 100;
+            this.ruleSetList.type = "horizontal";
+            console.log({value: this.ruleSetList.width, pos: this.ruleSetList.position});
+            this.ruleSetContainer.addChild(this.ruleSetList);
 
             setTimeout(() => {
                 this.doTextSpacingAnim = false;
@@ -163,24 +170,13 @@ export class IntroScreen extends Screen {
                 this.welcomeText.destroy();
                 this.triangles.destroy();
                 this.ruleSetContainer.position.set(this.getScreenWidth() / 2, this.getScreenHeight() / 2);
-
                 this.addChild(this.ruleSetContainer);
-
-                let spacing = 100;
-                this.standard.position.set(-((spacing * 2) + 175) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.taiko.position.set(-((spacing) + 25) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.ctb.position.set(((spacing) + 25) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.mania.position.set(((spacing * 2) + 175) * Screen.getScaleBasedOffScreenSize(), 0);
+                this.ruleSetList.elementsMargin = (200 * Screen.getScaleBasedOffScreenSize()) + this.standard.width;
                 Ease.getEase(this.ruleSetContainer).ScaleTo(0.8, 1000, TWEEN.Easing.Linear.None);
             }, 1450);
 
             setTimeout(() => {
-                let spacing = 15;
-                this.standard.position.set(-((spacing * 2) + 210) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.taiko.position.set(-((spacing) + 60) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.ctb.position.set(((spacing) + 60) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.mania.position.set(((spacing * 2) + 210) * Screen.getScaleBasedOffScreenSize(), 0);
-
+                this.ruleSetList.elementsMargin = (30 * Screen.getScaleBasedOffScreenSize()) + this.standard.width;
                 this.standard.scale.set(Screen.getScaleBasedOffScreenSize());
                 this.taiko.scale.set(Screen.getScaleBasedOffScreenSize());
                 this.ctb.scale.set(Screen.getScaleBasedOffScreenSize());
@@ -188,16 +184,8 @@ export class IntroScreen extends Screen {
             }, 1650);
 
             setTimeout(() => {
-                let spacing = 60;
-                this.standard.position.set(-((spacing * 2) + 230) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.taiko.position.set(-((spacing) + 60) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.ctb.position.set(((spacing) + 60) * Screen.getScaleBasedOffScreenSize(), 0);
-                this.mania.position.set(((spacing * 2) + 230) * Screen.getScaleBasedOffScreenSize(), 0);
-
-                this.standard.scale.set(2 * Screen.getScaleBasedOffScreenSize());
-                this.taiko.scale.set(2 * Screen.getScaleBasedOffScreenSize());
-                this.ctb.scale.set(2 * Screen.getScaleBasedOffScreenSize());
-                this.mania.scale.set(2 * Screen.getScaleBasedOffScreenSize());
+                this.ruleSetList.elementsMargin = (10 * Screen.getScaleBasedOffScreenSize()) + this.standard.width;
+                console.log({value: this.ruleSetList.width, pos: this.ruleSetList.position});
                 Ease.getEase(this.ruleSetContainer).ScaleTo(1.3, 1000, TWEEN.Easing.Linear.None);
             }, 1850);
 
@@ -233,6 +221,7 @@ export class IntroScreen extends Screen {
             this.welcomeText.style.letterSpacing += 0.15 * deltaTime.deltaTime;
             this.onResize();
         }
+        this.ruleSetList.position.x = -this.ruleSetList.width/2;
     }
 
     public onClose(): Promise<Screen> {
