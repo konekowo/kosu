@@ -9,7 +9,8 @@ import {LazerLogo} from "./LazerLogo";
 import {BeatmapParser} from "../../Util/Beatmap/Parser/BeatmapParser";
 import * as TWEEN from "@tweenjs/tween.js";
 import {Ease} from "../../Util/TweenWrapper/Ease";
-import {List} from "@pixi/ui";
+import {UIUtils} from "../../Util/UI/UIUtils";
+import {CenteredList} from "../../Util/UI/CenteredList";
 
 export class IntroScreen extends Screen {
 
@@ -18,7 +19,7 @@ export class IntroScreen extends Screen {
     private doTextSpacingAnim = false;
     private triangles = new PIXI.Container();
     private ruleSetContainer = new PIXI.Container();
-    private ruleSetList = new List({});
+    private ruleSetList = new CenteredList({});
     private flash = new PIXI.Graphics();
 
     private logoContainerContainer = new PIXI.Container();
@@ -145,22 +146,14 @@ export class IntroScreen extends Screen {
             }, 900);
 
 
-            this.standard.anchor.set(0.5, 0.5);
-            this.standard.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
             this.ruleSetList.addChild(this.standard);
-            this.taiko.anchor.set(0.5, 0.5);
-            this.taiko.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
             this.ruleSetList.addChild(this.taiko);
-            this.ctb.anchor.set(0.5, 0.5);
-            this.ctb.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
             this.ruleSetList.addChild(this.ctb);
-            this.mania.anchor.set(0.5, 0.5);
-            this.mania.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
             this.ruleSetList.addChild(this.mania);
             this.ruleSetList.padding = 0;
-            this.ruleSetList.elementsMargin = 100;
+            this.ruleSetList.elementsMargin = 200 * Screen.getScaleBasedOffScreenSize();
             this.ruleSetList.type = "horizontal";
-            console.log({value: this.ruleSetList.width, pos: this.ruleSetList.position});
+            this.ruleSetList.scale = 1;
             this.ruleSetContainer.addChild(this.ruleSetList);
 
             setTimeout(() => {
@@ -171,21 +164,19 @@ export class IntroScreen extends Screen {
                 this.triangles.destroy();
                 this.ruleSetContainer.position.set(this.getScreenWidth() / 2, this.getScreenHeight() / 2);
                 this.addChild(this.ruleSetContainer);
-                this.ruleSetList.elementsMargin = (200 * Screen.getScaleBasedOffScreenSize()) + this.standard.width;
+                this.ruleSetList.elementsMargin = 200 * Screen.getScaleBasedOffScreenSize();
                 Ease.getEase(this.ruleSetContainer).ScaleTo(0.8, 1000, TWEEN.Easing.Linear.None);
             }, 1450);
 
             setTimeout(() => {
-                this.ruleSetList.elementsMargin = (30 * Screen.getScaleBasedOffScreenSize()) + this.standard.width;
-                this.standard.scale.set(Screen.getScaleBasedOffScreenSize());
-                this.taiko.scale.set(Screen.getScaleBasedOffScreenSize());
-                this.ctb.scale.set(Screen.getScaleBasedOffScreenSize());
-                this.mania.scale.set(Screen.getScaleBasedOffScreenSize());
+                this.ruleSetList.elementsMargin = 30 * Screen.getScaleBasedOffScreenSize();
+                this.ruleSetList.scale = 2;
+                UIUtils.centerPivotOfList(this.ruleSetList);
             }, 1650);
 
             setTimeout(() => {
-                this.ruleSetList.elementsMargin = (10 * Screen.getScaleBasedOffScreenSize()) + this.standard.width;
-                console.log({value: this.ruleSetList.width, pos: this.ruleSetList.position});
+                this.ruleSetList.elementsMargin = 10 * Screen.getScaleBasedOffScreenSize();
+                this.ruleSetList.scale = 4;
                 Ease.getEase(this.ruleSetContainer).ScaleTo(1.3, 1000, TWEEN.Easing.Linear.None);
             }, 1850);
 
@@ -221,7 +212,6 @@ export class IntroScreen extends Screen {
             this.welcomeText.style.letterSpacing += 0.15 * deltaTime.deltaTime;
             this.onResize();
         }
-        this.ruleSetList.position.x = -this.ruleSetList.width/2;
     }
 
     public onClose(): Promise<Screen> {
