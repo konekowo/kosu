@@ -145,6 +145,11 @@ export class IntroScreen extends Screen {
                 this.onResize();
             }, 900);
 
+            this.standard.scale = 0.5 * Screen.getScaleBasedOffScreenSize();
+            this.ctb.scale = 0.5 * Screen.getScaleBasedOffScreenSize();
+            this.mania.scale = 0.5 * Screen.getScaleBasedOffScreenSize();
+            this.taiko.scale = 0.5 * Screen.getScaleBasedOffScreenSize();
+
 
             this.ruleSetList.addChild(this.standard);
             this.ruleSetList.addChild(this.taiko);
@@ -254,16 +259,19 @@ export class IntroScreen extends Screen {
             this.welcomeText.scale.set(Screen.getScaleBasedOffScreenSize());
         }
         if (!this.standard.destroyed) {
-            this.standard.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
+            this.standard.scale.set(0.5 * Screen.getScaleBasedOffScreenSize());
         }
         if (!this.mania.destroyed) {
-            this.mania.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
+            this.mania.scale.set(0.5 * Screen.getScaleBasedOffScreenSize());
         }
         if (!this.ctb.destroyed) {
-            this.ctb.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
+            this.ctb.scale.set(0.5 * Screen.getScaleBasedOffScreenSize());
         }
         if (!this.taiko.destroyed) {
-            this.taiko.scale.set(0.4 * Screen.getScaleBasedOffScreenSize());
+            this.taiko.scale.set(0.5 * Screen.getScaleBasedOffScreenSize());
+        }
+        if (!this.ruleSetList.destroyed) {
+            this.ruleSetList.ReCenter();
         }
     }
 }

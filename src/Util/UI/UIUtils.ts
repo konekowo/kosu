@@ -2,21 +2,36 @@ import {List} from "@pixi/ui";
 
 export class UIUtils {
     public static centerPivotOfList(list: List) {
-        let childrenSortedWidth = list.children.sort((a, b) => {return a.width - b.width});
-        let childrenSortedHeight = list.children.sort((a, b) => {return a.width - b.width});
-        let biggestWidth = childrenSortedWidth.at(0)?.width;
-        let biggestHeight = childrenSortedHeight.at(0)?.height;
-        if (biggestWidth == undefined || biggestHeight == undefined) {
-            return;
+        let width = list.leftPadding;
+        let height = list.topPadding;
+        for (let i = 0; i < list.children.length; i++) {
+            let isLast = i + 1 == list.children.length;
+            switch (list.type) {
+                case "horizontal":
+                    width += list.children[i].width + (!isLast? list.elementsMargin : 0);
+                    height += list.children[i].height;
+                    break;
+                case "vertical":
+                    width += list.children[i].width;
+                    height += list.children[i].height + (!isLast? list.elementsMargin : 0);
+                    break;
+                default:
+                    width += list.children[i].width + (!isLast? list.elementsMargin : 0);
+                    height += list.children[i].height + (!isLast? list.elementsMargin : 0);
+                    break;
+            }
         }
-        let stackHorizontally = list.type == "horizontal" || list.type == null;
-        let stackVertically = list.type == "vertical" || list.type == null;
+        switch (list.type) {
+            case "horizontal":
+                height /= list.children.length;
+                break;
+            case "vertical":
+                width /= list.children.length;
+                break;
+        }
+        width += list.rightPadding;
+        height += list.bottomPadding;
 
-        let pivotX = ((biggestWidth * (stackHorizontally ? list.children.length : 1)) +
-            (stackHorizontally ? (list.elementsMargin * Math.max(0, list.children.length - 1)) : 0) + list.horPadding)/2;
-        let pivotY = ((biggestHeight * (stackVertically ? list.children.length : 1)) +
-            (stackVertically ? (list.elementsMargin * Math.max(0, list.children.length - 1)) : 0) + list.vertPadding)/2;
-
-        list.pivot.set(pivotX, pivotY);
+        list.pivot.set(width/2, height/2);
     }
 }

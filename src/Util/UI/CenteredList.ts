@@ -9,4 +9,9 @@ export class CenteredList extends List {
         super.elementsMargin = margin;
         UIUtils.centerPivotOfList(this);
     }
+
+
+    public ReCenter() {
+        UIUtils.centerPivotOfList(this);
+    }
 }
