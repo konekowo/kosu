@@ -4,6 +4,7 @@ import {GeneralParser} from "./GeneralParser";
 import {EditorParser} from "./EditorParser";
 import {MetadataParser} from "./MetadataParser";
 import {DifficultyParser} from "./DifficultyParser";
+import {EventsParser} from "./EventsParser";
 
 export class BeatmapParser {
     public static Parse(osuFileContent: string, storyBoardFileContent?: string): BeatmapData {
@@ -13,6 +14,7 @@ export class BeatmapParser {
         EditorParser.ParseEditor(beatMapData, BeatmapParser.GetSection("Editor", osuFileContentLines));
         MetadataParser.ParseMetadata(beatMapData, BeatmapParser.GetSection("Metadata", osuFileContentLines));
         DifficultyParser.ParseDifficulty(beatMapData, BeatmapParser.GetSection("Difficulty", osuFileContentLines));
+        EventsParser.ParseEvents(beatMapData, BeatmapParser.GetSection("Events", osuFileContentLines));
         TimingPointsParser.ParseTimingPoints(beatMapData, BeatmapParser.GetSection("TimingPoints", osuFileContentLines));
         return beatMapData
     }

@@ -10,7 +10,7 @@ export class AudioEngine {
     private readonly _playingAudios: PlayingAudios;
     private _musicQueue: MapAudio[] = [];
     private _audioIdTicker: number = 0;
-    private _changeCallbacks: (() => void)[] = [];
+    private _changeCallbacks: ((mapAudio: MapAudio) => void)[] = [];
     private silentMusic = this.createSilentMusic();
     public useSilentMusic = true;
 
@@ -26,12 +26,12 @@ export class AudioEngine {
         if (this._musicQueue[0]) {
             if (!this._musicQueue[0].fadingOut && this._musicQueue[0].GetCurrentTime() == 0) {
                 this._play(this._musicQueue[0]);
-                this._changeCallbacks.forEach((cb) => cb());
+                this._changeCallbacks.forEach((cb) => cb(this._musicQueue[0]));
             }
             if (this._musicQueue[0].fadingOut && this._musicQueue[1]) {
                 if (this._musicQueue[1]) {
                     this._play(this._musicQueue[1]);
-                    this._changeCallbacks.forEach((cb) => cb());
+                    this._changeCallbacks.forEach((cb) => cb(this._musicQueue[1]));
                 }
             }
         }
@@ -56,11 +56,11 @@ export class AudioEngine {
         return mapAudio;
     }
 
-    public addMusicChangeEventListener(cb: () => void) {
+    public addMusicChangeEventListener(cb: (() => void) | ((mapAudio: MapAudio) => void)) {
         this._changeCallbacks.push(cb);
     }
 
-    public removeMusicChangeEventListener(cb: () => void) {
+    public removeMusicChangeEventListener(cb: (() => void) | ((mapAudio: MapAudio) => void)) {
         this._changeCallbacks = this._changeCallbacks.filter(callback => callback != cb);
     }
 
@@ -97,12 +97,9 @@ export class AudioEngine {
 
     public PlayMusicImmediately(mapAudio: string, beatMapData: BeatmapData, musicPlayingCallback?: () => void) {
         let currentPlaying = this.GetCurrentPlayingMusicNoSilent();
+        this._musicQueue = [];
         if (currentPlaying) {
-            this._musicQueue = [currentPlaying];
             currentPlaying.FadeOut();
-        }
-        else {
-            this._musicQueue = []
         }
         this.AddToMusicQueue(mapAudio, beatMapData, musicPlayingCallback);
     }

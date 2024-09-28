@@ -16,8 +16,17 @@ export class RandomBackground extends Screen {
             (Main.mousePos.y - (this.getScreenHeight() / 2)) / this.parallaxMultiplier);
         this.addChild(this.bgContainer);
         this.newRandomBG();
-        Main.AudioEngine.addMusicChangeEventListener(() => {
-            this.newRandomBG();
+        Main.AudioEngine.addMusicChangeEventListener((audio) => {
+            if (audio.beatmap.background) {
+                let url = URL.createObjectURL(audio.beatmap.background);
+                let texture = PIXI.Assets.load({src: url, loadParser: 'loadTextures'});
+                texture.then((texture) => {
+                    this.setBG(texture);
+                })
+            }
+            else {
+                this.newRandomBG();
+            }
         });
         this.zIndex = -100;
     }

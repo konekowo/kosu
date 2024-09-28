@@ -10,6 +10,8 @@ import * as TWEEN from "@tweenjs/tween.js";
 import {SettingsPane} from "./Elements/Settings/SettingsPane";
 import {unzip} from "unzipit";
 import {BeatmapParser} from "./Util/Beatmap/Parser/BeatmapParser";
+import {EventTypes} from "./Util/Beatmap/Data/Sections/Events/EventTypes";
+import {EventBackground} from "./Util/Beatmap/Data/Sections/Events/EventBackground";
 
 export class Main {
     public static app: Application;
@@ -35,18 +37,28 @@ export class Main {
                     unzip(file).then(({entries}) => {
                         for (const [name, entry] of Object.entries(entries)) {
                             if (name.endsWith(".osu")) {
-                                entry.text().then((osuFile) => {
+                                entry.text().then(async (osuFile) => {
                                     let beatmapData = BeatmapParser.Parse(osuFile);
-                                    console.log(beatmapData);
+                                    let bgEvent: EventBackground | undefined =
+                                        beatmapData.Events.Events.find((event) => {
+                                            if (event instanceof EventBackground) return event;
+                                        }) as EventBackground;
+                                    if (bgEvent) {
+                                        for (const [name, entry] of Object.entries(entries)) {
+                                            if (name == bgEvent.filename) {
+                                                beatmapData.background = await entry.blob();
+                                            }
+                                        }
+                                    }
                                     for (const [name, entry] of Object.entries(entries)) {
                                         if (name == beatmapData.General.AudioFilename) {
-                                            entry.blob().then(blob => {
-                                                let url = URL.createObjectURL(blob);
-                                                Main.AudioEngine.PlayMusicImmediately(url, beatmapData, () => {
-                                                   console.log("Now playing " + beatmapData.Metadata.TitleUnicode + " - " +beatmapData.Metadata.ArtistUnicode +
-                                                       " ("+beatmapData.Metadata.Title + " - " + beatmapData.Metadata.Artist + ")");
-                                                });
+                                            let blob = await entry.blob()
+                                            let url = URL.createObjectURL(blob);
+                                            Main.AudioEngine.PlayMusicImmediately(url, beatmapData, () => {
+                                                console.log("Now playing " + beatmapData.Metadata.TitleUnicode + " - " + beatmapData.Metadata.ArtistUnicode +
+                                                    " (" + beatmapData.Metadata.Title + " - " + beatmapData.Metadata.Artist + ")");
                                             });
+                                            console.log(beatmapData);
                                         }
                                     }
                                 });
@@ -65,7 +77,7 @@ export class Main {
         Main.app.canvas.setAttribute("ondragover", "window.onDragEvent(event);");
 
         document.body.appendChild(Main.app.canvas);
-        
+
         Main.settingsPane = new SettingsPane();
         Main.settingsPane.zIndex = 999998;
         Main.app.stage.addChild(Main.settingsPane);
