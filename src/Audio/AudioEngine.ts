@@ -96,8 +96,14 @@ export class AudioEngine {
     }
 
     public PlayMusicImmediately(mapAudio: string, beatMapData: BeatmapData, musicPlayingCallback?: () => void) {
-        // clear queue
-        this._musicQueue = [];
+        let currentPlaying = this.GetCurrentPlayingMusicNoSilent();
+        if (currentPlaying) {
+            this._musicQueue = [currentPlaying];
+            currentPlaying.FadeOut();
+        }
+        else {
+            this._musicQueue = []
+        }
         this.AddToMusicQueue(mapAudio, beatMapData, musicPlayingCallback);
     }
 
@@ -160,21 +166,6 @@ export class AudioEngine {
         // check if audio is type of MapAudio
         if ("beatmap" in audio && audio.beatmap) {
             audio.Create(this.audioContext, true);
-            this._playingAudios.audios.forEach((audio) => {
-                if ("beatmap" in audio && audio.beatmap) {
-                    clearTimeout(audio.fadeOutTimeout);
-                    audio.fadingOut = true;
-                    let gainNodes = audio.GetNode(GainNode);
-                    if (gainNodes == null) {
-                        throw new Error("Gain Node doesn't exist on Audio Object!");
-                    }
-                    let gain = gainNodes[0];
-                    gain.gain.linearRampToValueAtTime(0, this.audioContext.currentTime + 0.4)
-                    setTimeout(() => {
-                        audio.Stop();
-                    }, 400);
-                }
-            });
             let gain = this.audioContext.createGain();
             gain.gain.value = 0;
             let analyzer = this.audioContext.createAnalyser();
@@ -207,10 +198,10 @@ export class AudioEngine {
             let timeOffset = Date.now();
             audio.mediaAudioElement.onloadedmetadata = () => {
                 audio.fadeOutTimeout = setTimeout(() => {
-                    gain.gain.linearRampToValueAtTime(0, this.audioContext.currentTime + 0.4);
-                }, Math.max(0, ((audio.mediaAudioElement.duration - 0.4) * 1000) - (Date.now() - timeOffset)));
+                    gain.gain.linearRampToValueAtTime(0, this.audioContext.currentTime + 1);
+                }, Math.max(0, ((audio.mediaAudioElement.duration - 1) * 1000) - (Date.now() - timeOffset)));
             }
-            gain.gain.linearRampToValueAtTime(1, this.audioContext.currentTime + 0.4);
+            gain.gain.linearRampToValueAtTime(1, this.audioContext.currentTime + 0.5);
 
         } else {
             audio.Create(this.audioContext, false);

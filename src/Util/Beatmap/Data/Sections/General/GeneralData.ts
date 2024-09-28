@@ -9,7 +9,7 @@ export class GeneralData {
     /**
      * Location of the audio file relative to the current folder.
      */
-    public AudioFileName: string | undefined;
+    public AudioFilename: string | null = null;
     /**
      * Milliseconds of silence before the audio starts playing
      */
@@ -17,7 +17,7 @@ export class GeneralData {
     /**
      * @deprecated The `AudioHash` property is deprecated according to the osu! wiki.
      */
-    public AudioHash: string | undefined;
+    public AudioHash: string | null = null;
     /**
      * Time in milliseconds when the audio preview should start
      */
@@ -63,7 +63,7 @@ export class GeneralData {
     /**
      * Preferred skin to use during gameplay
      */
-    public SkinPreference: string | undefined;
+    public SkinPreference: string | null = null;
     /**
      * Whether or not a warning about flashing colours should be shown at the beginning of the map
      */

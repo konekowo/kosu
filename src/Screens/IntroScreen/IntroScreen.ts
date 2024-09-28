@@ -88,7 +88,7 @@ export class IntroScreen extends Screen {
                         let beatmapData = BeatmapParser.Parse(osuFile);
                         console.log(beatmapData);
                         for (const [name, entry] of Object.entries(entries)) {
-                            if (name == beatmapData.General.AudioFileName) {
+                            if (name == beatmapData.General.AudioFilename) {
                                 entry.blob().then(blob => {
                                     let url = URL.createObjectURL(blob);
                                     setTimeout(() => {

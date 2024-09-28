@@ -8,6 +8,8 @@ import {MenuCursor} from "./Elements/MenuCursor/MenuCursor";
 import {AudioEngine} from "./Audio/AudioEngine";
 import * as TWEEN from "@tweenjs/tween.js";
 import {SettingsPane} from "./Elements/Settings/SettingsPane";
+import {unzip} from "unzipit";
+import {BeatmapParser} from "./Util/Beatmap/Parser/BeatmapParser";
 
 export class Main {
     public static app: Application;
@@ -23,9 +25,47 @@ export class Main {
 
     public constructor(app: Application) {
         Main.app = app;
-        // @ts-ignore
-        document.body.appendChild(Main.app.canvas);
+        // for testing purposes
+        Object.defineProperty(window, "onDropEvent", {value: (e: DragEvent) => {
+            e.preventDefault();
+            if (e.dataTransfer!.items) {
+                let item = [...e.dataTransfer!.items][0];
+                if (item.kind == "file") {
+                    const file = item.getAsFile()!;
+                    unzip(file).then(({entries}) => {
+                        for (const [name, entry] of Object.entries(entries)) {
+                            if (name.endsWith(".osu")) {
+                                entry.text().then((osuFile) => {
+                                    let beatmapData = BeatmapParser.Parse(osuFile);
+                                    console.log(beatmapData);
+                                    for (const [name, entry] of Object.entries(entries)) {
+                                        if (name == beatmapData.General.AudioFilename) {
+                                            entry.blob().then(blob => {
+                                                let url = URL.createObjectURL(blob);
+                                                Main.AudioEngine.PlayMusicImmediately(url, beatmapData, () => {
+                                                   console.log("Now playing " + beatmapData.Metadata.TitleUnicode + " - " +beatmapData.Metadata.ArtistUnicode +
+                                                       " ("+beatmapData.Metadata.Title + " - " + beatmapData.Metadata.Artist + ")");
+                                                });
+                                            });
+                                        }
+                                    }
+                                });
+                                break;
+                            }
+                        }
+                    });
+                }
+            }
+        }});
 
+        Object.defineProperty(window, "onDragEvent", {value: (e: DragEvent) => {
+            e.preventDefault();
+        }});
+        Main.app.canvas.setAttribute("ondrop", "window.onDropEvent(event);");
+        Main.app.canvas.setAttribute("ondragover", "window.onDragEvent(event);");
+
+        document.body.appendChild(Main.app.canvas);
+        
         Main.settingsPane = new SettingsPane();
         Main.settingsPane.zIndex = 999998;
         Main.app.stage.addChild(Main.settingsPane);

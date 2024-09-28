@@ -1,4 +1,5 @@
 import {BeatmapData} from "../Util/Beatmap/Data/BeatmapData";
+import {Main} from "../main";
 
 export class Audio {
     public audio!: AudioBuffer;
@@ -19,11 +20,11 @@ export class Audio {
     public LeftChannel: number = 0;
     public RightChannel: number = 0;
     public FrequencyAmplitudes = new Float32Array(256);
-    private _connectedToContext = false;
-    private _useMediaSource = false;
-    private _onEndCallback?: () => void;
+    protected _connectedToContext = false;
+    protected _useMediaSource = false;
+    protected _onEndCallback?: () => void;
     public timeStarted = 0; // only for silent audio when real music is paused
-    private paused = false; // used to check if music was paused outside of Audio class (i.e. pressing stop media button on the keyboard)
+    protected paused = false; // used to check if music was paused outside of Audio class (i.e. pressing stop media button on the keyboard)
 
     public GetMaximumAudioLevel() {
         return Math.max(this.LeftChannel, this.RightChannel);
@@ -45,7 +46,6 @@ export class Audio {
             }
             this.mediaSource = audioContext.createMediaElementSource(this.mediaAudioElement);
             this.mediaAudioElement.onpause = () => {
-                console.log(this.mediaAudioElement.ended);
                 if (!this.paused && !this.mediaAudioElement.ended) { // check if music was paused outside of Audio class
                     this.Play();
                 }
@@ -198,4 +198,29 @@ export class MapAudio extends Audio {
     public fadeOutTimeout!: Timeout
     public playingCallback?: () => void;
 
+    public FadeOut() {
+        if (!(!this._useMediaSource ? this.source : this.mediaSource)) {
+            throw new Error("Source not created yet!");
+        }
+        if (!this._connectedToContext) {
+            throw new Error("Not connected to audio context yet!");
+        }
+        if (!this._useMediaSource) {
+            throw new Error("FadeOut is not supported on AudioSourceBuffer!");
+        }
+        if (this.fadingOut) {
+            return;
+        }
+        this.fadingOut = true;
+        clearTimeout(this.fadeOutTimeout);
+        let gainNodes = this.GetNode(GainNode);
+        if (gainNodes == null) {
+            throw new Error("Gain Node doesn't exist on Audio Object!");
+        }
+        let gain = gainNodes[0];
+        gain.gain.linearRampToValueAtTime(0, Main.AudioEngine.audioContext.currentTime + 1)
+        setTimeout(() => {
+            this.Stop();
+        }, 1000);
+    }
 }
