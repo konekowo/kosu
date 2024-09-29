@@ -177,6 +177,21 @@ export class Audio {
             if (this._onEndCallback) {
                 this._onEndCallback();
             }
+            let backgroundVideo = this.beatmap.Events.Events.find((e) => {
+                if (e.eventType == EventTypes.VIDEO){
+                    return e;
+                }
+            }) as EventVideo;
+            if (backgroundVideo) {
+                if (backgroundVideo.texture) {
+                    if (backgroundVideo.texture.source.resource.startPromise) {
+                        backgroundVideo.texture.source.resource.startPromise.then(() => {
+                            let video = backgroundVideo.texture!.source.resource as HTMLVideoElement;
+                            video.pause();
+                        });
+                    }
+                }
+            }
         }
     }
 
@@ -191,6 +206,34 @@ export class Audio {
             throw new Error("SetTime is not supported on AudioSourceBuffer!");
         }
         this.mediaAudioElement.currentTime = timeMS/1000;
+        let backgroundVideo = this.beatmap.Events.Events.find((e) => {
+            if (e.eventType == EventTypes.VIDEO){
+                return e;
+            }
+        }) as EventVideo;
+        if (backgroundVideo) {
+            if (backgroundVideo.texture) {
+                if (backgroundVideo.texture.source.resource.startPromise) {
+                    backgroundVideo.texture.source.resource.startPromise.then(() => {
+                        let video = backgroundVideo.texture!.source.resource as HTMLVideoElement;
+                        let time = timeMS/1000;
+                        time += backgroundVideo.startTime;
+                        if (time < 0) {
+                            video.currentTime = 0;
+                            video.pause();
+                            backgroundVideo.texture!.source.resource.startPromise = new Promise<void>((resolve) => {
+                                setTimeout(() => {
+                                    video.play();
+                                }, Math.abs(time));
+                            });
+                        } else {
+                            video.currentTime = time;
+                        }
+
+                    });
+                }
+            }
+        }
     }
 
     public GetDuration() {
