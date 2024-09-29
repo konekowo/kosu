@@ -10,8 +10,6 @@ import * as TWEEN from "@tweenjs/tween.js";
 import {SettingsPane} from "./Elements/Settings/SettingsPane";
 import {unzip} from "unzipit";
 import {BeatmapParser} from "./Util/Beatmap/Parser/BeatmapParser";
-import {EventTypes} from "./Util/Beatmap/Data/Sections/Events/EventTypes";
-import {EventBackground} from "./Util/Beatmap/Data/Sections/Events/EventBackground";
 
 export class Main {
     public static app: Application;
@@ -24,57 +22,12 @@ export class Main {
     private static clickArea: PIXI.Graphics = new PIXI.Graphics();
     private static doPointerLock: boolean = false;
     private static settingsPane: SettingsPane;
+    private static processingOsuFile: boolean = false;
 
     public constructor(app: Application) {
         Main.app = app;
         // for testing purposes
-        Object.defineProperty(window, "onDropEvent", {value: (e: DragEvent) => {
-            e.preventDefault();
-            if (e.dataTransfer!.items) {
-                let item = [...e.dataTransfer!.items][0];
-                if (item.kind == "file") {
-                    const file = item.getAsFile()!;
-                    unzip(file).then(({entries}) => {
-                        for (const [name, entry] of Object.entries(entries)) {
-                            if (name.endsWith(".osu")) {
-                                entry.text().then(async (osuFile) => {
-                                    let beatmapData = BeatmapParser.Parse(osuFile);
-                                    let bgEvent: EventBackground | undefined =
-                                        beatmapData.Events.Events.find((event) => {
-                                            if (event instanceof EventBackground) return event;
-                                        }) as EventBackground;
-                                    if (bgEvent) {
-                                        for (const [name, entry] of Object.entries(entries)) {
-                                            if (name == bgEvent.filename) {
-                                                beatmapData.background = await entry.blob();
-                                            }
-                                        }
-                                    }
-                                    for (const [name, entry] of Object.entries(entries)) {
-                                        if (name == beatmapData.General.AudioFilename) {
-                                            let blob = await entry.blob()
-                                            let url = URL.createObjectURL(blob);
-                                            Main.AudioEngine.PlayMusicImmediately(url, beatmapData, () => {
-                                                console.log("Now playing " + beatmapData.Metadata.TitleUnicode + " - " + beatmapData.Metadata.ArtistUnicode +
-                                                    " (" + beatmapData.Metadata.Title + " - " + beatmapData.Metadata.Artist + ")");
-                                            });
-                                            console.log(beatmapData);
-                                        }
-                                    }
-                                });
-                                break;
-                            }
-                        }
-                    });
-                }
-            }
-        }});
-
-        Object.defineProperty(window, "onDragEvent", {value: (e: DragEvent) => {
-            e.preventDefault();
-        }});
-        Main.app.canvas.setAttribute("ondrop", "window.onDropEvent(event);");
-        Main.app.canvas.setAttribute("ondragover", "window.onDragEvent(event);");
+        Main.setDropEvents();
 
         document.body.appendChild(Main.app.canvas);
 
@@ -83,7 +36,7 @@ export class Main {
         Main.app.stage.addChild(Main.settingsPane);
 
         document.addEventListener("keydown", (e: KeyboardEvent) => {
-            if (e.ctrlKey && e.code == "KeyO"){
+            if (e.ctrlKey && e.code == "KeyO") {
                 Main.settingsPane.toggle();
             }
         });
@@ -110,6 +63,62 @@ export class Main {
             let introTrack = Loader.Get("introTrianglesTrack");
             Main.switchScreen(new InteractScreen(introTrack, dialogOk));
         });
+    }
+
+    // for testing purposes
+    private static setDropEvents() {
+        Object.defineProperty(window, "onDropEvent", {
+            value: (e: DragEvent) => {
+                e.preventDefault();
+                if (Main.processingOsuFile) {
+                    alert("Another BeatMap is still processing. (Most likely transcoding a .avi file, check the console for progress) " +
+                        "Please wait for it to process and start playing before processing another one!");
+                    return;
+                }
+                Main.processingOsuFile = true;
+                if (e.dataTransfer!.items) {
+                    let item = [...e.dataTransfer!.items][0];
+                    if (item.kind == "file") {
+
+                        const file = item.getAsFile()!;
+                        unzip(file).then(({entries}) => {
+                            for (const [name, entry] of Object.entries(entries)) {
+                                if (name.endsWith(".osu")) {
+                                    entry.text().then(async (osuFile) => {
+                                        let beatmapData = BeatmapParser.Parse(osuFile);
+                                        for (const [name, entry] of Object.entries(entries)) {
+                                            let blob = await entry.blob();
+                                            beatmapData.files.set(name, blob);
+                                        }
+                                        await BeatmapParser.LoadFiles(beatmapData);
+                                        let audioFile = beatmapData.General.audioFile;
+                                        if (audioFile) {
+                                            let url = URL.createObjectURL(audioFile);
+                                            Main.AudioEngine.PlayMusicImmediately(url, beatmapData, () => {
+                                                console.log("Now playing " + beatmapData.Metadata.TitleUnicode + " - " + beatmapData.Metadata.ArtistUnicode +
+                                                    " (" + beatmapData.Metadata.Title + " - " + beatmapData.Metadata.Artist + ")");
+                                            });
+                                        }
+                                        Main.processingOsuFile = false;
+                                        console.log(beatmapData);
+                                    });
+                                    break;
+                                }
+                            }
+                        });
+
+                    }
+                }
+            }
+        });
+
+        Object.defineProperty(window, "onDragEvent", {
+            value: (e: DragEvent) => {
+                e.preventDefault();
+            }
+        });
+        Main.app.canvas.setAttribute("ondrop", "window.onDropEvent(event);");
+        Main.app.canvas.setAttribute("ondragover", "window.onDragEvent(event);");
     }
 
     public static lockKeyboard() {

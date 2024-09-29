@@ -30,6 +30,10 @@ export class Loader {
             pixiBundleName: "textures"});
         this.loadList.push({id: "menu.cursor.sample.tap", url: "assets/osu-assets/osu.Game.Resources/Samples/UI/cursor-tap.wav", isAudio: true});
         this.loadList.push({id: "menu.kiaiFountains.star", url: "assets/osu-assets/osu.Game.Resources/Textures/Menu/fountain-star.png", pixiBundleName: "textures"});
+        this.loadList.push({id: "workers.ffmpeg", url: "assets/workers/814.ffmpeg.js"});
+        this.loadList.push({id: "ffmpeg.core", url: "https://unpkg.com/@ffmpeg/core-mt@0.12.6/dist/esm/ffmpeg-core.js"});
+        this.loadList.push({id: "ffmpeg.wasm", url: "https://unpkg.com/@ffmpeg/core-mt@0.12.6/dist/esm/ffmpeg-core.wasm"});
+        this.loadList.push({id: "ffmpeg.coreWorker", url: "https://unpkg.com/@ffmpeg/core-mt@0.12.6/dist/esm/ffmpeg-core.worker.js"});
     }
 
     public static Get(id: string): Blob {

@@ -1,5 +1,7 @@
 import {Event} from "./Event";
 import {EventTypes} from "./EventTypes";
+import * as PIXI from "pixi.js";
+
 export class EventBackground extends Event {
     public eventType = EventTypes.BACKGROUND;
     public startTime = 0;
@@ -20,4 +22,6 @@ export class EventBackground extends Event {
      * right and 100 osu! pixels down from the centre of the screen. If the offset is 0,0, writing it is optional.
      */
     public yOffset!: number;
+
+    public texture?: PIXI.Texture;
 }

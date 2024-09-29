@@ -6,6 +6,9 @@ import {OverlayPosition} from "./OverlayPosition";
  * General information about the beatmap
  */
 export class GeneralData {
+
+    public audioFile?: Blob;
+
     /**
      * Location of the audio file relative to the current folder.
      */

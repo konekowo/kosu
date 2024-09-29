@@ -1,8 +1,12 @@
 import * as PIXI from "pixi.js";
 import {Ease} from "../../Util/TweenWrapper/Ease";
 import * as TWEEN from "@tweenjs/tween.js";
+import {DestroyOptions} from "pixi.js";
 
 export class Background extends PIXI.Sprite {
+    public static readonly fadeOutDuration = 800;
+    public destroying = false;
+
     public constructor(texture: PIXI.Texture) {
         super();
         this.texture = texture;
@@ -16,10 +20,46 @@ export class Background extends PIXI.Sprite {
     }
 
     public destroy(options?: PIXI.DestroyOptions) {
-        Ease.getEase(this).FadeOut(800, TWEEN.Easing.Linear.None).Then(() => {
+        this.destroying = true;
+        Ease.getEase(this).FadeOut(Background.fadeOutDuration, TWEEN.Easing.Linear.None).Then(() => {
             this.visible = false;
             super.destroy(options);
+            this.destroying = false;
         });
         this.zIndex = 1;
     }
+}
+
+export class BackgroundContainer extends PIXI.Container {
+    public constructor() {
+        super();
+        this.visible = false;
+    }
+
+    public show() {
+        this.visible = true;
+        for (let i = 0; i < this.children?.length; i++) {
+            let child = this.children[i];
+            if (child instanceof Background) {
+                child.show();
+            }
+        }
+    }
+
+    public destroy(options?: DestroyOptions) {
+        for (let i = 0; i < this.children?.length; i++) {
+            let child = this.children[i];
+            if (child instanceof Background) {
+                if (!child.destroyed && !child.destroying) {
+                    child.destroy(options);
+                }
+            }
+        }
+        setTimeout(() => {
+            super.destroy(options);
+        }, Background.fadeOutDuration);
+        this.zIndex = 1;
+    }
+
+
 }

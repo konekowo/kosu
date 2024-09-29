@@ -1,5 +1,7 @@
 import {BeatmapData} from "../Util/Beatmap/Data/BeatmapData";
 import {Main} from "../main";
+import {EventTypes} from "../Util/Beatmap/Data/Sections/Events/EventTypes";
+import {EventVideo} from "../Util/Beatmap/Data/Sections/Events/EventVideo";
 
 export class Audio {
     public audio!: AudioBuffer;
@@ -25,6 +27,7 @@ export class Audio {
     protected _onEndCallback?: () => void;
     public timeStarted = 0; // only for silent audio when real music is paused
     protected paused = false; // used to check if music was paused outside of Audio class (i.e. pressing stop media button on the keyboard)
+    public beatmap!: BeatmapData;
 
     public GetMaximumAudioLevel() {
         return Math.max(this.LeftChannel, this.RightChannel);
@@ -111,6 +114,21 @@ export class Audio {
         }
         else {
             this.mediaAudioElement!.play();
+            let backgroundVideo = this.beatmap.Events.Events.find((e) => {
+                if (e.eventType == EventTypes.VIDEO){
+                    return e;
+                }
+            }) as EventVideo;
+            if (backgroundVideo) {
+                if (backgroundVideo.texture) {
+                    if (backgroundVideo.texture.source.resource.startPromise) {
+                        backgroundVideo.texture.source.resource.startPromise.then(() => {
+                            let video = backgroundVideo.texture!.source.resource as HTMLVideoElement;
+                            video.play();
+                        });
+                    }
+                }
+            }
         }
     }
 
@@ -126,6 +144,21 @@ export class Audio {
         }
         this.paused = true;
         this.mediaAudioElement!.pause();
+        let backgroundVideo = this.beatmap.Events.Events.find((e) => {
+            if (e.eventType == EventTypes.VIDEO){
+                return e;
+            }
+        }) as EventVideo;
+        if (backgroundVideo) {
+            if (backgroundVideo.texture) {
+                if (backgroundVideo.texture.source.resource.startPromise) {
+                    backgroundVideo.texture.source.resource.startPromise.then(() => {
+                        let video = backgroundVideo.texture!.source.resource as HTMLVideoElement;
+                        video.pause();
+                    });
+                }
+            }
+        }
     }
 
     public Stop() {
@@ -192,7 +225,6 @@ export class Audio {
 }
 
 export class MapAudio extends Audio {
-    public beatmap!: BeatmapData;
     public fadingOut: boolean = false;
     // @ts-ignore
     public fadeOutTimeout!: Timeout

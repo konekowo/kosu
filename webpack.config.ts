@@ -28,7 +28,7 @@ module.exports = (env: { mode: "development" | "production" }) => {
                         "css-loader",
                     ],
                 },
-                { test: /\.(glsl|vs|fs|vert|frag|wgsl)$/, exclude: /node_modules/, use: [ 'raw-loader' ] }
+                { test: /\.(glsl|vs|fs|vert|frag|wgsl|txt)$/, exclude: /node_modules/, use: [ 'raw-loader' ] }
             ],
         },
         optimization: {

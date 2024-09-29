@@ -11,7 +11,7 @@ import {ColorsData} from "./Sections/Colors/ColorsData";
  * <a href="https://osu.ppy.sh/wiki/en/Client/File_formats/osu_%28file_format%29">.osu (file format)</a>
  */
 export class BeatmapData {
-    public background: Blob | null = null;
+    public files: Map<string, Blob> = new Map();
 
     /**
      * General information about the beatmap

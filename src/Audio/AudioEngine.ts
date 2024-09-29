@@ -118,6 +118,11 @@ export class AudioEngine {
             currentPlaying = this.GetCurrentPlayingMusic();
         }
         if (!this.useSilentMusic) {
+            if (!currentPlaying.fadingOut) {
+                if (currentPlaying.GetDuration() - currentPlaying.GetCurrentTime() <= 1000){
+                    currentPlaying.FadeOut();
+                }
+            }
             let analyzerMain = currentPlaying.GetNode(AnalyserNode)![0];
             let analyzerL = currentPlaying.GetNode(AnalyserNode)![1];
             let analyzerR = currentPlaying.GetNode(AnalyserNode)![2];
@@ -161,7 +166,7 @@ export class AudioEngine {
 
     private _play(audio: Audio | MapAudio, pitch?: number) {
         // check if audio is type of MapAudio
-        if ("beatmap" in audio && audio.beatmap) {
+        if (audio instanceof MapAudio) {
             audio.Create(this.audioContext, true);
             let gain = this.audioContext.createGain();
             gain.gain.value = 0;
@@ -192,12 +197,6 @@ export class AudioEngine {
             if (audio.playingCallback) {
                 audio.playingCallback();
             }
-            let timeOffset = Date.now();
-            audio.mediaAudioElement.onloadedmetadata = () => {
-                audio.fadeOutTimeout = setTimeout(() => {
-                    gain.gain.linearRampToValueAtTime(0, this.audioContext.currentTime + 1);
-                }, Math.max(0, ((audio.mediaAudioElement.duration - 1) * 1000) - (Date.now() - timeOffset)));
-            }
             gain.gain.linearRampToValueAtTime(1, this.audioContext.currentTime + 0.5);
 
         } else {
@@ -214,7 +213,7 @@ export class AudioEngine {
 
 
         audio.RegisterEndCallBack(() => {
-            if ("beatmap" in audio && audio.beatmap) {
+            if (audio instanceof MapAudio) {
                 if (this._musicQueue[0] == audio) {
                     this._musicQueue.splice(0, 1);
                 }

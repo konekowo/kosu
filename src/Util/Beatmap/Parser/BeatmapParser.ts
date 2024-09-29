@@ -18,15 +18,21 @@ export class BeatmapParser {
         TimingPointsParser.ParseTimingPoints(beatMapData, BeatmapParser.GetSection("TimingPoints", osuFileContentLines));
         return beatMapData
     }
+
+    public static async LoadFiles(beatMapData: BeatmapData) {
+        await GeneralParser.LoadFiles(beatMapData);
+        await EventsParser.LoadFiles(beatMapData);
+    }
+
     public static GetSection(sectionName: string, osuFileContentLines: string[]) {
         let section: string[] = [];
         osuFileContentLines.forEach((str, index) => {
-            if (str == "["+sectionName+"]") {
+            if (str == "[" + sectionName + "]") {
                 for (let i = index + 1; i < osuFileContentLines.length; i++) {
-                    if (osuFileContentLines[i] == ""){
+                    if (osuFileContentLines[i] == "") {
                         continue;
                     }
-                    if (osuFileContentLines[i].startsWith("[")){
+                    if (osuFileContentLines[i].startsWith("[")) {
                         break;
                     }
                     section.push(osuFileContentLines[i]);
@@ -35,16 +41,17 @@ export class BeatmapParser {
         });
         return section;
     }
+
     public static AutoParse<T>(sectionType: new (...args: any[]) => T, propValue: string[], beatmapDataSection: T) {
         let key = propValue[0] as keyof T;
         let keyExists = false;
         for (let sectionKey in beatmapDataSection) {
-            if (sectionKey == key){
+            if (sectionKey == key) {
                 keyExists = true;
             }
         }
         if (!keyExists) {
-            console.warn(key.toString() + " does not exist on " + sectionType.name +"!");
+            console.warn(key.toString() + " does not exist on " + sectionType.name + "!");
             return;
         }
         let isNumber = /^[0-9]+$|^[0-9]+.+$|^-[0-9]+$|^-[0-9]+.+$/.test(propValue[1]);
@@ -52,11 +59,9 @@ export class BeatmapParser {
         let value;
         if (isBoolean) {
             value = propValue[1] == "1";
-        }
-        else if (isNumber) {
+        } else if (isNumber) {
             value = parseFloat(propValue[1]);
-        }
-        else {
+        } else {
             value = propValue[1];
         }
 

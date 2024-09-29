@@ -2,6 +2,7 @@ import {StoryboardCommand} from "./StoryboardCommand";
 import {Event} from "../Event";
 import {Layer} from "./Layer";
 import {Origin} from "./Origin";
+import * as PIXI from "pixi.js";
 
 export abstract class EventStoryboard extends Event {
     public startTime = -1;
@@ -62,4 +63,6 @@ export abstract class EventStoryboard extends Event {
      */
     public y!: number;
 
+
+    public texture?: PIXI.Texture;
 }

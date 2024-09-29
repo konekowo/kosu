@@ -80,33 +80,32 @@ export class IntroScreen extends Screen {
         this.flash.blendMode = "add";
         this.welcomeText.anchor.set(0.5, 0.5);
         this.welcomeText.position.set(this.getScreenWidth() / 2, this.getScreenHeight() / 2);
-        setTimeout(async () => {
+        (async () => {
             const {entries} = await unzip(this.introTrackUrl);
             for (const [name, entry] of Object.entries(entries)) {
                 if (name.endsWith(".osu")) {
-                    entry.text().then((osuFile) => {
+                    entry.text().then(async (osuFile) => {
                         let beatmapData = BeatmapParser.Parse(osuFile);
-                        console.log(beatmapData);
                         for (const [name, entry] of Object.entries(entries)) {
-                            if (name == beatmapData.General.AudioFilename) {
-                                entry.blob().then(blob => {
-                                    let url = URL.createObjectURL(blob);
-                                    setTimeout(() => {
-                                        Main.AudioEngine.PlayMusicImmediately(url, beatmapData, () => {
-                                            this.afterAudioPlay();
-                                        });
-                                    }, 200);
-                                });
-                            }
+                            let blob = await entry.blob();
+                            beatmapData.files.set(name, blob);
                         }
-
+                        await BeatmapParser.LoadFiles(beatmapData);
+                        let audioFile = beatmapData.General.audioFile;
+                        if (audioFile) {
+                            let url = URL.createObjectURL(audioFile);
+                            setTimeout(() => {
+                                Main.AudioEngine.PlayMusicImmediately(url, beatmapData, () => {
+                                    this.afterAudioPlay();
+                                });
+                            }, 200);
+                        }
+                        console.log(beatmapData);
                     });
-
-
                     break;
                 }
             }
-        }, 0);
+        })();
     }
 
     public afterAudioPlay() {
@@ -205,7 +204,9 @@ export class IntroScreen extends Screen {
                 this.flash.eventMode = "none";
                 this.flashed = true;
                 this.logoContainerContainer.visible = false;
-                Ease.getEase(this.flash).FadeOut(1000, TWEEN.Easing.Quadratic.Out).Then(() => {resolve();});
+                Ease.getEase(this.flash).FadeOut(1000, TWEEN.Easing.Quadratic.Out).Then(() => {
+                    resolve();
+                });
                 Main.cursor.PopIn();
             }, 3000);
         });
@@ -221,14 +222,14 @@ export class IntroScreen extends Screen {
 
     public onClose(): Promise<Screen> {
         return new Promise((resolve) => {
-            this.completionPromise.then(()=> {
+            this.completionPromise.then(() => {
                 resolve(this);
             })
         });
     }
 
     public onResize() {
-        if (!this.bg.destroyed){
+        if (!this.bg.destroyed) {
             this.bg.width = window.innerWidth;
             this.bg.height = window.innerHeight;
             this.bg.x = 0;
