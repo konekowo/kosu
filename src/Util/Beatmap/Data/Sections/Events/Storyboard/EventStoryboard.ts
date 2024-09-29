@@ -1,4 +1,4 @@
-import {StoryboardCommand} from "./StoryboardCommand";
+import {StoryboardCommand} from "./Commands/StoryboardCommand";
 import {Event} from "../Event";
 import {Layer} from "./Layer";
 import {Origin} from "./Origin";
@@ -50,7 +50,7 @@ export abstract class EventStoryboard extends Event {
      *  - origin = BottomRight, x = 640, y = 480
      *  - and so on.
      */
-    public x!: number;
+    public x: number = 0;
     /**
      * (x) and (y) are the x-/y-coordinates of where the object should be, by default respectively.
      * The interpretation of this depends on the value of (origin);
@@ -61,8 +61,5 @@ export abstract class EventStoryboard extends Event {
      *  - origin = BottomRight, x = 640, y = 480
      *  - and so on.
      */
-    public y!: number;
-
-
-    public texture?: PIXI.Texture;
+    public y: number = 0;
 }

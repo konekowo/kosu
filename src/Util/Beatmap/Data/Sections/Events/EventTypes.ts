@@ -1,8 +1,9 @@
 export enum EventTypes {
-    BACKGROUND = "0",
+    BACKGROUND = "Background",
     VIDEO = "Video",
     BREAK = "Break",
-    // storyboard
+    COLOR = "Colour",
     SPRITE = "Sprite",
+    SAMPLE = "Sample",
     ANIMATION = "Animation"
 }

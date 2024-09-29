@@ -1,9 +1,11 @@
 import {EventStoryboard} from "./EventStoryboard";
 import {EventTypes} from "../EventTypes";
 import {LoopType} from "./LoopType";
+import * as PIXI from "pixi.js";
 
 export class EventAnimation extends EventStoryboard {
     public eventType = EventTypes.ANIMATION;
+    public filepaths: string[] = [];
     /**
      * (frameCount) indicates how many frames the animation has.
      * If we have "sample0.png" and "sample1.png", for instance, our `frameCount = 2`.
@@ -22,4 +24,6 @@ export class EventAnimation extends EventStoryboard {
      *  useful for, like, an animation of someone turning around)
      */
     public loopType!: LoopType;
+
+    public textures: PIXI.Texture[] = [];
 }

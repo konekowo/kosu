@@ -13,6 +13,8 @@ import {ColorsData} from "./Sections/Colors/ColorsData";
 export class BeatmapData {
     public files: Map<string, Blob> = new Map();
 
+    public formatVersion: number = -1;
+
     /**
      * General information about the beatmap
      */

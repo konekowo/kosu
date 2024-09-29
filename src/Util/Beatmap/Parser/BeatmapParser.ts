@@ -5,40 +5,81 @@ import {EditorParser} from "./EditorParser";
 import {MetadataParser} from "./MetadataParser";
 import {DifficultyParser} from "./DifficultyParser";
 import {EventsParser} from "./EventsParser";
+import {AudioEngine} from "../../../Audio/AudioEngine";
 
 export class BeatmapParser {
-    public static Parse(osuFileContent: string, storyBoardFileContent?: string): BeatmapData {
-        const beatMapData = new BeatmapData();
+    public static Parse(osuFileContent: string, beatMapData = new BeatmapData(), storyBoardFileContent?: string): BeatmapData {
         let osuFileContentLines = osuFileContent.split(/\r?\n|\r|\n/g);
+        let osuSBFileContentLines = storyBoardFileContent?.split(/\r?\n|\r|\n/g);
+        for (let i = 0; i < osuFileContentLines.length; i++) {
+            if (osuFileContentLines[i].startsWith("osu file format")){
+                let version = osuFileContentLines[i].split("v")[1];
+                beatMapData.formatVersion = parseFloat(version);
+            }
+        }
+
         GeneralParser.ParseGeneral(beatMapData, BeatmapParser.GetSection("General", osuFileContentLines));
         EditorParser.ParseEditor(beatMapData, BeatmapParser.GetSection("Editor", osuFileContentLines));
         MetadataParser.ParseMetadata(beatMapData, BeatmapParser.GetSection("Metadata", osuFileContentLines));
         DifficultyParser.ParseDifficulty(beatMapData, BeatmapParser.GetSection("Difficulty", osuFileContentLines));
-        EventsParser.ParseEvents(beatMapData, BeatmapParser.GetSection("Events", osuFileContentLines));
+        EventsParser.ParseEvents(beatMapData, BeatmapParser.GetSection("Events", osuFileContentLines, osuSBFileContentLines));
         TimingPointsParser.ParseTimingPoints(beatMapData, BeatmapParser.GetSection("TimingPoints", osuFileContentLines));
         return beatMapData
     }
 
-    public static async LoadFiles(beatMapData: BeatmapData) {
-        await GeneralParser.LoadFiles(beatMapData);
-        await EventsParser.LoadFiles(beatMapData);
-    }
-
-    public static GetSection(sectionName: string, osuFileContentLines: string[]) {
-        let section: string[] = [];
-        osuFileContentLines.forEach((str, index) => {
-            if (str == "[" + sectionName + "]") {
-                for (let i = index + 1; i < osuFileContentLines.length; i++) {
-                    if (osuFileContentLines[i] == "") {
-                        continue;
-                    }
-                    if (osuFileContentLines[i].startsWith("[")) {
-                        break;
-                    }
-                    section.push(osuFileContentLines[i]);
+    public static async LoadFiles(beatMapData: BeatmapData, audioEngine: AudioEngine) {
+        await new Promise<void>((resolve) => {
+            let toLoad = 2;
+            let loaded = 0;
+            let check = () => {
+                if (loaded == toLoad) {
+                    resolve();
                 }
             }
+            GeneralParser.LoadFiles(beatMapData); // this is not async
+            loaded++;
+            check();
+            EventsParser.LoadFiles(beatMapData, audioEngine).then(() => {
+                loaded++;
+                check();
+            });
         });
+    }
+
+    public static GetSection(sectionName: string, osuFileContentLines: string[], osuStoryBoardFileContentLines?: string[]) {
+        let section: string[] = [];
+        let index = 0;
+        osuFileContentLines.forEach((str, i) => {
+            if (str == "[" + sectionName + "]") {
+                index = i;
+            }
+        });
+        for (let i = index + 1; i < osuFileContentLines.length; i++) {
+            if (osuFileContentLines[i] == "") {
+                continue;
+            }
+            if (osuFileContentLines[i].startsWith("//")) {
+                continue;
+            }
+            if (osuFileContentLines[i].startsWith("[")) {
+                break;
+            }
+            section.push(osuFileContentLines[i]);
+        }
+        if (osuStoryBoardFileContentLines) {
+            for (let i = 0; i < osuStoryBoardFileContentLines.length; i++) {
+                if (osuStoryBoardFileContentLines[i] == "") {
+                    continue;
+                }
+                if (osuStoryBoardFileContentLines[i].startsWith("//")) {
+                    continue;
+                }
+                if (osuStoryBoardFileContentLines[i].startsWith("[" + sectionName + "]")) {
+                    continue;
+                }
+                section.push(osuStoryBoardFileContentLines[i]);
+            }
+        }
         return section;
     }
 
@@ -54,7 +95,7 @@ export class BeatmapParser {
             console.warn(key.toString() + " does not exist on " + sectionType.name + "!");
             return;
         }
-        let isNumber = /^[0-9]+$|^[0-9]+.+$|^-[0-9]+$|^-[0-9]+.+$/.test(propValue[1]);
+        let isNumber = /^[0-9]+$|^[0-9]+\.+[0-9]+$|^-[0-9]+$|^-[0-9]+\.+[0-9]+$/.test(propValue[1]);
         let isBoolean = typeof beatmapDataSection[key] == "boolean";
         let value;
         if (isBoolean) {

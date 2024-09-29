@@ -10,6 +10,7 @@ import * as TWEEN from "@tweenjs/tween.js";
 import {SettingsPane} from "./Elements/Settings/SettingsPane";
 import {unzip} from "unzipit";
 import {BeatmapParser} from "./Util/Beatmap/Parser/BeatmapParser";
+import {BeatmapData} from "./Util/Beatmap/Data/BeatmapData";
 
 export class Main {
     public static app: Application;
@@ -85,12 +86,25 @@ export class Main {
                             for (const [name, entry] of Object.entries(entries)) {
                                 if (name.endsWith(".osu")) {
                                     entry.text().then(async (osuFile) => {
-                                        let beatmapData = BeatmapParser.Parse(osuFile);
-                                        for (const [name, entry] of Object.entries(entries)) {
-                                            let blob = await entry.blob();
-                                            beatmapData.files.set(name, blob);
+                                        let beatmapData = new BeatmapData();
+                                        await new Promise<void>((resolve) => {
+                                            for (const [name, entry] of Object.entries(entries)) {
+                                                entry.blob().then((blob) => {
+                                                    beatmapData.files.set(name, blob);
+                                                    if (beatmapData.files.size == Object.entries(entries).length){
+                                                        resolve();
+                                                    }
+                                                })
+                                            }
+                                        });
+                                        let SBFile: string | undefined;
+                                        for (const [name, entry] of beatmapData.files.entries()) {
+                                            if (name.endsWith(".osb")){
+                                                SBFile = await entry.text();
+                                            }
                                         }
-                                        await BeatmapParser.LoadFiles(beatmapData);
+                                        BeatmapParser.Parse(osuFile, beatmapData, SBFile);
+                                        await BeatmapParser.LoadFiles(beatmapData, Main.AudioEngine);
                                         let audioFile = beatmapData.General.audioFile;
                                         if (audioFile) {
                                             let url = URL.createObjectURL(audioFile);
