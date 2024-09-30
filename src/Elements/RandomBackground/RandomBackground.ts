@@ -6,6 +6,7 @@ import {Background, BackgroundContainer} from "./Background";
 import {EventTypes} from "../../Util/Beatmap/Data/Sections/Events/EventTypes";
 import {EventVideo} from "../../Util/Beatmap/Data/Sections/Events/EventVideo";
 import {EventBackground} from "../../Util/Beatmap/Data/Sections/Events/EventBackground";
+import {StoryBoard} from "./StoryBoard";
 
 export class RandomBackground extends Screen {
 
@@ -61,6 +62,7 @@ export class RandomBackground extends Screen {
                     }
                 }
             }
+            bgContainer.addChild(new StoryBoard(audio.beatmap))
             if (background || backgroundVideo) {
                 this.setBGContainer(bgContainer);
             }

@@ -156,4 +156,83 @@ export class EasingFunction {
     public static readonly OutPow10 = (time: number) => {
         return --time * Math.pow(time, 10) + 1;
     }
+
+    public static convertFromStoryBoardToEaseFunction(easing: number) {
+        switch (easing) {
+            case 0:
+                return this.None;
+            case 1:
+                return this.Out;
+            case 2:
+                return this.In;
+            case 3:
+                return this.InQuad;
+            case 4:
+                return this.OutQuad;
+            case 5:
+                return this.InOutQuad;
+            case 6:
+                return this.InCubic;
+            case 7:
+                return this.OutCubic;
+            case 8:
+                return this.InOutCubic;
+            case 9:
+                return this.InQuart;
+            case 10:
+                return this.OutQuart;
+            case 11:
+                return this.InOutQuart;
+            case 12:
+                return this.InQuint;
+            case 13:
+                return this.OutQuint;
+            case 14:
+                return this.InOutQuint;
+            case 15:
+                return this.InSine;
+            case 16:
+                return this.OutSine;
+            case 17:
+                return this.InOutSine;
+            case 18:
+                return this.InExpo;
+            case 19:
+                return this.OutExpo;
+            case 20:
+                return this.InOutExpo;
+            case 21:
+                return this.InCirc;
+            case 22:
+                return this.OutCirc;
+            case 23:
+                return this.InOutCirc;
+            case 24:
+                return this.InElastic;
+            case 25:
+                return this.OutElastic;
+            case 26:
+                return this.OutElasticHalf;
+            case 27:
+                return this.OutElasticQuarter;
+            case 28:
+                return this.InOutElastic;
+            case 29:
+                return this.InBack;
+            case 30:
+                return this.OutBack;
+            case 31:
+                return this.InOutBack;
+            case 32:
+                return this.InBounce;
+            case 33:
+                return this.OutBounce;
+            case 34:
+                return this.InOutBounce;
+            case 35:
+                return this.OutPow10;
+            default:
+                return this.None;
+        }
+    }
 }
