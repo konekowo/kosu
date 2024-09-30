@@ -15,4 +15,5 @@ export abstract class StoryboardCommand extends Event{
 
     public endTime: number = 0;
 
+    public timesLooped: number = 0;
 }
