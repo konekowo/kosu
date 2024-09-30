@@ -62,7 +62,7 @@ export class RandomBackground extends Screen {
                     }
                 }
             }
-            bgContainer.addChild(new StoryBoard(audio.beatmap))
+            bgContainer.addChild(new StoryBoard(audio.beatmap, audio))
             if (background || backgroundVideo) {
                 this.setBGContainer(bgContainer);
             }

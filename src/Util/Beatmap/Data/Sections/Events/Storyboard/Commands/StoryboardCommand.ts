@@ -1,12 +1,9 @@
 import {CommandType} from "./CommandType";
 import {EasingFunction} from "../../../../../../TweenWrapper/EasingFunction";
-import {EventStoryboard} from "../EventStoryboard";
 import {Event} from "../../Event";
 
 export abstract class StoryboardCommand extends Event{
     public abstract commandType: CommandType;
-
-    public parentStoryboardObject!: EventStoryboard;
 
     /**
      * indicates if the command should "accelerate". See <a href="http://easings.net/">Easing Functions Cheat Sheet</a>.
@@ -16,4 +13,6 @@ export abstract class StoryboardCommand extends Event{
     public endTime: number = 0;
 
     public timesLooped: number = 0;
+
+    public executedOnce: boolean = false;
 }

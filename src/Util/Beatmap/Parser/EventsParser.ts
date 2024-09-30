@@ -166,7 +166,6 @@ export class EventsParser {
                         case CommandType.Loop:
                             if (depth == 2) break;
                             event = new LoopCommand();
-                            event.parentStoryboardObject = object;
                             event.startTime = parseFloat(values[1]);
                             event.loopCount = Math.max(0, parseInt(values[2]) - 1);
                             parentCommand = event;
@@ -188,7 +187,6 @@ export class EventsParser {
                                      command.easing = easing;
                                      command.startOpacity = MathUtil.clamp01(parseFloat(values[4]));
                                      command.endOpacity = values.length > 5 ? MathUtil.clamp01(parseFloat(values[5])) : command.startOpacity;
-                                     command.parentStoryboardObject = object;
                                      break;
                                 case CommandType.Scale:
                                     command = new ScaleCommand();
@@ -197,7 +195,6 @@ export class EventsParser {
                                     command.easing = easing;
                                     command.startScale = parseFloat(values[4]);
                                     command.endScale = values.length > 5 ? parseFloat(values[5]) : command.startScale;
-                                    command.parentStoryboardObject = object;
                                     break;
                                 case CommandType.VectorScale:
                                     command = new VectorScaleCommand();
@@ -208,7 +205,6 @@ export class EventsParser {
                                     let endX = values.length > 6 ? parseFloat(values[6]) : command.startScale.x;
                                     let endY = values.length > 7 ? parseFloat(values[7]) : command.startScale.y;
                                     command.endScale = new PIXI.Point(endX, endY);
-                                    command.parentStoryboardObject = object;
                                     break;
                                 case CommandType.Rotate:
                                     command = new RotateCommand();
@@ -217,7 +213,6 @@ export class EventsParser {
                                     command.easing = easing;
                                     command.startRotation = parseFloat(values[4]);
                                     command.endRotation = values.length > 5 ? parseFloat(values[5]) : command.startRotation;
-                                    command.parentStoryboardObject = object;
                                     break;
                                 case CommandType.Move:
                                     command = new MoveCommand();
@@ -228,7 +223,6 @@ export class EventsParser {
                                     let endX_ = values.length > 6 ? parseFloat(values[6]) : command.startPos.x;
                                     let endY_ = values.length > 7 ? parseFloat(values[7]) : command.startPos.y;
                                     command.endPos = new PIXI.Point(endX_, endY_);
-                                    command.parentStoryboardObject = object;
                                     break;
                                 case CommandType.MoveX:
                                     command = new MoveXCommand();
@@ -237,7 +231,6 @@ export class EventsParser {
                                     command.easing = easing;
                                     command.startX = parseFloat(values[4]);
                                     command.endX = values.length > 5 ? parseFloat(values[5]) : command.startX;
-                                    command.parentStoryboardObject = object;
                                     break;
                                 case CommandType.MoveY:
                                     command = new MoveYCommand();
@@ -246,7 +239,6 @@ export class EventsParser {
                                     command.easing = easing;
                                     command.startY = parseFloat(values[4]);
                                     command.endY = values.length > 5 ? parseFloat(values[5]) : command.startY;
-                                    command.parentStoryboardObject = object;
                                     break;
                                 case CommandType.Color:
                                     command = new ColorCommand();
@@ -274,9 +266,8 @@ export class EventsParser {
                                     endR = MathUtil.clamp01(endR);
                                     endG = MathUtil.clamp01(endG);
                                     endB = MathUtil.clamp01(endB);
-                                    command.startColor = new PIXI.Color(new Float32Array([startR, startG, startB]));
-                                    command.endColor = new PIXI.Color(new Float32Array([endR, endG, endB]));
-                                    command.parentStoryboardObject = object;
+                                    command.startColor = new PIXI.Color([startR, startG, startB]);
+                                    command.endColor = new PIXI.Color([endR, endG, endB]);
                                     break;
                                 case CommandType.Parameter:
                                     command = new ParameterCommand();
@@ -284,7 +275,6 @@ export class EventsParser {
                                     command.endTime = endTime;
                                     command.easing = easing;
                                     command.parameter = values[4] as ParameterCommandType;
-                                    command.parentStoryboardObject = object;
                                     break;
                             }
                             if (command) {
@@ -296,7 +286,7 @@ export class EventsParser {
                                         }
                                     }
                                 } else {
-                                    event = command;
+                                    object.Commands.push(command);
                                 }
                             }
                             break;

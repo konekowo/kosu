@@ -17,20 +17,25 @@ import {ColorCommand} from "../../Util/Beatmap/Data/Sections/Events/Storyboard/C
 import {LoopCommand} from "../../Util/Beatmap/Data/Sections/Events/Storyboard/Commands/impl/LoopCommand";
 import {StoryBoardUtil} from "../../Util/StoryBoardUtil";
 import {Layer} from "../../Util/Beatmap/Data/Sections/Events/Storyboard/Layer";
+
 import {
     ParameterCommand,
     ParameterCommandType
 } from "../../Util/Beatmap/Data/Sections/Events/Storyboard/Commands/impl/ParameterCommand";
+import {Audio} from "../../Audio/Audio";
+import {MathUtil} from "../../Util/MathUtil";
+import {EventStoryboard} from "../../Util/Beatmap/Data/Sections/Events/Storyboard/EventStoryboard";
 
 export class StoryBoard extends BackgroundContainer {
     private beatmap: BeatmapData;
-    private startTime = Date.now();
+    private audio: Audio;
 
-    public constructor(beatmap: BeatmapData) {
+    public constructor(beatmap: BeatmapData, audio: Audio) {
         super();
         this.interactiveChildren = false;
         this.interactive = false;
         this.beatmap = beatmap;
+        this.audio = audio;
         Main.app.ticker.add(this.Update, this);
         for (let i = 0; i < beatmap.Events.Events.length; i++) {
             let event = beatmap.Events.Events[i];
@@ -46,14 +51,15 @@ export class StoryBoard extends BackgroundContainer {
                         sprite.zIndex = 1;
                         break;
                     case Layer.Pass:
-                        sprite.zIndex = 1;
+                        sprite.zIndex = 2;
                         break;
                     case Layer.Foreground:
-                        sprite.zIndex = 2;
+                        sprite.zIndex = 3;
                         break;
                 }
                 sprite.anchor = StoryBoardUtil.ConvertOriginToAnchor(event.origin);
-                sprite.position.set(event.x,event.y);
+                sprite.position = StoryBoardUtil.ConvertOsuPixels(new PIXI.Point(event.x,event.y), beatmap.General.WidescreenStoryboard);
+                sprite.label = event.filepath;
                 event.sprite = sprite;
                 this.addChild(sprite);
             }
@@ -62,27 +68,30 @@ export class StoryBoard extends BackgroundContainer {
 
 
     public Update() {
-        let currentTime = Date.now() - this.startTime;
+        let currentTime = this.audio.GetCurrentTime();
         for (let i = 0; i < this.beatmap.Events.Events.length; i++) {
             let event = this.beatmap.Events.Events[i];
-            if (event instanceof StoryboardCommand) {
-                if (currentTime > event.startTime && !(event instanceof LoopCommand) ? (currentTime <= event.endTime) : true) {
-                    if (event.parentStoryboardObject instanceof EventSprite && event.parentStoryboardObject.sprite) {
-                        event.parentStoryboardObject.sprite.blendMode = "normal";
-                        this.applyCommand(currentTime, event.parentStoryboardObject.sprite, event);
-                        if (event.parentStoryboardObject.sprite.alpha > 0) {
-                            event.parentStoryboardObject.sprite.visible = true;
-                        } else {
-                            event.parentStoryboardObject.sprite.visible = false;
+            if (event instanceof EventSprite && event.sprite) {
+                if (currentTime >= event.StartTime && currentTime <= event.EndTime) {
+                    event.sprite.visible = true;
+                    if (event.filepath.startsWith("sb/q.png")){
+                        console.log(event);
+                    }
+                    for (let j = 0; j < event.Commands.length; j++) {
+                        let command = event.Commands[j];
+                        if (currentTime >= command.startTime) {
+                            this.applyCommand(currentTime, event.sprite, command, event);
                         }
                     }
+                } else if (currentTime > event.EndTime) {
+                    event.sprite.destroy();
                 }
             }
         }
     }
 
-    private applyCommand(time: number, pixiObject: PIXI.Container, command: StoryboardCommand) {
-        let animProgress = (command.endTime - time)/(command.endTime - command.startTime);
+    private applyCommand(time: number, pixiObject: PIXI.Container, command: StoryboardCommand, event: EventStoryboard) {
+        let animProgress = MathUtil.clamp01((command.endTime - time)/(command.endTime - command.startTime));
         switch (command.commandType) {
             case CommandType.Fade:
                 let fadeCommand = command as FadeCommand;
@@ -113,7 +122,7 @@ export class StoryBoard extends BackgroundContainer {
             case CommandType.MoveY:
                 let moveYCommand = command as MoveYCommand;
                 pixiObject.position.y = StoryBoardUtil.ConvertOsuPixels(new PIXI.Point(
-                    ((moveYCommand.endY - moveYCommand.startY) * command.easing(animProgress)) + moveYCommand.startY, 0),
+                    0, ((moveYCommand.endY - moveYCommand.startY) * command.easing(animProgress)) + moveYCommand.startY),
                     this.beatmap.General.WidescreenStoryboard).y;
                 break;
             case CommandType.Rotate:
@@ -125,7 +134,7 @@ export class StoryBoard extends BackgroundContainer {
                 let r = ((colorCommand.endColor.red - colorCommand.startColor.red) * command.easing(animProgress)) + colorCommand.startColor.red;
                 let g = ((colorCommand.endColor.green - colorCommand.startColor.green) * command.easing(animProgress)) + colorCommand.startColor.green;
                 let b = ((colorCommand.endColor.blue - colorCommand.startColor.blue) * command.easing(animProgress)) + colorCommand.startColor.blue;
-                pixiObject.tint = new Float32Array([r, g, b]);
+                pixiObject.tint = [r, g, b];
                 break;
             case CommandType.Parameter:
                 let parameterCommand = command as ParameterCommand;
@@ -138,7 +147,7 @@ export class StoryBoard extends BackgroundContainer {
                 loopCommand.childCommands.forEach((command) => {
                     let relativeTime = (time - ((command.endTime - command.startTime)*command.timesLooped)) - loopCommand.startTime;
                     if (relativeTime > command.startTime && relativeTime <= command.endTime && command.timesLooped <= loopCommand.loopCount) {
-                        this.applyCommand(relativeTime, pixiObject, command);
+                        this.applyCommand(relativeTime, pixiObject, command, event);
                     } else if (relativeTime > command.endTime) {
                         command.timesLooped++;
                     }
@@ -147,6 +156,7 @@ export class StoryBoard extends BackgroundContainer {
             case CommandType.Trigger:
                 break; //skip for now
         }
+        command.executedOnce = true;
     }
 
     public destroy(options?: DestroyOptions) {

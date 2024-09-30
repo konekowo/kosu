@@ -3,9 +3,39 @@ import {Event} from "../Event";
 import {Layer} from "./Layer";
 import {Origin} from "./Origin";
 import * as PIXI from "pixi.js";
+import {LoopCommand} from "./Commands/impl/LoopCommand";
 
 export abstract class EventStoryboard extends Event {
-    public startTime = -1;
+    private _startTime?: number;
+    private _endTime?: number;
+
+    public get StartTime() {
+        if (!this._startTime) {
+            this._startTime = this.Commands.sort((a, b) => a.startTime - b.startTime)[0].startTime;
+        }
+        return this._startTime
+    }
+
+    public get EndTime() {
+        if (!this._endTime) {
+            let endTime = this.Commands.sort((a, b) => a.endTime - b.endTime)[this.Commands.length - 1].endTime;
+            for (let i = 0; i < this.Commands.length; i++) {
+                let command = this.Commands[i];
+                if (command instanceof LoopCommand) {
+                    let latestEndTime = command.childCommands.
+                    sort((a, b) => a.endTime - b.endTime)[command.childCommands.length - 1].endTime;
+                    latestEndTime *= command.loopCount;
+                    latestEndTime += command.startTime;
+                    if (latestEndTime > endTime) {
+                        endTime = latestEndTime;
+                    }
+                }
+            }
+            this._endTime = endTime;
+        }
+        return this._endTime;
+    }
+
     /**
      * Each <a href="https://osu.ppy.sh/wiki/en/Storyboard/Scripting/Objects">object declaration</a>
      * is followed by one or more commands. These tell the object to do something, called an event,
