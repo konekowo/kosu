@@ -33,11 +33,11 @@ export abstract class Screen extends PIXI.Container {
 
     public abstract onResize(): void;
 
-    protected getScreenWidth(): number {
+    public static getScreenWidth(): number {
         return window.innerWidth;
     }
 
-    protected getScreenHeight(): number {
+    public static getScreenHeight(): number {
         return window.innerHeight;
     }
 }

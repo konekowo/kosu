@@ -17,6 +17,7 @@ import {RotateCommand} from "../../Util/Beatmap/Data/Sections/Events/Storyboard/
 import {ColorCommand} from "../../Util/Beatmap/Data/Sections/Events/Storyboard/Commands/impl/ColorCommand";
 import {ParameterCommand} from "../../Util/Beatmap/Data/Sections/Events/Storyboard/Commands/impl/ParameterCommand";
 import {LoopCommand} from "../../Util/Beatmap/Data/Sections/Events/Storyboard/Commands/impl/LoopCommand";
+import {StoryBoardUtil} from "../../Util/StoryBoardUtil";
 
 export class StoryBoard extends BackgroundContainer {
     private beatmap: BeatmapData;
@@ -78,16 +79,22 @@ export class StoryBoard extends BackgroundContainer {
                 break;
             case CommandType.Move:
                 let moveCommand = command as MoveCommand;
-                pixiObject.position.x = ((moveCommand.endPos.x - moveCommand.startPos.x) * command.easing(animProgress)) + moveCommand.startPos.x;
-                pixiObject.position.y = ((moveCommand.endPos.y - moveCommand.startPos.y) * command.easing(animProgress)) + moveCommand.startPos.y;
+                pixiObject.position = StoryBoardUtil.ConvertOsuPixels(new PIXI.Point(
+                    ((moveCommand.endPos.x - moveCommand.startPos.x) * command.easing(animProgress)) + moveCommand.startPos.x,
+                        ((moveCommand.endPos.y - moveCommand.startPos.y) * command.easing(animProgress)) + moveCommand.startPos.y),
+                    moveCommand.parentStoryboardObject.origin, this.beatmap.General.WidescreenStoryboard);
                 break;
             case CommandType.MoveX:
                 let moveXCommand = command as MoveXCommand;
-                pixiObject.position.x = ((moveXCommand.endX - moveXCommand.startX) * command.easing(animProgress)) + moveXCommand.startX;
+                pixiObject.position.x = StoryBoardUtil.ConvertOsuPixels(new PIXI.Point(
+                    ((moveXCommand.endX - moveXCommand.startX) * command.easing(animProgress)) + moveXCommand.startX, 0),
+                    moveXCommand.parentStoryboardObject.origin, this.beatmap.General.WidescreenStoryboard).x;
                 break;
             case CommandType.MoveY:
                 let moveYCommand = command as MoveYCommand;
-                pixiObject.position.y = ((moveYCommand.endY - moveYCommand.startY) * command.easing(animProgress)) + moveYCommand.startY;
+                pixiObject.position.y = StoryBoardUtil.ConvertOsuPixels(new PIXI.Point(
+                    ((moveYCommand.endY - moveYCommand.startY) * command.easing(animProgress)) + moveYCommand.startY, 0),
+                    moveYCommand.parentStoryboardObject.origin, this.beatmap.General.WidescreenStoryboard).y;
                 break;
             case CommandType.Rotate:
                 let rotateCommand = command as RotateCommand;
