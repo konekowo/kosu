@@ -11,6 +11,8 @@ import {SettingsPane} from "./Elements/Settings/SettingsPane";
 import {unzip} from "unzipit";
 import {BeatmapParser} from "./Util/Beatmap/Parser/BeatmapParser";
 import {BeatmapData} from "./Util/Beatmap/Data/BeatmapData";
+import {StoryBoardUtil} from "./Util/StoryBoardUtil";
+import {Origin} from "./Util/Beatmap/Data/Sections/Events/Storyboard/Origin";
 
 export class Main {
     public static app: Application;

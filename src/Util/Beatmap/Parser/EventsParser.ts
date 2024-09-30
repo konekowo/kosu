@@ -307,9 +307,6 @@ export class EventsParser {
                 beatmapData.Events.Events.push(event as Event);
             }
         });
-        beatmapData.Events.Events.sort((a, b) => {
-           return a.startTime - b.startTime;
-        });
     }
 
     public static async LoadFiles(beatmapData: BeatmapData, audioEngine: AudioEngine) {
@@ -327,7 +324,7 @@ export class EventsParser {
                 }
             }
             check(); // check because toLoad.length could be 0
-            let textureCache: {filePath: string, texture: PIXI.Texture}[] = [];
+            let textureCache: Map<string, PIXI.Texture> = new Map<string, PIXI.Texture>();
             for (const event of toLoad) {
                 for (let eventKey in event) {
                     if (eventKey == "filename" || eventKey == "filepath") {
@@ -339,12 +336,95 @@ export class EventsParser {
                         if (file) {
                             let url = URL.createObjectURL(file);
                             if (event instanceof EventBackground) {
+                                PIXI.Assets.load({src: url, loadParser: "loadTextures"}).then((texture) => {
+                                    event.texture = texture;
+                                    loaded++;
+                                    check();
+                                }).catch((e) => {
+                                    console.warn(e);
+                                    loaded++;
+                                    check();
+                                });
+                            }
+                            if (event instanceof EventVideo) {
+                                let failed = false;
                                 // @ts-ignore
-                                if (!textureCache.find((texture) => {if (texture.filePath == event[eventKey]) {return texture;}})) {
-                                    PIXI.Assets.load({src: url, loadParser: "loadTextures"}).then((texture) => {
+                                if (event[eventKey].endsWith(".avi")) {
+                                    // @ts-ignore
+                                    let cacheHit = this.aviTranscodedVideoCache.find(
+                                        (cache) => {
+                                            // @ts-ignore
+                                            if (cache.beatmapSID == beatmapData.Metadata.BeatmapSetID && cache.filePath == event[eventKey]) {
+                                                return cache;
+                                            }
+                                        }
+                                    );
+                                    try {
+                                        if (!cacheHit) {
+                                            console.warn("AVI video is not natively supported! Transcoding to .mp4, this may take a few minutes!");
+                                            let ffmpeg = new FFmpeg();
+                                            ffmpeg.on('progress', ({progress, time}) => {
+                                                console.log(`.avi to .mp4 transcoding: ${Math.round(progress * 1000) / 10}% (transcoded time: ${Math.round(time / 100000) / 10}s)`);
+                                            });
+                                            console.log("FFmpeg initialized");
+                                            const baseURL = 'https://unpkg.com/@ffmpeg/core-mt@0.12.6/dist/esm';
+                                            let classWorker = Loader.Get("workers.ffmpeg");
+                                            let core = Loader.Get("ffmpeg.core");
+                                            let wasm = Loader.Get("ffmpeg.wasm");
+                                            let worker = Loader.Get("ffmpeg.coreWorker");
+                                            await ffmpeg.load({
+                                                classWorkerURL: URL.createObjectURL(classWorker),
+                                                coreURL: URL.createObjectURL(core),
+                                                wasmURL: URL.createObjectURL(wasm),
+                                                workerURL: URL.createObjectURL(worker)
+                                            });
+                                            console.log("FFmpeg loaded");
+                                            await ffmpeg.writeFile('input.avi', new Uint8Array(await file.arrayBuffer()));
+                                            console.log("Written file to FFmpeg's vfs");
+                                            await ffmpeg.exec(["-i", "input.avi", "-c:v", "libx264", "-preset",
+                                                "ultrafast", "-an", "-movflags", "faststart", "output.mp4"]);
+                                            console.log("Transcoding done");
+                                            const data = await ffmpeg.readFile("output.mp4");
+                                            ffmpeg.terminate();
+                                            console.log("FFmpeg terminated");
+                                            let newFile = new Blob([data], {type: 'video/mp4'});
+                                            this.aviTranscodedVideoCache.push({
+                                                beatmapSID: beatmapData.Metadata.BeatmapSetID,
+                                                // @ts-ignore
+                                                filePath: event[eventKey],
+                                                blob: newFile
+                                            });
+                                            // @ts-ignore
+                                            beatmapData.files.delete(event[eventKey]);
+                                            // @ts-ignore
+                                            event[eventKey] = event[eventKey].substring(0, event[eventKey].length - 4) + ".mp4";
+                                            // @ts-ignore
+                                            beatmapData.files.set(event[eventKey], newFile);
+                                            URL.revokeObjectURL(url);
+                                            url = URL.createObjectURL(newFile);
+                                            console.log("Successfully transcoded from .avi to .mp4!");
+                                        } else {
+                                            // @ts-ignore
+                                            beatmapData.files.delete(event[eventKey]);
+                                            // @ts-ignore
+                                            event[eventKey] = event[eventKey].substring(0, event[eventKey].length - 4) + ".mp4";
+                                            // @ts-ignore
+                                            beatmapData.files.set(event[eventKey], cacheHit.blob);
+                                            URL.revokeObjectURL(url);
+                                            url = URL.createObjectURL(cacheHit.blob);
+                                        }
+                                    } catch (e) {
+                                        console.warn(e);
+                                        failed = true;
+                                    }
+                                }
+                                if (!failed) {
+                                    PIXI.Assets.load({src: url, loadParser: "loadVideo"}).then((texture) => {
                                         event.texture = texture;
-                                        // @ts-ignore
-                                        textureCache.push({filePath: event[eventKey], texture: texture});
+                                        if (event.texture) {
+                                            event.texture.source.resource.volume = 0;
+                                            event.texture.source.resource.pause();
+                                        }
                                         loaded++;
                                         check();
                                     }).catch((e) => {
@@ -352,139 +432,31 @@ export class EventsParser {
                                         loaded++;
                                         check();
                                     });
-                                }
-                                else {
-                                    URL.revokeObjectURL(url);
-                                    // @ts-ignore
-                                    event.texture = textureCache.find((texture) => {if (texture.filePath == event[eventKey]) {return texture;}})!.texture;
-                                    loaded++;
-                                    check();
-                                }
-                            }
-                            if (event instanceof EventVideo) {
-                                // @ts-ignore
-                                if (!textureCache.find((texture) => {if (texture.filePath == event[eventKey]) {return texture;}})) {
-                                    let failed = false;
-                                    // @ts-ignore
-                                    if (event[eventKey].endsWith(".avi")) {
-                                        // @ts-ignore
-                                        let cacheHit = this.aviTranscodedVideoCache.find(
-                                            (cache) => {
-                                                // @ts-ignore
-                                                if (cache.beatmapSID == beatmapData.Metadata.BeatmapSetID && cache.filePath == event[eventKey]) {
-                                                    return cache;
-                                                }
-                                            }
-                                        );
-                                        try {
-                                            if (!cacheHit) {
-                                                console.warn("AVI video is not natively supported! Transcoding to .mp4, this may take a few minutes!");
-                                                let ffmpeg = new FFmpeg();
-                                                ffmpeg.on('progress', ({progress, time}) => {
-                                                    console.log(`.avi to .mp4 transcoding: ${Math.round(progress * 1000) / 10}% (transcoded time: ${Math.round(time / 100000) / 10}s)`);
-                                                });
-                                                console.log("FFmpeg initialized");
-                                                const baseURL = 'https://unpkg.com/@ffmpeg/core-mt@0.12.6/dist/esm';
-                                                let classWorker = Loader.Get("workers.ffmpeg");
-                                                let core = Loader.Get("ffmpeg.core");
-                                                let wasm = Loader.Get("ffmpeg.wasm");
-                                                let worker = Loader.Get("ffmpeg.coreWorker");
-                                                await ffmpeg.load({
-                                                    classWorkerURL: URL.createObjectURL(classWorker),
-                                                    coreURL: URL.createObjectURL(core),
-                                                    wasmURL: URL.createObjectURL(wasm),
-                                                    workerURL: URL.createObjectURL(worker)
-                                                });
-                                                console.log("FFmpeg loaded");
-                                                await ffmpeg.writeFile('input.avi', new Uint8Array(await file.arrayBuffer()));
-                                                console.log("Written file to FFmpeg's vfs");
-                                                await ffmpeg.exec(["-i", "input.avi", "-c:v", "libx264", "-preset",
-                                                    "ultrafast", "-an", "-movflags", "faststart", "output.mp4"]);
-                                                console.log("Transcoding done");
-                                                const data = await ffmpeg.readFile("output.mp4");
-                                                ffmpeg.terminate();
-                                                console.log("FFmpeg terminated");
-                                                let newFile = new Blob([data], {type: 'video/mp4'});
-                                                this.aviTranscodedVideoCache.push({
-                                                    beatmapSID: beatmapData.Metadata.BeatmapSetID,
-                                                    // @ts-ignore
-                                                    filePath: event[eventKey],
-                                                    blob: newFile
-                                                });
-                                                // @ts-ignore
-                                                beatmapData.files.delete(event[eventKey]);
-                                                // @ts-ignore
-                                                event[eventKey] = event[eventKey].substring(0, event[eventKey].length - 4) + ".mp4";
-                                                // @ts-ignore
-                                                beatmapData.files.set(event[eventKey], newFile);
-                                                URL.revokeObjectURL(url);
-                                                url = URL.createObjectURL(newFile);
-                                                console.log("Successfully transcoded from .avi to .mp4!");
-                                            } else {
-                                                // @ts-ignore
-                                                beatmapData.files.delete(event[eventKey]);
-                                                // @ts-ignore
-                                                event[eventKey] = event[eventKey].substring(0, event[eventKey].length - 4) + ".mp4";
-                                                // @ts-ignore
-                                                beatmapData.files.set(event[eventKey], cacheHit.blob);
-                                                URL.revokeObjectURL(url);
-                                                url = URL.createObjectURL(cacheHit.blob);
-                                            }
-                                        } catch (e) {
-                                            console.warn(e);
-                                            failed = true;
-                                        }
-                                    }
-                                    if (!failed) {
-                                        PIXI.Assets.load({src: url, loadParser: "loadVideo"}).then((texture) => {
-                                            event.texture = texture;
-                                            // @ts-ignore
-                                            textureCache.push({filePath: event[eventKey], texture: texture});
-                                            if (event.texture) {
-                                                event.texture.source.resource.volume = 0;
-                                                event.texture.source.resource.pause();
-                                            }
-                                            loaded++;
-                                            check();
-                                        }).catch((e) => {
-                                            console.warn(e);
-                                            loaded++;
-                                            check();
-                                        });
-                                    } else {
-                                        loaded++;
-                                        check();
-                                    }
-                                }
-                                else {
-                                    URL.revokeObjectURL(url);
-                                    // @ts-ignore
-                                    event.texture = textureCache.find((texture) => {if (texture.filePath == event[eventKey]) {return texture;}})!.texture;
-                                    event.texture.source.resource.volume = 0;
-                                    event.texture.source.resource.pause();
+                                } else {
                                     loaded++;
                                     check();
                                 }
                             }
                             if (event instanceof EventSprite) {
                                 // @ts-ignore
-                                if (!textureCache.find((texture) => {if (texture.filePath == event[eventKey]) {return texture;}})) {
-                                    PIXI.Assets.load({src: url, loadParser: "loadTextures"}).then((texture) => {
+                                if (!textureCache.has(event[eventKey])) {
+                                    try {
+                                        let texture = await PIXI.Assets.load({src: url, loadParser: "loadTextures"});
                                         event.texture = texture;
                                         // @ts-ignore
-                                        textureCache.push({filePath: event[eventKey], texture: texture});
+                                        textureCache.set(event[eventKey], texture);
                                         loaded++;
                                         check();
-                                    }).catch((e) => {
+                                    } catch (e) {
                                         console.warn(e);
                                         loaded++;
                                         check();
-                                    });
+                                    }
                                 }
                                 else {
                                     URL.revokeObjectURL(url);
                                     // @ts-ignore
-                                    event.texture = textureCache.find((texture) => {if (texture.filePath == event[eventKey]) {return texture;}})!.texture;
+                                    event.texture = textureCache.get(event[eventKey]);
                                     loaded++;
                                     check();
                                 }
@@ -512,31 +484,35 @@ export class EventsParser {
                                         check();
                                     }
                                 }
-                                event.filepaths.forEach((filePath, i) => {
-                                    // @ts-ignore
-                                    if (!textureCache.find((texture) => {if (texture.filePath == filePath) {return texture;}})) {
+                                for (const filePath of event.filepaths) {
+                                    const i = event.filepaths.indexOf(filePath);
+                                    if (!textureCache.has(filePath)) {
                                         let file = beatmapData.files.get(filePath);
                                         if (file) {
                                             let url = URL.createObjectURL(file);
-                                            PIXI.Assets.load({src: url, loadParser: "loadTextures"}).then((texture) => {
+                                            try {
+                                                let texture = await PIXI.Assets.load({
+                                                    src: url,
+                                                    loadParser: "loadTextures"
+                                                });
                                                 event.textures[i] = texture;
-                                                textureCache.push({filePath: filePath, texture: texture});
-                                                loadedTextures++
+                                                // @ts-ignore
+                                                textureCache.set(event[eventKey], texture);
+                                                loadedTextures++;
                                                 checkLoadedTextures();
-                                            }).catch((e) => {
+                                            } catch (e) {
                                                 console.warn(e);
                                                 loadedTextures++;
                                                 checkLoadedTextures();
-                                            });
+                                            }
                                         }
                                     }
                                     else {
-                                        event.textures[i] = textureCache.find((texture) => {if (texture.filePath == filePath) {return texture;}})!.texture;
-                                        loadedTextures++
+                                        event.textures[i] = textureCache.get(filePath)!;
+                                        loadedTextures++;
                                         checkLoadedTextures();
                                     }
-
-                                });
+                                }
                             }
                         } else {
                             // @ts-ignore
