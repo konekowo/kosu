@@ -14,5 +14,5 @@ export abstract class StoryboardCommand extends Event{
 
     public timesLooped: number = 0;
 
-    public executedOnce: boolean = false;
+    public executed: boolean = false;
 }
