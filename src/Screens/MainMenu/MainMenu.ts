@@ -15,8 +15,6 @@ export class MainMenu extends Screen {
         this.osuCircle.scale = Screen.getScaleBasedOffScreenSize();
         this.addChild(this.menu);
         this.menu.onResize();
-        this.osuCircle.visible = false;
-        this.menu.visible = false;
         this.addChild(this.osuCircle);
     }
 
