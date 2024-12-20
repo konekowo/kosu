@@ -140,7 +140,7 @@
     <value>Жоден з постів не стосується моєї проблеми</value>
   </data>
   <data name="nearby_posts.notice" xml:space="preserve">
-    <value>Вже є дискусії біля {0} ({1}). Перевірте їх перед публікацією.</value>
+    <value>Вже є пости біля {0} ({1}). Перевірте їх перед публікацією.</value>
   </data>
   <data name="nearby_posts.unsaved" xml:space="preserve">
     <value>{0} в цьому відгуку</value>
@@ -156,6 +156,18 @@
   </data>
   <data name="owner_editor.version" xml:space="preserve">
     <value>Складність</value>
+  </data>
+  <data name="refresh.checking" xml:space="preserve">
+    <value>Перевіряємо, чи є нові дописи...</value>
+  </data>
+  <data name="refresh.has_updates" xml:space="preserve">
+    <value>Нові дописи в обговоренні, натисніть для оновлення.</value>
+  </data>
+  <data name="refresh.no_updates" xml:space="preserve">
+    <value>Немає нових дописів.</value>
+  </data>
+  <data name="refresh.updating" xml:space="preserve">
+    <value>Оновлення...</value>
   </data>
   <data name="reply.open.guest" xml:space="preserve">
     <value>Увійдіть, щоб відповісти</value>

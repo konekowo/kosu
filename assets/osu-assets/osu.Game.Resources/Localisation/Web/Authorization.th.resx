@@ -136,9 +136,6 @@
   <data name="beatmapset.metadata.nominated" xml:space="preserve">
     <value>คุณไม่สามารถเปลี่ยน metadata ของบีทแมพที่ทำการเสนอชื่อเป็นที่เรียบร้อยแล้ว ติดต่อ BN หรือ NAT หากคุณคิดว่ามีข้อผิดพลาดประการใด</value>
   </data>
-  <data name="chat.annnonce_only" xml:space="preserve">
-    <value>ช่องนี้สำหรับการประกาศเท่านั้น</value>
-  </data>
   <data name="chat.blocked" xml:space="preserve">
     <value>ไม่สามารถส่งข้อความถึงผู้ใช้ที่บล็อกคุณหรือที่คุณบล็อกได้</value>
   </data>
@@ -150,6 +147,9 @@
   </data>
   <data name="chat.no_access" xml:space="preserve">
     <value>คุณไม่มีสิทธิ์เข้าถึงช่องนี้</value>
+  </data>
+  <data name="chat.no_announce" xml:space="preserve">
+    <value>คุณไม่ได้รับอนุญาตที่จะโพสต์ประกาศ</value>
   </data>
   <data name="chat.receive_friends_only" xml:space="preserve">
     <value>ผู้ใช้นี้อาจไม่สามารถตอบกลับได้ เนื่องจากคุณกำลังยอมรับแค่ข้อความจากบุคคลที่อยู่บนรายชื่อเพื่อนของคุณ</value>

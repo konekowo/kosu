@@ -379,6 +379,9 @@
   <data name="show.daily_challenge.daily_streak_current" xml:space="preserve">
     <value>Aktuelle Tagesserie</value>
   </data>
+  <data name="show.daily_challenge.playcount" xml:space="preserve">
+    <value>Gesamtbeteiligung</value>
+  </data>
   <data name="show.daily_challenge.title" xml:space="preserve">
     <value>Tägliche\nHerausforderung</value>
   </data>
@@ -521,7 +524,7 @@
     <value>mehr Events anzeigen</value>
   </data>
   <data name="show.extra.historical.title" xml:space="preserve">
-    <value>Historisch</value>
+    <value>Historie</value>
   </data>
   <data name="show.extra.historical.monthly_playcounts.title" xml:space="preserve">
     <value>Spielverlauf</value>
@@ -644,7 +647,7 @@
     <value>Details anzeigen</value>
   </data>
   <data name="show.extra.top_ranks.title" xml:space="preserve">
-    <value>Ränge</value>
+    <value>Scores</value>
   </data>
   <data name="show.extra.top_ranks.best.title" xml:space="preserve">
     <value>Beste Performance</value>
@@ -686,7 +689,7 @@
     <value>Accountstatus</value>
   </data>
   <data name="show.extra.account_standing.bad_standing" xml:space="preserve">
-    <value>Der Account von {0} ist zurzeit eingeschränkt :(</value>
+    <value>Der Account von {0} hat zurzeit keinen guten Ruf :(</value>
   </data>
   <data name="show.extra.account_standing.remaining_silence" xml:space="preserve">
     <value>{0} kann in {1} wieder sprechen.</value>
@@ -779,13 +782,13 @@
     <value>Länderrang im Modus {0}</value>
   </data>
   <data name="show.rank.country_simple" xml:space="preserve">
-    <value>Landesrangliste</value>
+    <value>Nationaler Rang</value>
   </data>
   <data name="show.rank.global" xml:space="preserve">
     <value>Globaler Rang im Modus {0}</value>
   </data>
   <data name="show.rank.global_simple" xml:space="preserve">
-    <value>Globale Rangliste</value>
+    <value>Globaler Rang</value>
   </data>
   <data name="show.rank.highest" xml:space="preserve">
     <value>Höchster Rang: {0} am {1}</value>

@@ -140,9 +140,9 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString BeatmapsetMetadataNominated => new TranslatableString(getKey(@"beatmapset.metadata.nominated"), @"You cannot change metadata of a nominated map. Contact a BN or NAT member if you think it is set incorrectly.");
 
         /// <summary>
-        /// "This channel is for announcements only."
+        /// "You must set a score on a beatmap to add a tag."
         /// </summary>
-        public static LocalisableString ChatAnnnonceOnly => new TranslatableString(getKey(@"chat.annnonce_only"), @"This channel is for announcements only.");
+        public static LocalisableString BeatmapTagStoreNoScore => new TranslatableString(getKey(@"beatmap_tag.store.no_score"), @"You must set a score on a beatmap to add a tag.");
 
         /// <summary>
         /// "Cannot message a user that is blocking you or that you have blocked."
@@ -163,6 +163,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "You do not have access to that channel."
         /// </summary>
         public static LocalisableString ChatNoAccess => new TranslatableString(getKey(@"chat.no_access"), @"You do not have access to that channel.");
+
+        /// <summary>
+        /// "You do not have permission to post announcement."
+        /// </summary>
+        public static LocalisableString ChatNoAnnounce => new TranslatableString(getKey(@"chat.no_announce"), @"You do not have permission to post announcement.");
 
         /// <summary>
         /// "The user may not be able to reply because you are only accepting messages from people on your friends list."
@@ -378,6 +383,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Only admin can view this forum."
         /// </summary>
         public static LocalisableString ForumViewAdminOnly => new TranslatableString(getKey(@"forum.view.admin_only"), @"Only admin can view this forum.");
+
+        /// <summary>
+        /// "Only room owner can close it."
+        /// </summary>
+        public static LocalisableString RoomDestroyNotOwner => new TranslatableString(getKey(@"room.destroy.not_owner"), @"Only room owner can close it.");
 
         /// <summary>
         /// "Can&#39;t pin this type of score"

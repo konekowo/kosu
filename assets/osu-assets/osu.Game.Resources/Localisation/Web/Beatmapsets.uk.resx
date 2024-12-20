@@ -130,6 +130,9 @@
   <data name="nominate.dialog.confirmation" xml:space="preserve">
     <value>Ви впевнені що хочете номінувати цю мапу?</value>
   </data>
+  <data name="nominate.dialog.different_nominator_warning" xml:space="preserve">
+    <value>Кваліфікування цієї мапи іншими номінаторами призведе до скидання її позиції в черзі кваліфікованих.</value>
+  </data>
   <data name="nominate.dialog.header" xml:space="preserve">
     <value>Номінувати мапу</value>
   </data>
@@ -218,7 +221,7 @@
     <value>Ви вподобали забагато мап! Будь ласка приберіть деякі та спробуйте знову.</value>
   </data>
   <data name="show.hype.action" xml:space="preserve">
-    <value>Хайпніть цю мапу, якщо вам сподобалося в неї грати, щоб допомогти їй отримати статус &lt;strong&gt;Рангової&lt;/strong&gt;.</value>
+    <value>Хайпніть цю мапу, якщо вам сподобалося в неї грати, щоб допомогти їй отримати статус &lt;strong&gt;Рейтингової&lt;/strong&gt;.</value>
   </data>
   <data name="show.hype.current._" xml:space="preserve">
     <value>Ця мапа зараз {0}.</value>
@@ -230,7 +233,7 @@
     <value>кваліфікована</value>
   </data>
   <data name="show.hype.current.status.wip" xml:space="preserve">
-    <value>в процесі створення</value>
+    <value>в розробці</value>
   </data>
   <data name="show.hype.disqualify._" xml:space="preserve">
     <value>Якщо ви знайшли проблему в цій мапі, будь ласка, дискваліфікуйте її {0}.</value>
@@ -317,7 +320,7 @@
     <value>Натисніть &lt;a href="{0}"&gt;сюди&lt;/a&gt; для перегляду всіх можливостей які ви отримаєте!</value>
   </data>
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
-    <value>Ви повинні мати osu!прихильник, для перегляду рейтингів по друзях, країні та модах!</value>
+    <value>Ви повинні мати osu!supporter для перегляду рейтингів по друзях, країні та модах!</value>
   </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>Табло</value>
@@ -365,7 +368,7 @@
     <value>Результати завантажуються...</value>
   </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
-    <value>Нерангова мапа.</value>
+    <value>Нерейтингова мапа.</value>
   </data>
   <data name="show.scoreboard.score.first" xml:space="preserve">
     <value>Лідирує</value>
@@ -437,7 +440,7 @@
     <value>Кваліфікована</value>
   </data>
   <data name="show.status.wip" xml:space="preserve">
-    <value>В процесі створення</value>
+    <value>В розробці</value>
   </data>
   <data name="show.status.pending" xml:space="preserve">
     <value>На розгляді</value>

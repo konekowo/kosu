@@ -130,6 +130,9 @@
   <data name="nominate.dialog.confirmation" xml:space="preserve">
     <value>Bist du sicher, dass du diese Beatmap nominieren möchtest?</value>
   </data>
+  <data name="nominate.dialog.different_nominator_warning" xml:space="preserve">
+    <value>Das Qualifizieren dieser Beatmap mit anderen Nominatoren wird dessen Position in der Qualifikationswarteschlange zurücksetzen.</value>
+  </data>
   <data name="nominate.dialog.header" xml:space="preserve">
     <value>Beatmap nominieren</value>
   </data>
@@ -404,10 +407,10 @@
     <value>BPM</value>
   </data>
   <data name="show.stats.count_circles" xml:space="preserve">
-    <value>Circle-Anzahl</value>
+    <value>Anzahl der Circles</value>
   </data>
   <data name="show.stats.count_sliders" xml:space="preserve">
-    <value>Slider-Anzahl</value>
+    <value>Anzahl der Slider</value>
   </data>
   <data name="show.stats.offset" xml:space="preserve">
     <value>Online-Offset: {0}</value>

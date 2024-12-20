@@ -119,7 +119,7 @@
     <value>Розблокувати</value>
   </data>
   <data name="card.gift_supporter" xml:space="preserve">
-    <value>Подарувати osu!прихильник</value>
+    <value>Подарувати osu!supporter</value>
   </data>
   <data name="card.loading" xml:space="preserve">
     <value>Завантаження...</value>
@@ -182,10 +182,10 @@
     <value>Учасники за ігровим режимом</value>
   </data>
   <data name="force_reactivation.reason.inactive" xml:space="preserve">
-    <value>Ваш обліковий запис вже давно не використовується.</value>
+    <value>Ваш обліковий запис вже давно не використовувався.</value>
   </data>
   <data name="force_reactivation.reason.inactive_different_country" xml:space="preserve">
-    <value>Ваш обліковий запис вже давно не використовується.</value>
+    <value>Ваш обліковий запис вже давно не використовувався.</value>
   </data>
   <data name="login._" xml:space="preserve">
     <value>Вхід</value>
@@ -233,7 +233,7 @@
     <value>На даний час доступ до бета-версії обмежена привілейованими користувачами.</value>
   </data>
   <data name="login.beta.small" xml:space="preserve">
-    <value>(гравці з osu!прихильником отримають доступ раніше)</value>
+    <value>(гравці з osu!supporter отримають доступ раніше)</value>
   </data>
   <data name="ogp.modding_description" xml:space="preserve">
     <value>Мап: {0}</value>
@@ -335,7 +335,7 @@
     <value>osu!розробник</value>
   </data>
   <data name="show.is_supporter" xml:space="preserve">
-    <value>osu!прихильник</value>
+    <value>osu!supporter</value>
   </data>
   <data name="show.joined_at" xml:space="preserve">
     <value>Дата реєстрації: {0}</value>
@@ -362,7 +362,7 @@
     <value>Опубліковано {0}</value>
   </data>
   <data name="show.comments_count.count" xml:space="preserve">
-    <value>{0} коментар|{0} коментарі|{0} коментарів</value>
+    <value>{0} коментар|{0} коментаря|{0} коментарів</value>
   </data>
   <data name="show.cover.to_0" xml:space="preserve">
     <value>Згорнути обкладинку профілю</value>
@@ -378,6 +378,9 @@
   </data>
   <data name="show.daily_challenge.daily_streak_current" xml:space="preserve">
     <value>Поточна щоденна серія</value>
+  </data>
+  <data name="show.daily_challenge.playcount" xml:space="preserve">
+    <value>Всього участі</value>
   </data>
   <data name="show.daily_challenge.title" xml:space="preserve">
     <value>Щоденний\nВиклик</value>
@@ -440,7 +443,7 @@
     <value>Завантаження доступно лише для {0}</value>
   </data>
   <data name="show.edit.cover.upload.restriction_info.link" xml:space="preserve">
-    <value>власників osu!прихильника</value>
+    <value>власників osu!supporter</value>
   </data>
   <data name="show.edit.default_playmode.is_default_tooltip" xml:space="preserve">
     <value>основний ігровий режим</value>
@@ -449,7 +452,7 @@
     <value>вибрати {0} як основний ігровий режим</value>
   </data>
   <data name="show.edit.hue.reset_no_supporter" xml:space="preserve">
-    <value>Відновити колір за замовчуванням? Тег прихильника буде необхідним для зміни його на інший колір.</value>
+    <value>Відновити колір за замовчуванням? Для зміни його на інший колір буде необхідний тег osu!supporter.</value>
   </data>
   <data name="show.edit.hue.title" xml:space="preserve">
     <value>Колір</value>
@@ -458,7 +461,7 @@
     <value>Користувацькі кольорові теми доступні лише для {0}</value>
   </data>
   <data name="show.edit.hue.supporter.link" xml:space="preserve">
-    <value>osu!прихильників</value>
+    <value>власників osu!supporter</value>
   </data>
   <data name="show.extra.none" xml:space="preserve">
     <value>нічого</value>
@@ -494,7 +497,7 @@
     <value>Улюблені бітмапи</value>
   </data>
   <data name="show.extra.beatmaps.nominated.title" xml:space="preserve">
-    <value>Номіновні рейтингові бітмапи</value>
+    <value>Номіновані рейтингові бітмапи</value>
   </data>
   <data name="show.extra.beatmaps.pending.title" xml:space="preserve">
     <value>На розгляді</value>
@@ -635,7 +638,7 @@
     <value>Завантажити повтор</value>
   </data>
   <data name="show.extra.top_ranks.not_ranked" xml:space="preserve">
-    <value>Очки продуктивності видаються тільки за рейтингові карти</value>
+    <value>Тільки рейтингові мапи надають pp</value>
   </data>
   <data name="show.extra.top_ranks.pp_weight" xml:space="preserve">
     <value>зважено: {0}</value>
@@ -767,7 +770,7 @@
     <value>Щоб використовувати цю функцію, потрібен {0}.</value>
   </data>
   <data name="show.page.restriction_info.link" xml:space="preserve">
-    <value>osu!прихильник</value>
+    <value>osu!supporter</value>
   </data>
   <data name="show.post_count._" xml:space="preserve">
     <value>Написав {0}</value>
@@ -779,7 +782,7 @@
     <value>Рейтинг країни для {0}</value>
   </data>
   <data name="show.rank.country_simple" xml:space="preserve">
-    <value>Рейтинг країни</value>
+    <value>Рейтинг в країні</value>
   </data>
   <data name="show.rank.global" xml:space="preserve">
     <value>Глобальний рейтинг для {0}</value>

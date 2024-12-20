@@ -166,8 +166,11 @@
   <data name="editor_clone_selection" xml:space="preserve">
     <value>Clonar selección</value>
   </data>
-  <data name="editor_cycle_grid_display_mode" xml:space="preserve">
-    <value>Cambiar el modo de visualización de la rejilla</value>
+  <data name="editor_cycle_grid_spacing" xml:space="preserve">
+    <value>Cambiar el espaciado de la rejilla</value>
+  </data>
+  <data name="editor_cycle_grid_type" xml:space="preserve">
+    <value>Cambiar el tipo de la rejilla</value>
   </data>
   <data name="editor_test_gameplay" xml:space="preserve">
     <value>Probar el mapa</value>
@@ -294,5 +297,17 @@
   </data>
   <data name="decrease_mod_speed" xml:space="preserve">
     <value>Disminuir la velocidad del mod</value>
+  </data>
+  <data name="editor_seek_to_previous_hit_object" xml:space="preserve">
+    <value>Ir al objeto anterior</value>
+  </data>
+  <data name="editor_seek_to_next_hit_object" xml:space="preserve">
+    <value>Ir al siguiente objeto</value>
+  </data>
+  <data name="editor_seek_to_previous_sample_point" xml:space="preserve">
+    <value>Ir al punto de muestra anterior</value>
+  </data>
+  <data name="editor_seek_to_next_sample_point" xml:space="preserve">
+    <value>Ir al siguiente punto de muestra</value>
   </data>
 </root>

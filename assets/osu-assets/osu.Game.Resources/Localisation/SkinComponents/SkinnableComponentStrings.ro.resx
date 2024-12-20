@@ -88,4 +88,19 @@
   <data name="show_label_description" xml:space="preserve">
     <value>Dacă eticheta componentului trebuie să fie afișată.</value>
   </data>
+  <data name="colour" xml:space="preserve">
+    <value>Culoare</value>
+  </data>
+  <data name="colour_description" xml:space="preserve">
+    <value>Culoarea componentei.</value>
+  </data>
+  <data name="text_colour" xml:space="preserve">
+    <value>Culoare text</value>
+  </data>
+  <data name="text_colour_description" xml:space="preserve">
+    <value>Culoarea textului.</value>
+  </data>
+  <data name="use_relative_size" xml:space="preserve">
+    <value>Folosește dimensiunea relativă</value>
+  </data>
 </root>

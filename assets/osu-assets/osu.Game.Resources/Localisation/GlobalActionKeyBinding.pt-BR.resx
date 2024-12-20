@@ -167,8 +167,11 @@
   <data name="editor_clone_selection" xml:space="preserve">
     <value>Clonar seleção</value>
   </data>
-  <data name="editor_cycle_grid_display_mode" xml:space="preserve">
-    <value>Alternar modo de exibição da grade</value>
+  <data name="editor_cycle_grid_spacing" xml:space="preserve">
+    <value>Ciclo de espaçamento de grade</value>
+  </data>
+  <data name="editor_cycle_grid_type" xml:space="preserve">
+    <value>Tipo de ciclo de grade</value>
   </data>
   <data name="editor_test_gameplay" xml:space="preserve">
     <value>Testar gameplay</value>
@@ -296,5 +299,17 @@
   </data>
   <data name="decrease_mod_speed" xml:space="preserve">
     <value>Diminuir velocidade do mod</value>
+  </data>
+  <data name="editor_seek_to_previous_hit_object" xml:space="preserve">
+    <value>Procure pelo objeto acertável anterior</value>
+  </data>
+  <data name="editor_seek_to_next_hit_object" xml:space="preserve">
+    <value>Procure pelo próximo objeto acertável</value>
+  </data>
+  <data name="editor_seek_to_previous_sample_point" xml:space="preserve">
+    <value>Procure pelo ponto de amostra anterior</value>
+  </data>
+  <data name="editor_seek_to_next_sample_point" xml:space="preserve">
+    <value>Procure pelo próximo ponto de amostra</value>
   </data>
 </root>
