@@ -80,10 +80,10 @@ export class Loader {
             for (let i = 1; i < this.defaultBackgroundsNum + 1; i++) {
                 this.loadList.push({id: "default_bg"+i, url: "assets/osu-assets/osu.Game.Resources/Textures/Menu/menu-background-"+i+".jpg", pixiBundleName: "textures"});
             }
-            fetch("https://corsproxy.io/?"+ encodeURIComponent("https://osu.ppy.sh/api/v2/seasonal-backgrounds"))
+            fetch("https://corsproxy.io/?url="+ encodeURIComponent("https://osu.ppy.sh/api/v2/seasonal-backgrounds"))
                 .then(res => res.json()).then(res => {
                 res.backgrounds.forEach((background: any, index: number) => {
-                    this.loadList.push({id: "seasonal_bg"+(index+1), url: "https://corsproxy.io/?"+ encodeURIComponent(background.url),
+                    this.loadList.push({id: "seasonal_bg"+(index+1), url: "https://corsproxy.io/?url="+ encodeURIComponent(background.url),
                         pixiBundleName: "textures", loadParser: "loadTextures"});
                     this.seasonalBackgroundsNum = index+1;
                 });
