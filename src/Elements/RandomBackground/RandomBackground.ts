@@ -25,13 +25,13 @@ export class RandomBackground extends Screen {
                 if (e.eventType == EventTypes.BACKGROUND){
                     return e;
                 }
-            }) as EventBackground;
+            }) as EventBackground | undefined;
 
             let backgroundVideo = audio.beatmap.Events.Events.find((e) => {
                 if (e.eventType == EventTypes.VIDEO){
                     return e;
                 }
-            }) as EventVideo;
+            }) as EventVideo | undefined;
 
             let bgContainer = new BackgroundContainer();
 
@@ -46,13 +46,13 @@ export class RandomBackground extends Screen {
                     let bg = new Background(backgroundVideo.texture);
                     bgContainer.addChild(bg);
                     backgroundVideo.texture.source.resource.startPromise = new Promise<void>((resolve) => {
-                        if (backgroundVideo.startTime > 0) {
+                        if (backgroundVideo!.startTime > 0) {
                             setTimeout(() => {
                                 video.play();
                                 resolve();
-                            }, backgroundVideo.startTime);
+                            }, backgroundVideo!.startTime);
                         } else {
-                            video.currentTime = Math.abs(backgroundVideo.startTime)/1000;
+                            video.currentTime = Math.abs(backgroundVideo!.startTime)/1000;
                             video.play();
                             resolve();
                         }
@@ -63,6 +63,13 @@ export class RandomBackground extends Screen {
                 }
             }
             bgContainer.addChild(new StoryBoard(audio.beatmap, audio))
+            if (audio.beatmap.Metadata.Title == "circle the halls"
+            && audio.beatmap.Metadata.Artist == "nekodex"
+            && audio.beatmap.Metadata.Version == "laser show"
+            && audio.beatmap.Metadata.Creator == "pishifat") {
+                background = undefined;
+                backgroundVideo = undefined;
+            }
             if (background || backgroundVideo) {
                 this.setBGContainer(bgContainer);
             }
