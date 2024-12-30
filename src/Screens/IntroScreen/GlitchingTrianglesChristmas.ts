@@ -7,7 +7,7 @@ export class GlitchingTrianglesChristmas extends PIXI.Container {
     public constructor(bounds: GlitchingTrianglesBounds, beatLength: number) {
         super();
         let triangle = new PIXI.Graphics();
-        let scale = random(3, 3.2);
+        let scale = random(2, 3.2);
         let angle = Math.random() * 2 * Math.PI;
         let randomRadius = Math.sqrt(Math.random());
         triangle.moveTo(0, 0);
