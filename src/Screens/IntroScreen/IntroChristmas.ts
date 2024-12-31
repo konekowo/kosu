@@ -167,7 +167,7 @@ export class IntroChristmas extends Screen {
                 let mask = new PIXI.Graphics();
                 mask.circle(0,0,475);
                 mask.fill({color:"white"});
-                mask.scale = 1;
+                mask.scale = Screen.getScaleBasedOffScreenSize() * 1.35;
                 this.logoContainer.addChild(mask);
                 this.triangles.mask = mask;
                 this.logoContainer.addChild(this.triangles);
