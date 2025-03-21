@@ -380,6 +380,9 @@
   <data name="show.daily_challenge.daily_streak_current" xml:space="preserve">
     <value>Aktualna Dzienna Seria</value>
   </data>
+  <data name="show.daily_challenge.playcount" xml:space="preserve">
+    <value>Łączny udział</value>
+  </data>
   <data name="show.daily_challenge.title" xml:space="preserve">
     <value>Wyzwanie Dnia</value>
   </data>
@@ -429,7 +432,7 @@
     <value>Możesz także upuścić swoje tło tutaj, aby je dodać</value>
   </data>
   <data name="show.edit.cover.upload.size_info" xml:space="preserve">
-    <value>Rozmiary tła powinny wynosić przynajmniej 2400x640</value>
+    <value>Rozmiary tła powinny wynosić przynajmniej 2800x620</value>
   </data>
   <data name="show.edit.cover.upload.too_large" xml:space="preserve">
     <value>Plik jest zbyt duży.</value>

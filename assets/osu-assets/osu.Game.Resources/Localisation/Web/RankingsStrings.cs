@@ -105,6 +105,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString TypeSeasons => new TranslatableString(getKey(@"type.seasons"), @"seasons");
 
         /// <summary>
+        /// "team"
+        /// </summary>
+        public static LocalisableString TypeTeam => new TranslatableString(getKey(@"type.team"), @"team");
+
+        /// <summary>
         /// "There are no rooms in this season yet."
         /// </summary>
         public static LocalisableString SeasonsEmpty => new TranslatableString(getKey(@"seasons.empty"), @"There are no rooms in this season yet.");
@@ -123,6 +128,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Display more informations on that season."
         /// </summary>
         public static LocalisableString SeasonsUrl => new TranslatableString(getKey(@"seasons.url"), @"Display more informations on that season.");
+
+        /// <summary>
+        /// "there is not enough score factors for proper calculation"
+        /// </summary>
+        public static LocalisableString SeasonsValidationNotEnoughFactors => new TranslatableString(getKey(@"seasons.validation.not_enough_factors"), @"there is not enough score factors for proper calculation");
 
         /// <summary>
         /// "End Date"
@@ -158,6 +168,16 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Country"
         /// </summary>
         public static LocalisableString StatCountry => new TranslatableString(getKey(@"stat.country"), @"Country");
+
+        /// <summary>
+        /// "Division"
+        /// </summary>
+        public static LocalisableString StatDivision => new TranslatableString(getKey(@"stat.division"), @"Division");
+
+        /// <summary>
+        /// "Members"
+        /// </summary>
+        public static LocalisableString StatMembers => new TranslatableString(getKey(@"stat.members"), @"Members");
 
         /// <summary>
         /// "Play Count"

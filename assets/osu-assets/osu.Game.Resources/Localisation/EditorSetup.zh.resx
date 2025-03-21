@@ -122,7 +122,7 @@
     <value>物件出现的速度</value>
   </data>
   <data name="overall_difficulty_description" xml:space="preserve">
-    <value>判定严格度和一些特殊物件的难度（如转盘）</value>
+    <value>判定严格度和一些特殊物件的难度(如转盘)</value>
   </data>
   <data name="tick_rate" xml:space="preserve">
     <value>滑条点倍率</value>
@@ -165,6 +165,15 @@
   </data>
   <data name="click_to_select_background" xml:space="preserve">
     <value>点击选择背景图片</value>
+  </data>
+  <data name="application_scope_selection_title" xml:space="preserve">
+    <value>将此更改应用到所有难度？</value>
+  </data>
+  <data name="apply_to_all_difficulties" xml:space="preserve">
+    <value>应用到所有难度</value>
+  </data>
+  <data name="apply_to_this_difficulty" xml:space="preserve">
+    <value>仅应用到这个难度</value>
   </data>
   <data name="ruleset" xml:space="preserve">
     <value>({0}) 模式</value>
