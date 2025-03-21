@@ -14,7 +14,7 @@ export class InteractScreen extends Screen {
     private readonly textContainerContainer = new PIXI.Container();
 
     private readonly introTrack: Blob;
-    private clickSound: AudioBuffer;
+    private readonly clickSound: AudioBuffer;
 
     private readonly clickArea: PIXI.Graphics = new PIXI.Graphics();
 

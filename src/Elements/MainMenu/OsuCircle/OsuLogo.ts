@@ -54,7 +54,7 @@ export class OsuLogo extends PIXI.Container {
         this.outline.anchor.set(0.5, 0.5);
         //approximation of size in actual osu!lazer
         let scale = 0.7;
-        this.visualizer.scale.set(scale);
+        this.visualizer.scale.set(scale + 0.05);
         this.visualizer.pivot.set(LogoVisualizer.size/2, LogoVisualizer.size/2);
         this.visualizer.alpha = this.defaultVisualizerAlpha;
 
