@@ -5,7 +5,6 @@ import {Main} from "../../main";
 import {IntroScreen} from "../IntroScreen/IntroScreen";
 import * as TWEEN from "@tweenjs/tween.js";
 import {Ease} from "../../Util/TweenWrapper/Ease";
-import {IntroChristmas} from "../IntroScreen/IntroChristmas";
 
 export class InteractScreen extends Screen {
 
@@ -69,7 +68,7 @@ export class InteractScreen extends Screen {
         const clicked = () => {
             this.clickArea.eventMode = "none";
             Main.AudioEngine.PlayEffect(this.clickSound);
-            Main.switchScreen(new IntroChristmas(this.introTrack));
+            Main.switchScreen(new IntroScreen(this.introTrack));
             document.body.style.cursor = "none";
             Main.pointerLock();
             Main.lockKeyboard();

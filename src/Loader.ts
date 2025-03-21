@@ -8,7 +8,7 @@ export class Loader {
 
     private static addToLoadList() {
         // intro and interaction screen
-        this.loadList.push({id: "introTrianglesTrack", url: "assets/osu-assets/osu.Game.Resources/Tracks/christmas2024.osz"});
+        this.loadList.push({id: "introTrianglesTrack", url: "assets/osu-assets/osu.Game.Resources/Tracks/triangles.osz"});
         this.loadList.push({id: "sample_dialog_ok", url: "assets/osu-assets/osu.Game.Resources/Samples/UI/dialog-ok-select.wav", isAudio: true});
         this.loadList.push({id: "TorusRegular", url: "assets/fonts/TorusRegular.otf", pixiBundleName: "fonts"});
         this.loadList.push({id: "TorusLight", url: "assets/fonts/TorusLight.otf", pixiBundleName: "fonts"});

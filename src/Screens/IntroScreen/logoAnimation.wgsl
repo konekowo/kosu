@@ -49,11 +49,11 @@ struct ProgressUniform {
 @fragment
 fn mainFrag(@location(0) vUV: vec2<f32>, @location(1) vColor: vec4<f32>) -> @location(0) vec4<f32> {
     let color: vec4<f32> = textureSample(uTexture, uSampler, vUV);
-    let a: f32 = color.a;
-    let _vColor: vec4<f32> = smoothstep(0.88, 1.0, color.a) * vColor;
+    let current: f32 = color.r;
+    let alpha: f32 = color.g;
     var outColor: vec4<f32> = vec4<f32>(0.0);
-    if (color.r < uProgress.progress) {
-        outColor = vec4<f32>(_vColor.rgb * a, a);
+    if (current < uProgress.progress) {
+        outColor = vec4<f32>(vColor.rgb * alpha * alpha, alpha);
     }
     return outColor;
 };
