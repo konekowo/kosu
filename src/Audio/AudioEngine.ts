@@ -17,8 +17,12 @@ export class AudioEngine {
     public constructor() {
         this.audioContext = new AudioContext();
         this._playingAudios = new PlayingAudios();
+        let startTime = Date.now();
         Main.app.ticker.add(() => {
-            this.update();
+            if (Date.now() - startTime > 50) {
+                this.update();
+                startTime = Date.now();
+            }
         });
     }
 
