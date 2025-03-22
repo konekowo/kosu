@@ -1,6 +1,6 @@
 import "./style.css";
 import {Application, EventSystem} from "pixi.js";
-import {Main} from "./main";
+import {Main} from "./Main";
 import {Settings} from "./Settings/Settings";
 import {Renderer} from "./Settings/impl/Graphics/Renderer";
 import {MouseSensitivity} from "./Settings/impl/Input/MouseSensitivity";

@@ -2,7 +2,7 @@ import {Screen} from "../Screen";
 import * as PIXI from "pixi.js";
 import {Ticker} from "pixi.js";
 import {unzip} from 'unzipit';
-import {Main} from "../../main";
+import {Main} from "../../Main";
 import {GlitchingTriangles} from "./GlitchingTriangles";
 import {MainMenu} from "../MainMenu/MainMenu";
 import {LazerLogo} from "./LazerLogo";

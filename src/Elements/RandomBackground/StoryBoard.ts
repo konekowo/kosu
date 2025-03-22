@@ -1,7 +1,7 @@
 import * as PIXI from "pixi.js";
 import {DestroyOptions} from "pixi.js";
 import {BackgroundContainer} from "./Background";
-import {Main} from "../../main";
+import {Main} from "../../Main";
 import {BeatmapData} from "../../Util/Beatmap/Data/BeatmapData";
 import {Audio} from "../../Audio/Audio";
 

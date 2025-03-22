@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {Main} from "../../../main";
+import {Main} from "../../../Main";
 import glVertShader from "./osuCircleTriangles.vert";
 import glFragShader from "./osuCircleTriangles.frag";
 import gpuShader from "./osuCircleTriangles.wgsl";

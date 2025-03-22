@@ -1,7 +1,7 @@
 import * as PIXI from "pixi.js";
 import {Loader} from "../../Loader";
 import {Screen} from "../../Screens/Screen";
-import {Main} from "../../main";
+import {Main} from "../../Main";
 import {Background, BackgroundContainer} from "./Background";
 import {EventTypes} from "../../Util/Beatmap/Data/Sections/Events/EventTypes";
 import {EventVideo} from "../../Util/Beatmap/Data/Sections/Events/EventVideo";

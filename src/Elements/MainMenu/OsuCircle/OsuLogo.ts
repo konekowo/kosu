@@ -2,7 +2,7 @@ import * as PIXI from "pixi.js";
 import {Triangles} from "./Triangles";
 import * as TWEEN from "@tweenjs/tween.js";
 import {Ease} from "../../../Util/TweenWrapper/Ease";
-import {Main} from "../../../main";
+import {Main} from "../../../Main";
 import {Loader} from "../../../Loader";
 import {ButtonSystem} from "./Menu/ButtonSystem";
 import {MenuLogoVisualizer} from "../../AudioVisualizers/impl/MenuLogoVisualizer";

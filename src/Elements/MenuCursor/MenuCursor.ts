@@ -1,5 +1,5 @@
 import * as PIXI from "pixi.js";
-import {Main} from "../../main";
+import {Main} from "../../Main";
 import {Loader} from "../../Loader";
 import {MathUtil} from "../../Util/MathUtil";
 import {Screen} from "../../Screens/Screen";

@@ -1,7 +1,7 @@
 import {Screen} from "../Screen";
 import * as PIXI from "pixi.js";
 import {Ticker} from "pixi.js";
-import {Main} from "../../main";
+import {Main} from "../../Main";
 import {IntroScreen} from "../IntroScreen/IntroScreen";
 import * as TWEEN from "@tweenjs/tween.js";
 import {Ease} from "../../Util/TweenWrapper/Ease";

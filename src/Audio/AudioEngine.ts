@@ -1,7 +1,7 @@
 import {PlayingAudios} from "./PlayingAudios";
 import {Audio, MapAudio} from "./Audio";
 import {BeatmapData} from "../Util/Beatmap/Data/BeatmapData";
-import {Main} from "../main";
+import {Main} from "../Main";
 import {UnInheritedTimingPoint} from "../Util/Beatmap/Data/Sections/TimingPoints/UnInheritedTimingPoint";
 import {Effect} from "../Util/Beatmap/Data/Sections/TimingPoints/Effect";
 

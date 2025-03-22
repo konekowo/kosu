@@ -1,4 +1,4 @@
-import {Main} from "../../main";
+import {Main} from "../../Main";
 import {MapAudio} from "../../Audio/Audio";
 import * as PIXI from "pixi.js";
 import {MathUtil} from "../../Util/MathUtil";

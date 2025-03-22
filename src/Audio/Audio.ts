@@ -1,5 +1,5 @@
 import {BeatmapData} from "../Util/Beatmap/Data/BeatmapData";
-import {Main} from "../main";
+import {Main} from "../Main";
 import {EventTypes} from "../Util/Beatmap/Data/Sections/Events/EventTypes";
 import {EventVideo} from "../Util/Beatmap/Data/Sections/Events/EventVideo";
 
