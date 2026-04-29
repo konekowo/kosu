@@ -5,6 +5,8 @@ import {Settings} from "./Settings/Settings";
 import {Renderer} from "./Settings/impl/Graphics/Renderer";
 import {MouseSensitivity} from "./Settings/impl/Input/MouseSensitivity";
 import {UIScale} from "./Settings/impl/Graphics/UIScale";
+import init from "@mercuryworkshop/epoxy-tls/epoxy";
+
 Settings.registerAll();
 Settings.load();
 const gameWidth = window.innerWidth;
@@ -14,19 +16,20 @@ const app = new Application();
 // @ts-ignore
 globalThis.__PIXI_APP__ = app;
 window.onload = async (): Promise<void> => {
-    // @ts-ignore
-    const renderer = Settings.getSetting(Renderer).getValue().value as "webgl" | "webgpu";
-    app.init({
-        backgroundColor: "black",
-        width: gameWidth,
-        height: gameHeight,
-        antialias: true,
-        preference: renderer,
-        resolution: window.devicePixelRatio,
-        autoDensity: true
-    }).then(() => {
-        new Main(app);
-    });
+    init().then(() => {
+        const renderer = Settings.getSetting(Renderer).getValue().value as "webgl" | "webgpu";
+        app.init({
+            backgroundColor: "black",
+            width: gameWidth,
+            height: gameHeight,
+            antialias: true,
+            preference: renderer,
+            resolution: window.devicePixelRatio,
+            autoDensity: true
+        }).then(() => {
+            new Main(app);
+        });
+    })
 };
 
 navigator.mediaSession.setActionHandler('play', () => {Main.AudioEngine.GetCurrentPlayingMusicNoSilent()?.Play();});

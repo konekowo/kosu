@@ -1,13 +1,20 @@
-import * as webpack from "webpack";
-import * as path from "path";
+import webpack from "webpack";
+import path from "path";
 import fs from "fs";
+import { fileURLToPath } from "url";
 
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import ESLintPlugin from "eslint-webpack-plugin";
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, "package.json"), "utf-8"));
 
-module.exports = () => {
+// recreate __filename / __dirname for ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const pkg = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "package.json"), "utf-8")
+);
+
+export default () => {
     const devConfig = {
         mode: "development",
 
@@ -23,7 +30,7 @@ module.exports = () => {
             },
             headers: {
                 "Cross-Origin-Opener-Policy": "same-origin",
-                "Cross-Origin-Embedder-Policy": "require-corp"
+                "Cross-Origin-Embedder-Policy": "require-corp",
             },
         },
 

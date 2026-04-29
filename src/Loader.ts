@@ -1,4 +1,5 @@
 import * as PIXI from "pixi.js";
+import { EpoxyClient, EpoxyClientOptions, EpoxyHandlers } from "@mercuryworkshop/epoxy-tls/epoxy";
 
 export class Loader {
     private static loadList: LoaderObject[] = [];
@@ -76,22 +77,40 @@ export class Loader {
     }
 
     private static addBackgrounds() {
-        return new Promise<void>(resolve => {
+        return new Promise<void>(async resolve => {
             for (let i = 1; i < this.defaultBackgroundsNum + 1; i++) {
                 this.loadList.push({id: "default_bg"+i, url: "assets/osu-assets/osu.Game.Resources/Textures/Menu/menu-background-"+i+".jpg", pixiBundleName: "textures"});
             }
-            fetch("https://corsproxy.io/?url="+ encodeURIComponent("https://osu.ppy.sh/api/v2/seasonal-backgrounds"))
-                .then(res => res.json()).then(res => {
-                res.backgrounds.forEach((background: any, index: number) => {
-                    this.loadList.push({id: "seasonal_bg"+(index+1), url: "https://corsproxy.io/?url="+ encodeURIComponent(background.url),
-                        pixiBundleName: "textures", loadParser: "loadTextures"});
-                    this.seasonalBackgroundsNum = index+1;
-                });
+
+            try {
+                const options = new EpoxyClientOptions();
+                options.user_agent = navigator.userAgent;
+                options.wisp_v2 = true;
+                options.udp_extension_required = true;
+
+                const client = new EpoxyClient("wss://anura.pro", options);
+
+                const res = await client.fetch("https://osu.ppy.sh/api/v2/seasonal-backgrounds", {});
+                const json = await res.json();
+
+                for (const background of json.backgrounds) {
+                    const index: number = json.backgrounds.indexOf(background);
+                    const res = await client.fetch(background.url, {});
+                    const blobURL = URL.createObjectURL(await res.blob());
+
+                    this.loadList.push({
+                        id: "seasonal_bg" + (index + 1), url: blobURL,
+                        pixiBundleName: "textures", loadParser: "loadTextures"
+                    });
+
+                    this.seasonalBackgroundsNum = index + 1;
+                }
+
                 resolve();
-            }).catch(error => {
+            } catch (error) {
                 console.warn("Could not fetch seasonal backgrounds.", error);
                 resolve();
-            });
+            }
         });
     }
 

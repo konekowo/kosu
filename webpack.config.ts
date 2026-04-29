@@ -1,15 +1,20 @@
 /* eslint-disable */
 
-const path = require("path");
+import path from "path";
+import { fileURLToPath } from "url";
 
-const merge = require("webpack-merge").merge;
+import { merge } from "webpack-merge";
 
 // plugins
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import CopyPlugin from "copy-webpack-plugin";
 
-module.exports = (env: { mode: "development" | "production" }) => {
+// recreate __filename / __dirname for ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default async (env: { mode: "development" | "production" }) => {
     const config = {
         entry: "./src/index.ts",
 
@@ -28,9 +33,14 @@ module.exports = (env: { mode: "development" | "production" }) => {
                         "css-loader",
                     ],
                 },
-                { test: /\.(glsl|vs|fs|vert|frag|wgsl|txt)$/, exclude: /node_modules/, use: [ 'raw-loader' ] }
+                {
+                    test: /\.(glsl|vs|fs|vert|frag|wgsl|txt)$/,
+                    exclude: /node_modules/,
+                    use: ["raw-loader"],
+                },
             ],
         },
+
         optimization: {
             splitChunks: {
                 chunks: "all",
@@ -40,22 +50,25 @@ module.exports = (env: { mode: "development" | "production" }) => {
         plugins: [
             new HtmlWebpackPlugin({
                 title: "kosu!",
-                favicon: "assets/favicon.png"
+                favicon: "assets/favicon.png",
             }),
+
             new CopyPlugin({
                 patterns: [
                     {
                         from: "assets/**",
 
-                        // if there are nested subdirectories , keep the hierarchy
-                        to({ absoluteFilename }: { absoluteFilename: string }) {
+                        to(pathData) {
                             const assetsPath = path.resolve(__dirname, "assets");
 
-                            if (!absoluteFilename) {
-                                throw Error();
+                            if (!pathData.absoluteFilename) {
+                                throw new Error();
                             }
 
-                            const endPath = absoluteFilename.slice(assetsPath.length);
+                            const endPath =
+                                pathData.absoluteFilename.slice(
+                                    assetsPath.length
+                                );
 
                             return Promise.resolve(`assets/${endPath}`);
                         },
@@ -64,11 +77,14 @@ module.exports = (env: { mode: "development" | "production" }) => {
             }),
         ],
     };
+
     const isDev = env.mode === "development";
-    const webpackConfigFile = isDev ? "webpack.dev.ts" : "webpack.prod.ts";
-    const envConfig = require(path.resolve(__dirname, webpackConfigFile))();
+    const webpackConfigFile = isDev
+        ? "./webpack.dev.ts"
+        : "./webpack.prod.ts";
 
-    const mergedConfig = merge(config, envConfig);
+    const envModule = await import(webpackConfigFile);
+    const envConfig = envModule.default();
 
-    return mergedConfig;
+    return merge(config, envConfig);
 };
