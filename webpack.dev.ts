@@ -25,7 +25,7 @@ export default () => {
             client: {
                 overlay: {
                     warnings: false,
-                    errors: true,
+                    errors: false,
                 },
             },
             headers: {
