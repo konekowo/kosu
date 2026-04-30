@@ -107,7 +107,6 @@ export class Loader {
                 }
 
                 client.free()
-                options.free()
 
                 resolve();
             } catch (error) {
