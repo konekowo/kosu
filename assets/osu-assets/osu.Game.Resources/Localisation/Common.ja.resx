@@ -76,6 +76,9 @@
   <data name="default" xml:space="preserve">
     <value>既定</value>
   </data>
+  <data name="rename" xml:space="preserve">
+    <value>名前の変更</value>
+  </data>
   <data name="export" xml:space="preserve">
     <value>出力</value>
   </data>
@@ -159,5 +162,17 @@
   </data>
   <data name="copy_link" xml:space="preserve">
     <value>リンクをコピー</value>
+  </data>
+  <data name="manage" xml:space="preserve">
+    <value>管理...</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>詳細...</value>
+  </data>
+  <data name="mapper" xml:space="preserve">
+    <value>マッパー</value>
+  </data>
+  <data name="delete_with_confrmation" xml:space="preserve">
+    <value>削除…</value>
   </data>
 </root>

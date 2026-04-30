@@ -110,10 +110,10 @@
     <value>Marking as read...</value>
   </data>
   <data name="post.confirm_destroy" xml:space="preserve">
-    <value>Really delete post?</value>
+    <value>Are you sure you want to delete this post?</value>
   </data>
   <data name="post.confirm_restore" xml:space="preserve">
-    <value>Really restore post?</value>
+    <value>Are you sure you want to restore this post?</value>
   </data>
   <data name="post.edited" xml:space="preserve">
     <value>Last edited by {0} {1}, edited {2} time in total.|Last edited by {0} {1}, edited {2} times in total.</value>
@@ -155,10 +155,10 @@
     <value>{0} posts total</value>
   </data>
   <data name="topic.confirm_destroy" xml:space="preserve">
-    <value>Really delete topic?</value>
+    <value>Are you sure you want to delete this topic?</value>
   </data>
   <data name="topic.confirm_restore" xml:space="preserve">
-    <value>Really restore topic?</value>
+    <value>Are you sure you want to restore this topic?</value>
   </data>
   <data name="topic.deleted" xml:space="preserve">
     <value>deleted topic</value>
@@ -459,114 +459,6 @@
   </data>
   <data name="topics.index.views" xml:space="preserve">
     <value>views</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0" xml:space="preserve">
-    <value>Remove "added" tag</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0_done" xml:space="preserve">
-    <value>Removed "added" tag</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1" xml:space="preserve">
-    <value>Add "added" tag</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1_done" xml:space="preserve">
-    <value>Added "added" tag</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0" xml:space="preserve">
-    <value>Remove "assigned" tag</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0_done" xml:space="preserve">
-    <value>Removed "assigned" tag</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1" xml:space="preserve">
-    <value>Add "assigned" tag</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1_done" xml:space="preserve">
-    <value>Added "assigned" tag</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0" xml:space="preserve">
-    <value>Remove "confirmed" tag</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0_done" xml:space="preserve">
-    <value>Removed "confirmed" tag</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1" xml:space="preserve">
-    <value>Add "confirmed" tag</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1_done" xml:space="preserve">
-    <value>Added "confirmed" tag</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0" xml:space="preserve">
-    <value>Remove "duplicate" tag</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0_done" xml:space="preserve">
-    <value>Removed "duplicate" tag</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1" xml:space="preserve">
-    <value>Add "duplicate" tag</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1_done" xml:space="preserve">
-    <value>Added "duplicate" tag</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0" xml:space="preserve">
-    <value>Remove "invalid" tag</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0_done" xml:space="preserve">
-    <value>Removed "invalid" tag</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1" xml:space="preserve">
-    <value>Add "invalid" tag</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1_done" xml:space="preserve">
-    <value>Added "invalid" tag</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0" xml:space="preserve">
-    <value>Remove "resolved" tag</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0_done" xml:space="preserve">
-    <value>Removed "resolved" tag</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1" xml:space="preserve">
-    <value>Add "resolved" tag</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1_done" xml:space="preserve">
-    <value>Added "resolved" tag</value>
-  </data>
-  <data name="topics.issue_tag_osulazer.to_0" xml:space="preserve">
-    <value>Remove "osu!lazer" tag</value>
-  </data>
-  <data name="topics.issue_tag_osulazer.to_0_done" xml:space="preserve">
-    <value>Removed "osu!lazer" tag</value>
-  </data>
-  <data name="topics.issue_tag_osulazer.to_1" xml:space="preserve">
-    <value>Add "osu!lazer" tag</value>
-  </data>
-  <data name="topics.issue_tag_osulazer.to_1_done" xml:space="preserve">
-    <value>Added "osu!lazer" tag</value>
-  </data>
-  <data name="topics.issue_tag_osustable.to_0" xml:space="preserve">
-    <value>Remove "osu!stable" tag</value>
-  </data>
-  <data name="topics.issue_tag_osustable.to_0_done" xml:space="preserve">
-    <value>Removed "osu!stable" tag</value>
-  </data>
-  <data name="topics.issue_tag_osustable.to_1" xml:space="preserve">
-    <value>Add "osu!stable" tag</value>
-  </data>
-  <data name="topics.issue_tag_osustable.to_1_done" xml:space="preserve">
-    <value>Added "osu!stable" tag</value>
-  </data>
-  <data name="topics.issue_tag_osuweb.to_0" xml:space="preserve">
-    <value>Remove "osu!web" tag</value>
-  </data>
-  <data name="topics.issue_tag_osuweb.to_0_done" xml:space="preserve">
-    <value>Removed "osu!web" tag</value>
-  </data>
-  <data name="topics.issue_tag_osuweb.to_1" xml:space="preserve">
-    <value>Add "osu!web" tag</value>
-  </data>
-  <data name="topics.issue_tag_osuweb.to_1_done" xml:space="preserve">
-    <value>Added "osu!web" tag</value>
   </data>
   <data name="topics.lock.is_locked" xml:space="preserve">
     <value>This topic is locked and can not be replied to</value>

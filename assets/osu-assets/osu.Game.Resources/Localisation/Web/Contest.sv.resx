@@ -67,6 +67,9 @@
   <data name="index.nav_title" xml:space="preserve">
     <value>listning</value>
   </data>
+  <data name="judge.comments" xml:space="preserve">
+    <value>kommentarer</value>
+  </data>
   <data name="judge.hide_judged" xml:space="preserve">
     <value>dölj bedömda bidrag</value>
   </data>
@@ -97,8 +100,14 @@
   <data name="judge_results.score" xml:space="preserve">
     <value>Poäng</value>
   </data>
+  <data name="judge_results.score_std" xml:space="preserve">
+    <value>Standardiserad poäng</value>
+  </data>
   <data name="judge_results.total_score" xml:space="preserve">
     <value>total poäng</value>
+  </data>
+  <data name="judge_results.total_score_std" xml:space="preserve">
+    <value>total standardiserad poäng</value>
   </data>
   <data name="voting.judge_link" xml:space="preserve">
     <value>Du är domare i denna tävling. Bedöm bidragen här!</value>
@@ -151,15 +160,6 @@
   <data name="entry.download" xml:space="preserve">
     <value>Ladda ner .osz</value>
   </data>
-  <data name="entry.wrong_type.art" xml:space="preserve">
-    <value>Endast .jpg- och .png-filer är tillåtna i denna tävling.</value>
-  </data>
-  <data name="entry.wrong_type.beatmap" xml:space="preserve">
-    <value>Endast .osu-filer är tillåtna i denna tävling.</value>
-  </data>
-  <data name="entry.wrong_type.music" xml:space="preserve">
-    <value>Endast .mp3-filer är tillåtna i denna tävling.</value>
-  </data>
   <data name="entry.wrong_dimensions" xml:space="preserve">
     <value>Bidrag för denna tävling måste vara {0}{1}</value>
   </data>
@@ -177,6 +177,9 @@
   </data>
   <data name="vote.points" xml:space="preserve">
     <value>{0} poäng|{0} poäng</value>
+  </data>
+  <data name="vote.points_float" xml:space="preserve">
+    <value>{0} poäng</value>
   </data>
   <data name="dates.ended" xml:space="preserve">
     <value>Avslutad {0}</value>
@@ -198,5 +201,8 @@
   </data>
   <data name="states.results" xml:space="preserve">
     <value>Resultat ute</value>
+  </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Visa information och poster</value>
   </data>
 </root>

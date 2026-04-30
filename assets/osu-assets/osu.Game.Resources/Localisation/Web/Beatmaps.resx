@@ -499,6 +499,9 @@
   <data name="listing.search.options" xml:space="preserve">
     <value>More Search Options</value>
   </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>Profile top rank counts and results shown on this page are based on your highest "standardised" (aka "lazer") scores on beatmaps.</value>
+  </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
     <value>Filtering by {0} requires an active osu!supporter tag</value>
   </data>
@@ -570,6 +573,12 @@
   </data>
   <data name="listing.search.supporter_filter_quote.link_text" xml:space="preserve">
     <value>osu!supporter tag</value>
+  </data>
+  <data name="listing.search.tag_picker.tooltip" xml:space="preserve">
+    <value>browse user tags</value>
+  </data>
+  <data name="listing.search.tag_picker.prompt" xml:space="preserve">
+    <value>type to search</value>
   </data>
   <data name="general.converts" xml:space="preserve">
     <value>Include converted beatmaps</value>

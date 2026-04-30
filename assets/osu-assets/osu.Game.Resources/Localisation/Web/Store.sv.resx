@@ -145,6 +145,9 @@
   <data name="invoice.echeck_delay" xml:space="preserve">
     <value>Eftersom din betalning var en eCheck, vänligen tillåt upp till 10 extra dagar för betalningen att accepteras via PayPal! </value>
   </data>
+  <data name="invoice.echeck_denied" xml:space="preserve">
+    <value>eCheck-betalningen avvisades av PayPal.</value>
+  </data>
   <data name="invoice.hide_from_activity" xml:space="preserve">
     <value>osu!supporter taggar i denna ordning visas inte i dina senaste aktiviteter.</value>
   </data>
@@ -336,6 +339,9 @@
   </data>
   <data name="product.notify" xml:space="preserve">
     <value>Notifiera mig när den är tillgänglig!</value>
+  </data>
+  <data name="product.out_of_stock" xml:space="preserve">
+    <value>Ej i lager</value>
   </data>
   <data name="product.notification_success" xml:space="preserve">
     <value>du kommer bli notifierad när vi har mer i lager. klicka {0} för att avbryta</value>

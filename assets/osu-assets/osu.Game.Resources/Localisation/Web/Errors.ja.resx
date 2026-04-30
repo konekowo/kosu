@@ -67,6 +67,9 @@
   <data name="no_restricted_access" xml:space="preserve">
     <value>アカウントが制限されている状態では実行できません。</value>
   </data>
+  <data name="param_too_large" xml:space="preserve">
+    <value>{0}パラメータは最大{1}個の項目を持つことができます|{0}パラメータは最大{1}個の項目を持つことができます</value>
+  </data>
   <data name="supporter_only" xml:space="preserve">
     <value>osu!サポーター限定の機能です。</value>
   </data>
@@ -87,12 +90,6 @@
   </data>
   <data name="account.profile-order.generic" xml:space="preserve">
     <value>エラーが発生しました。ページの更新をすると直る可能性があります。</value>
-  </data>
-  <data name="beatmaps.invalid_mode" xml:space="preserve">
-    <value>無効なモードが選択されました。</value>
-  </data>
-  <data name="beatmaps.standard_converts_only" xml:space="preserve">
-    <value>このビートマップの難易度には要求されたモードのスコアはありません。</value>
   </data>
   <data name="checkout.generic" xml:space="preserve">
     <value>支払い準備中にエラーが発生しました。</value>

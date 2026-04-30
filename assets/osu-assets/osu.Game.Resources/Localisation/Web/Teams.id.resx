@@ -70,11 +70,14 @@
   <data name="applications.store.ok" xml:space="preserve">
     <value>Permintaan bergabung dikirim.</value>
   </data>
+  <data name="card.members" xml:space="preserve">
+    <value>{0} anggota|{0} anggota</value>
+  </data>
   <data name="create.submit" xml:space="preserve">
     <value>Buat Tim</value>
   </data>
   <data name="create.form.name_help" xml:space="preserve">
-    <value>Nama tim kamu. Nama ini bersifat permanen untuk saat ini.</value>
+    <value>Nama tim kamu. Nama ini akan bersifat permanen untuk saat ini.</value>
   </data>
   <data name="create.form.short_name_help" xml:space="preserve">
     <value>Maksimum 4 karakter.</value>
@@ -83,13 +86,13 @@
     <value>Mari bentuk tim baru</value>
   </data>
   <data name="create.intro.description" xml:space="preserve">
-    <value>Bermainlah bersama teman-temanmu; baik itu yang sudah akrab denganmu atau yang baru kamu kenal. Kamu saat ini tidak tergabung di dalam tim. Bergabunglah dengan tim yang sudah ada dengan mengunjungi halaman tim mereka atau buat tim kamu sendiri dari halaman ini.</value>
+    <value>Bermainlah bersama teman-temanmu; baik yang sudah akrab atau yang baru kamu kenal. Kamu tidak sedang berada di dalam tim. Bergabunglah dengan tim yang sudah ada dengan mengunjungi halaman tim mereka atau buat tim kamu sendiri dari halaman ini.</value>
   </data>
   <data name="create.intro.title" xml:space="preserve">
     <value>Tim!</value>
   </data>
   <data name="destroy.ok" xml:space="preserve">
-    <value>Tim dihapus</value>
+    <value>Tim dihapus.</value>
   </data>
   <data name="edit.ok" xml:space="preserve">
     <value>Pengaturan berhasil disimpan.</value>
@@ -107,7 +110,7 @@
     <value>Bendera Tim</value>
   </data>
   <data name="edit.flag.title" xml:space="preserve">
-    <value>Atur Bendera Tim</value>
+    <value>Pasang Bendera Tim</value>
   </data>
   <data name="edit.header.label" xml:space="preserve">
     <value>Gambar Tajuk</value>
@@ -157,26 +160,44 @@
   <data name="members.index.title" xml:space="preserve">
     <value>Kelola Anggota</value>
   </data>
+  <data name="members.index.applications.accept_confirm" xml:space="preserve">
+    <value>Tambahkan pengguna {0} ke tim?</value>
+  </data>
+  <data name="members.index.applications.created_at" xml:space="preserve">
+    <value>Diminta Pada</value>
+  </data>
   <data name="members.index.applications.empty" xml:space="preserve">
     <value>Tidak ada permintaan untuk bergabung pada saat ini.</value>
   </data>
   <data name="members.index.applications.empty_slots" xml:space="preserve">
     <value>Slot yang tersedia</value>
   </data>
+  <data name="members.index.applications.empty_slots_overflow" xml:space="preserve">
+    <value>{0} kelebihan pengguna|{0} kelebihan pengguna</value>
+  </data>
+  <data name="members.index.applications.reject_confirm" xml:space="preserve">
+    <value>Tolak permintaan bergabung dari pengguna {0}?</value>
+  </data>
   <data name="members.index.applications.title" xml:space="preserve">
     <value>Permintaan Bergabung</value>
-  </data>
-  <data name="members.index.applications.created_at" xml:space="preserve">
-    <value>Diminta Pada</value>
-  </data>
-  <data name="members.index.table.status" xml:space="preserve">
-    <value>Status</value>
   </data>
   <data name="members.index.table.joined_at" xml:space="preserve">
     <value>Tanggal Bergabung</value>
   </data>
   <data name="members.index.table.remove" xml:space="preserve">
     <value>Keluarkan</value>
+  </data>
+  <data name="members.index.table.remove_confirm" xml:space="preserve">
+    <value>Keluarkan pengguna {0} dari tim?</value>
+  </data>
+  <data name="members.index.table.set_leader" xml:space="preserve">
+    <value>Pindahkan kepemimpinan tim</value>
+  </data>
+  <data name="members.index.table.set_leader_confirm" xml:space="preserve">
+    <value>Pindahkan kepemimpinan tim ke pengguna {0}?</value>
+  </data>
+  <data name="members.index.table.status" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="members.index.table.title" xml:space="preserve">
     <value>Anggota Saat Ini</value>
@@ -187,11 +208,14 @@
   <data name="members.index.status.status_1" xml:space="preserve">
     <value>Aktif</value>
   </data>
+  <data name="members.set_leader.success" xml:space="preserve">
+    <value>Pengguna {0} sekarang adalah ketua tim.</value>
+  </data>
   <data name="part.ok" xml:space="preserve">
     <value>Tinggalkan tim ;_;</value>
   </data>
   <data name="show.bar.chat" xml:space="preserve">
-    <value>Percakapan Tim</value>
+    <value>Obrolan Tim</value>
   </data>
   <data name="show.bar.destroy" xml:space="preserve">
     <value>Bubarkan Tim</value>
@@ -214,13 +238,31 @@
   <data name="show.members.owner" xml:space="preserve">
     <value>Ketua Tim</value>
   </data>
+  <data name="show.sections.about" xml:space="preserve">
+    <value>Tentang Kami!</value>
+  </data>
   <data name="show.sections.info" xml:space="preserve">
     <value>Info</value>
   </data>
   <data name="show.sections.members" xml:space="preserve">
     <value>Anggota</value>
   </data>
+  <data name="show.statistics.empty_slots" xml:space="preserve">
+    <value>{0} slot tersedia|{0} slot tersedia</value>
+  </data>
+  <data name="show.statistics.first_places" xml:space="preserve">
+    <value>Peringkat pertama</value>
+  </data>
+  <data name="show.statistics.leader" xml:space="preserve">
+    <value>Ketua Tim</value>
+  </data>
+  <data name="show.statistics.rank" xml:space="preserve">
+    <value>Peringkat</value>
+  </data>
+  <data name="show.statistics.ranked_beatmapsets" xml:space="preserve">
+    <value>Beatmap Ranked</value>
+  </data>
   <data name="store.ok" xml:space="preserve">
-    <value>Tim telah dibuat.</value>
+    <value>Tim dibuat.</value>
   </data>
 </root>

@@ -100,8 +100,14 @@
   <data name="judge_results.score" xml:space="preserve">
     <value>Scor</value>
   </data>
+  <data name="judge_results.score_std" xml:space="preserve">
+    <value>Scor Standardizat</value>
+  </data>
   <data name="judge_results.total_score" xml:space="preserve">
     <value>scor total</value>
+  </data>
+  <data name="judge_results.total_score_std" xml:space="preserve">
+    <value>scor standardizat total</value>
   </data>
   <data name="voting.judge_link" xml:space="preserve">
     <value>Sunteți un evaluator al acestui concurs. Evaluați intrările aici!</value>
@@ -154,15 +160,6 @@
   <data name="entry.download" xml:space="preserve">
     <value>Descarcă .osz</value>
   </data>
-  <data name="entry.wrong_type.art" xml:space="preserve">
-    <value>Numai fișierele de tip .jpg și .png sunt acceptate pentru acest concurs.</value>
-  </data>
-  <data name="entry.wrong_type.beatmap" xml:space="preserve">
-    <value>Numai fișierele de tip .osu sunt acceptate pentru acest concurs.</value>
-  </data>
-  <data name="entry.wrong_type.music" xml:space="preserve">
-    <value>Numai fișierele de tip .mp3 sunt acceptate pentru acest concurs.</value>
-  </data>
   <data name="entry.wrong_dimensions" xml:space="preserve">
     <value>Intrările pentru acest concurs trebuie să fie {0}{1}</value>
   </data>
@@ -180,6 +177,9 @@
   </data>
   <data name="vote.points" xml:space="preserve">
     <value>un punct|{0} puncte|{0} de puncte</value>
+  </data>
+  <data name="vote.points_float" xml:space="preserve">
+    <value>{0} puncte</value>
   </data>
   <data name="dates.ended" xml:space="preserve">
     <value>S-a terminat pe {0}</value>

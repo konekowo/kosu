@@ -62,13 +62,13 @@
     <value>Putar runut seterusnya secara automatik</value>
   </data>
   <data name="defaults.page_description" xml:space="preserve">
-    <value>osu! - Irama tinggal satu *klik* sahaja! Dengan Ouendan/EBA, Taiko dan mod permainan asli serta penyunting tahap berfungsi penuh.</value>
+    <value>osu! - Irama tinggal *seketik* saja! Dengan Ouendan/EBA, Taiko dan mod permainan asli serta penyunting tahap berfungsi penuh.</value>
   </data>
   <data name="header.admin.beatmapset" xml:space="preserve">
-    <value>peta rentak</value>
+    <value>peranggu peta rentak</value>
   </data>
   <data name="header.admin.beatmapset_covers" xml:space="preserve">
-    <value>kulit peta rentak</value>
+    <value>rupa peranggu peta rentak</value>
   </data>
   <data name="header.admin.contest" xml:space="preserve">
     <value>peraduan</value>
@@ -125,7 +125,7 @@
     <value>Tutup (Keluar)</value>
   </data>
   <data name="gallery.fullscreen" xml:space="preserve">
-    <value>Togol skrin penuh</value>
+    <value>Togol layar penuh</value>
   </data>
   <data name="gallery.zoom" xml:space="preserve">
     <value>Luru ke dalam/luar</value>
@@ -167,7 +167,7 @@
     <value>pasukan</value>
   </data>
   <data name="menu.rankings._" xml:space="preserve">
-    <value>kedudukan</value>
+    <value>pangkat</value>
   </data>
   <data name="menu.store._" xml:space="preserve">
     <value>kedai</value>
@@ -206,13 +206,16 @@
     <value>Wiki</value>
   </data>
   <data name="footer.legal._" xml:space="preserve">
-    <value>Undang-Undang &amp; Status</value>
+    <value>Undang-Undang &amp; Taraf</value>
   </data>
   <data name="footer.legal.copyright" xml:space="preserve">
     <value>Hak Cipta (DMCA)</value>
   </data>
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Kebersendirian</value>
+  </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Peraturan</value>
   </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Taraf Pelayan</value>
@@ -230,7 +233,7 @@
     <value>Halaman Tiada</value>
   </data>
   <data name="errors.404.description" xml:space="preserve">
-    <value>Maaf tetapi halaman permintaan tiada di sini!</value>
+    <value>Maaf tetapi halaman pintaan tiada di sini!</value>
   </data>
   <data name="errors.403.error" xml:space="preserve">
     <value>Anda sepatutnya tidak berada di sini.</value>
@@ -248,7 +251,7 @@
     <value>Halaman Tiada</value>
   </data>
   <data name="errors.405.description" xml:space="preserve">
-    <value>Maaf tetapi halaman permintaan tiada di sini!</value>
+    <value>Maaf tetapi halaman pintaan tiada di sini!</value>
   </data>
   <data name="errors.422.error" xml:space="preserve">
     <value>Parameter permintaan tidak sah</value>
@@ -269,7 +272,7 @@
     <value>Kami diberitahu tentang setiap ralat secara automatik.</value>
   </data>
   <data name="errors.503.error" xml:space="preserve">
-    <value>Tergendala bagi penyelenggaraan!</value>
+    <value>Tergendala untuk penyelenggaraan!</value>
   </data>
   <data name="errors.503.description" xml:space="preserve">
     <value>Penyelenggaraan biasanya mengambil masa antara 5 saat hingga 10 minit. Sekiranya kami tergendala lebih lama, lihat {0} untuk maklumat lanjut.</value>
@@ -293,10 +296,10 @@
     <value>nama pengguna</value>
   </data>
   <data name="popup_login.login.error.email" xml:space="preserve">
-    <value>Nama pengguna atau alamat e-mel tidak wujud</value>
+    <value>Nama pengguna atau alamat e-mel tidak ada</value>
   </data>
   <data name="popup_login.login.error.password" xml:space="preserve">
-    <value>Kata laluan tidak betul</value>
+    <value>Kata laluan salah</value>
   </data>
   <data name="popup_login.register.download" xml:space="preserve">
     <value>Muat Turun</value>
@@ -311,7 +314,7 @@
     <value>Tetapan</value>
   </data>
   <data name="popup_user.links.follows" xml:space="preserve">
-    <value>Senarai Amatan</value>
+    <value>Senarai Ikutan</value>
   </data>
   <data name="popup_user.links.friends" xml:space="preserve">
     <value>Kawan</value>

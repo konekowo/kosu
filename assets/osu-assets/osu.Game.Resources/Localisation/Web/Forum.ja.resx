@@ -166,6 +166,9 @@
   <data name="topic.go_to_latest" xml:space="preserve">
     <value>最新の投稿を見る</value>
   </data>
+  <data name="topic.go_to_unread" xml:space="preserve">
+    <value>最初の未読投稿を表示</value>
+  </data>
   <data name="topic.has_replied" xml:space="preserve">
     <value>このトピックに返信しました</value>
   </data>
@@ -456,78 +459,6 @@
   </data>
   <data name="topics.index.views" xml:space="preserve">
     <value>観覧数</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0" xml:space="preserve">
-    <value>"added" タグを外す</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0_done" xml:space="preserve">
-    <value>"added" タグを外しました</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1" xml:space="preserve">
-    <value>"added" タグを追加する</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1_done" xml:space="preserve">
-    <value>"added" タグを追加しました</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0" xml:space="preserve">
-    <value>"assigned" タグを外す</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0_done" xml:space="preserve">
-    <value>"assigned" タグを外しました</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1" xml:space="preserve">
-    <value>"assigned" タグを追加する</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1_done" xml:space="preserve">
-    <value>"assigned" タグを追加しました</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0" xml:space="preserve">
-    <value>"confirmed" タグを外す</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0_done" xml:space="preserve">
-    <value>"confirmed" タグを外しました</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1" xml:space="preserve">
-    <value>"confirmed" タグを追加する</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1_done" xml:space="preserve">
-    <value>"confirmed" タグを追加しました</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0" xml:space="preserve">
-    <value>"duplicate" タグを外す</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0_done" xml:space="preserve">
-    <value>"duplicate" タグを外しました</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1" xml:space="preserve">
-    <value>"duplicate" タグを追加する</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1_done" xml:space="preserve">
-    <value>"duplicate" タグを追加しました</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0" xml:space="preserve">
-    <value>"invalid" タグを外す</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0_done" xml:space="preserve">
-    <value>"invalid" タグを外しました</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1" xml:space="preserve">
-    <value>"invalid" タグを追加する</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1_done" xml:space="preserve">
-    <value>"invalid" タグを追加しました</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0" xml:space="preserve">
-    <value>"resolved" タグを外す</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0_done" xml:space="preserve">
-    <value>"resolved" タグを外しました</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1" xml:space="preserve">
-    <value>"resolved" タグを追加する</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1_done" xml:space="preserve">
-    <value>"resolved" タグを追加しました</value>
   </data>
   <data name="topics.lock.is_locked" xml:space="preserve">
     <value>このトピックはロックされていて投稿が制限されています。</value>

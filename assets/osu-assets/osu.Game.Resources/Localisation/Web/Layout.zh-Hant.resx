@@ -88,6 +88,9 @@
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>討論</value>
   </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>版本紀錄</value>
+  </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>清單</value>
   </data>
@@ -213,6 +216,9 @@
   </data>
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>隱私政策</value>
+  </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>規則</value>
   </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>伺服器狀態</value>

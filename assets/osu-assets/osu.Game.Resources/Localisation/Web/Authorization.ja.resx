@@ -205,6 +205,9 @@
   <data name="forum.post.edit.no_forum_access" xml:space="preserve">
     <value>要求されたフォーラムへのアクセスが必要です。</value>
   </data>
+  <data name="forum.post.edit.no_permission" xml:space="preserve">
+    <value>編集する権限がありません。</value>
+  </data>
   <data name="forum.post.edit.not_owner" xml:space="preserve">
     <value>投稿を編集できるのは投稿者のみです。</value>
   </data>
@@ -318,6 +321,9 @@
   </data>
   <data name="team.part.not_member" xml:space="preserve">
     <value>チームのメンバーではありません。</value>
+  </data>
+  <data name="team.store.require_supporter_tag" xml:space="preserve">
+    <value>チームを作成するには osu!supporter が必要です。</value>
   </data>
   <data name="user.page.edit.locked" xml:space="preserve">
     <value>ユーザーページはロックされています。</value>

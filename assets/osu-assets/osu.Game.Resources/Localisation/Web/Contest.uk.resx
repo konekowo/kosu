@@ -100,8 +100,14 @@
   <data name="judge_results.score" xml:space="preserve">
     <value>Бали</value>
   </data>
+  <data name="judge_results.score_std" xml:space="preserve">
+    <value>Стандартизований рахунок</value>
+  </data>
   <data name="judge_results.total_score" xml:space="preserve">
     <value>всього очок</value>
+  </data>
+  <data name="judge_results.total_score_std" xml:space="preserve">
+    <value>загальний стандартизований рахунок</value>
   </data>
   <data name="voting.judge_link" xml:space="preserve">
     <value>Ви - суддя цього конкурсу. Натисніть сюди, щоб почати оцінювати заявки!</value>
@@ -151,17 +157,20 @@
   <data name="entry.drop_here" xml:space="preserve">
     <value>Кинь свою заявку сюди</value>
   </data>
+  <data name="entry.allowed_extensions" xml:space="preserve">
+    <value>Приймаються лише файли {0} </value>
+  </data>
+  <data name="entry.max_size" xml:space="preserve">
+    <value>Максимальний розмір: {0}</value>
+  </data>
+  <data name="entry.required_dimensions" xml:space="preserve">
+    <value>Розміри мають бути обов'язково {0}{1}</value>
+  </data>
   <data name="entry.download" xml:space="preserve">
     <value>Завантажити .osz</value>
   </data>
-  <data name="entry.wrong_type.art" xml:space="preserve">
-    <value>Тільки файли формату .jpg і .png дозволені для цього конкурсу.</value>
-  </data>
-  <data name="entry.wrong_type.beatmap" xml:space="preserve">
-    <value>Тільки файли формату .osu дозволені для цього конкурсу.</value>
-  </data>
-  <data name="entry.wrong_type.music" xml:space="preserve">
-    <value>Тільки файли формату .mp3 дозволені для цього конкурсу.</value>
+  <data name="entry.wrong_file_type" xml:space="preserve">
+    <value>Для цього конкурсу приймаються лише файли {0}.</value>
   </data>
   <data name="entry.wrong_dimensions" xml:space="preserve">
     <value>Заявки для цього конкурсу мають бути {0}{1}</value>
@@ -180,6 +189,9 @@
   </data>
   <data name="vote.points" xml:space="preserve">
     <value>{0} очко|{0} очка|{0} очків</value>
+  </data>
+  <data name="vote.points_float" xml:space="preserve">
+    <value>{0} очок</value>
   </data>
   <data name="dates.ended" xml:space="preserve">
     <value>Завершено {0}</value>
@@ -201,5 +213,8 @@
   </data>
   <data name="states.results" xml:space="preserve">
     <value>Результати опубліковані</value>
+  </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Перегляд інформації та матеріалів</value>
   </data>
 </root>

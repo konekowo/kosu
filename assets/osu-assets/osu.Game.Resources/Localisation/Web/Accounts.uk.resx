@@ -74,7 +74,7 @@
     <value>Будь ласка, переконайтесь що Ваш аватар відповідає {0}.&lt;br/&gt;Це означає що він повинен &lt;strong&gt;підходити людям, будь-якого віку&lt;/strong&gt;. Тобто: не містити наготи, нецензурної лексики або непристойного вмісту.</value>
   </data>
   <data name="edit.avatar.rules_link" xml:space="preserve">
-    <value>правилам спільноти</value>
+    <value>міркуванням щодо візуального змісту</value>
   </data>
   <data name="edit.email.new" xml:space="preserve">
     <value>нова пошта</value>
@@ -167,10 +167,13 @@
     <value>отримувати сповіщення про нові проблеми у кваліфікованих мапах для перелічених режимів</value>
   </data>
   <data name="notifications.beatmapset_disqualify" xml:space="preserve">
-    <value>отримувати сповіщення коли мапи перелічених режимів будуть дискваліфіковані</value>
+    <value>отримувати сповіщення якщо мапи перелічених режимів будуть дискваліфіковані</value>
   </data>
   <data name="notifications.comment_reply" xml:space="preserve">
     <value>отримувати сповіщення про відповіді на ваші коментарі</value>
+  </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>отримувати сповіщення про новини</value>
   </data>
   <data name="notifications.title" xml:space="preserve">
     <value>Сповіщення</value>
@@ -190,6 +193,9 @@
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>особисті повідомлення</value>
   </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>повідомлення командного чату </value>
+  </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>нові коментарі</value>
   </data>
@@ -202,6 +208,9 @@
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>автор бітмапи</value>
   </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>нові дописи</value>
+  </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>push</value>
   </data>
@@ -213,6 +222,9 @@
   </data>
   <data name="oauth.title" xml:space="preserve">
     <value>OAuth</value>
+  </data>
+  <data name="options.beatmapset_show_anime_cover" xml:space="preserve">
+    <value>відображати аніме-обкладинки у бітмапах</value>
   </data>
   <data name="options.beatmapset_show_nsfw" xml:space="preserve">
     <value>приховати попередження щодо відвертого вмісту в мапах</value>
@@ -256,8 +268,11 @@
   <data name="privacy.hide_online" xml:space="preserve">
     <value>приховувати вашу присутність "В мережі"</value>
   </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>це позначить вас у статусі "не в мережі" в osu!lazer </value>
+  </data>
   <data name="privacy.title" xml:space="preserve">
-    <value>Політика конфіденційності</value>
+    <value>Конфіденційність</value>
   </data>
   <data name="security.current_session" xml:space="preserve">
     <value>поточна</value>
@@ -282,6 +297,27 @@
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>оновити</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>Програма аутентифікації</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>Використовуйте програму аутентифікації замість електронної пошти для верифікації. Електронна пошта буде доступна як запасний варіант.</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>Додати програму аутентифікації</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>статус</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>Не налаштовано</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>Налаштовано</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>Тепер ви можете закрити цю вкладку/вікно</value>

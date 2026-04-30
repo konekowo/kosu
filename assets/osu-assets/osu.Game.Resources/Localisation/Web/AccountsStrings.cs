@@ -210,6 +210,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString NotificationsCommentReply => new TranslatableString(getKey(@"notifications.comment_reply"), @"receive notifications for replies to your comments");
 
         /// <summary>
+        /// "receive notifications for news posts"
+        /// </summary>
+        public static LocalisableString NotificationsNewsPost => new TranslatableString(getKey(@"notifications.news_post"), @"receive notifications for news posts");
+
+        /// <summary>
         /// "Notifications"
         /// </summary>
         public static LocalisableString NotificationsTitle => new TranslatableString(getKey(@"notifications.title"), @"Notifications");
@@ -240,6 +245,16 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString NotificationsOptionsChannelMessage => new TranslatableString(getKey(@"notifications.options.channel_message"), @"private chat messages");
 
         /// <summary>
+        /// "chat mention"
+        /// </summary>
+        public static LocalisableString NotificationsOptionsChannelMention => new TranslatableString(getKey(@"notifications.options.channel_mention"), @"chat mention");
+
+        /// <summary>
+        /// "team chat messages"
+        /// </summary>
+        public static LocalisableString NotificationsOptionsChannelTeam => new TranslatableString(getKey(@"notifications.options.channel_team"), @"team chat messages");
+
+        /// <summary>
         /// "new comments"
         /// </summary>
         public static LocalisableString NotificationsOptionsCommentNew => new TranslatableString(getKey(@"notifications.options.comment_new"), @"new comments");
@@ -260,6 +275,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString NotificationsOptionsMapping => new TranslatableString(getKey(@"notifications.options.mapping"), @"beatmap mapper");
 
         /// <summary>
+        /// "news posts"
+        /// </summary>
+        public static LocalisableString NotificationsOptionsNewsPost => new TranslatableString(getKey(@"notifications.options.news_post"), @"news posts");
+
+        /// <summary>
         /// "push"
         /// </summary>
         public static LocalisableString NotificationsOptionsPush => new TranslatableString(getKey(@"notifications.options.push"), @"push");
@@ -278,6 +298,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "OAuth"
         /// </summary>
         public static LocalisableString OauthTitle => new TranslatableString(getKey(@"oauth.title"), @"OAuth");
+
+        /// <summary>
+        /// "show anime style beatmap covers"
+        /// </summary>
+        public static LocalisableString OptionsBeatmapsetShowAnimeCover => new TranslatableString(getKey(@"options.beatmapset_show_anime_cover"), @"show anime style beatmap covers");
 
         /// <summary>
         /// "hide warnings for explicit content in beatmaps"
@@ -350,6 +375,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString PrivacyHideOnline => new TranslatableString(getKey(@"privacy.hide_online"), @"hide your online presence");
 
         /// <summary>
+        /// "this maps to the &quot;appear offline&quot; mode in osu!lazer"
+        /// </summary>
+        public static LocalisableString PrivacyHideOnlineInfo => new TranslatableString(getKey(@"privacy.hide_online_info"), @"this maps to the ""appear offline"" mode in osu!lazer");
+
+        /// <summary>
         /// "Privacy"
         /// </summary>
         public static LocalisableString PrivacyTitle => new TranslatableString(getKey(@"privacy.title"), @"Privacy");
@@ -393,6 +423,41 @@ namespace osu.Game.Resources.Localisation.Web
         /// "update"
         /// </summary>
         public static LocalisableString UpdatePasswordUpdate => new TranslatableString(getKey(@"update_password.update"), @"update");
+
+        /// <summary>
+        /// "Authenticator App"
+        /// </summary>
+        public static LocalisableString UserTotpTitle => new TranslatableString(getKey(@"user_totp.title"), @"Authenticator App");
+
+        /// <summary>
+        /// "Use authenticator app instead of email for verification. Email verification will still be available as a fallback."
+        /// </summary>
+        public static LocalisableString UserTotpUsageNote => new TranslatableString(getKey(@"user_totp.usage_note"), @"Use authenticator app instead of email for verification. Email verification will still be available as a fallback.");
+
+        /// <summary>
+        /// "Remove"
+        /// </summary>
+        public static LocalisableString UserTotpButtonRemove => new TranslatableString(getKey(@"user_totp.button.remove"), @"Remove");
+
+        /// <summary>
+        /// "Add Authenticator App"
+        /// </summary>
+        public static LocalisableString UserTotpButtonSetup => new TranslatableString(getKey(@"user_totp.button.setup"), @"Add Authenticator App");
+
+        /// <summary>
+        /// "status"
+        /// </summary>
+        public static LocalisableString UserTotpStatusLabel => new TranslatableString(getKey(@"user_totp.status.label"), @"status");
+
+        /// <summary>
+        /// "Not configured"
+        /// </summary>
+        public static LocalisableString UserTotpStatusNotSet => new TranslatableString(getKey(@"user_totp.status.not_set"), @"Not configured");
+
+        /// <summary>
+        /// "Configured"
+        /// </summary>
+        public static LocalisableString UserTotpStatusSet => new TranslatableString(getKey(@"user_totp.status.set"), @"Configured");
 
         /// <summary>
         /// "You can close this tab/window now"

@@ -209,10 +209,10 @@
     <value>Beatmapa byla diskvalifikována</value>
   </data>
   <data name="item.beatmapset.beatmapset_state.beatmapset_love" xml:space="preserve">
-    <value>"{0}" byla povýšena do milované kategorie</value>
+    <value>"{0}" byla povýšena na oblíbenou komunitou</value>
   </data>
   <data name="item.beatmapset.beatmapset_state.beatmapset_love_compact" xml:space="preserve">
-    <value>Beatmapa byla povýšena do milované kategorie</value>
+    <value>Beatmapa byla povýšena na oblíbenou komunitou</value>
   </data>
   <data name="item.beatmapset.beatmapset_state.beatmapset_nominate" xml:space="preserve">
     <value>"{0}" byla nominována</value>
@@ -233,10 +233,10 @@
     <value>Beatmapa byla hodnocena</value>
   </data>
   <data name="item.beatmapset.beatmapset_state.beatmapset_remove_from_loved" xml:space="preserve">
-    <value>"{0}" byla odstraněna z milované kategorie</value>
+    <value>"{0}" byla odebrána z oblíbených komunitou</value>
   </data>
   <data name="item.beatmapset.beatmapset_state.beatmapset_remove_from_loved_compact" xml:space="preserve">
-    <value>Beatmapa byla odstraněna z milované kategorie</value>
+    <value>Beatmapa byla odebrána z oblíbených komunitou</value>
   </data>
   <data name="item.beatmapset.beatmapset_state.beatmapset_reset_nominations" xml:space="preserve">
     <value>Nominace "{0}" byla obnovena</value>
@@ -286,6 +286,18 @@
   <data name="item.channel.channel.pm.channel_message_group" xml:space="preserve">
     <value>od {0}</value>
   </data>
+  <data name="item.channel.channel_team._" xml:space="preserve">
+    <value>Nová týmová zpráva</value>
+  </data>
+  <data name="item.channel.channel_team.team.channel_team" xml:space="preserve">
+    <value>{0} říká "{1}"</value>
+  </data>
+  <data name="item.channel.channel_team.team.channel_team_compact" xml:space="preserve">
+    <value>{0} říká "{1}"</value>
+  </data>
+  <data name="item.channel.channel_team.team.channel_team_group" xml:space="preserve">
+    <value>{0} říká "{1}"</value>
+  </data>
   <data name="item.build._" xml:space="preserve">
     <value>Protokol změn</value>
   </data>
@@ -322,6 +334,15 @@
   <data name="item.news_post.comment.comment_reply_compact" xml:space="preserve">
     <value>{0} odpověděl "{1}"</value>
   </data>
+  <data name="item.news_post.news_post._" xml:space="preserve">
+    <value>Novinky ({0})</value>
+  </data>
+  <data name="item.news_post.news_post.news_post_new" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="item.news_post.news_post.news_post_new_compact" xml:space="preserve">
+    <value>{0}</value>
+  </data>
   <data name="item.forum_topic._" xml:space="preserve">
     <value>Téma fóra</value>
   </data>
@@ -343,11 +364,20 @@
   <data name="item.team.team_application.team_application_accept_compact" xml:space="preserve">
     <value>Jsi nyní členem týmu {0}</value>
   </data>
+  <data name="item.team.team_application.team_application_group" xml:space="preserve">
+    <value>Novinky pro žádosti o připojení k týmu</value>
+  </data>
   <data name="item.team.team_application.team_application_reject" xml:space="preserve">
     <value>Tvoje žádost o připojení k týmu {0} byla zamítnuta</value>
   </data>
   <data name="item.team.team_application.team_application_reject_compact" xml:space="preserve">
     <value>Tvoje žádost o připojení k týmu {0} byla zamítnuta</value>
+  </data>
+  <data name="item.team.team_application.team_application_store" xml:space="preserve">
+    <value>{0} požádal o připojení k tvému týmu</value>
+  </data>
+  <data name="item.team.team_application.team_application_store_compact" xml:space="preserve">
+    <value>{0} požádal o připojení k tvému týmu</value>
   </data>
   <data name="item.user.user_beatmapset_new._" xml:space="preserve">
     <value>Nová beatmapa</value>
@@ -382,6 +412,9 @@
   <data name="item.user_achievement.user_achievement_unlock.user_achievement_unlock_group" xml:space="preserve">
     <value>Medaile odemčeny!</value>
   </data>
+  <data name="mail.news" xml:space="preserve">
+    <value>Novinky</value>
+  </data>
   <data name="mail.beatmapset.beatmap_owner_change.beatmap_owner_change" xml:space="preserve">
     <value>Nyní hostujete beatmapu "{0}"</value>
   </data>
@@ -401,7 +434,7 @@
     <value>"{0}" byla diskvalifikována</value>
   </data>
   <data name="mail.beatmapset.beatmapset_state.beatmapset_love" xml:space="preserve">
-    <value>"{0}" byla povýšena na milované</value>
+    <value>"{0}" byla povýšena na oblíbenou komunitou</value>
   </data>
   <data name="mail.beatmapset.beatmapset_state.beatmapset_nominate" xml:space="preserve">
     <value>"{0}" byla nominována</value>
@@ -413,7 +446,7 @@
     <value>"{0}" byla hodnocena</value>
   </data>
   <data name="mail.beatmapset.beatmapset_state.beatmapset_remove_from_loved" xml:space="preserve">
-    <value>"{0}" byla odebrána z milovaných</value>
+    <value>"{0}" byla odebrána z oblíbených komunitou</value>
   </data>
   <data name="mail.beatmapset.beatmapset_state.beatmapset_reset_nominations" xml:space="preserve">
     <value>Nominace "{0}" byla obnovena</value>
@@ -421,11 +454,14 @@
   <data name="mail.beatmapset.comment.comment_new" xml:space="preserve">
     <value>Beatmapa "{0}" má nové komentáře</value>
   </data>
-  <data name="mail.channel.announcement.announce" xml:space="preserve">
-    <value>Nové oznámení v „{0}“</value>
+  <data name="mail.channel.announcement.channel_announcement" xml:space="preserve">
+    <value>Nové oznámení v "{0}"</value>
   </data>
-  <data name="mail.channel.channel.pm" xml:space="preserve">
-    <value>Obdrželi jste novou zprávu od {0}</value>
+  <data name="mail.channel.channel.channel_message" xml:space="preserve">
+    <value>Obdržel jsi novou zprávu od {0}</value>
+  </data>
+  <data name="mail.channel.channel_team.channel_team" xml:space="preserve">
+    <value>Nová zpráva v týmu "{0}"</value>
   </data>
   <data name="mail.build.comment.comment_new" xml:space="preserve">
     <value>Seznam změn "{0}" má nové komentáře</value>
@@ -441,6 +477,9 @@
   </data>
   <data name="mail.team.team_application.team_application_reject" xml:space="preserve">
     <value>Tvoje žádost o připojení k týmu {0} byla zamítnuta</value>
+  </data>
+  <data name="mail.team.team_application.team_application_store" xml:space="preserve">
+    <value>{0} požádal o připojení k tvému týmu</value>
   </data>
   <data name="mail.user.user_beatmapset_new.user_beatmapset_new" xml:space="preserve">
     <value>{0} vytvořil nové beatmapy</value>

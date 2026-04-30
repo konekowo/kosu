@@ -74,7 +74,7 @@
     <value>BACA INI SEBELUM MENGUNDUH</value>
   </data>
   <data name="index.blurb.install_instruction" xml:space="preserve">
-    <value>Petunjuk Pemasangan: Setelah paket beatmap selesai diunduh, ekstrak berkas paket yang kamu peroleh ke dalam folder Songs yang terdapat pada direktori osu! milikmu.</value>
+    <value>Petunjuk Pemasangan: Setelah paket beatmap selesai diunduh, ekstrak konten paket ini ke folder Songs kamu dan osu! akan melakukan sisanya untukmu.</value>
   </data>
   <data name="show.created_by" xml:space="preserve">
     <value>oleh {0}</value>
@@ -83,13 +83,13 @@
     <value>Unduh</value>
   </data>
   <data name="show.item.cleared" xml:space="preserve">
-    <value>telah dituntaskan</value>
+    <value>sudah dituntaskan</value>
   </data>
   <data name="show.item.not_cleared" xml:space="preserve">
     <value>belum dituntaskan</value>
   </data>
   <data name="show.no_diff_reduction._" xml:space="preserve">
-    <value>{0} tidak dapat digunakan untuk menuntaskan paket ini.</value>
+    <value>{0} tidak bisa digunakan untuk menuntaskan paket ini.</value>
   </data>
   <data name="show.no_diff_reduction.link" xml:space="preserve">
     <value>Mod pengurang kesulitan</value>
@@ -107,7 +107,7 @@
     <value>Project Loved</value>
   </data>
   <data name="mode.standard" xml:space="preserve">
-    <value>Standar</value>
+    <value>Reguler</value>
   </data>
   <data name="mode.theme" xml:space="preserve">
     <value>Tematik</value>

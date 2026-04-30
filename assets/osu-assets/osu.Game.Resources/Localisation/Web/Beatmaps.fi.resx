@@ -58,6 +58,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="invalid_ruleset" xml:space="preserve">
+    <value>Virheellinen pelimuoto valittu.</value>
+  </data>
+  <data name="change_owner.too_many" xml:space="preserve">
+    <value>Liian monta vieraskartoittajaa.</value>
+  </data>
   <data name="discussion-votes.update.error" xml:space="preserve">
     <value>Äänen päivitys ei onnistunut</value>
   </data>
@@ -65,7 +71,7 @@
     <value>salli kudosu</value>
   </data>
   <data name="discussions.beatmap_information" xml:space="preserve">
-    <value>Rytmikarttasivu</value>
+    <value>Beatmap-sivu</value>
   </data>
   <data name="discussions.delete" xml:space="preserve">
     <value>poista</value>
@@ -92,7 +98,7 @@
     <value>Tämä vaikeustaso on poistettu, joten siitä ei voi enää keskustella.</value>
   </data>
   <data name="discussions.message_placeholder_locked" xml:space="preserve">
-    <value>Tämän rytmikartan keskustelu on poistettu käytöstä.</value>
+    <value>Keskustelu tälle beatmapille on poistettu käytöstä.</value>
   </data>
   <data name="discussions.message_placeholder_silenced" xml:space="preserve">
     <value>Keskusteluun ei voi osallistua mykistettynä.</value>
@@ -493,6 +499,9 @@
   <data name="listing.search.options" xml:space="preserve">
     <value>Lisää hakuvaihtoehtoja</value>
   </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>Profiilin huippusijoitusten määrät ja tällä sivulla näkyvät tulokset perustuvat korkeimpiin ”standardoituihin” (eli ”lazer”) tuloksiisi rytmikartoissa.</value>
+  </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
     <value>Tunnisteella {0} rajaaminen vaatii aktiivisen osu!supporter-tagin</value>
   </data>
@@ -564,6 +573,12 @@
   </data>
   <data name="listing.search.supporter_filter_quote.link_text" xml:space="preserve">
     <value>osu!tukijamerkki</value>
+  </data>
+  <data name="listing.search.tag_picker.tooltip" xml:space="preserve">
+    <value>selaa käyttäjätunnisteita</value>
+  </data>
+  <data name="listing.search.tag_picker.prompt" xml:space="preserve">
+    <value>kirjoita hakeaksesi</value>
   </data>
   <data name="general.converts" xml:space="preserve">
     <value>Sisällytä automaattisesti muunnetut rytmikartat</value>

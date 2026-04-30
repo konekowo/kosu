@@ -127,6 +127,9 @@
   <data name="main.beatmapsets_controller.show" xml:space="preserve">
     <value>thông tin beatmap</value>
   </data>
+  <data name="main.beatmapsets_controller.versions" xml:space="preserve">
+    <value>Lịch sử phiên bản beatmap</value>
+  </data>
   <data name="main.changelog_controller._" xml:space="preserve">
     <value>nhật ký thay đổi</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="main.contests_controller.judge" xml:space="preserve">
     <value>đánh giá bài thi</value>
+  </data>
+  <data name="main.group_history_controller._" xml:space="preserve">
+    <value>lịch sử nhóm</value>
   </data>
   <data name="main.groups_controller.show" xml:space="preserve">
     <value>nhóm</value>
@@ -163,15 +169,15 @@
   <data name="main.home_controller.testflight" xml:space="preserve">
     <value>thử nghệm bay</value>
   </data>
+  <data name="main.legacy_matches_controller._" xml:space="preserve">
+    <value>trận đấu</value>
+  </data>
   <data name="main.legal_controller._" xml:space="preserve">
     <value>thông tin
 </value>
   </data>
   <data name="main.livestreams_controller._" xml:space="preserve">
     <value>nguồn trực tiếp</value>
-  </data>
-  <data name="main.matches_controller._" xml:space="preserve">
-    <value>kết quả</value>
   </data>
   <data name="main.news_controller._" xml:space="preserve">
     <value>tin tức</value>
@@ -212,6 +218,9 @@
   <data name="main.user_cover_presets_controller._" xml:space="preserve">
     <value>ảnh bìa người dùng mặc định</value>
   </data>
+  <data name="main.user_totp_controller._" xml:space="preserve">
+    <value>ứng dụng xác thực</value>
+  </data>
   <data name="main.users_controller._" xml:space="preserve">
     <value>thông tin người chơi</value>
   </data>
@@ -223,6 +232,9 @@
   </data>
   <data name="main.wiki_controller._" xml:space="preserve">
     <value>wiki</value>
+  </data>
+  <data name="multiplayer.rooms_controller.events" xml:space="preserve">
+    <value>lịch sử phòng</value>
   </data>
   <data name="passport.authorization_controller._" xml:space="preserve">
     <value>uỷ quyền ứng dụng</value>

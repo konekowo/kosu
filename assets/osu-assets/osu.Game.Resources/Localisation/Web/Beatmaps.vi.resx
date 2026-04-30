@@ -58,6 +58,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="invalid_ruleset" xml:space="preserve">
+    <value>Quy tắc đã chỉ định không hợp lệ.</value>
+  </data>
   <data name="change_owner.too_many" xml:space="preserve">
     <value>Quá nhiều mapper khách.</value>
   </data>
@@ -495,6 +498,9 @@
   </data>
   <data name="listing.search.options" xml:space="preserve">
     <value>Tùy Chọn Tìm Kiếm Khác</value>
+  </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>Số lượng top rank và kết quả hiển thị trên trang này dựa trên các điểm số “chuẩn hoá” cao nhất của bạn (còn gọi là “lazer”) trên beatmap.</value>
   </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
     <value>Lọc theo {0} cần một supporter tag đang hoạt động</value>

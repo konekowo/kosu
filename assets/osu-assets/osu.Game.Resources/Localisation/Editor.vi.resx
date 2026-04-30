@@ -64,6 +64,9 @@
   <data name="waveform_opacity" xml:space="preserve">
     <value>Độ mờ phổ âm thanh</value>
   </data>
+  <data name="show_storyboard" xml:space="preserve">
+    <value>Hiển thị storyboard</value>
+  </data>
   <data name="show_hit_markers" xml:space="preserve">
     <value>Hiện các mốc đánh dấu trúng</value>
   </data>
@@ -84,6 +87,9 @@
   </data>
   <data name="export_for_compatibility" xml:space="preserve">
     <value>Cho tính tương thích (.osz)</value>
+  </data>
+  <data name="export_guest_difficulty" xml:space="preserve">
+    <value>Độ khó khách mời (.osu)</value>
   </data>
   <data name="create_new_difficulty" xml:space="preserve">
     <value>Tạo độ khó mới</value>
@@ -145,6 +151,9 @@
   <data name="timeline_show_timing_changes" xml:space="preserve">
     <value>Hiện thay đổi timing</value>
   </data>
+  <data name="Finish editing and import changes" xml:space="preserve">
+    <value>Hoàn thành chỉnh sửa và xuất thay đổi</value>
+  </data>
   <data name="timeline_show_breaks" xml:space="preserve">
     <value>Hiển thị các điểm ngắt</value>
   </data>
@@ -174,5 +183,11 @@
   </data>
   <data name="open_discussion_page" xml:space="preserve">
     <value>Mở trang thảo luận beatmap</value>
+  </data>
+  <data name="check_current_difficulty" xml:space="preserve">
+    <value>Độ khó hiện tại</value>
+  </data>
+  <data name="check_entire_beatmap_set" xml:space="preserve">
+    <value>Cả bộ beatmap</value>
   </data>
 </root>

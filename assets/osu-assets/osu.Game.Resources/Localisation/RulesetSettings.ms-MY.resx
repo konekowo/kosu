@@ -59,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="rulesets" xml:space="preserve">
-    <value>Ruleset</value>
+    <value>Cara main</value>
   </data>
   <data name="snaking_in_sliders" xml:space="preserve">
     <value>Gelangsar seret masuk</value>
@@ -68,10 +68,10 @@
     <value>Gelangsar seret keluar</value>
   </data>
   <data name="cursor_trail" xml:space="preserve">
-    <value>Jejak penanda kini</value>
+    <value>Jejak kursor</value>
   </data>
   <data name="cursor_ripples" xml:space="preserve">
-    <value>Riak penanda kini</value>
+    <value>Riak kursor</value>
   </data>
   <data name="playfield_border_style" xml:space="preserve">
     <value>Gaya sempadan medan main</value>
@@ -86,7 +86,7 @@
     <value>Penuh</value>
   </data>
   <data name="scrolling_direction" xml:space="preserve">
-    <value>Arah tatal</value>
+    <value>Arah penatalan</value>
   </data>
   <data name="scrolling_up" xml:space="preserve">
     <value>Atas</value>
@@ -105,5 +105,20 @@
   </data>
   <data name="touch_control_scheme" xml:space="preserve">
     <value>Skema kawalan sentuhan</value>
+  </data>
+  <data name="mobile_layout" xml:space="preserve">
+    <value>Bentangan bimbit</value>
+  </data>
+  <data name="portrait" xml:space="preserve">
+    <value>Menegak</value>
+  </data>
+  <data name="landscape" xml:space="preserve">
+    <value>Melintang</value>
+  </data>
+  <data name="landscape_expanded_columns" xml:space="preserve">
+    <value>Melintang (lajur kembang)</value>
+  </data>
+  <data name="touch_overlay" xml:space="preserve">
+    <value>Tindanan sentuhan</value>
   </data>
 </root>

@@ -70,6 +70,9 @@
   <data name="applications.store.ok" xml:space="preserve">
     <value>Solicita unirse al equipo.</value>
   </data>
+  <data name="card.members" xml:space="preserve">
+    <value>{0} miembro|{0} miembros</value>
+  </data>
   <data name="create.submit" xml:space="preserve">
     <value>Crear equipo</value>
   </data>
@@ -157,26 +160,44 @@
   <data name="members.index.title" xml:space="preserve">
     <value>Gestionar miembros</value>
   </data>
+  <data name="members.index.applications.accept_confirm" xml:space="preserve">
+    <value>¿Añadir a {0} al equipo?</value>
+  </data>
+  <data name="members.index.applications.created_at" xml:space="preserve">
+    <value>Solicitud realizada</value>
+  </data>
   <data name="members.index.applications.empty" xml:space="preserve">
     <value>No hay solicitudes para unirse al equipo por el momento.</value>
   </data>
   <data name="members.index.applications.empty_slots" xml:space="preserve">
     <value>Espacios disponibles</value>
   </data>
+  <data name="members.index.applications.empty_slots_overflow" xml:space="preserve">
+    <value>Exceso de {0} usuario|Exceso de {0} usuarios</value>
+  </data>
+  <data name="members.index.applications.reject_confirm" xml:space="preserve">
+    <value>¿Rechazar la solicitud para unirse de {0}?</value>
+  </data>
   <data name="members.index.applications.title" xml:space="preserve">
     <value>Solicitudes para unirse al equipo</value>
-  </data>
-  <data name="members.index.applications.created_at" xml:space="preserve">
-    <value>Solicitud realizada</value>
-  </data>
-  <data name="members.index.table.status" xml:space="preserve">
-    <value>Estado</value>
   </data>
   <data name="members.index.table.joined_at" xml:space="preserve">
     <value>Fecha de ingreso</value>
   </data>
   <data name="members.index.table.remove" xml:space="preserve">
     <value>Eliminar</value>
+  </data>
+  <data name="members.index.table.remove_confirm" xml:space="preserve">
+    <value>¿Expulsar a {0} del equipo?</value>
+  </data>
+  <data name="members.index.table.set_leader" xml:space="preserve">
+    <value>Transferir el liderazgo del equipo</value>
+  </data>
+  <data name="members.index.table.set_leader_confirm" xml:space="preserve">
+    <value>¿Transferir el liderazgo del equipo a {0}?</value>
+  </data>
+  <data name="members.index.table.status" xml:space="preserve">
+    <value>Estado</value>
   </data>
   <data name="members.index.table.title" xml:space="preserve">
     <value>Miembros actuales</value>
@@ -186,6 +207,9 @@
   </data>
   <data name="members.index.status.status_1" xml:space="preserve">
     <value>Activo</value>
+  </data>
+  <data name="members.set_leader.success" xml:space="preserve">
+    <value>{0} es ahora el líder del equipo.</value>
   </data>
   <data name="part.ok" xml:space="preserve">
     <value>Abandonar equipo ;_;</value>
@@ -214,11 +238,29 @@
   <data name="show.members.owner" xml:space="preserve">
     <value>Líder del equipo</value>
   </data>
+  <data name="show.sections.about" xml:space="preserve">
+    <value>¡Acerca de nosotros!</value>
+  </data>
   <data name="show.sections.info" xml:space="preserve">
     <value>Información</value>
   </data>
   <data name="show.sections.members" xml:space="preserve">
     <value>Miembros</value>
+  </data>
+  <data name="show.statistics.empty_slots" xml:space="preserve">
+    <value>{0} espacio disponible|{0} espacios disponibles</value>
+  </data>
+  <data name="show.statistics.first_places" xml:space="preserve">
+    <value>Primeros lugares</value>
+  </data>
+  <data name="show.statistics.leader" xml:space="preserve">
+    <value>Líder del equipo</value>
+  </data>
+  <data name="show.statistics.rank" xml:space="preserve">
+    <value>Puesto</value>
+  </data>
+  <data name="show.statistics.ranked_beatmapsets" xml:space="preserve">
+    <value>Mapas clasificados</value>
   </data>
   <data name="store.ok" xml:space="preserve">
     <value>Equipo creado.</value>

@@ -79,41 +79,56 @@
   <data name="match.winner" xml:space="preserve">
     <value>{0} vinder</value>
   </data>
-  <data name="match.events.player-left" xml:space="preserve">
+  <data name="match.winner_by" xml:space="preserve">
+    <value>{0} med {1}</value>
+  </data>
+  <data name="match.events.game_aborted" xml:space="preserve">
+    <value>spillet blev aflyst</value>
+  </data>
+  <data name="match.events.game_aborted_no_user" xml:space="preserve">
+    <value>spillet blev aflyst</value>
+  </data>
+  <data name="match.events.game_completed" xml:space="preserve">
+    <value>spillet er afsluttet</value>
+  </data>
+  <data name="match.events.game_completed_no_user" xml:space="preserve">
+    <value>spillet er afsluttet</value>
+  </data>
+  <data name="match.events.host_changed" xml:space="preserve">
+    <value>{0} blev vært</value>
+  </data>
+  <data name="match.events.host_changed_no_user" xml:space="preserve">
+    <value>værten blev ændret</value>
+  </data>
+  <data name="match.events.player_joined" xml:space="preserve">
+    <value>{0} tilsluttede sig kampen</value>
+  </data>
+  <data name="match.events.player_joined_no_user" xml:space="preserve">
+    <value>a spillet tilsluttede sig kampen</value>
+  </data>
+  <data name="match.events.player_kicked" xml:space="preserve">
+    <value>{0} er blevet sparket ud fra kampen</value>
+  </data>
+  <data name="match.events.player_kicked_no_user" xml:space="preserve">
+    <value>en spiller er blevet sparkert ud fra kampen</value>
+  </data>
+  <data name="match.events.player_left" xml:space="preserve">
     <value>{0} forlod kampen</value>
   </data>
-  <data name="match.events.player-joined" xml:space="preserve">
-    <value>{0} deltog i kampen</value>
-  </data>
-  <data name="match.events.player-kicked" xml:space="preserve">
-    <value>{0} blev smidt ud af kampen</value>
-  </data>
-  <data name="match.events.match-created" xml:space="preserve">
-    <value>{0} lavede kampen</value>
-  </data>
-  <data name="match.events.match-disbanded" xml:space="preserve">
-    <value>kampen blev opløst</value>
-  </data>
-  <data name="match.events.host-changed" xml:space="preserve">
-    <value>{0} er blevet vært</value>
-  </data>
-  <data name="match.events.player-left-no-user" xml:space="preserve">
+  <data name="match.events.player_left_no_user" xml:space="preserve">
     <value>en spiller forlod kampen</value>
   </data>
-  <data name="match.events.player-joined-no-user" xml:space="preserve">
-    <value>en spiller deltog i kampen</value>
+  <data name="match.events.room_created" xml:space="preserve">
+    <value>{0} oprettede kampe</value>
   </data>
-  <data name="match.events.player-kicked-no-user" xml:space="preserve">
-    <value>en spiller blev smidt ud af kampen</value>
+  <data name="match.events.room_created_no_user" xml:space="preserve">
+    <value>kampen blev oprettet</value>
   </data>
-  <data name="match.events.match-created-no-user" xml:space="preserve">
-    <value>kampen blev lavet</value>
-  </data>
-  <data name="match.events.match-disbanded-no-user" xml:space="preserve">
+  <data name="match.events.room_disbanded" xml:space="preserve">
     <value>kampen blev opløst</value>
   </data>
-  <data name="match.events.host-changed-no-user" xml:space="preserve">
-    <value>vært blev skiftet</value>
+  <data name="match.events.room_disbanded_no_user" xml:space="preserve">
+    <value>kampen blev opløst</value>
   </data>
   <data name="match.score.stats.accuracy" xml:space="preserve">
     <value>Præcision</value>
@@ -124,23 +139,26 @@
   <data name="match.score.stats.score" xml:space="preserve">
     <value>Score</value>
   </data>
-  <data name="match.team-types.head-to-head" xml:space="preserve">
-    <value>Alle mod alle</value>
+  <data name="match.team_types.head_to_head" xml:space="preserve">
+    <value>Hoved-til-hoved</value>
   </data>
-  <data name="match.team-types.tag-coop" xml:space="preserve">
+  <data name="match.team_types.tag_coop" xml:space="preserve">
     <value>Tag Co-op</value>
   </data>
-  <data name="match.team-types.team-vs" xml:space="preserve">
-    <value>Team VS</value>
+  <data name="match.team_types.tag_team_versus" xml:space="preserve">
+    <value>Tag Hold VS</value>
   </data>
-  <data name="match.team-types.tag-team-vs" xml:space="preserve">
-    <value>Tag Team VS</value>
+  <data name="match.team_types.team_versus" xml:space="preserve">
+    <value>Hold VS</value>
   </data>
   <data name="match.teams.blue" xml:space="preserve">
     <value>Blåt Hold</value>
   </data>
   <data name="match.teams.red" xml:space="preserve">
     <value>Rødt Hold</value>
+  </data>
+  <data name="game.freestyle" xml:space="preserve">
+    <value>Freestyle</value>
   </data>
   <data name="game.scoring-type.score" xml:space="preserve">
     <value>Højeste Score</value>

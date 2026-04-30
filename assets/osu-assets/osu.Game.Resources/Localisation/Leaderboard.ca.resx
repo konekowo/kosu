@@ -79,4 +79,7 @@
   <data name="please_invest_in_an_osu_supporter_tag_to_view_this_leaderboard" xml:space="preserve">
     <value>Invertiu en una etiqueta osu!supporter per veure aquest marcador!</value>
   </data>
+  <data name="no_team" xml:space="preserve">
+    <value>No pertanys a cap equip. Uneix-te a un!</value>
+  </data>
 </root>

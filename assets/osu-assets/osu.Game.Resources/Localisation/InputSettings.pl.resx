@@ -61,6 +61,9 @@
   <data name="input_section_header" xml:space="preserve">
     <value>Sterowanie</value>
   </data>
+  <data name="device" xml:space="preserve">
+    <value>Urządzenie: {0}</value>
+  </data>
   <data name="global_key_binding_header" xml:space="preserve">
     <value>Globalne</value>
   </data>
@@ -83,7 +86,7 @@
     <value>Edytor</value>
   </data>
   <data name="editor_test_play_section" xml:space="preserve">
-    <value>Edytor: Test mapy</value>
+    <value>Edytor - test rozgrywki</value>
   </data>
   <data name="reset_section_button" xml:space="preserve">
     <value>Przywróć domyślne ustawienia w tej sekcji</value>
@@ -95,10 +98,10 @@
     <value>Dostosuj swoje klawisze!</value>
   </data>
   <data name="key_binding_conflict_detected" xml:space="preserve">
-    <value>Klawisz, który wybrałeś, jest przypisany do innego ustawienia.</value>
+    <value>Wybrana kombinacja klawiszy jest niekompatybilna z obecną konfiguracją.</value>
   </data>
   <data name="keep_existing_binding" xml:space="preserve">
-    <value>Zachowaj</value>
+    <value>Anuluj</value>
   </data>
   <data name="apply_new_binding" xml:space="preserve">
     <value>Zastosuj</value>

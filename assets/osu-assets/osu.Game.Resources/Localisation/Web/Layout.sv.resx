@@ -88,6 +88,9 @@
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>diskussion</value>
   </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>versionshistorik</value>
+  </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>listning</value>
   </data>
@@ -214,6 +217,9 @@
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Sekretess</value>
   </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Regler</value>
+  </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Serverstatus</value>
   </data>
@@ -333,6 +339,9 @@
   </data>
   <data name="popup_user.links.scoring_mode_toggle_tooltip" xml:space="preserve">
     <value>Justera poängvärden för att kännas mer som klassisk poängsättning utan tak</value>
+  </data>
+  <data name="popup_user.links.team" xml:space="preserve">
+    <value>Mitt Lag</value>
   </data>
   <data name="popup_search.initial" xml:space="preserve">
     <value>Skriv för att söka!</value>

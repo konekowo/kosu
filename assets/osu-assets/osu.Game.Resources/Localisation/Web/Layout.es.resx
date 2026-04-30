@@ -88,6 +88,9 @@
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>discusión</value>
   </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>historial de versiones</value>
+  </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>listado</value>
   </data>
@@ -216,6 +219,9 @@
   </data>
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Privacidad</value>
+  </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Reglas</value>
   </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Estado del servidor</value>

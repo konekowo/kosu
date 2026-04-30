@@ -67,6 +67,9 @@
   <data name="no_restricted_access" xml:space="preserve">
     <value>Tuto akci nemůžeš provést, když je tvůj účet v omezeném režimu.</value>
   </data>
+  <data name="param_too_large" xml:space="preserve">
+    <value>Parametr {0} může mít maximálně {1} položku|Parametr {0} může mít maximálně {1} položky|Parametr {0} může mít maximálně {1} položek</value>
+  </data>
   <data name="supporter_only" xml:space="preserve">
     <value>Pro použití této funkce musíš mít osu! supporter tag.</value>
   </data>
@@ -87,12 +90,6 @@
   </data>
   <data name="account.profile-order.generic" xml:space="preserve">
     <value>Došlo k chybě. Zkus stránku obnovit.</value>
-  </data>
-  <data name="beatmaps.invalid_mode" xml:space="preserve">
-    <value>Byl specifikován neplatný mód.</value>
-  </data>
-  <data name="beatmaps.standard_converts_only" xml:space="preserve">
-    <value>Není dostupné žádné score pro zvolený mód na této obtížnosti.</value>
   </data>
   <data name="checkout.generic" xml:space="preserve">
     <value>Při zpracování vaší objednávky došlo k chybě.</value>

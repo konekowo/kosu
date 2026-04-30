@@ -107,7 +107,7 @@
     <value>Squadra</value>
   </data>
   <data name="form.title.announcement" xml:space="preserve">
-    <value>Crea Nuovo Annuncio</value>
+    <value>Crea nuovo annuncio</value>
   </data>
   <data name="form.labels.description" xml:space="preserve">
     <value>descrizione</value>
@@ -141,15 +141,6 @@
   </data>
   <data name="input.send" xml:space="preserve">
     <value>Invia</value>
-  </data>
-  <data name="no-conversations.howto" xml:space="preserve">
-    <value>Inizia le conversazioni dal profilo di un utente o dal popup della sua carta utente.</value>
-  </data>
-  <data name="no-conversations.lazer" xml:space="preserve">
-    <value>I canali pubblici in cui entri attraverso &lt;a href="{0}"&gt;osu!lazer&lt;/a&gt; saranno visibili anche qui.</value>
-  </data>
-  <data name="no-conversations.title" xml:space="preserve">
-    <value>nessuna conversazione al momento</value>
   </data>
   <data name="join_channels.loading" xml:space="preserve">
     <value>Caricamento elenco canali...</value>

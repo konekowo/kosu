@@ -172,6 +172,9 @@
   <data name="notifications.comment_reply" xml:space="preserve">
     <value>yorumlarına yapılan yanıtlar için bildirim al</value>
   </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>Yeni haber gönderileri için bildirim al</value>
+  </data>
   <data name="notifications.title" xml:space="preserve">
     <value>Bildirimler</value>
   </data>
@@ -190,6 +193,9 @@
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>özel sohbet mesajları</value>
   </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>takım sohbet mesajları</value>
+  </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>yeni yorumlar</value>
   </data>
@@ -202,6 +208,9 @@
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>beatmap mapper</value>
   </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>haber paylaşımları</value>
+  </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>anlık</value>
   </data>
@@ -213,6 +222,9 @@
   </data>
   <data name="oauth.title" xml:space="preserve">
     <value>OAuth</value>
+  </data>
+  <data name="options.beatmapset_show_anime_cover" xml:space="preserve">
+    <value>Anime tarzı beatmap kapaklarını göster</value>
   </data>
   <data name="options.beatmapset_show_nsfw" xml:space="preserve">
     <value>beatmaplerdeki müstehcen içerikler için uyarıları gizle</value>
@@ -256,6 +268,9 @@
   <data name="privacy.hide_online" xml:space="preserve">
     <value>çevrimiçi durumunu gizle</value>
   </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>bu osu!lazer'de "çevrimdışı olarak görün" modunu atayacak</value>
+  </data>
   <data name="privacy.title" xml:space="preserve">
     <value>Gizlilik</value>
   </data>
@@ -282,6 +297,27 @@
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>güncelle</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>Doğrulayıcı uygulama</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>Doğrulama için e-posta yerine doğrulayıcı uygulama kullan. E-posta doğrulaması yedek olarak hala mevcut olacak.</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>Kaldır</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>Doğrulayıcı uygulama ekle</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>durum</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>Yapılandırılmamış</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>Yapılandırılmış</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>Şimdi bu sekmeyi/pencereyi kapatabilirsiniz</value>

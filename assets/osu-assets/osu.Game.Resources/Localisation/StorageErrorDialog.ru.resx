@@ -59,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="storage_error" xml:space="preserve">
-    <value>Ошибка памяти osu!</value>
+    <value>Ошибка хранилища osu!</value>
   </data>
   <data name="location_is_not_accessible" xml:space="preserve">
     <value>Указанный путь к файлам osu! ("{0}") недоступен. Если файлы находятся на внешнем накопителе, пожалуйста, переподключите устройство и попробуйте ещё раз.</value>
@@ -71,12 +71,12 @@
     <value>Проверить ещё раз</value>
   </data>
   <data name="use_default_location" xml:space="preserve">
-    <value>Использовать стандартное местоположение до перезапуска</value>
+    <value>Использовать стандартный путь до перезапуска</value>
   </data>
   <data name="reset_to_default_location" xml:space="preserve">
-    <value>Сбросить до стандартного местоположения</value>
+    <value>Сбросить до стандартного пути</value>
   </data>
   <data name="start_fresh" xml:space="preserve">
-    <value>Начать с нуля в указанном местоположении</value>
+    <value>Начать с нуля в указанном пути</value>
   </data>
 </root>

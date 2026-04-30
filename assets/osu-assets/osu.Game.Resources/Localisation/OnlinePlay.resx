@@ -67,4 +67,34 @@
   <data name="cant_invite_this_user_as1" xml:space="preserve">
     <value>Can't invite this user as they have opted out of non-friend communications.</value>
   </data>
+  <data name="footer_button_playlist_add" xml:space="preserve">
+    <value>Add to playlist</value>
+  </data>
+  <data name="footer_button_freemods" xml:space="preserve">
+    <value>Freemods</value>
+  </data>
+  <data name="footer_button_freestyle" xml:space="preserve">
+    <value>Freestyle</value>
+  </data>
+  <data name="playlist_tray_items" xml:space="preserve">
+    <value>{0} item(s)</value>
+  </data>
+  <data name="playlist_tray_description" xml:space="preserve">
+    <value>Manage items on previous screen</value>
+  </data>
+  <data name="multiplayer_beatmap_queue" xml:space="preserve">
+    <value>Beatmap queue</value>
+  </data>
+  <data name="playlist_progress" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="playlist_leaderboard" xml:space="preserve">
+    <value>Leaderboard</value>
+  </data>
+  <data name="difficulty" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="chat" xml:space="preserve">
+    <value>Chat</value>
+  </data>
 </root>

@@ -458,7 +458,7 @@
     <value>Es existieren noch Vorschläge/Probleme, die gelöst werden müssen.</value>
   </data>
   <data name="nominations.rank_estimate._" xml:space="preserve">
-    <value>Diese Map wird voraussichtlich am {0} ranked. Sie befindet sich aktuell an Position {1} der {2}.</value>
+    <value>Diese Beatmap wird voraussichtlich {0} ranked. Sie befindet sich aktuell an Position {1} der {2}.</value>
   </data>
   <data name="nominations.rank_estimate.unresolved_problems" xml:space="preserve">
     <value>Diese Beatmap verbleibt im Qualified-Abschnitt, bis {0} behoben wurden.</value>
@@ -479,7 +479,7 @@
     <value>Nominierungsprozess zurückgesetzt vor {0} von {1} mit dem Problem {2} ({3}).</value>
   </data>
   <data name="nominations.reset_at.disqualify" xml:space="preserve">
-    <value>Vor {0} disqualifiziert von {1} mit einem neuen Problem {2} ({3}).</value>
+    <value>Wegen eines neuen Problems {0} ({1}) {2} von {3} disqualifiziert.</value>
   </data>
   <data name="nominations.reset_confirm.disqualify" xml:space="preserve">
     <value>Bist du sicher? Das wird die Beatmap von der Qualifizierung entfernen und den Nominierungsprozess zurücksetzen.</value>
@@ -498,6 +498,9 @@
   </data>
   <data name="listing.search.options" xml:space="preserve">
     <value>Mehr Suchoptionen</value>
+  </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>Die Anzahl der Top-Platzierungen und die Ergebnisse, die auf dieser Seite angezeigt werden, basieren auf Beatmaps mit deinen besten "standardisierten" Scores (also aus lazer).</value>
   </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
     <value>Um nach {0} zu filtern, benötigt es ein aktives osu!supporter-Tag</value>
@@ -570,6 +573,12 @@
   </data>
   <data name="listing.search.supporter_filter_quote.link_text" xml:space="preserve">
     <value>osu!supporter-Tag</value>
+  </data>
+  <data name="listing.search.tag_picker.tooltip" xml:space="preserve">
+    <value>Nutzertags durchstöbern</value>
+  </data>
+  <data name="listing.search.tag_picker.prompt" xml:space="preserve">
+    <value>Schreibe zum Suchen</value>
   </data>
   <data name="general.converts" xml:space="preserve">
     <value>Konvertierte Beatmaps miteinbeziehen</value>

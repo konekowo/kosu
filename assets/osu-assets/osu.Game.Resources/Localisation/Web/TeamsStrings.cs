@@ -30,6 +30,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString ApplicationsStoreOk => new TranslatableString(getKey(@"applications.store.ok"), @"Requested to join team.");
 
         /// <summary>
+        /// "{0} member|{0} members"
+        /// </summary>
+        public static LocalisableString CardMembers(LocalisableString countDelimited) => new TranslatableString(getKey(@"card.members"), @"{0} member|{0} members", countDelimited);
+
+        /// <summary>
         /// "Create Team"
         /// </summary>
         public static LocalisableString CreateSubmit => new TranslatableString(getKey(@"create.submit"), @"Create Team");
@@ -175,6 +180,16 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString MembersIndexTitle => new TranslatableString(getKey(@"members.index.title"), @"Manage Members");
 
         /// <summary>
+        /// "Add user {0} to team?"
+        /// </summary>
+        public static LocalisableString MembersIndexApplicationsAcceptConfirm(LocalisableString user) => new TranslatableString(getKey(@"members.index.applications.accept_confirm"), @"Add user {0} to team?", user);
+
+        /// <summary>
+        /// "Requested At"
+        /// </summary>
+        public static LocalisableString MembersIndexApplicationsCreatedAt => new TranslatableString(getKey(@"members.index.applications.created_at"), @"Requested At");
+
+        /// <summary>
         /// "No join requests at the moment."
         /// </summary>
         public static LocalisableString MembersIndexApplicationsEmpty => new TranslatableString(getKey(@"members.index.applications.empty"), @"No join requests at the moment.");
@@ -185,19 +200,19 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString MembersIndexApplicationsEmptySlots => new TranslatableString(getKey(@"members.index.applications.empty_slots"), @"Available slots");
 
         /// <summary>
+        /// "{0} user overflow|{0} users overflow"
+        /// </summary>
+        public static LocalisableString MembersIndexApplicationsEmptySlotsOverflow(LocalisableString countDelimited) => new TranslatableString(getKey(@"members.index.applications.empty_slots_overflow"), @"{0} user overflow|{0} users overflow", countDelimited);
+
+        /// <summary>
+        /// "Deny join request from user {0}?"
+        /// </summary>
+        public static LocalisableString MembersIndexApplicationsRejectConfirm(LocalisableString user) => new TranslatableString(getKey(@"members.index.applications.reject_confirm"), @"Deny join request from user {0}?", user);
+
+        /// <summary>
         /// "Join Requests"
         /// </summary>
         public static LocalisableString MembersIndexApplicationsTitle => new TranslatableString(getKey(@"members.index.applications.title"), @"Join Requests");
-
-        /// <summary>
-        /// "Requested At"
-        /// </summary>
-        public static LocalisableString MembersIndexApplicationsCreatedAt => new TranslatableString(getKey(@"members.index.applications.created_at"), @"Requested At");
-
-        /// <summary>
-        /// "Status"
-        /// </summary>
-        public static LocalisableString MembersIndexTableStatus => new TranslatableString(getKey(@"members.index.table.status"), @"Status");
 
         /// <summary>
         /// "Join Date"
@@ -208,6 +223,26 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Remove"
         /// </summary>
         public static LocalisableString MembersIndexTableRemove => new TranslatableString(getKey(@"members.index.table.remove"), @"Remove");
+
+        /// <summary>
+        /// "Remove user {0} from team?"
+        /// </summary>
+        public static LocalisableString MembersIndexTableRemoveConfirm(LocalisableString user) => new TranslatableString(getKey(@"members.index.table.remove_confirm"), @"Remove user {0} from team?", user);
+
+        /// <summary>
+        /// "Transfer team leadership"
+        /// </summary>
+        public static LocalisableString MembersIndexTableSetLeader => new TranslatableString(getKey(@"members.index.table.set_leader"), @"Transfer team leadership");
+
+        /// <summary>
+        /// "Transfer team leadership to user {0}?"
+        /// </summary>
+        public static LocalisableString MembersIndexTableSetLeaderConfirm(LocalisableString user) => new TranslatableString(getKey(@"members.index.table.set_leader_confirm"), @"Transfer team leadership to user {0}?", user);
+
+        /// <summary>
+        /// "Status"
+        /// </summary>
+        public static LocalisableString MembersIndexTableStatus => new TranslatableString(getKey(@"members.index.table.status"), @"Status");
 
         /// <summary>
         /// "Current Members"
@@ -223,6 +258,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Active"
         /// </summary>
         public static LocalisableString MembersIndexStatusStatus1 => new TranslatableString(getKey(@"members.index.status.status_1"), @"Active");
+
+        /// <summary>
+        /// "User {0} is now the team leader."
+        /// </summary>
+        public static LocalisableString MembersSetLeaderSuccess(LocalisableString user) => new TranslatableString(getKey(@"members.set_leader.success"), @"User {0} is now the team leader.", user);
 
         /// <summary>
         /// "Left the team ;_;"
@@ -285,14 +325,29 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString ShowSectionsMembers => new TranslatableString(getKey(@"show.sections.members"), @"Members");
 
         /// <summary>
-        /// "Rank"
+        /// "{0} slot available|{0} slots available"
         /// </summary>
-        public static LocalisableString ShowStatisticsRank => new TranslatableString(getKey(@"show.statistics.rank"), @"Rank");
+        public static LocalisableString ShowStatisticsEmptySlots(LocalisableString countDelimited) => new TranslatableString(getKey(@"show.statistics.empty_slots"), @"{0} slot available|{0} slots available", countDelimited);
+
+        /// <summary>
+        /// "First places"
+        /// </summary>
+        public static LocalisableString ShowStatisticsFirstPlaces => new TranslatableString(getKey(@"show.statistics.first_places"), @"First places");
 
         /// <summary>
         /// "Team Leader"
         /// </summary>
         public static LocalisableString ShowStatisticsLeader => new TranslatableString(getKey(@"show.statistics.leader"), @"Team Leader");
+
+        /// <summary>
+        /// "Rank"
+        /// </summary>
+        public static LocalisableString ShowStatisticsRank => new TranslatableString(getKey(@"show.statistics.rank"), @"Rank");
+
+        /// <summary>
+        /// "Ranked beatmaps"
+        /// </summary>
+        public static LocalisableString ShowStatisticsRankedBeatmapsets => new TranslatableString(getKey(@"show.statistics.ranked_beatmapsets"), @"Ranked beatmaps");
 
         /// <summary>
         /// "Team created."

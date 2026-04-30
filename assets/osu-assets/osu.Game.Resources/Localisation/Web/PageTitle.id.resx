@@ -127,11 +127,14 @@
   <data name="main.beatmapsets_controller.show" xml:space="preserve">
     <value>info beatmap</value>
   </data>
+  <data name="main.beatmapsets_controller.versions" xml:space="preserve">
+    <value>riwayat versi beatmap</value>
+  </data>
   <data name="main.changelog_controller._" xml:space="preserve">
     <value>riwayat perubahan</value>
   </data>
   <data name="main.chat_controller._" xml:space="preserve">
-    <value>chat</value>
+    <value>obrolan</value>
   </data>
   <data name="main.comments_controller._" xml:space="preserve">
     <value>komentar</value>
@@ -144,6 +147,9 @@
   </data>
   <data name="main.contests_controller.judge" xml:space="preserve">
     <value>penjurian kontes</value>
+  </data>
+  <data name="main.group_history_controller._" xml:space="preserve">
+    <value>riwayat grup</value>
   </data>
   <data name="main.groups_controller.show" xml:space="preserve">
     <value>grup</value>
@@ -163,14 +169,14 @@
   <data name="main.home_controller.testflight" xml:space="preserve">
     <value>testflight</value>
   </data>
+  <data name="main.legacy_matches_controller._" xml:space="preserve">
+    <value>pertandingan</value>
+  </data>
   <data name="main.legal_controller._" xml:space="preserve">
     <value>informasi</value>
   </data>
   <data name="main.livestreams_controller._" xml:space="preserve">
     <value>siaran langsung</value>
-  </data>
-  <data name="main.matches_controller._" xml:space="preserve">
-    <value>pertandingan</value>
   </data>
   <data name="main.news_controller._" xml:space="preserve">
     <value>berita</value>
@@ -211,6 +217,9 @@
   <data name="main.user_cover_presets_controller._" xml:space="preserve">
     <value>preset sampul pengguna</value>
   </data>
+  <data name="main.user_totp_controller._" xml:space="preserve">
+    <value>aplikasi autentikator</value>
+  </data>
   <data name="main.users_controller._" xml:space="preserve">
     <value>info pemain</value>
   </data>
@@ -222,6 +231,9 @@
   </data>
   <data name="main.wiki_controller._" xml:space="preserve">
     <value>wiki</value>
+  </data>
+  <data name="multiplayer.rooms_controller.events" xml:space="preserve">
+    <value>riwayat ruangan</value>
   </data>
   <data name="passport.authorization_controller._" xml:space="preserve">
     <value>otorisir aplikasi</value>

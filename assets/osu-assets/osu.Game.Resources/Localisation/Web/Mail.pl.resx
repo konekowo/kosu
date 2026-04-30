@@ -80,7 +80,7 @@
     <value>Odpowiedz na ten e-mail NATYCHMIAST, jeżeli to działanie nie zostało wykonane przez Ciebie.</value>
   </data>
   <data name="common.ignore" xml:space="preserve">
-    <value>Jeśli to nie Ty o to poprosiłeś(aś), zignoruj tę wiadomość.</value>
+    <value>Jeśli to nie Ty o to poprosiłeś(-aś), zignoruj tę wiadomość.</value>
   </data>
   <data name="donation_thanks.benefit_more" xml:space="preserve">
     <value>Więcej korzyści pojawi się z czasem!</value>
@@ -224,7 +224,7 @@
     <value>Możesz wprowadzić kod ze spacjami lub bez.</value>
   </data>
   <data name="user_verification.link" xml:space="preserve">
-    <value>Ewentualnie możesz kliknąć odnośnik poniżej, aby dokończyć proces weryfikacji:</value>
+    <value>Ewentualnie możesz kliknąć link poniżej, aby dokończyć proces weryfikacji:</value>
   </data>
   <data name="user_verification.report" xml:space="preserve">
     <value>Jeżeli to nie Ty, odpowiedz na tę wiadomość NATYCHMIAST, gdyż Twoje konto może być zagrożone.</value>

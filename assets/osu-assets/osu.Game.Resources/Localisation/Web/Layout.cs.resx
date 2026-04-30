@@ -88,6 +88,9 @@
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>diskuze</value>
   </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>historie verzí</value>
+  </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>výpis</value>
   </data>
@@ -214,6 +217,9 @@
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Soukromí</value>
   </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Pravidla</value>
+  </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Stav serveru</value>
   </data>
@@ -260,13 +266,13 @@
     <value>Ale ne! Něco se pokazilo! ;_;</value>
   </data>
   <data name="errors.500.description" xml:space="preserve">
-    <value>Jsme automaticky oznámeni o každé chybě.</value>
+    <value>Jsme automaticky upozorněni na každou chybu.</value>
   </data>
   <data name="errors.fatal.error" xml:space="preserve">
     <value>Ale né! Něco se pokazilo (Fatálně)! ;_;</value>
   </data>
   <data name="errors.fatal.description" xml:space="preserve">
-    <value>Jsme automaticky oznámeni o každé chybě.</value>
+    <value>Jsme automaticky upozorněni na každou chybu.</value>
   </data>
   <data name="errors.503.error" xml:space="preserve">
     <value>Vypnuté kvůli údržbě!</value>
@@ -338,7 +344,7 @@
     <value>Můj tým</value>
   </data>
   <data name="popup_search.initial" xml:space="preserve">
-    <value>Zadejte hledaný výraz!</value>
+    <value>Zadej hledaný výraz!</value>
   </data>
   <data name="popup_search.retry" xml:space="preserve">
     <value>Hledání se nezdařilo. Klepněte na tlačítko Opakovat.</value>

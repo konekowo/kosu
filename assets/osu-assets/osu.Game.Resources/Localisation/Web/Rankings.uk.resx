@@ -73,6 +73,12 @@
   <data name="daily_challenge.top_50p" xml:space="preserve">
     <value>Для досягнення топ 50%</value>
   </data>
+  <data name="daily_challenge.unavailable.future" xml:space="preserve">
+    <value>Бітмапа дня ще не визначена на вказану дату!</value>
+  </data>
+  <data name="daily_challenge.unavailable.past" xml:space="preserve">
+    <value>Бітмапа дня не визначена на вказану дату!</value>
+  </data>
   <data name="filter.title" xml:space="preserve">
     <value>Показати</value>
   </data>
@@ -88,11 +94,44 @@
   <data name="kudosu.used" xml:space="preserve">
     <value>Витрачено</value>
   </data>
+  <data name="matchmaking.plays" xml:space="preserve">
+    <value>Ігри</value>
+  </data>
+  <data name="matchmaking.points" xml:space="preserve">
+    <value>Очки</value>
+  </data>
+  <data name="matchmaking.provisional" xml:space="preserve">
+    <value>Не вистачає зіграних матчів, щоб визначити рейтинг</value>
+  </data>
+  <data name="matchmaking.rating" xml:space="preserve">
+    <value>Рейтинг</value>
+  </data>
+  <data name="matchmaking.wins" xml:space="preserve">
+    <value>Перемоги</value>
+  </data>
+  <data name="multiplayer.room_name" xml:space="preserve">
+    <value>Назва кімнати</value>
+  </data>
   <data name="performance.insufficient_history" xml:space="preserve">
     <value>Цей користувач має менше 30 днів недавньої історії рейтингу.</value>
   </data>
-  <data name="type.charts" xml:space="preserve">
-    <value>чарти</value>
+  <data name="top_plays.empty" xml:space="preserve">
+    <value>Дані підраховуються...</value>
+  </data>
+  <data name="top_plays.last_updated" xml:space="preserve">
+    <value>Востаннє оновленно</value>
+  </data>
+  <data name="playlists.charts" xml:space="preserve">
+    <value>чарти (застаріло)</value>
+  </data>
+  <data name="playlists.featured" xml:space="preserve">
+    <value>вподобані</value>
+  </data>
+  <data name="playlists.season_room" xml:space="preserve">
+    <value>кімната сезону</value>
+  </data>
+  <data name="playlists.seasons" xml:space="preserve">
+    <value>сезони</value>
   </data>
   <data name="type.country" xml:space="preserve">
     <value>країни</value>
@@ -100,20 +139,23 @@
   <data name="type.daily_challenge" xml:space="preserve">
     <value>щоденний виклик</value>
   </data>
+  <data name="type.global" xml:space="preserve">
+    <value>топ світу</value>
+  </data>
   <data name="type.kudosu" xml:space="preserve">
     <value>кудосу</value>
   </data>
-  <data name="type.multiplayer" xml:space="preserve">
-    <value>мультиплеєр</value>
+  <data name="type.matchmaking" xml:space="preserve">
+    <value>швидка гра</value>
   </data>
-  <data name="type.performance" xml:space="preserve">
-    <value>продуктивність</value>
+  <data name="type.playlists" xml:space="preserve">
+    <value>плейлисти</value>
   </data>
-  <data name="type.score" xml:space="preserve">
-    <value>очки</value>
+  <data name="type.team" xml:space="preserve">
+    <value>команди</value>
   </data>
-  <data name="type.seasons" xml:space="preserve">
-    <value>сезонні</value>
+  <data name="type.top_plays" xml:space="preserve">
+    <value>найкращі результати</value>
   </data>
   <data name="seasons.empty" xml:space="preserve">
     <value>У цьому сезоні зараз немає кімнат.</value>
@@ -123,6 +165,9 @@
   </data>
   <data name="seasons.room_count" xml:space="preserve">
     <value>Кількість плейлистів</value>
+  </data>
+  <data name="seasons.summary" xml:space="preserve">
+    <value>Переглянути звіт по сезону</value>
   </data>
   <data name="seasons.url" xml:space="preserve">
     <value>Показувати більше інформації про цей сезон.</value>
@@ -153,6 +198,9 @@
   </data>
   <data name="stat.division" xml:space="preserve">
     <value>Дивізіон</value>
+  </data>
+  <data name="stat.members" xml:space="preserve">
+    <value>Учасники</value>
   </data>
   <data name="stat.play_count" xml:space="preserve">
     <value>Кількість ігор</value>

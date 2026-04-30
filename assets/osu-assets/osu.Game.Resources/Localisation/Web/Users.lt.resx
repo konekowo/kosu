@@ -62,7 +62,7 @@
     <value>[ištrintas vartotojas]</value>
   </data>
   <data name="beatmapset_activities.title" xml:space="preserve">
-    <value>{0} Taisymų istorija</value>
+    <value>{0} Taisymų Istorija</value>
   </data>
   <data name="beatmapset_activities.title_compact" xml:space="preserve">
     <value>Taisymai</value>
@@ -235,6 +235,12 @@
   <data name="login.beta.small" xml:space="preserve">
     <value>(osu! rėmėjai bus įleisti greitu metu)</value>
   </data>
+  <data name="multiplayer.index.active" xml:space="preserve">
+    <value>Aktyvus</value>
+  </data>
+  <data name="multiplayer.index.ended" xml:space="preserve">
+    <value>Baigėsi</value>
+  </data>
   <data name="ogp.modding_description" xml:space="preserve">
     <value>Beatmap'ai: {0}</value>
   </data>
@@ -292,26 +298,41 @@
   <data name="report.actions.cancel" xml:space="preserve">
     <value>Atšaukti</value>
   </data>
+  <data name="report.dmca.message_1._" xml:space="preserve">
+    <value>Prašome pranešti apie autorinių teisių pažeidimus su DMCA skundu į {0} kaip numatyta {1}.</value>
+  </data>
+  <data name="report.dmca.message_1.policy" xml:space="preserve">
+    <value>osu! autorinių teisių politikoje</value>
+  </data>
+  <data name="report.dmca.message_2" xml:space="preserve">
+    <value>Taikoma atvejams kai garso takeliai, vizualus turinys arba beatmap'o lygio turinys naudojamas be tinkamo leidimo.</value>
+  </data>
   <data name="report.options.cheating" xml:space="preserve">
     <value>Sukčiavimas</value>
   </data>
-  <data name="report.options.multiple_accounts" xml:space="preserve">
-    <value>Naudoja kelias paskyras</value>
+  <data name="report.options.copyright_infringement" xml:space="preserve">
+    <value>Autorinių teisių pažeidimas</value>
+  </data>
+  <data name="report.options.inappropriate_chat" xml:space="preserve">
+    <value>Netinkamas elgesys pokalbiuose</value>
   </data>
   <data name="report.options.insults" xml:space="preserve">
     <value>Įžeidinėja manę / kitus</value>
   </data>
-  <data name="report.options.spam" xml:space="preserve">
-    <value>Siuntinėja šlamštą</value>
-  </data>
-  <data name="report.options.unwanted_content" xml:space="preserve">
-    <value>Nuorodos į netinkamą turinį</value>
+  <data name="report.options.multiple_accounts" xml:space="preserve">
+    <value>Naudoja kelias paskyras</value>
   </data>
   <data name="report.options.nonsense" xml:space="preserve">
     <value>Nesąmonės</value>
   </data>
   <data name="report.options.other" xml:space="preserve">
     <value>Kita (nurodykite žemiau)</value>
+  </data>
+  <data name="report.options.spam" xml:space="preserve">
+    <value>Siuntinėja šlamštą</value>
+  </data>
+  <data name="report.options.unwanted_content" xml:space="preserve">
+    <value>Nuorodos į netinkamą turinį</value>
   </data>
   <data name="restricted_banner.title" xml:space="preserve">
     <value>Tavo vartotojo prieiga buvo apribota!</value>
@@ -412,6 +433,12 @@
   <data name="show.edit.cover.defaults_info" xml:space="preserve">
     <value>Daugiau viršelio pasirinkimų pridėsime ateityje</value>
   </data>
+  <data name="show.edit.cover.holdover_remove_confirm" xml:space="preserve">
+    <value>Prieš tai naudotas viršelis nebėra prieinamas pasirinkimui. Nebegalite pasirinkti jo po pakeitimo į kitą viršelį. Tęsti?</value>
+  </data>
+  <data name="show.edit.cover.title" xml:space="preserve">
+    <value>Viršelis</value>
+  </data>
   <data name="show.edit.cover.upload.broken_file" xml:space="preserve">
     <value>Nepavyko apdoroti paveiksliuko. Patikrink įkeltą paveiksliuką ir mėgink dar kart.</value>
   </data>
@@ -444,6 +471,9 @@
   </data>
   <data name="show.edit.default_playmode.set" xml:space="preserve">
     <value>nustatyti {0} kaip pagrindiniu profilio žaidimo rėžimu</value>
+  </data>
+  <data name="show.edit.hue.reset_no_supporter" xml:space="preserve">
+    <value>Grąžinti numatytąją spalva? Rėmėjo žyma yra reikalinga, kad pakeisti į kitą spalvą.</value>
   </data>
   <data name="show.edit.hue.title" xml:space="preserve">
     <value>Spalva</value>
@@ -488,7 +518,7 @@
     <value>Mylimi Beatmap'ai</value>
   </data>
   <data name="show.extra.beatmaps.nominated.title" xml:space="preserve">
-    <value>Nominuoti Reitinguoti Beatmap'ai</value>
+    <value>Nominuoti Reitingavimui Beatmap'ai</value>
   </data>
   <data name="show.extra.beatmaps.pending.title" xml:space="preserve">
     <value>Laukiantis Beatmap'ai</value>
@@ -536,10 +566,10 @@
     <value>Nesenai žaisti (24h)</value>
   </data>
   <data name="show.extra.historical.replays_watched_counts.title" xml:space="preserve">
-    <value>Sužaidimų Peržiūrų Istorija</value>
+    <value>Įrašų Peržiūros Istorija</value>
   </data>
   <data name="show.extra.historical.replays_watched_counts.count_label" xml:space="preserve">
-    <value>Sužaidimai Žiūrėti</value>
+    <value>Įrašai Žiūrėti</value>
   </data>
   <data name="show.extra.kudosu.recent_entries" xml:space="preserve">
     <value>Paskutinių Kudosu Istorija</value>
@@ -560,7 +590,7 @@
     <value>Gauta {0} už kudosu atmetimo anuliavimą taisymų įrašą tarp {1}</value>
   </data>
   <data name="show.extra.kudosu.entry.beatmap_discussion.deny_kudosu.reset" xml:space="preserve">
-    <value>Atmesta {0} už taisymų įraša {1}</value>
+    <value>Atmesta {0} už taisymų įrašą {1}</value>
   </data>
   <data name="show.extra.kudosu.entry.beatmap_discussion.delete.reset" xml:space="preserve">
     <value>Prarasta {0} dėl taisymų įrašo ištrynimo iš {1}</value>
@@ -626,7 +656,7 @@
     <value>Tinklo Žaidimai</value>
   </data>
   <data name="show.extra.top_ranks.download_replay" xml:space="preserve">
-    <value>Atsiųsti Sužaidimą</value>
+    <value>Atsiųsti Įrašą</value>
   </data>
   <data name="show.extra.top_ranks.not_ranked" xml:space="preserve">
     <value>Tik reitinguoti beatmap'ai duoda pp</value>
@@ -641,7 +671,7 @@
     <value>Reitingai</value>
   </data>
   <data name="show.extra.top_ranks.best.title" xml:space="preserve">
-    <value>Geriausi rezultatai</value>
+    <value>Geriausi Rezultatai</value>
   </data>
   <data name="show.extra.top_ranks.first.title" xml:space="preserve">
     <value>Pirmos vietos</value>
@@ -784,8 +814,17 @@
   <data name="show.rank.highest" xml:space="preserve">
     <value>Aukščiausias reitingas: {0} kada: {1}</value>
   </data>
+  <data name="show.season_stats.division_top_percentage" xml:space="preserve">
+    <value>Top {0}</value>
+  </data>
+  <data name="show.season_stats.total_score" xml:space="preserve">
+    <value>Visi taškai</value>
+  </data>
   <data name="show.stats.hit_accuracy" xml:space="preserve">
     <value>Paspaudimų Tikslumas</value>
+  </data>
+  <data name="show.stats.hits_per_play" xml:space="preserve">
+    <value>Pataikymai Per Sužaidimą</value>
   </data>
   <data name="show.stats.level" xml:space="preserve">
     <value>Lygis {0}</value>
@@ -810,7 +849,7 @@
     <value>Reitinguoti taškai</value>
   </data>
   <data name="show.stats.replays_watched_by_others" xml:space="preserve">
-    <value>Sužaidimų peržiūros iš kitų</value>
+    <value>Įrašų peržiūros iš kitų</value>
   </data>
   <data name="show.stats.score_ranks" xml:space="preserve">
     <value>Taškų Įvertinimai</value>

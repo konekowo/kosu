@@ -170,6 +170,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString ShowAdminFullSizeCover => new TranslatableString(getKey(@"show.admin.full_size_cover"), @"View full size cover image");
 
         /// <summary>
+        /// "View admin page"
+        /// </summary>
+        public static LocalisableString ShowAdminPage => new TranslatableString(getKey(@"show.admin.page"), @"View admin page");
+
+        /// <summary>
         /// "This beatmap has been deleted."
         /// </summary>
         public static LocalisableString ShowDeletedBannerTitle => new TranslatableString(getKey(@"show.deleted_banner.title"), @"This beatmap has been deleted.");
@@ -345,6 +350,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString ShowInfoLanguage => new TranslatableString(getKey(@"show.info.language"), @"Language");
 
         /// <summary>
+        /// "Mapper Tags"
+        /// </summary>
+        public static LocalisableString ShowInfoMapperTags => new TranslatableString(getKey(@"show.info.mapper_tags"), @"Mapper Tags");
+
+        /// <summary>
         /// "Data still being calculated..."
         /// </summary>
         public static LocalisableString ShowInfoNoScores => new TranslatableString(getKey(@"show.info.no_scores"), @"Data still being calculated...");
@@ -363,6 +373,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Online offset"
         /// </summary>
         public static LocalisableString ShowInfoOffset => new TranslatableString(getKey(@"show.info.offset"), @"Online offset");
+
+        /// <summary>
+        /// "Beatmap Packs"
+        /// </summary>
+        public static LocalisableString ShowInfoPackTags => new TranslatableString(getKey(@"show.info.pack_tags"), @"Beatmap Packs");
 
         /// <summary>
         /// "Points of Failure"
@@ -385,9 +400,14 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString ShowInfoSuccessRate => new TranslatableString(getKey(@"show.info.success-rate"), @"Success Rate");
 
         /// <summary>
-        /// "Tags"
+        /// "{0} of {1} play|{0} of {1} plays"
         /// </summary>
-        public static LocalisableString ShowInfoTags => new TranslatableString(getKey(@"show.info.tags"), @"Tags");
+        public static LocalisableString ShowInfoSuccessRatePlays(LocalisableString passes, LocalisableString countDelimited) => new TranslatableString(getKey(@"show.info.success_rate_plays"), @"{0} of {1} play|{0} of {1} plays", passes, countDelimited);
+
+        /// <summary>
+        /// "User Tags"
+        /// </summary>
+        public static LocalisableString ShowInfoUserTags => new TranslatableString(getKey(@"show.info.user_tags"), @"User Tags");
 
         /// <summary>
         /// "This beatmap contains video"
@@ -643,6 +663,16 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Playcount"
         /// </summary>
         public static LocalisableString ShowStatsPlaycount => new TranslatableString(getKey(@"show.stats.playcount"), @"Playcount");
+
+        /// <summary>
+        /// "Favourites"
+        /// </summary>
+        public static LocalisableString ShowStatsFavourites => new TranslatableString(getKey(@"show.stats.favourites"), @"Favourites");
+
+        /// <summary>
+        /// "No favourites yet"
+        /// </summary>
+        public static LocalisableString ShowStatsNoFavourites => new TranslatableString(getKey(@"show.stats.no_favourites"), @"No favourites yet");
 
         /// <summary>
         /// "Ranked"

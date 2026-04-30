@@ -95,15 +95,30 @@
     <value>Verso il basso</value>
   </data>
   <data name="scroll_speed" xml:space="preserve">
-    <value>Velocità scorrimento</value>
+    <value>Velocità di scorrimento</value>
   </data>
   <data name="Timing_based_colouring" xml:space="preserve">
     <value>Colora note in base al tempo</value>
   </data>
   <data name="ruleset" xml:space="preserve">
-    <value>{0}ms (velocità {1})</value>
+    <value>{0}ms (velocità {1:N1})</value>
   </data>
   <data name="touch_control_scheme" xml:space="preserve">
     <value>Schema di controllo touch</value>
+  </data>
+  <data name="mobile_layout" xml:space="preserve">
+    <value>Layout dispositivi mobili</value>
+  </data>
+  <data name="portrait" xml:space="preserve">
+    <value>Verticale</value>
+  </data>
+  <data name="landscape" xml:space="preserve">
+    <value>Orizzontale</value>
+  </data>
+  <data name="landscape_expanded_columns" xml:space="preserve">
+    <value>Orizzontale (colonne espanse)</value>
+  </data>
+  <data name="touch_overlay" xml:space="preserve">
+    <value>Overlay touch</value>
   </data>
 </root>

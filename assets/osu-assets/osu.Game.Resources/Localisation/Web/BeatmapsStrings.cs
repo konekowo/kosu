@@ -745,6 +745,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString ListingSearchOptions => new TranslatableString(getKey(@"listing.search.options"), @"More Search Options");
 
         /// <summary>
+        /// "Profile top rank counts and results shown on this page are based on your highest &quot;standardised&quot; (aka &quot;lazer&quot;) scores on beatmaps."
+        /// </summary>
+        public static LocalisableString ListingSearchRankFilterNote => new TranslatableString(getKey(@"listing.search.rank_filter_note"), @"Profile top rank counts and results shown on this page are based on your highest ""standardised"" (aka ""lazer"") scores on beatmaps.");
+
+        /// <summary>
         /// "Filtering by {0} requires an active osu!supporter tag"
         /// </summary>
         public static LocalisableString ListingSearchSupporterFilter(LocalisableString filters) => new TranslatableString(getKey(@"listing.search.supporter_filter"), @"Filtering by {0} requires an active osu!supporter tag", filters);
@@ -863,6 +868,16 @@ namespace osu.Game.Resources.Localisation.Web
         /// "osu!supporter tag"
         /// </summary>
         public static LocalisableString ListingSearchSupporterFilterQuoteLinkText => new TranslatableString(getKey(@"listing.search.supporter_filter_quote.link_text"), @"osu!supporter tag");
+
+        /// <summary>
+        /// "browse user tags"
+        /// </summary>
+        public static LocalisableString ListingSearchTagPickerTooltip => new TranslatableString(getKey(@"listing.search.tag_picker.tooltip"), @"browse user tags");
+
+        /// <summary>
+        /// "type to search"
+        /// </summary>
+        public static LocalisableString ListingSearchTagPickerPrompt => new TranslatableString(getKey(@"listing.search.tag_picker.prompt"), @"type to search");
 
         /// <summary>
         /// "Include converted beatmaps"

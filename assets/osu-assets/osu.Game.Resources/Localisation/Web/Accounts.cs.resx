@@ -164,13 +164,16 @@
     <value>Ověřte prosím svůj primární e-mail na GitHubu a pak zkuste znovu propojit svůj účet.</value>
   </data>
   <data name="notifications.beatmapset_discussion_qualified_problem" xml:space="preserve">
-    <value>dostávat oznámení na nové problémy u kvalifikovaných map u následujících módů</value>
+    <value>dostávat oznámení na nové problémy u kvalifikovaných map následujících módů</value>
   </data>
   <data name="notifications.beatmapset_disqualify" xml:space="preserve">
-    <value>dostávat notifikace kdy mapy následujících módů jsou diskvalifikované</value>
+    <value>dostávat oznámení, když beatmapy následujících módů jsou diskvalifikované</value>
   </data>
   <data name="notifications.comment_reply" xml:space="preserve">
-    <value>dostávat notifikace na odpovědi na vaše komentáře</value>
+    <value>dostávat oznámení na odpovědi k tvým komentářům</value>
+  </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>dostávat oznámení na články o novinkách</value>
   </data>
   <data name="notifications.title" xml:space="preserve">
     <value>Oznámení</value>
@@ -190,6 +193,9 @@
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>soukromé zprávy</value>
   </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>zprávy týmového chatu</value>
+  </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>nové komentáře</value>
   </data>
@@ -202,6 +208,9 @@
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>tvůrce beatmapy</value>
   </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>články o novinkách</value>
+  </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>push</value>
   </data>
@@ -213,6 +222,9 @@
   </data>
   <data name="oauth.title" xml:space="preserve">
     <value>OAuth</value>
+  </data>
+  <data name="options.beatmapset_show_anime_cover" xml:space="preserve">
+    <value>zobrazovat anime záhlaví beatmap</value>
   </data>
   <data name="options.beatmapset_show_nsfw" xml:space="preserve">
     <value>skrýt varování před explicitním obsahem v beatmapách</value>
@@ -254,7 +266,10 @@
     <value>blokovat soukromé zprávy od lidí, kteří nejsou v tvém seznamu přátel</value>
   </data>
   <data name="privacy.hide_online" xml:space="preserve">
-    <value>skrýt váš online status</value>
+    <value>skrýt tvůj online status</value>
+  </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>toto je stejné, jako "neviditelný" režim v osu!lazer</value>
   </data>
   <data name="privacy.title" xml:space="preserve">
     <value>Soukromí</value>
@@ -282,6 +297,27 @@
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>aktualizovat</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>Ověřovací aplikace</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>Použít ověřovací aplikaci namísto emailu k ověření. Ověření emailem bude stále k dispozici jako záloha.</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>Odebrat</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>Přidat ověřovací aplikaci</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>stav</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>Nenastavena</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>Nakonfigurována</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>Nyní můžete zavřít toto okno</value>

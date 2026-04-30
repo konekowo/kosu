@@ -154,6 +154,9 @@
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>檢視完整封面圖片</value>
   </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>檢視管理頁面</value>
+  </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>此圖譜已被刪除。</value>
   </data>
@@ -256,6 +259,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>語言</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>譜師標籤</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>資料還在計算中...</value>
   </data>
@@ -267,6 +273,9 @@
   </data>
   <data name="show.info.offset" xml:space="preserve">
     <value>線上偏移調整</value>
+  </data>
+  <data name="show.info.pack_tags" xml:space="preserve">
+    <value>圖譜組合包</value>
   </data>
   <data name="show.info.points-of-failure" xml:space="preserve">
     <value>失敗位置</value>
@@ -280,8 +289,11 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>成功率</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>標籤</value>
+  <data name="show.info.success_rate_plays" xml:space="preserve">
+    <value>{0} 次遊玩中的 {1}|{0} 次遊玩中的 {1}</value>
+  </data>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>玩家標籤</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>此圖譜包含背景影片</value>
@@ -321,6 +333,9 @@
   </data>
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
     <value>你需要成為贊助者才能查看國內與好友排名！</value>
+  </data>
+  <data name="show.scoreboard.team" xml:space="preserve">
+    <value>隊伍排名</value>
   </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>排行榜</value>
@@ -366,6 +381,9 @@
   </data>
   <data name="show.scoreboard.no_scores.loading" xml:space="preserve">
     <value>正在載入分數...</value>
+  </data>
+  <data name="show.scoreboard.no_scores.team" xml:space="preserve">
+    <value>您的隊員尚未在此圖譜上傳任何分數！</value>
   </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
     <value>Unranked 譜面</value>
@@ -426,6 +444,12 @@
   </data>
   <data name="show.stats.playcount" xml:space="preserve">
     <value>遊玩次數</value>
+  </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>收藏</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>無人收藏</value>
   </data>
   <data name="show.status.ranked" xml:space="preserve">
     <value>已進榜</value>

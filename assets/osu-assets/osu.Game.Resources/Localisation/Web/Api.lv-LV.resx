@@ -62,10 +62,10 @@
     <value>Nevar nosūtīt tukšu ziņu.</value>
   </data>
   <data name="error.chat.limit_exceeded" xml:space="preserve">
-    <value>Tu pārāk ātri sūtāt ziņas, lūdzu, nedaudz uzgaidiet, pirms mēģiniet vēlreiz.</value>
+    <value>Tu pārāk ātri sūtāt ziņas, lūdzu, nedaudz uzgaidi, pirms mēģini vēlreiz.</value>
   </data>
   <data name="error.chat.too_long" xml:space="preserve">
-    <value>Ziņa, ko mēģināji nosūtīt, ir pārāk gara.</value>
+    <value>Ziņa, kuru tu mēģināji nosūtīt, ir pārāk gara.</value>
   </data>
   <data name="scopes.bot" xml:space="preserve">
     <value>Darboties kā sarakstu robots.</value>
@@ -84,6 +84,9 @@
   </data>
   <data name="scopes.forum.write" xml:space="preserve">
     <value>Tavā vārdā izveidot un rediģēt foruma tēmas un ziņojumus.</value>
+  </data>
+  <data name="scopes.forum.write_manage" xml:space="preserve">
+    <value>Pārvaldīt foruma tēmas un ierakstus jūsu vārdā.</value>
   </data>
   <data name="scopes.friends.read" xml:space="preserve">
     <value>Skatīt, kam tu seko.</value>

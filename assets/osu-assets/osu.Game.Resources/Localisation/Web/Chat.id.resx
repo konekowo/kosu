@@ -68,16 +68,16 @@
     <value>berbicara dengan {0}</value>
   </data>
   <data name="title_compact" xml:space="preserve">
-    <value>chat</value>
+    <value>obrolan</value>
   </data>
   <data name="unread_messages" xml:space="preserve">
     <value>pesan yang belum dibaca</value>
   </data>
   <data name="cannot_send.channel" xml:space="preserve">
-    <value>Kamu sedang tidak dapat mengirimkan pesan pada kanal percakapan ini.</value>
+    <value>Kamu sedang tidak bisa mengirim pesan pada kanal percakapan ini.</value>
   </data>
   <data name="cannot_send.user" xml:space="preserve">
-    <value>Kamu sedang tidak dapat mengirimkan pesan kepada pengguna ini.</value>
+    <value>Kamu sedang tidak bisa mengirimkan pesan kepada pengguna ini.</value>
   </data>
   <data name="channels.confirm_part" xml:space="preserve">
     <value>Apakah kamu ingin menyembunyikan kanal percakapan ini? Kamu akan tetap menerima pesan dari kanal percakapan ini.</value>
@@ -89,7 +89,7 @@
     <value>gabung kanal baru</value>
   </data>
   <data name="channels.none" xml:space="preserve">
-    <value>tidak ada kanal percakapan</value>
+    <value>tidak ada kanal</value>
   </data>
   <data name="channels.list.title.announce" xml:space="preserve">
     <value>Pengumuman</value>
@@ -122,7 +122,7 @@
     <value>pemain yang akan ditambahkan</value>
   </data>
   <data name="not_found.message" xml:space="preserve">
-    <value>Tidak ada apa-apa di sini. Mungkin kamu telah meninggalkan kanal percakapan ini, atau kanal yang ingin kamu tuju sudah tidak ada...</value>
+    <value>Tidak ada apa-apa di sini. Mungkin kamu sudah meninggalkan kanal percakapan ini, atau kanal yang ingin kamu tuju sudah tidak ada...</value>
   </data>
   <data name="not_found.title" xml:space="preserve">
     <value>kanal percakapan tidak ditemukan</value>
@@ -131,7 +131,7 @@
     <value>Buat</value>
   </data>
   <data name="input.disabled" xml:space="preserve">
-    <value>pesan tidak dapat dikirim...</value>
+    <value>pesan tidak bisa dikirim...</value>
   </data>
   <data name="input.disconnected" xml:space="preserve">
     <value>Terputus</value>
@@ -141,15 +141,6 @@
   </data>
   <data name="input.send" xml:space="preserve">
     <value>Kirim</value>
-  </data>
-  <data name="no-conversations.howto" xml:space="preserve">
-    <value>Mulailah percakapan baru dari halaman profil atau kartu pop-up pengguna.</value>
-  </data>
-  <data name="no-conversations.lazer" xml:space="preserve">
-    <value>Kanal percakapan publik yang kamu buka melalui &lt;a href="{0}"&gt;osu!lazer&lt;/a&gt; juga akan terlihat di sini.</value>
-  </data>
-  <data name="no-conversations.title" xml:space="preserve">
-    <value>belum ada percakapan</value>
   </data>
   <data name="join_channels.loading" xml:space="preserve">
     <value>Memuat daftar kanal percakapan...</value>

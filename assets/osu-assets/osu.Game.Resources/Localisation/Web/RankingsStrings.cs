@@ -35,6 +35,16 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString DailyChallengeTop50p => new TranslatableString(getKey(@"daily_challenge.top_50p"), @"Top 50% Score");
 
         /// <summary>
+        /// "No daily challenge at the specified date yet!"
+        /// </summary>
+        public static LocalisableString DailyChallengeUnavailableFuture => new TranslatableString(getKey(@"daily_challenge.unavailable.future"), @"No daily challenge at the specified date yet!");
+
+        /// <summary>
+        /// "No daily challenge at the specified date!"
+        /// </summary>
+        public static LocalisableString DailyChallengeUnavailablePast => new TranslatableString(getKey(@"daily_challenge.unavailable.past"), @"No daily challenge at the specified date!");
+
+        /// <summary>
         /// "Show"
         /// </summary>
         public static LocalisableString FilterTitle => new TranslatableString(getKey(@"filter.title"), @"Show");
@@ -60,14 +70,69 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString KudosuUsed => new TranslatableString(getKey(@"kudosu.used"), @"Spent");
 
         /// <summary>
+        /// "Plays"
+        /// </summary>
+        public static LocalisableString MatchmakingPlays => new TranslatableString(getKey(@"matchmaking.plays"), @"Plays");
+
+        /// <summary>
+        /// "Points"
+        /// </summary>
+        public static LocalisableString MatchmakingPoints => new TranslatableString(getKey(@"matchmaking.points"), @"Points");
+
+        /// <summary>
+        /// "Not enough matches played to accurately determine rating"
+        /// </summary>
+        public static LocalisableString MatchmakingProvisional => new TranslatableString(getKey(@"matchmaking.provisional"), @"Not enough matches played to accurately determine rating");
+
+        /// <summary>
+        /// "Rating"
+        /// </summary>
+        public static LocalisableString MatchmakingRating => new TranslatableString(getKey(@"matchmaking.rating"), @"Rating");
+
+        /// <summary>
+        /// "Wins"
+        /// </summary>
+        public static LocalisableString MatchmakingWins => new TranslatableString(getKey(@"matchmaking.wins"), @"Wins");
+
+        /// <summary>
+        /// "Room Name"
+        /// </summary>
+        public static LocalisableString MultiplayerRoomName => new TranslatableString(getKey(@"multiplayer.room_name"), @"Room Name");
+
+        /// <summary>
         /// "This user has less than 30 days of recent ranking history."
         /// </summary>
         public static LocalisableString PerformanceInsufficientHistory => new TranslatableString(getKey(@"performance.insufficient_history"), @"This user has less than 30 days of recent ranking history.");
 
         /// <summary>
+        /// "The data is being calculated..."
+        /// </summary>
+        public static LocalisableString TopPlaysEmpty => new TranslatableString(getKey(@"top_plays.empty"), @"The data is being calculated...");
+
+        /// <summary>
+        /// "Last updated"
+        /// </summary>
+        public static LocalisableString TopPlaysLastUpdated => new TranslatableString(getKey(@"top_plays.last_updated"), @"Last updated");
+
+        /// <summary>
         /// "spotlights (old)"
         /// </summary>
-        public static LocalisableString TypeCharts => new TranslatableString(getKey(@"type.charts"), @"spotlights (old)");
+        public static LocalisableString PlaylistsCharts => new TranslatableString(getKey(@"playlists.charts"), @"spotlights (old)");
+
+        /// <summary>
+        /// "featured"
+        /// </summary>
+        public static LocalisableString PlaylistsFeatured => new TranslatableString(getKey(@"playlists.featured"), @"featured");
+
+        /// <summary>
+        /// "season room"
+        /// </summary>
+        public static LocalisableString PlaylistsSeasonRoom => new TranslatableString(getKey(@"playlists.season_room"), @"season room");
+
+        /// <summary>
+        /// "seasons"
+        /// </summary>
+        public static LocalisableString PlaylistsSeasons => new TranslatableString(getKey(@"playlists.seasons"), @"seasons");
 
         /// <summary>
         /// "country"
@@ -80,34 +145,34 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString TypeDailyChallenge => new TranslatableString(getKey(@"type.daily_challenge"), @"daily challenge");
 
         /// <summary>
+        /// "global"
+        /// </summary>
+        public static LocalisableString TypeGlobal => new TranslatableString(getKey(@"type.global"), @"global");
+
+        /// <summary>
         /// "kudosu"
         /// </summary>
         public static LocalisableString TypeKudosu => new TranslatableString(getKey(@"type.kudosu"), @"kudosu");
 
         /// <summary>
-        /// "multiplayer"
+        /// "ranked play"
         /// </summary>
-        public static LocalisableString TypeMultiplayer => new TranslatableString(getKey(@"type.multiplayer"), @"multiplayer");
+        public static LocalisableString TypeMatchmaking => new TranslatableString(getKey(@"type.matchmaking"), @"ranked play");
 
         /// <summary>
-        /// "performance"
+        /// "playlists"
         /// </summary>
-        public static LocalisableString TypePerformance => new TranslatableString(getKey(@"type.performance"), @"performance");
-
-        /// <summary>
-        /// "score"
-        /// </summary>
-        public static LocalisableString TypeScore => new TranslatableString(getKey(@"type.score"), @"score");
-
-        /// <summary>
-        /// "seasons"
-        /// </summary>
-        public static LocalisableString TypeSeasons => new TranslatableString(getKey(@"type.seasons"), @"seasons");
+        public static LocalisableString TypePlaylists => new TranslatableString(getKey(@"type.playlists"), @"playlists");
 
         /// <summary>
         /// "team"
         /// </summary>
         public static LocalisableString TypeTeam => new TranslatableString(getKey(@"type.team"), @"team");
+
+        /// <summary>
+        /// "top plays"
+        /// </summary>
+        public static LocalisableString TypeTopPlays => new TranslatableString(getKey(@"type.top_plays"), @"top plays");
 
         /// <summary>
         /// "There are no rooms in this season yet."
@@ -123,6 +188,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Playlist count"
         /// </summary>
         public static LocalisableString SeasonsRoomCount => new TranslatableString(getKey(@"seasons.room_count"), @"Playlist count");
+
+        /// <summary>
+        /// "View Season Summary"
+        /// </summary>
+        public static LocalisableString SeasonsSummary => new TranslatableString(getKey(@"seasons.summary"), @"View Season Summary");
 
         /// <summary>
         /// "Display more informations on that season."

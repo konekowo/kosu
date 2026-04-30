@@ -62,7 +62,10 @@
     <value>Редактор бітмап</value>
   </data>
   <data name="waveform_opacity" xml:space="preserve">
-    <value>Непрозорість звукохвилі</value>
+    <value>Непрозорість звукової хвилі</value>
+  </data>
+  <data name="show_storyboard" xml:space="preserve">
+    <value>Показати сторіборд</value>
   </data>
   <data name="show_hit_markers" xml:space="preserve">
     <value>Показувати попадання по ноті</value>
@@ -84,6 +87,9 @@
   </data>
   <data name="export_for_compatibility" xml:space="preserve">
     <value>Для сумісності (.osz)</value>
+  </data>
+  <data name="export_guest_difficulty" xml:space="preserve">
+    <value>Як гостьову складність (.osu)</value>
   </data>
   <data name="create_new_difficulty" xml:space="preserve">
     <value>Створити нову складність</value>
@@ -145,6 +151,9 @@
   <data name="timeline_show_timing_changes" xml:space="preserve">
     <value>Показувати зміни таймінгу</value>
   </data>
+  <data name="Finish editing and import changes" xml:space="preserve">
+    <value>Завершити редагування та імпортувати зміни</value>
+  </data>
   <data name="timeline_show_breaks" xml:space="preserve">
     <value>Показувати перерви</value>
   </data>
@@ -174,5 +183,11 @@
   </data>
   <data name="open_discussion_page" xml:space="preserve">
     <value>Відкрити сторінку обговорення мапи</value>
+  </data>
+  <data name="check_current_difficulty" xml:space="preserve">
+    <value>Поточна складність</value>
+  </data>
+  <data name="check_entire_beatmap_set" xml:space="preserve">
+    <value>Повний набір мап</value>
   </data>
 </root>

@@ -67,6 +67,9 @@
   <data name="no_restricted_access" xml:space="preserve">
     <value>由於您的帳號已受限，故無法執行該操作。</value>
   </data>
+  <data name="param_too_large" xml:space="preserve">
+    <value>{0} 參數最多只能有 {1} 個項目</value>
+  </data>
   <data name="supporter_only" xml:space="preserve">
     <value>您需要成為 osu! 贊助者才能使用此功能。</value>
   </data>
@@ -74,7 +77,7 @@
     <value>發生了未知的錯誤。</value>
   </data>
   <data name="codes.http-401" xml:space="preserve">
-    <value>請登入以繼續.</value>
+    <value>請登入以繼續。</value>
   </data>
   <data name="codes.http-403" xml:space="preserve">
     <value>拒絕存取。</value>
@@ -87,12 +90,6 @@
   </data>
   <data name="account.profile-order.generic" xml:space="preserve">
     <value>發生未知錯誤，請嘗試重新載入頁面。</value>
-  </data>
-  <data name="beatmaps.invalid_mode" xml:space="preserve">
-    <value>指定的遊戲模式無效。</value>
-  </data>
-  <data name="beatmaps.standard_converts_only" xml:space="preserve">
-    <value>此遊戲模式下的圖譜難度尚未有分數。</value>
   </data>
   <data name="checkout.generic" xml:space="preserve">
     <value>處理您的訂單時發生錯誤。</value>

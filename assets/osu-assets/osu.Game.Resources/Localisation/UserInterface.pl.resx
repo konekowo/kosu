@@ -68,7 +68,7 @@
     <value>Rozmiar kursora (w menu)</value>
   </data>
   <data name="show_menu_tips" xml:space="preserve">
-    <value>Podpowiedzi w menu</value>
+    <value>Pokaż wskazówki w menu głównym</value>
   </data>
   <data name="parallax" xml:space="preserve">
     <value>Efekt paralaksy</value>
@@ -88,6 +88,9 @@
   <data name="intro_sequence" xml:space="preserve">
     <value>Sekwencja intro</value>
   </data>
+  <data name="intro_random" xml:space="preserve">
+    <value>Losowa</value>
+  </data>
   <data name="background_source" xml:space="preserve">
     <value>Źródło tła</value>
   </data>
@@ -102,6 +105,9 @@
   </data>
   <data name="right_mouse_scroll" xml:space="preserve">
     <value>Szybkie przewijanie prawym przyciskiem myszy</value>
+  </data>
+  <data name="show_converts" xml:space="preserve">
+    <value>Pokaż konwertowane</value>
   </data>
   <data name="show_converted_beatmaps" xml:space="preserve">
     <value>Pokaż przekonwertowane beatmapy</value>
@@ -119,7 +125,7 @@
     <value>Styl konfiguracji klawiszy do wyboru modyfikatorów</value>
   </data>
   <data name="mod_select_text_search_starts_active" xml:space="preserve">
-    <value>Automatycznie zaznacz pole tekstowe w wyborze modyfikacji</value>
+    <value>Automatycznie zaznaczaj pole tekstowe w nakładce wyboru modyfikatorów</value>
   </data>
   <data name="no_limit" xml:space="preserve">
     <value>bez limitu</value>
@@ -147,5 +153,20 @@
   </data>
   <data name="true_random" xml:space="preserve">
     <value>Pełna losowość</value>
+  </data>
+  <data name="selected_mods" xml:space="preserve">
+    <value>Moje modyfikatory</value>
+  </data>
+  <data name="hold_for_menu" xml:space="preserve">
+    <value>przytrzymaj, aby otworzyć menu</value>
+  </data>
+  <data name="press_for_menu" xml:space="preserve">
+    <value>naciśnij, aby otworzyć menu</value>
+  </data>
+  <data name="device" xml:space="preserve">
+    <value>Urządzenie</value>
+  </data>
+  <data name="show_hidden" xml:space="preserve">
+    <value>Pokaż ukryte</value>
   </data>
 </root>

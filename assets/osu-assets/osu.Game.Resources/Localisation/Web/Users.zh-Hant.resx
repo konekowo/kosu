@@ -197,7 +197,7 @@
     <value>登入中...</value>
   </data>
   <data name="login.email_login_disabled" xml:space="preserve">
-    <value>目前沒辦法使用電郵登入，請使用使用者名稱登入。</value>
+    <value>目前無法使用電子郵件登入，請使用使用者名稱登入。</value>
   </data>
   <data name="login.failed" xml:space="preserve">
     <value>登入失敗</value>
@@ -234,6 +234,12 @@
   </data>
   <data name="login.beta.small" xml:space="preserve">
     <value>(osu!贊助者將在不久後開放)</value>
+  </data>
+  <data name="multiplayer.index.active" xml:space="preserve">
+    <value>活躍中</value>
+  </data>
+  <data name="multiplayer.index.ended" xml:space="preserve">
+    <value>已結束</value>
   </data>
   <data name="ogp.modding_description" xml:space="preserve">
     <value>圖譜: {0}</value>
@@ -292,26 +298,41 @@
   <data name="report.actions.cancel" xml:space="preserve">
     <value>取消</value>
   </data>
+  <data name="report.dmca.message_1._" xml:space="preserve">
+    <value>請依照《{0}》的規定，透過 DMCA 聲明向 {1} 檢舉著作權侵權。</value>
+  </data>
+  <data name="report.dmca.message_1.policy" xml:space="preserve">
+    <value>osu! 著作權政策</value>
+  </data>
+  <data name="report.dmca.message_2" xml:space="preserve">
+    <value>本規定適用於未經合法授權使用音訊、視覺內容或圖譜內容的情況。</value>
+  </data>
   <data name="report.options.cheating" xml:space="preserve">
     <value>違規 / 作弊</value>
   </data>
-  <data name="report.options.multiple_accounts" xml:space="preserve">
-    <value>使用多個帳號</value>
+  <data name="report.options.copyright_infringement" xml:space="preserve">
+    <value>侵犯版權</value>
+  </data>
+  <data name="report.options.inappropriate_chat" xml:space="preserve">
+    <value>不適當的聊天行為</value>
   </data>
   <data name="report.options.insults" xml:space="preserve">
     <value>侮辱我 / 其他人</value>
   </data>
-  <data name="report.options.spam" xml:space="preserve">
-    <value>垃圾訊息</value>
-  </data>
-  <data name="report.options.unwanted_content" xml:space="preserve">
-    <value>連結不適當的內容</value>
+  <data name="report.options.multiple_accounts" xml:space="preserve">
+    <value>使用多個帳號</value>
   </data>
   <data name="report.options.nonsense" xml:space="preserve">
     <value>無意義內容</value>
   </data>
   <data name="report.options.other" xml:space="preserve">
     <value>其他（在下方輸入原因）</value>
+  </data>
+  <data name="report.options.spam" xml:space="preserve">
+    <value>垃圾訊息</value>
+  </data>
+  <data name="report.options.unwanted_content" xml:space="preserve">
+    <value>連結不適當的內容</value>
   </data>
   <data name="restricted_banner.title" xml:space="preserve">
     <value>您的帳號已受到限制!</value>
@@ -550,6 +571,9 @@
   <data name="show.extra.historical.replays_watched_counts.count_label" xml:space="preserve">
     <value>重播觀看次數</value>
   </data>
+  <data name="show.extra.historical.score_replay_stats.title" xml:space="preserve">
+    <value>觀看最多次的重播</value>
+  </data>
   <data name="show.extra.kudosu.recent_entries" xml:space="preserve">
     <value>近期 Kudosu 記錄</value>
   </data>
@@ -739,6 +763,9 @@
   <data name="show.info.website" xml:space="preserve">
     <value>個人網站</value>
   </data>
+  <data name="show.matchmaking.title" xml:space="preserve">
+    <value>快速遊玩</value>
+  </data>
   <data name="show.not_found.reason_1" xml:space="preserve">
     <value>他可能已經更換了使用者名稱。</value>
   </data>
@@ -793,8 +820,17 @@
   <data name="show.rank.highest" xml:space="preserve">
     <value>最高排名{0}於{1}</value>
   </data>
+  <data name="show.season_stats.division_top_percentage" xml:space="preserve">
+    <value>前 {0}</value>
+  </data>
+  <data name="show.season_stats.total_score" xml:space="preserve">
+    <value>總分</value>
+  </data>
   <data name="show.stats.hit_accuracy" xml:space="preserve">
     <value>準確率</value>
+  </data>
+  <data name="show.stats.hits_per_play" xml:space="preserve">
+    <value>每次遊玩打擊數</value>
   </data>
   <data name="show.stats.level" xml:space="preserve">
     <value>等級 {0}</value>

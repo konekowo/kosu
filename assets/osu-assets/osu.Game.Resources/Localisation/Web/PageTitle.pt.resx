@@ -163,14 +163,14 @@
   <data name="main.home_controller.testflight" xml:space="preserve">
     <value>testflight</value>
   </data>
+  <data name="main.legacy_matches_controller._" xml:space="preserve">
+    <value>partidas</value>
+  </data>
   <data name="main.legal_controller._" xml:space="preserve">
     <value>informação</value>
   </data>
   <data name="main.livestreams_controller._" xml:space="preserve">
     <value>transmissões em direto</value>
-  </data>
-  <data name="main.matches_controller._" xml:space="preserve">
-    <value>partidas</value>
   </data>
   <data name="main.news_controller._" xml:space="preserve">
     <value>notícias</value>

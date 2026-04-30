@@ -235,6 +235,12 @@
   <data name="login.beta.small" xml:space="preserve">
     <value>(người ủng hộ sẽ sớm được tham gia)</value>
   </data>
+  <data name="multiplayer.index.active" xml:space="preserve">
+    <value>Đang hoạt động</value>
+  </data>
+  <data name="multiplayer.index.ended" xml:space="preserve">
+    <value>Đã kết thúc</value>
+  </data>
   <data name="ogp.modding_description" xml:space="preserve">
     <value>Beatmap: {0}</value>
   </data>
@@ -292,26 +298,41 @@
   <data name="report.actions.cancel" xml:space="preserve">
     <value>Hủy</value>
   </data>
+  <data name="report.dmca.message_1._" xml:space="preserve">
+    <value>Vui lòng gửi mọi khiếu nại về vi phạm bản quyền bằng cách gửi yêu cầu DMCA đến {0} theo {1}.</value>
+  </data>
+  <data name="report.dmca.message_1.policy" xml:space="preserve">
+    <value>chính sách bản quyền của osu!</value>
+  </data>
+  <data name="report.dmca.message_2" xml:space="preserve">
+    <value>Đây áp dụng cho các trường hợp bài hát, hình ảnh hoặc beatmap bị sử dụng mà không có quyền cho phép.</value>
+  </data>
   <data name="report.options.cheating" xml:space="preserve">
     <value>Chơi xấu / Gian lận</value>
   </data>
-  <data name="report.options.multiple_accounts" xml:space="preserve">
-    <value>Sử dụng nhiều tài khoản</value>
+  <data name="report.options.copyright_infringement" xml:space="preserve">
+    <value>Vi phạm bản quyền</value>
+  </data>
+  <data name="report.options.inappropriate_chat" xml:space="preserve">
+    <value>Hành vi trò chuyện không phù hợp</value>
   </data>
   <data name="report.options.insults" xml:space="preserve">
     <value>Xúc phạm tôi / những người khác</value>
   </data>
-  <data name="report.options.spam" xml:space="preserve">
-    <value>Spamming</value>
-  </data>
-  <data name="report.options.unwanted_content" xml:space="preserve">
-    <value>Có những nội dung không phù hợp</value>
+  <data name="report.options.multiple_accounts" xml:space="preserve">
+    <value>Sử dụng nhiều tài khoản</value>
   </data>
   <data name="report.options.nonsense" xml:space="preserve">
     <value>Phi lý</value>
   </data>
   <data name="report.options.other" xml:space="preserve">
     <value>Khác (nhập dưới đây)</value>
+  </data>
+  <data name="report.options.spam" xml:space="preserve">
+    <value>Spamming</value>
+  </data>
+  <data name="report.options.unwanted_content" xml:space="preserve">
+    <value>Có những nội dung không phù hợp</value>
   </data>
   <data name="restricted_banner.title" xml:space="preserve">
     <value>Tài khoản của bạn đã bị hạn chế!</value>
@@ -550,6 +571,9 @@
   <data name="show.extra.historical.replays_watched_counts.count_label" xml:space="preserve">
     <value>Replay Đã Xem</value>
   </data>
+  <data name="show.extra.historical.score_replay_stats.title" xml:space="preserve">
+    <value>Replay được xem nhiều nhất</value>
+  </data>
   <data name="show.extra.kudosu.recent_entries" xml:space="preserve">
     <value>Lịch Sử Kudosu Gần Đây</value>
   </data>
@@ -739,6 +763,9 @@
   <data name="show.info.website" xml:space="preserve">
     <value>Website</value>
   </data>
+  <data name="show.matchmaking.title" xml:space="preserve">
+    <value>Chơi nhanh</value>
+  </data>
   <data name="show.not_found.reason_1" xml:space="preserve">
     <value>Có thể họ đã đổi tên tài khoản.</value>
   </data>
@@ -793,8 +820,17 @@
   <data name="show.rank.highest" xml:space="preserve">
     <value>Hạng cao nhất: {0} vào {1}</value>
   </data>
+  <data name="show.season_stats.division_top_percentage" xml:space="preserve">
+    <value>Top {0}</value>
+  </data>
+  <data name="show.season_stats.total_score" xml:space="preserve">
+    <value>Tổng điểm</value>
+  </data>
   <data name="show.stats.hit_accuracy" xml:space="preserve">
-    <value>Độ Chính Xác</value>
+    <value>Độ bấm chính xác</value>
+  </data>
+  <data name="show.stats.hits_per_play" xml:space="preserve">
+    <value>Số lần bấm mỗi khi chơi</value>
   </data>
   <data name="show.stats.level" xml:space="preserve">
     <value>Level {0}</value>
@@ -824,7 +860,7 @@
     <value>Thứ hạng điểm</value>
   </data>
   <data name="show.stats.total_hits" xml:space="preserve">
-    <value>Tổng Lần Bấm</value>
+    <value>Tổng lần bấm</value>
   </data>
   <data name="show.stats.total_score" xml:space="preserve">
     <value>Tổng điểm</value>

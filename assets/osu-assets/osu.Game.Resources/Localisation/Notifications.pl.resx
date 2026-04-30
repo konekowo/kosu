@@ -89,46 +89,124 @@
     <value>Adres URL {0} korzysta z niewspieranego lub niebezpiecznego protokołu i nie zostanie otwarty.</value>
   </data>
   <data name="subsequent_messages_logged" xml:space="preserve">
-    <value>Kolejne wiadomości zostały zarejestrowane. Kliknij, aby wyświetlić pliki dziennika.</value>
+    <value>Kolejne wiadomości zostały zarejestrowane. Kliknij tutaj, aby wyświetlić pliki z logami.</value>
   </data>
   <data name="tablet_support_disabled_due_to_error" xml:space="preserve">
     <value>Obsługiwanie tabletów zostało wyłączone z powodu wystąpienia następującego błędu: „{0}”</value>
   </data>
   <data name="encountered_tablet_warning" xml:space="preserve">
-    <value>Wykryto problem z tabletem. Twoje urządzenie może nie działać poprawnie. Kliknij tutaj, aby wyświetlić listę wszystkich obsługiwanych tabletów.</value>
+    <value>Wykryto problem z tabletem - twoje urządzenie może nie działać prawidłowo. Kliknij tutaj, aby wyświetlić listę wszystkich obsługiwanych tabletów.</value>
   </data>
   <data name="unsupported_link_type" xml:space="preserve">
-    <value>Ten typ łącz nie jest jeszcze obsługiwany!</value>
-  </data>
-  <data name="private_message_received" xml:space="preserve">
-    <value>Otrzymujesz wiadomość prywatną od użytkownika {0}. Kliknij tutaj, aby ją odczytać!</value>
-  </data>
-  <data name="your_name_was_mentioned" xml:space="preserve">
-    <value>Użytkownik {0} wspomniał Cię na czacie. Kliknij, aby dowiedzieć się dlaczego!</value>
+    <value>Ten typ linków nie jest jeszcze obsługiwany!</value>
   </data>
   <data name="invited_you_to_the_multiplayer" xml:space="preserve">
-    <value>{0} zaprosił Cię do meczu wieloosobowego "{1}"! Kliknij, aby dołączyć.</value>
+    <value>{0} zaprasza Cię do meczu wieloosobowego „{1}”! Kliknij tutaj, aby dołączyć.</value>
   </data>
   <data name="missing_beatmap_for_replay" xml:space="preserve">
     <value>Nie posiadasz beatmapy do tej powtórki.</value>
   </data>
   <data name="downloading_beatmap_for_replay" xml:space="preserve">
-    <value>Pobieranie brakującej beatmapy dla tej powtórki...</value>
+    <value>Pobieranie brakującej beatmapy do powtórki...</value>
   </data>
   <data name="mismatching_beatmap_for_replay" xml:space="preserve">
-    <value>Twoja lokalna kopia beatmapy dla tej powtórki wydaje się inna niż oczekiwana. Być może będziesz musiał ją zaktualizować lub pobrać ponownie.</value>
+    <value>Twoja lokalna kopia beatmapy jest niekompatybilna z tą powtórką. Spróbuj zaktualizować lub pobrać ponownie beatmapę.</value>
   </data>
   <data name="game_version_after_update" xml:space="preserve">
     <value>Korzystasz teraz z wersji {0}. 
 Sprawdź, co się zmieniło!</value>
   </data>
   <data name="update_ready_to_install" xml:space="preserve">
-    <value>Aktualizacja jest gotowa do zainstalowania. Kliknij, aby uruchomić grę ponownie!</value>
+    <value>Aktualizacja jest gotowa do zainstalowania. Kliknij tutaj, aby uruchomić grę ponownie!</value>
   </data>
   <data name="not_official_build" xml:space="preserve">
-    <value>To nie jest oficialnie wydanie gry. Wyniki nie będą zgłaszane, a inne usługi online mogą nie działać jak powinny.</value>
+    <value>Nie korzystasz z oficjalnej wersji gry. Twoje wyniki nie zostaną przesłane a inne funkcje online mogą nie działać prawidłowo.</value>
   </data>
   <data name="downloading_update" xml:space="preserve">
     <value>Pobieranie aktualizacji...</value>
+  </data>
+  <data name="multiplayer_room_ended" xml:space="preserve">
+    <value>Ta gra wieloosobowa zakończyła się. Kliknij tutaj, aby wyświetlić wyniki.</value>
+  </data>
+  <data name="mention" xml:space="preserve">
+    <value>Wzmianka</value>
+  </data>
+  <data name="friend_online" xml:space="preserve">
+    <value>Online: {0}</value>
+  </data>
+  <data name="friend_offline" xml:space="preserve">
+    <value>Offline: {0}</value>
+  </data>
+  <data name="api_connection_interrupted" xml:space="preserve">
+    <value>Połączenie do serwisów online zostało przerwane. osu! będzie działać z ograniczoną funkcjonalnością.</value>
+  </data>
+  <data name="another_device_disconnect" xml:space="preserve">
+    <value>Nastąpiło wylogowanie z powodu zalogowania się na innym urządzeniu.</value>
+  </data>
+  <data name="account_change_disconnect" xml:space="preserve">
+    <value>Nastąpiło wylogowanie z powodu zmian na Twoim koncie. Zaloguj się ponownie.</value>
+  </data>
+  <data name="downloading" xml:space="preserve">
+    <value>Pobieranie {0}</value>
+  </data>
+  <data name="collections_import_initialising" xml:space="preserve">
+    <value>Inicjalizowanie importu kolekcji...</value>
+  </data>
+  <data name="reading_collections" xml:space="preserve">
+    <value>Odczytywanie informacji o kolekcjach...</value>
+  </data>
+  <data name="collections_import_progress" xml:space="preserve">
+    <value>Zaimportowano {0} kolekcji</value>
+  </data>
+  <data name="collections_import_progress_total" xml:space="preserve">
+    <value>Zaimportowano {0} / {1} kolekcji</value>
+  </data>
+  <data name="error_automatically_reported" xml:space="preserve">
+    <value>Ten błąd został automatycznie zgłoszony do zespołu deweloperskiego.</value>
+  </data>
+  <data name="update_available" xml:space="preserve">
+    <value>Znaleziono nowszą wersję osu! ({0} → {1}).</value>
+  </data>
+  <data name="update_available_manual_install" xml:space="preserve">
+    <value>Kliknij tutaj, aby pobrać nową wersję, która może być zainstalowana na twojej istniejącej instalacji.</value>
+  </data>
+  <data name="update_available_package_managed" xml:space="preserve">
+    <value>Sprawdź swój menedżer pakietów / dostawcę pakietów, aby zaktualizować osu!</value>
+  </data>
+  <data name="action_interrupted_by_dialog" xml:space="preserve">
+    <value>Akcja została przerwana przez przeszkadzające okno dialogowe.</value>
+  </data>
+  <data name="file_export_ongoing" xml:space="preserve">
+    <value>Eksportowanie {0}...</value>
+  </data>
+  <data name="file_export_finished" xml:space="preserve">
+    <value>Wyeksportowano {0}! Kliknij, aby wyświetlić.</value>
+  </data>
+  <data name="logs_export_ongoing" xml:space="preserve">
+    <value>Eksportowanie logów...</value>
+  </data>
+  <data name="logs_export_finished" xml:space="preserve">
+    <value>Wyeksportowano logi! Kliknij, aby je wyświetlić.</value>
+  </data>
+  <data name="elevated_privileges" xml:space="preserve">
+    <value>Uruchamianie osu! jako {0} nie poprawia wydajności, może sprawić, że niektóre integracje przestaną działać oraz stwarza ono zagrożenie bezpieczeństwa. Uruchom grę jako zwykły użytkownik.</value>
+  </data>
+  <data name="macos_app_location" xml:space="preserve">
+    <value>Na macOS, instalacja osu! do katalogu innego niż /Applications lub {0}/Applications może powodować problemy z aktualizacją gry. Prosimy o przeniesienie instalacji gry do jednego z podanych katalogów.</value>
+  </data>
+  <data name="screenshot_saved" xml:space="preserve">
+    <value>Zapisano zrzut ekranu ({0})!</value>
+  </data>
+  <data name="multiplayer_server_shutting_down_immediately" xml:space="preserve">
+    <value>Serwer multiplayer niedługo wróci...</value>
+  </data>
+  <data name="multiplayer_server_shutting_down_remaining" xml:space="preserve">
+    <value>Serwer multiplayer zrestartuje się za {0}.</value>
+  </data>
+  <data name="collection_created" xml:space="preserve">
+    <value>Utworzono nową kolekcję "{0}" z {1} beatmapami.</value>
+  </data>
+  <data name="collection_beatmaps_added" xml:space="preserve">
+    <value>Dodano {0} beatmapów do kolekcji "{1}".</value>
   </data>
 </root>

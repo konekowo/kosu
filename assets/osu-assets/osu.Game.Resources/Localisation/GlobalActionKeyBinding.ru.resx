@@ -130,11 +130,20 @@
   <data name="select_next" xml:space="preserve">
     <value>Следующая карта</value>
   </data>
-  <data name="select_previous_group" xml:space="preserve">
-    <value>Выбрать предыдущий трек</value>
+  <data name="activate_previous_set" xml:space="preserve">
+    <value>Выбрать предыдущую карту</value>
   </data>
-  <data name="select_next_group" xml:space="preserve">
-    <value>Выбрать следующий трек</value>
+  <data name="activate_next_set" xml:space="preserve">
+    <value>Выбрать следующую карту</value>
+  </data>
+  <data name="expand_previous_group" xml:space="preserve">
+    <value>Развернуть предыдущую группу</value>
+  </data>
+  <data name="expand_next_group" xml:space="preserve">
+    <value>Развернуть следующую группу</value>
+  </data>
+  <data name="toggle_current_group" xml:space="preserve">
+    <value>Свернуть/развернуть текущую группу</value>
   </data>
   <data name="home" xml:space="preserve">
     <value>Главная страница</value>
@@ -180,6 +189,12 @@
   </data>
   <data name="random_skin" xml:space="preserve">
     <value>Случайный скин</value>
+  </data>
+  <data name="previous_skin" xml:space="preserve">
+    <value>Предыдущий скин</value>
+  </data>
+  <data name="next_skin" xml:space="preserve">
+    <value>Следующий скин</value>
   </data>
   <data name="toggle_pause_replay" xml:space="preserve">
     <value>Приостановить/возобновить запись</value>
@@ -260,7 +275,7 @@
     <value>Переключиться на чат</value>
   </data>
   <data name="toggle_replay_settings" xml:space="preserve">
-    <value>Показать / скрыть настройки</value>
+    <value>Показать/скрыть настройки записи</value>
   </data>
   <data name="save_replay" xml:space="preserve">
     <value>Сохранить запись игры</value>
@@ -323,9 +338,12 @@
     <value>Перейти к следующей закладке</value>
   </data>
   <data name="absolute_scroll_song_list" xml:space="preserve">
-    <value>Абсолютная прокрутка списка песен</value>
+    <value>Абсолютная прокрутка списка карт</value>
   </data>
   <data name="editor_toggle_move_control" xml:space="preserve">
     <value>Открыть настройки перемещения</value>
+  </data>
+  <data name="editor_discard_unsaved_changes" xml:space="preserve">
+    <value>Отменить несохранённые изменения</value>
   </data>
 </root>

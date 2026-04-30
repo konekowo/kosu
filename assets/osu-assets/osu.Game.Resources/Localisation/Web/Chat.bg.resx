@@ -103,6 +103,9 @@
   <data name="channels.list.title.public" xml:space="preserve">
     <value>Канали</value>
   </data>
+  <data name="channels.list.title.team" xml:space="preserve">
+    <value>Отбор</value>
+  </data>
   <data name="form.title.announcement" xml:space="preserve">
     <value>Създаване на ново оповестяване</value>
   </data>
@@ -138,15 +141,6 @@
   </data>
   <data name="input.send" xml:space="preserve">
     <value>Изпращане</value>
-  </data>
-  <data name="no-conversations.howto" xml:space="preserve">
-    <value>Започнете дискусия с потребител от неговия профил или изскачащ прозорец.</value>
-  </data>
-  <data name="no-conversations.lazer" xml:space="preserve">
-    <value>Публичните канали към които сте се присъединили чрез &lt;a href="{0}"&gt;osu!lazer&lt;/a&gt; ще са видими и тук.</value>
-  </data>
-  <data name="no-conversations.title" xml:space="preserve">
-    <value>няма налични дискусии</value>
   </data>
   <data name="join_channels.loading" xml:space="preserve">
     <value>Зареждане на списък с канали...</value>

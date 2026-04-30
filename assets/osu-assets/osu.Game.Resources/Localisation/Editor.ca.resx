@@ -59,13 +59,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="beatmap_editor" xml:space="preserve">
-    <value>Editor de beatmaps</value>
+    <value>Editor de mapes</value>
   </data>
   <data name="waveform_opacity" xml:space="preserve">
     <value>Opacitat de la forma d'ona</value>
   </data>
+  <data name="show_storyboard" xml:space="preserve">
+    <value>Mostra tauler</value>
+  </data>
   <data name="show_hit_markers" xml:space="preserve">
-    <value>Mostrar marcadors de cop</value>
+    <value>Mostra els marcadors de cop</value>
   </data>
   <data name="auto_seek_on_placement" xml:space="preserve">
     <value>Automàticament buscar després de posar objectes</value>
@@ -76,11 +79,17 @@
   <data name="set_preview_point_to_current" xml:space="preserve">
     <value>Estableix el punt de previsualització al temps actual</value>
   </data>
+  <data name="adjust_existing_objects_on_timing_changes" xml:space="preserve">
+    <value>Mogui els objectes ja col·locats mentre ajusti els temps</value>
+  </data>
   <data name="export_for_editing" xml:space="preserve">
     <value>Per a editar (.olz)</value>
   </data>
   <data name="export_for_compatibility" xml:space="preserve">
     <value>Per a compatibilidad (.osz)</value>
+  </data>
+  <data name="export_guest_difficulty" xml:space="preserve">
+    <value>Dificultat d'invitat (.osu)</value>
   </data>
   <data name="create_new_difficulty" xml:space="preserve">
     <value>Crear nova dificultat</value>
@@ -91,8 +100,14 @@
   <data name="delete_difficulty" xml:space="preserve">
     <value>Eliminar dificultat</value>
   </data>
+  <data name="edit_externally" xml:space="preserve">
+    <value>Edita externament</value>
+  </data>
+  <data name="submit_beatmap" xml:space="preserve">
+    <value>Envia el mapa</value>
+  </data>
   <data name="setup_screen" xml:space="preserve">
-    <value>configurar</value>
+    <value>configura</value>
   </data>
   <data name="compose_screen" xml:space="preserve">
     <value>compositor</value>
@@ -113,13 +128,16 @@
     <value>Prova!</value>
   </data>
   <data name="rotation_unsnapped" xml:space="preserve">
-    <value>{0:0.0}°</value>
+    <value>{0:0}°</value>
   </data>
   <data name="rotation_snapped" xml:space="preserve">
     <value>{0:0}° (encaixat)</value>
   </data>
   <data name="limited_distance_snap_grid" xml:space="preserve">
     <value>Limitar la ubicació de la configuració de distància al temps actual</value>
+  </data>
+  <data name="contract_sidebars" xml:space="preserve">
+    <value>Contraure les barres dels sliders quan no són coberts</value>
   </data>
   <data name="must_be_in_editor_to_handle_links" xml:space="preserve">
     <value>Has d'estar en el mode d'edició per gestionar enllaços de l'editor</value>
@@ -133,7 +151,43 @@
   <data name="timeline_show_timing_changes" xml:space="preserve">
     <value>Mostra els canvis de temps</value>
   </data>
+  <data name="Finish editing and import changes" xml:space="preserve">
+    <value>Finalitzar edició i importar els canvis</value>
+  </data>
+  <data name="timeline_show_breaks" xml:space="preserve">
+    <value>Mostra trencaments</value>
+  </data>
   <data name="timeline_show_ticks" xml:space="preserve">
     <value>Mostra les marques</value>
+  </data>
+  <data name="bookmarks" xml:space="preserve">
+    <value>Marques</value>
+  </data>
+  <data name="add_bookmark" xml:space="preserve">
+    <value>Afegeix una marca</value>
+  </data>
+  <data name="remove_closest_bookmark" xml:space="preserve">
+    <value>Trau la marca més propera</value>
+  </data>
+  <data name="seek_to_previous_bookmark" xml:space="preserve">
+    <value>Cerca la marca anterior</value>
+  </data>
+  <data name="seek_to_next_bookmark" xml:space="preserve">
+    <value>Cerca la marca següent</value>
+  </data>
+  <data name="reset_bookmarks" xml:space="preserve">
+    <value>Restableix les marques</value>
+  </data>
+  <data name="open_info_page" xml:space="preserve">
+    <value>Obre la pàgina d'informació del mapa</value>
+  </data>
+  <data name="open_discussion_page" xml:space="preserve">
+    <value>Obre la pàgina de discussió del mapa</value>
+  </data>
+  <data name="check_current_difficulty" xml:space="preserve">
+    <value>Dificultat actual</value>
+  </data>
+  <data name="check_entire_beatmap_set" xml:space="preserve">
+    <value>Tots els mapes del conjunt</value>
   </data>
 </root>

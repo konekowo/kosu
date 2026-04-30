@@ -125,6 +125,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString MainBeatmapsetsControllerShow => new TranslatableString(getKey(@"main.beatmapsets_controller.show"), @"beatmap info");
 
         /// <summary>
+        /// "beatmap version history"
+        /// </summary>
+        public static LocalisableString MainBeatmapsetsControllerVersions => new TranslatableString(getKey(@"main.beatmapsets_controller.versions"), @"beatmap version history");
+
+        /// <summary>
         /// "changelog"
         /// </summary>
         public static LocalisableString MainChangelogControllerDefault => new TranslatableString(getKey(@"main.changelog_controller._"), @"changelog");
@@ -153,6 +158,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "contest judging"
         /// </summary>
         public static LocalisableString MainContestsControllerJudge => new TranslatableString(getKey(@"main.contests_controller.judge"), @"contest judging");
+
+        /// <summary>
+        /// "group history"
+        /// </summary>
+        public static LocalisableString MainGroupHistoryControllerDefault => new TranslatableString(getKey(@"main.group_history_controller._"), @"group history");
 
         /// <summary>
         /// "groups"
@@ -185,6 +195,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString MainHomeControllerTestflight => new TranslatableString(getKey(@"main.home_controller.testflight"), @"testflight");
 
         /// <summary>
+        /// "matches"
+        /// </summary>
+        public static LocalisableString MainLegacyMatchesControllerDefault => new TranslatableString(getKey(@"main.legacy_matches_controller._"), @"matches");
+
+        /// <summary>
         /// "information"
         /// </summary>
         public static LocalisableString MainLegalControllerDefault => new TranslatableString(getKey(@"main.legal_controller._"), @"information");
@@ -193,11 +208,6 @@ namespace osu.Game.Resources.Localisation.Web
         /// "live streams"
         /// </summary>
         public static LocalisableString MainLivestreamsControllerDefault => new TranslatableString(getKey(@"main.livestreams_controller._"), @"live streams");
-
-        /// <summary>
-        /// "matches"
-        /// </summary>
-        public static LocalisableString MainMatchesControllerDefault => new TranslatableString(getKey(@"main.matches_controller._"), @"matches");
 
         /// <summary>
         /// "news"
@@ -265,6 +275,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString MainUserCoverPresetsControllerDefault => new TranslatableString(getKey(@"main.user_cover_presets_controller._"), @"user cover presets");
 
         /// <summary>
+        /// "authenticator app"
+        /// </summary>
+        public static LocalisableString MainUserTotpControllerDefault => new TranslatableString(getKey(@"main.user_totp_controller._"), @"authenticator app");
+
+        /// <summary>
         /// "player info"
         /// </summary>
         public static LocalisableString MainUsersControllerDefault => new TranslatableString(getKey(@"main.users_controller._"), @"player info");
@@ -283,6 +298,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "wiki"
         /// </summary>
         public static LocalisableString MainWikiControllerDefault => new TranslatableString(getKey(@"main.wiki_controller._"), @"wiki");
+
+        /// <summary>
+        /// "room history"
+        /// </summary>
+        public static LocalisableString MultiplayerRoomsControllerEvents => new TranslatableString(getKey(@"multiplayer.rooms_controller.events"), @"room history");
 
         /// <summary>
         /// "authorize app"

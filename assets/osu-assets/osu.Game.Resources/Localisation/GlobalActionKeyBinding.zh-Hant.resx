@@ -92,7 +92,7 @@
     <value>快速重試 (長按)</value>
   </data>
   <data name="take_screenshot" xml:space="preserve">
-    <value>螢幕截圖</value>
+    <value>擷取螢幕畫面</value>
   </data>
   <data name="toggle_gameplay_mouse_buttons" xml:space="preserve">
     <value>遊戲內滑鼠按鍵開關</value>
@@ -130,11 +130,20 @@
   <data name="select_next" xml:space="preserve">
     <value>選取下一個</value>
   </data>
-  <data name="select_previous_group" xml:space="preserve">
-    <value>選取上一組</value>
+  <data name="activate_previous_set" xml:space="preserve">
+    <value>使用上個組合</value>
   </data>
-  <data name="select_next_group" xml:space="preserve">
-    <value>選擇下一組</value>
+  <data name="activate_next_set" xml:space="preserve">
+    <value>使用下個組合</value>
+  </data>
+  <data name="expand_previous_group" xml:space="preserve">
+    <value>擴展上一組</value>
+  </data>
+  <data name="expand_next_group" xml:space="preserve">
+    <value>擴展下一組</value>
+  </data>
+  <data name="toggle_current_group" xml:space="preserve">
+    <value>伸縮目前的組別</value>
   </data>
   <data name="home" xml:space="preserve">
     <value>主選單</value>
@@ -180,6 +189,12 @@
   </data>
   <data name="random_skin" xml:space="preserve">
     <value>隨機 Skin</value>
+  </data>
+  <data name="previous_skin" xml:space="preserve">
+    <value>上一個 Skin</value>
+  </data>
+  <data name="next_skin" xml:space="preserve">
+    <value>下一個 Skin</value>
   </data>
   <data name="toggle_pause_replay" xml:space="preserve">
     <value>暫停/繼續重播</value>
@@ -323,9 +338,12 @@
     <value>前往下一個書籤</value>
   </data>
   <data name="absolute_scroll_song_list" xml:space="preserve">
-    <value>歌單滾動固定速度</value>
+    <value>歌單捲動固定速度</value>
   </data>
   <data name="editor_toggle_move_control" xml:space="preserve">
     <value>顯示移動控制</value>
+  </data>
+  <data name="editor_discard_unsaved_changes" xml:space="preserve">
+    <value>捨棄未儲存的變更</value>
   </data>
 </root>

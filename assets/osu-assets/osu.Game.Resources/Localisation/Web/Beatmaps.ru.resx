@@ -499,8 +499,11 @@
   <data name="listing.search.options" xml:space="preserve">
     <value>Больше настроек поиска</value>
   </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>Количество карт и результатов на них, отображённое на этой странице, основано на ваших наилучших "стандартизированных" (вида "lazer") рекордах на картах.</value>
+  </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
-    <value>Фильтрация по критерию {0} требует наличия тега osu!supporter</value>
+    <value>Фильтрация по критерию {0} доступна только с тегом osu!supporter</value>
   </data>
   <data name="listing.search.not-found" xml:space="preserve">
     <value>нет результатов</value>
@@ -545,7 +548,7 @@
     <value>Сложности</value>
   </data>
   <data name="listing.search.sorting.favourites" xml:space="preserve">
-    <value>Добавлениям в Избранные</value>
+    <value>Количеству в избранных</value>
   </data>
   <data name="listing.search.sorting.updated" xml:space="preserve">
     <value>Дате обновления</value>
@@ -566,10 +569,16 @@
     <value>Номинациям</value>
   </data>
   <data name="listing.search.supporter_filter_quote._" xml:space="preserve">
-    <value>Фильтрация по критерию {0} требует {1}</value>
+    <value>Фильтрация по критерию {0} доступна только с {1}</value>
   </data>
   <data name="listing.search.supporter_filter_quote.link_text" xml:space="preserve">
-    <value>тег osu!supporter</value>
+    <value>тегом osu!supporter</value>
+  </data>
+  <data name="listing.search.tag_picker.tooltip" xml:space="preserve">
+    <value>поиск по тегам от игроков</value>
+  </data>
+  <data name="listing.search.tag_picker.prompt" xml:space="preserve">
+    <value>начните печатать</value>
   </data>
   <data name="general.converts" xml:space="preserve">
     <value>Показывать конвертированные карты</value>
@@ -602,7 +611,7 @@
     <value>Одобренные</value>
   </data>
   <data name="status.favourites" xml:space="preserve">
-    <value>Избранные</value>
+    <value>В избранных</value>
   </data>
   <data name="status.graveyard" xml:space="preserve">
     <value>Заброшенные</value>
@@ -749,7 +758,7 @@
     <value>Количество игр: {0}</value>
   </data>
   <data name="panel.favourites" xml:space="preserve">
-    <value>В избранном: {0}</value>
+    <value>В избранных: {0}</value>
   </data>
   <data name="variant.mania.4k" xml:space="preserve">
     <value>4K</value>

@@ -79,9 +79,6 @@
   <data name="badges.new" xml:space="preserve">
     <value>НОВЫЙ</value>
   </data>
-  <data name="buttons.admin" xml:space="preserve">
-    <value>Администратор</value>
-  </data>
   <data name="buttons.authorise" xml:space="preserve">
     <value>Авторизовать</value>
   </data>
@@ -235,8 +232,11 @@
   <data name="count.notifications" xml:space="preserve">
     <value>{0} уведомление|{0} уведомления|{0} уведомлений</value>
   </data>
+  <data name="count.player" xml:space="preserve">
+    <value>{0} игрок|{0} игрока|{0} игроков</value>
+  </data>
   <data name="count.plus_others" xml:space="preserve">
-    <value>+ ещё {0} игрок!|+ ещё {0} игрока!|+ ещё {0} игроков!</value>
+    <value>+ ещё у {0} другого!|+ ещё у {0} других!|+ ещё у {0} других!</value>
   </data>
   <data name="count.post" xml:space="preserve">
     <value>{0} пост|{0} поста|{0} постов</value>
@@ -268,6 +268,12 @@
   <data name="countdown.seconds" xml:space="preserve">
     <value>секунд</value>
   </data>
+  <data name="datetime.month.php" xml:space="preserve">
+    <value>мес</value>
+  </data>
+  <data name="datetime.year.php" xml:space="preserve">
+    <value>г</value>
+  </data>
   <data name="datetime.year_month.moment" xml:space="preserve">
     <value>MMMM YYYY</value>
   </data>
@@ -290,7 +296,7 @@
     <value>сенсорным экраном</value>
   </data>
   <data name="dropzone.target" xml:space="preserve">
-    <value>бросьте файл сюда</value>
+    <value>перетащите для загрузки</value>
   </data>
   <data name="input.search" xml:space="preserve">
     <value>найти...</value>
@@ -362,7 +368,7 @@
     <value>Времени осталось</value>
   </data>
   <data name="title.notice" xml:space="preserve">
-    <value>Замечание</value>
+    <value>Примечание</value>
   </data>
   <data name="wrong_user._" xml:space="preserve">
     <value>Вы вошли как {0}. {1}.</value>

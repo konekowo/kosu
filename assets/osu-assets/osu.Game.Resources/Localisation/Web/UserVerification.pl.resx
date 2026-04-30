@@ -74,7 +74,7 @@
     <value>Sprawdź folder spam, jeżeli nie możesz znaleźć e-maila.</value>
   </data>
   <data name="box.info.recover" xml:space="preserve">
-    <value>Jeżeli nie masz dostępu do e-maila, lub nie pamiętasz, który jest przypisany do konta, spróbuj {0}.</value>
+    <value>Jeżeli nie masz dostępu do e-maila lub nie pamiętasz, który jest przypisany do konta, spróbuj {0}.</value>
   </data>
   <data name="box.info.recover_link" xml:space="preserve">
     <value>odzyskać go tutaj</value>
@@ -88,6 +88,21 @@
   <data name="box.info.logout_link" xml:space="preserve">
     <value>wylogować się</value>
   </data>
+  <data name="box_totp.heading" xml:space="preserve">
+    <value>Wprowadź kod z aplikacji uwierzytelniającej.</value>
+  </data>
+  <data name="box_totp.info.logout._" xml:space="preserve">
+    <value>Możesz również {0}.</value>
+  </data>
+  <data name="box_totp.info.logout.link" xml:space="preserve">
+    <value>wyloguj się</value>
+  </data>
+  <data name="box_totp.info.mail_fallback._" xml:space="preserve">
+    <value>Jeżeli nie możesz uzyskać dostępu do aplikacji, {0}.</value>
+  </data>
+  <data name="box_totp.info.mail_fallback.link" xml:space="preserve">
+    <value>zamiast tego, możesz się zweryfikować używając e-maila </value>
+  </data>
   <data name="errors.expired" xml:space="preserve">
     <value>Ten kod wygasł. Wysłano nowy kod weryfikacyjny.</value>
   </data>
@@ -95,12 +110,18 @@
     <value>Wprowadzono nieprawidłowy kod weryfikacyjny.</value>
   </data>
   <data name="errors.retries_exceeded" xml:space="preserve">
-    <value>Wprowadzono nieprawidłowy kod weryfikacyjny. Liczba prób została przekroczona, w związku z tym wysłaliśmy nowy kod weryfikacyjny.</value>
+    <value>Wprowadzono nieprawidłowy kod weryfikacyjny. Liczba prób została przekroczona, w związku z czym wysłaliśmy nowy kod weryfikacyjny.</value>
   </data>
   <data name="errors.reissued" xml:space="preserve">
     <value>Wygenerowano nowy kod weryfikacyjny. Sprawdź swoją skrzynkę odbiorczą.</value>
   </data>
+  <data name="errors.totp_used_key" xml:space="preserve">
+    <value>Kod weryfikacyjny został już użyty. Proszę poczekać i użyć nowego.</value>
+  </data>
+  <data name="errors.totp_gone" xml:space="preserve">
+    <value>Token uwierzytelniania został usunięty, zmieniam na weryfikację e-mailem. E-mail weryfikacyjny został wysłany.</value>
+  </data>
   <data name="errors.unknown" xml:space="preserve">
-    <value>Wystąpił nieoczekiwany błąd. Wysłano nowy e-mail weryfikacyjny.</value>
+    <value>Wystąpił nieoczekiwany błąd. Wysłano nowy kod weryfikacyjny.</value>
   </data>
 </root>

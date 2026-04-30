@@ -64,6 +64,9 @@
   <data name="mods" xml:space="preserve">
     <value>{0} mods</value>
   </data>
+  <data name="all_mods" xml:space="preserve">
+    <value>todos los mods</value>
+  </data>
   <data name="mod_select_description" xml:space="preserve">
     <value>Los mods proporcionan diferentes formas de disfrutar del juego. Algunos tienen un efecto en la puntuación que puede lograr durante una partida clasificada. Otros son solo para divertirse.</value>
   </data>
@@ -71,7 +74,7 @@
     <value>Personalización de mods</value>
   </data>
   <data name="personal_presets" xml:space="preserve">
-    <value>Preselecciones personales</value>
+    <value>Preajustes personales</value>
   </data>
   <data name="add_preset" xml:space="preserve">
     <value>Crear preselección</value>

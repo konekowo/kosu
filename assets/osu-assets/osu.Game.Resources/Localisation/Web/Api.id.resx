@@ -59,10 +59,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="error.chat.empty" xml:space="preserve">
-    <value>Tidak dapat mengirim pesan kosong.</value>
+    <value>Pesan kosong tidak bisa dikirim.</value>
   </data>
   <data name="error.chat.limit_exceeded" xml:space="preserve">
-    <value>Anda mengirim pesan terlalu cepat, harap tunggu sebentar sebelum mencoba lagi.</value>
+    <value>Kamu mengirim pesan terlalu cepat. Silakan tunggu beberapa saat sebelum mencoba lagi.</value>
   </data>
   <data name="error.chat.too_long" xml:space="preserve">
     <value>Pesan yang ingin kamu kirim terlalu panjang.</value>
@@ -80,13 +80,19 @@
     <value>Mengirim pesan atas nama akunmu.</value>
   </data>
   <data name="scopes.chat.write_manage" xml:space="preserve">
-    <value>Membawa akunmu untuk masuk dan keluar dari kanal percakapan.</value>
+    <value>Membawa akunmu untuk masuk dan keluar dari kanal obrolan.</value>
   </data>
   <data name="scopes.forum.write" xml:space="preserve">
     <value>Membuat dan menyunting topik forum serta postingan forum atas nama akunmu.</value>
   </data>
+  <data name="scopes.forum.write_manage" xml:space="preserve">
+    <value>Mengelola topik dan postingan forum atas nama akunmu.</value>
+  </data>
   <data name="scopes.friends.read" xml:space="preserve">
     <value>Melihat siapa saja yang kamu ikuti.</value>
+  </data>
+  <data name="scopes.multiplayer.write_manage" xml:space="preserve">
+    <value>Membuat dan mengelola ruangan multiplayer atas nama akunmu.</value>
   </data>
   <data name="scopes.public" xml:space="preserve">
     <value>Membaca data yang bersifat publik atas nama akunmu.</value>

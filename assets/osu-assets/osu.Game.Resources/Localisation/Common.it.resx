@@ -76,6 +76,9 @@
   <data name="default" xml:space="preserve">
     <value>Predefinito</value>
   </data>
+  <data name="rename" xml:space="preserve">
+    <value>Rinomina</value>
+  </data>
   <data name="export" xml:space="preserve">
     <value>Esporta</value>
   </data>
@@ -158,6 +161,18 @@
     <value>Generale</value>
   </data>
   <data name="copy_link" xml:space="preserve">
-    <value>Copia сollegamento</value>
+    <value>Copia link</value>
+  </data>
+  <data name="manage" xml:space="preserve">
+    <value>Gestisci...</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>Dettagli...</value>
+  </data>
+  <data name="mapper" xml:space="preserve">
+    <value>Mapper</value>
+  </data>
+  <data name="delete_with_confrmation" xml:space="preserve">
+    <value>Elimina...</value>
   </data>
 </root>

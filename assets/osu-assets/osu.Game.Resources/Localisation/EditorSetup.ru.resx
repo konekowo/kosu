@@ -134,7 +134,7 @@
     <value>Базовая скорость</value>
   </data>
   <data name="base_velocity_description" xml:space="preserve">
-    <value>Основная скорость для слайдеров и других подобных объектов.</value>
+    <value>Основное значение скорости для слайдеров и прокрутки в некоторых режимах игры.</value>
   </data>
   <data name="metadata_header" xml:space="preserve">
     <value>Метаданные</value>
@@ -159,6 +159,9 @@
   </data>
   <data name="audio_track" xml:space="preserve">
     <value>Аудиотрек</value>
+  </data>
+  <data name="custom_sample_sets" xml:space="preserve">
+    <value>Пользовательские наборы сэмплов</value>
   </data>
   <data name="click_to_select_track" xml:space="preserve">
     <value>Нажмите здесь, чтобы выбрать трек</value>

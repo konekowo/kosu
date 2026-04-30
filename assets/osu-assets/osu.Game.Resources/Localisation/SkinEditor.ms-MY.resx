@@ -59,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="skin_editor" xml:space="preserve">
-    <value>Penyunting kulit</value>
+    <value>Sunting rupa</value>
   </data>
   <data name="components" xml:space="preserve">
     <value>Bahagian</value>
@@ -77,10 +77,10 @@
     <value>Tetapan ({0})</value>
   </data>
   <data name="currently_editing" xml:space="preserve">
-    <value>Disunting kini</value>
+    <value>Kini disunting</value>
   </data>
   <data name="revert_to_default_description" xml:space="preserve">
-    <value>Semua unsur bentangan untuk lapisan pada layar semasa akan diset semula ke lalai.</value>
+    <value>Semua unsur bentangan untuk lapisan pada layar semasa akan ditetap semula ke asal.</value>
   </data>
   <data name="closest" xml:space="preserve">
     <value>Terdekat</value>
@@ -92,13 +92,13 @@
     <value>Asalan</value>
   </data>
   <data name="reset_position" xml:space="preserve">
-    <value>Set semula kedudukan</value>
+    <value>Tetap semula kedudukan</value>
   </data>
   <data name="reset_rotation" xml:space="preserve">
-    <value>Set semula putaran</value>
+    <value>Tetap semula putaran</value>
   </data>
   <data name="reset_scale" xml:space="preserve">
-    <value>Set semula skala</value>
+    <value>Tetap semula skala</value>
   </data>
   <data name="bring_to_front" xml:space="preserve">
     <value>Marakan</value>

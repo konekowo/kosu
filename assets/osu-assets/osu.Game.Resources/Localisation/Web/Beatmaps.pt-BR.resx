@@ -62,7 +62,7 @@
     <value>Regras especificadas inválidas.</value>
   </data>
   <data name="change_owner.too_many" xml:space="preserve">
-    <value>Muitos mapeadores convidados.</value>
+    <value>Muitos mappers convidados.</value>
   </data>
   <data name="discussion-votes.update.error" xml:space="preserve">
     <value>Falha ao atualizar votos</value>
@@ -499,6 +499,9 @@
   <data name="listing.search.options" xml:space="preserve">
     <value>Mais opções de busca</value>
   </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>A classificação do perfil e os resultados exibidos nesta página são baseados nas suas notas mais altas "padronizadas" (também conhecido como "lazer") em beatmaps.</value>
+  </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
     <value>Filtrar por {0} requer uma osu!supporter tag ativa</value>
   </data>
@@ -570,6 +573,12 @@
   </data>
   <data name="listing.search.supporter_filter_quote.link_text" xml:space="preserve">
     <value>osu!supporter tag</value>
+  </data>
+  <data name="listing.search.tag_picker.tooltip" xml:space="preserve">
+    <value>procurar por tags de usuário</value>
+  </data>
+  <data name="listing.search.tag_picker.prompt" xml:space="preserve">
+    <value>digite para pesquisar</value>
   </data>
   <data name="general.converts" xml:space="preserve">
     <value>Incluir beatmaps convertidos</value>

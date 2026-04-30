@@ -67,6 +67,9 @@
   <data name="edit.avatar.title" xml:space="preserve">
     <value>الصورة الشخصية</value>
   </data>
+  <data name="edit.avatar.reset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
   <data name="edit.avatar.rules" xml:space="preserve">
     <value>يرجى التأكد من ان صورتك تلتزم بـ{0}&lt;br/&gt;هذا يعني انه يجب ان تكون &lt;strong&gt;مناسبة لجميع الأعمار&lt;/strong&gt;. أي بلا تعري أو الفاظ نابية أو محتوى عنيف.</value>
   </data>
@@ -116,7 +119,7 @@
     <value>الملف الشخصي</value>
   </data>
   <data name="edit.profile.country_change._" xml:space="preserve">
-    <value>يبدو أن دولة حسابك لا تتطابق مع دولة الإقامة. {0}.</value>
+    <value>كأن دولة حسابك لا تتطابق مع دولة الإقامة. {0}.</value>
   </data>
   <data name="edit.profile.country_change.update_link" xml:space="preserve">
     <value>التحديث إلى {0}</value>
@@ -169,6 +172,9 @@
   <data name="notifications.comment_reply" xml:space="preserve">
     <value>تلقي إشعارات الردود على تعليقاتك</value>
   </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>تلقي إشعارات عند نشر الأخبار</value>
+  </data>
   <data name="notifications.title" xml:space="preserve">
     <value>الإشعارات</value>
   </data>
@@ -187,6 +193,9 @@
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>الرسائل الخاصة</value>
   </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>دردشة الفريق</value>
+  </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>تعليقات جديدة</value>
   </data>
@@ -198,6 +207,9 @@
   </data>
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>مُنشئ خرائط</value>
+  </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>منشورات الأخبار</value>
   </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>دفع</value>
@@ -253,6 +265,9 @@
   <data name="privacy.hide_online" xml:space="preserve">
     <value>إخفاء وجودك على الموقع</value>
   </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>هذا يرتبط بوضع "الظهور دون اتصال" في osu!lazer</value>
+  </data>
   <data name="privacy.title" xml:space="preserve">
     <value>الخصوصية</value>
   </data>
@@ -279,6 +294,27 @@
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>تحديث</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>تطبيق المصادقة</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>استخدام تطبيق المصادقة بدلاً من البريد الإلكتروني للتحقق. التحقق من البريد الإلكتروني سيظل متاحاً كمرجع مسبق.</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>إزالة</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>إضافة تطبيق المصادقة</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>لم يتم تكوينه</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>مُكوَّن</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>يمكنك الآن إغلاق هذه النافذة</value>

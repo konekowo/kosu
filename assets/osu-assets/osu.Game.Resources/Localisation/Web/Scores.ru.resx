@@ -59,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="show.non_preserved" xml:space="preserve">
-    <value>Этот рекорд признан недействительным и скоро будет удалён.</value>
+    <value>Этот рекорд поставлен в очередь на удаление и скоро исчезнет.</value>
   </data>
   <data name="show.title" xml:space="preserve">
     <value>{0} на {1} [{2}]</value>
@@ -70,8 +70,11 @@
   <data name="show.player.by" xml:space="preserve">
     <value>Игрок</value>
   </data>
+  <data name="show.player.played_on" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
   <data name="show.player.submitted_on" xml:space="preserve">
-    <value>Рекорд поставлен</value>
+    <value>Поставлен</value>
   </data>
   <data name="show.player.rank.country" xml:space="preserve">
     <value>Рейтинг в стране</value>
@@ -86,9 +89,9 @@
     <value>За этот рекорд нельзя получить pp</value>
   </data>
   <data name="status.processing" xml:space="preserve">
-    <value>Этот рекорд все ещё подсчитывается и будет отображен позже</value>
+    <value>Этот рекорд всё ещё подсчитывается и будет отображен позже</value>
   </data>
   <data name="status.no_rank" xml:space="preserve">
-    <value>У этого рекорда нет места в рейтинге, потому что он сыгран не на рейтинг или признан недействительным</value>
+    <value>У этого рекорда нет места в рейтинге, потому что он сыгран не на рейтинг или поставлен в очередь на удаление</value>
   </data>
 </root>

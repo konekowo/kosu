@@ -127,6 +127,9 @@
   <data name="main.beatmapsets_controller.show" xml:space="preserve">
     <value>ビートマップ情報</value>
   </data>
+  <data name="main.beatmapsets_controller.versions" xml:space="preserve">
+    <value>ビートマップのバージョン履歴</value>
+  </data>
   <data name="main.changelog_controller._" xml:space="preserve">
     <value>更新履歴</value>
   </data>
@@ -136,8 +139,17 @@
   <data name="main.comments_controller._" xml:space="preserve">
     <value>コメント</value>
   </data>
+  <data name="main.contest_entries_controller.judge_results" xml:space="preserve">
+    <value>コンテストの審査結果</value>
+  </data>
   <data name="main.contests_controller._" xml:space="preserve">
     <value>コンテスト</value>
+  </data>
+  <data name="main.contests_controller.judge" xml:space="preserve">
+    <value>コンテストの審査</value>
+  </data>
+  <data name="main.group_history_controller._" xml:space="preserve">
+    <value>グループの履歴</value>
   </data>
   <data name="main.groups_controller.show" xml:space="preserve">
     <value>グループ</value>
@@ -157,14 +169,14 @@
   <data name="main.home_controller.testflight" xml:space="preserve">
     <value>testflight</value>
   </data>
+  <data name="main.legacy_matches_controller._" xml:space="preserve">
+    <value>マッチ</value>
+  </data>
   <data name="main.legal_controller._" xml:space="preserve">
     <value>情報</value>
   </data>
   <data name="main.livestreams_controller._" xml:space="preserve">
     <value>ライブストリーム</value>
-  </data>
-  <data name="main.matches_controller._" xml:space="preserve">
-    <value>マッチ</value>
   </data>
   <data name="main.news_controller._" xml:space="preserve">
     <value>ニュース</value>
@@ -202,6 +214,12 @@
   <data name="main.tournaments_controller._" xml:space="preserve">
     <value>トーナメント</value>
   </data>
+  <data name="main.user_cover_presets_controller._" xml:space="preserve">
+    <value>ユーザーカバープリセット</value>
+  </data>
+  <data name="main.user_totp_controller._" xml:space="preserve">
+    <value>認証アプリ</value>
+  </data>
   <data name="main.users_controller._" xml:space="preserve">
     <value>プレイヤー情報</value>
   </data>
@@ -213,6 +231,9 @@
   </data>
   <data name="main.wiki_controller._" xml:space="preserve">
     <value>wiki</value>
+  </data>
+  <data name="multiplayer.rooms_controller.events" xml:space="preserve">
+    <value>ルームの履歴</value>
   </data>
   <data name="passport.authorization_controller._" xml:space="preserve">
     <value>アプリを認証</value>

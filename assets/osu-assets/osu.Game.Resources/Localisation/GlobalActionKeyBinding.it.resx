@@ -130,11 +130,20 @@
   <data name="select_next" xml:space="preserve">
     <value>Selezione successiva</value>
   </data>
-  <data name="select_previous_group" xml:space="preserve">
-    <value>Seleziona gruppo precedente</value>
+  <data name="activate_previous_set" xml:space="preserve">
+    <value>Attiva il set precedente</value>
   </data>
-  <data name="select_next_group" xml:space="preserve">
-    <value>Seleziona gruppo successivo</value>
+  <data name="activate_next_set" xml:space="preserve">
+    <value>Attiva il set successivo</value>
+  </data>
+  <data name="expand_previous_group" xml:space="preserve">
+    <value>Espandi gruppo precedente</value>
+  </data>
+  <data name="expand_next_group" xml:space="preserve">
+    <value>Espandi il gruppo successivo</value>
+  </data>
+  <data name="toggle_current_group" xml:space="preserve">
+    <value>Attiva espansione del gruppo corrente</value>
   </data>
   <data name="home" xml:space="preserve">
     <value>Menù principale</value>
@@ -180,6 +189,12 @@
   </data>
   <data name="random_skin" xml:space="preserve">
     <value>Skin casuale</value>
+  </data>
+  <data name="previous_skin" xml:space="preserve">
+    <value>Skin precedente</value>
+  </data>
+  <data name="next_skin" xml:space="preserve">
+    <value>Skin successiva</value>
   </data>
   <data name="toggle_pause_replay" xml:space="preserve">
     <value>Ferma / avvia il replay</value>
@@ -327,5 +342,8 @@
   </data>
   <data name="editor_toggle_move_control" xml:space="preserve">
     <value>Attiva i controlli del movimento</value>
+  </data>
+  <data name="editor_discard_unsaved_changes" xml:space="preserve">
+    <value>Ignora modifiche non salvate</value>
   </data>
 </root>

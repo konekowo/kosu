@@ -25,6 +25,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString NoRestrictedAccess => new TranslatableString(getKey(@"no_restricted_access"), @"You are not able to perform this action while your account is in a restricted state.");
 
         /// <summary>
+        /// "{0} parameter has a maximum of {1} item|{0} parameter has a maximum of {1} items"
+        /// </summary>
+        public static LocalisableString ParamTooLarge(LocalisableString name, LocalisableString countDelimited) => new TranslatableString(getKey(@"param_too_large"), @"{0} parameter has a maximum of {1} item|{0} parameter has a maximum of {1} items", name, countDelimited);
+
+        /// <summary>
         /// "You must be an osu!supporter to use this feature."
         /// </summary>
         public static LocalisableString SupporterOnly => new TranslatableString(getKey(@"supporter_only"), @"You must be an osu!supporter to use this feature.");
@@ -58,16 +63,6 @@ namespace osu.Game.Resources.Localisation.Web
         /// "An error occured. Try refreshing the page."
         /// </summary>
         public static LocalisableString AccountProfileOrderGeneric => new TranslatableString(getKey(@"account.profile-order.generic"), @"An error occured. Try refreshing the page.");
-
-        /// <summary>
-        /// "Invalid mode specified."
-        /// </summary>
-        public static LocalisableString BeatmapsInvalidMode => new TranslatableString(getKey(@"beatmaps.invalid_mode"), @"Invalid mode specified.");
-
-        /// <summary>
-        /// "No scores are available for the requested mode on this beatmap difficulty."
-        /// </summary>
-        public static LocalisableString BeatmapsStandardConvertsOnly => new TranslatableString(getKey(@"beatmaps.standard_converts_only"), @"No scores are available for the requested mode on this beatmap difficulty.");
 
         /// <summary>
         /// "An error occurred while preparing your checkout."

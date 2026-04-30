@@ -172,6 +172,9 @@
   <data name="notifications.comment_reply" xml:space="preserve">
     <value>コメントへの返信の通知を受け取る</value>
   </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>ニュースの通知を受け取る</value>
+  </data>
   <data name="notifications.title" xml:space="preserve">
     <value>通知</value>
   </data>
@@ -190,6 +193,9 @@
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>プライベートチャットメッセージ</value>
   </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>チームチャットメッセージ</value>
+  </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>新しいコメント</value>
   </data>
@@ -202,6 +208,9 @@
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>ビートマップマッパー</value>
   </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>新しい投稿</value>
+  </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>プッシュ通知</value>
   </data>
@@ -213,6 +222,9 @@
   </data>
   <data name="oauth.title" xml:space="preserve">
     <value>OAuth</value>
+  </data>
+  <data name="options.beatmapset_show_anime_cover" xml:space="preserve">
+    <value>アニメ調のビートマップカバーを表示する</value>
   </data>
   <data name="options.beatmapset_show_nsfw" xml:space="preserve">
     <value>ビートマップ内の不適切なコンテンツの警告を非表示にする</value>
@@ -256,6 +268,9 @@
   <data name="privacy.hide_online" xml:space="preserve">
     <value>オンライン状態を隠す</value>
   </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>これはosu!lazerの「オフラインで表示する」にマップされます</value>
+  </data>
   <data name="privacy.title" xml:space="preserve">
     <value>プライバシー</value>
   </data>
@@ -282,6 +297,28 @@
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>更新</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>認証アプリ</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>認証には、メールの代わりに認証アプリを使用してください。
+メール認証は引き続き、代替手段として利用可能です。</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>認証アプリを追加</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>設定されていません</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>設定済み</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>今すぐにこのウィンドウを閉じる事が出来ます。</value>

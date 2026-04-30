@@ -79,9 +79,6 @@
   <data name="badges.new" xml:space="preserve">
     <value>НОВИЙ</value>
   </data>
-  <data name="buttons.admin" xml:space="preserve">
-    <value>Адміністратор</value>
-  </data>
   <data name="buttons.authorise" xml:space="preserve">
     <value>Авторизація</value>
   </data>
@@ -235,6 +232,9 @@
   <data name="count.notifications" xml:space="preserve">
     <value>{0} сповіщення|{0} сповіщення|{0} сповіщень</value>
   </data>
+  <data name="count.player" xml:space="preserve">
+    <value>{0} гравець|{0} гравців</value>
+  </data>
   <data name="count.plus_others" xml:space="preserve">
     <value>+ {0} інший!|+ {0} інших!</value>
   </data>
@@ -267,6 +267,12 @@
   </data>
   <data name="countdown.seconds" xml:space="preserve">
     <value>секунд</value>
+  </data>
+  <data name="datetime.month.php" xml:space="preserve">
+    <value>м</value>
+  </data>
+  <data name="datetime.year.php" xml:space="preserve">
+    <value>р</value>
   </data>
   <data name="datetime.year_month.moment" xml:space="preserve">
     <value>MMMM YYYY</value>

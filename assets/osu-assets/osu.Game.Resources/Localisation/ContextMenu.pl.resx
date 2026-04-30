@@ -65,9 +65,15 @@
     <value>Wyświetl beatmapę</value>
   </data>
   <data name="invite_player" xml:space="preserve">
-    <value>Zaproś gracza</value>
+    <value>Zaproś do gry</value>
   </data>
   <data name="spectate_player" xml:space="preserve">
-    <value>Obserwuj</value>
+    <value>Oglądaj</value>
+  </data>
+  <data name="confirm_block_user" xml:space="preserve">
+    <value>Czy na pewno chcesz zablokować użytkownika {0}?</value>
+  </data>
+  <data name="confirm_unblock_user" xml:space="preserve">
+    <value>Czy na pewno chcesz odblokować użytkownika {0}?</value>
   </data>
 </root>

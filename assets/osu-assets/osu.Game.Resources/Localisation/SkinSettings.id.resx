@@ -64,6 +64,9 @@
   <data name="current_skin" xml:space="preserve">
     <value>Skin saat ini</value>
   </data>
+  <data name="skin_name" xml:space="preserve">
+    <value>Nama skin</value>
+  </data>
   <data name="skin_layout_editor" xml:space="preserve">
     <value>Editor tata letak skin</value>
   </data>
@@ -71,7 +74,7 @@
     <value>Ukuran kursor permainan</value>
   </data>
   <data name="auto_cursor_size" xml:space="preserve">
-    <value>Sesuaikan ukuran kursor dengan Circle Size beatmap yang dimainkan</value>
+    <value>Sesuaikan ukuran kursor permainan berdasarkan Circle Size beatmap yang dimainkan</value>
   </data>
   <data name="gameplay_cursor_during_touch" xml:space="preserve">
     <value>Tampilkan kursor pada saat bermain dengan layar sentuh</value>

@@ -94,13 +94,31 @@
   <data name="suggested_offset_note" xml:space="preserve">
     <value>Juga alguns mapes per rebre una compensació suggerida!</value>
   </data>
+  <data name="suggested_offset_correct" xml:space="preserve">
+    <value>Segons la/les última/es {0} partida/es, la vostra compensació s'ha establert correctament!</value>
+  </data>
   <data name="suggested_offset_value_received" xml:space="preserve">
     <value>Segons les últimes {0} partides, la compensació suggerida és d'{1} ms. </value>
   </data>
   <data name="apply_suggested_offset" xml:space="preserve">
-    <value>Aplicar compensació suggerida</value>
+    <value>Aplica la compensació suggerida</value>
   </data>
   <data name="offset_wizard" xml:space="preserve">
     <value>Assistent de compensació</value>
+  </data>
+  <data name="adjust_beatmap_offset_automatically" xml:space="preserve">
+    <value>Ajusta automàticament la compensació del mapa</value>
+  </data>
+  <data name="adjust_beatmap_offset_automatically_tooltip" xml:space="preserve">
+    <value>Si s'activa, s'aplica automàticament la compensació suggerida al mapa de l'última partida.</value>
+  </data>
+  <data name="wasapi_label" xml:space="preserve">
+    <value>Fes servir el mode d'àudio experimental</value>
+  </data>
+  <data name="wasapi_tooltip" xml:space="preserve">
+    <value>S'intentarà inicialitzar el motor d'àudio amb un mode de latència més baix.</value>
+  </data>
+  <data name="wasapi_notice" xml:space="preserve">
+    <value>Degut a la latència reduïda, el modificador d'àudio s'haurà d'ajustar si s'activa aquesta opció. En general, cal restar entre 20 i 60 ms del valor ja conegut.</value>
   </data>
 </root>

@@ -154,6 +154,9 @@
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>Xem ảnh bìa kích thước đầy đủ</value>
   </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Xem trang quản trị viên</value>
+  </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>Beatmap này đã bị xoá.</value>
   </data>
@@ -256,6 +259,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>Ngôn Ngữ</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>Thẻ người tạo bản đồ</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>Vẫn đang tính toán dữ liệu...</value>
   </data>
@@ -267,6 +273,9 @@
   </data>
   <data name="show.info.offset" xml:space="preserve">
     <value>Offset online</value>
+  </data>
+  <data name="show.info.pack_tags" xml:space="preserve">
+    <value>Gói beatmap</value>
   </data>
   <data name="show.info.points-of-failure" xml:space="preserve">
     <value>Tỉ Lệ Thất Bại</value>
@@ -280,8 +289,11 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>Tỉ Lệ Thành Công</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>Tags</value>
+  <data name="show.info.success_rate_plays" xml:space="preserve">
+    <value>{0} lần vượt qua trên {1} lượt chơi|{0} lần vượt qua trên {1} lượt chơi</value>
+  </data>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>Thẻ người dùng</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>Beatmap này chứa video</value>
@@ -321,6 +333,9 @@
   </data>
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
     <value>Bạn cần là người ủng hộ để truy cập xếp hạng bạn bè và quốc gia!</value>
+  </data>
+  <data name="show.scoreboard.team" xml:space="preserve">
+    <value>Xếp hạng đội</value>
   </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>Bảng Xếp hạng</value>
@@ -367,6 +382,9 @@
   <data name="show.scoreboard.no_scores.loading" xml:space="preserve">
     <value>Đang tải điểm số...</value>
   </data>
+  <data name="show.scoreboard.no_scores.team" xml:space="preserve">
+    <value>Chưa có ai từ đội của bạn lập điểm số tại beatmap này!</value>
+  </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
     <value>Beatmap chưa được xếp hạng.</value>
   </data>
@@ -383,13 +401,13 @@
     <value>đây</value>
   </data>
   <data name="show.stats.cs" xml:space="preserve">
-    <value>Kích Cỡ Nốt</value>
+    <value>Cỡ nốt tròn</value>
   </data>
   <data name="show.stats.cs-mania" xml:space="preserve">
     <value>Số Phím</value>
   </data>
   <data name="show.stats.drain" xml:space="preserve">
-    <value>Độ Giảm HP</value>
+    <value>Độ giảm máu</value>
   </data>
   <data name="show.stats.accuracy" xml:space="preserve">
     <value>Độ Chính Xác</value>
@@ -401,16 +419,16 @@
     <value>Độ Khó</value>
   </data>
   <data name="show.stats.total_length" xml:space="preserve">
-    <value>Độ Dài</value>
+    <value>Độ dài (Độ dài có tương tác: {0})</value>
   </data>
   <data name="show.stats.bpm" xml:space="preserve">
     <value>BPM</value>
   </data>
   <data name="show.stats.count_circles" xml:space="preserve">
-    <value>Số Nốt Bấm</value>
+    <value>Số nốt tròn</value>
   </data>
   <data name="show.stats.count_sliders" xml:space="preserve">
-    <value>Số Nốt Trượt</value>
+    <value>Số nốt trượt</value>
   </data>
   <data name="show.stats.offset" xml:space="preserve">
     <value>Offset online: {0}</value>
@@ -426,6 +444,12 @@
   </data>
   <data name="show.stats.playcount" xml:space="preserve">
     <value>Đã chơi</value>
+  </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>Mục ưa thích</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>Hiện chưa có mục yêu thích</value>
   </data>
   <data name="show.status.ranked" xml:space="preserve">
     <value>Đã được xếp hạng</value>

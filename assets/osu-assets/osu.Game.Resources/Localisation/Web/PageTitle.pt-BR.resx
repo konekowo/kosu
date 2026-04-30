@@ -127,6 +127,9 @@
   <data name="main.beatmapsets_controller.show" xml:space="preserve">
     <value>informação do beatmap</value>
   </data>
+  <data name="main.beatmapsets_controller.versions" xml:space="preserve">
+    <value>histórico de versões do beatmap</value>
+  </data>
   <data name="main.changelog_controller._" xml:space="preserve">
     <value>registro de alterações</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="main.contests_controller.judge" xml:space="preserve">
     <value>julgamento do concurso</value>
+  </data>
+  <data name="main.group_history_controller._" xml:space="preserve">
+    <value>histórico do grupo</value>
   </data>
   <data name="main.groups_controller.show" xml:space="preserve">
     <value>grupos</value>
@@ -163,14 +169,14 @@
   <data name="main.home_controller.testflight" xml:space="preserve">
     <value>testflight</value>
   </data>
+  <data name="main.legacy_matches_controller._" xml:space="preserve">
+    <value>partidas</value>
+  </data>
   <data name="main.legal_controller._" xml:space="preserve">
     <value>informação</value>
   </data>
   <data name="main.livestreams_controller._" xml:space="preserve">
     <value>transmissões ao vivo</value>
-  </data>
-  <data name="main.matches_controller._" xml:space="preserve">
-    <value>partidas</value>
   </data>
   <data name="main.news_controller._" xml:space="preserve">
     <value>notícias</value>
@@ -193,6 +199,9 @@
   <data name="main.teams_controller._" xml:space="preserve">
     <value>equipes</value>
   </data>
+  <data name="main.teams_controller.create" xml:space="preserve">
+    <value>criar equipe</value>
+  </data>
   <data name="main.teams_controller.edit" xml:space="preserve">
     <value>configurações de equipe</value>
   </data>
@@ -208,6 +217,9 @@
   <data name="main.user_cover_presets_controller._" xml:space="preserve">
     <value>predefinições da capa do usuário</value>
   </data>
+  <data name="main.user_totp_controller._" xml:space="preserve">
+    <value>app de autenticação</value>
+  </data>
   <data name="main.users_controller._" xml:space="preserve">
     <value>informações do jogador</value>
   </data>
@@ -219,6 +231,9 @@
   </data>
   <data name="main.wiki_controller._" xml:space="preserve">
     <value>wiki</value>
+  </data>
+  <data name="multiplayer.rooms_controller.events" xml:space="preserve">
+    <value>histórico do quarto</value>
   </data>
   <data name="passport.authorization_controller._" xml:space="preserve">
     <value>autorizar aplicativo</value>

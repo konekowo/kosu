@@ -74,7 +74,7 @@
     <value>限制滑鼠游標只能在視窗移動</value>
   </data>
   <data name="disable_mouse_wheel_volume_adjust" xml:space="preserve">
-    <value>遊戲時停用滑鼠滾輪調整音量</value>
+    <value>遊玩時停用滑鼠滾輪調整音量</value>
   </data>
   <data name="disable_mouse_wheel_volume_adjust_tooltip" xml:space="preserve">
     <value>音量仍可以透過按下 "Alt" 鍵加上滑鼠滾輪來調整</value>
@@ -92,7 +92,7 @@
     <value>這個設定在您使用的平台有已知問題。遇到問題時，建議在遊戲外調整靈敏度，且不要啟用這個設定。</value>
   </data>
   <data name="always_confine" xml:space="preserve">
-    <value>一律使用 @Tele_zh_TW 來源</value>
+    <value>一律限制</value>
   </data>
   <data name="confine_during_gameplay" xml:space="preserve">
     <value>遊玩時限制</value>

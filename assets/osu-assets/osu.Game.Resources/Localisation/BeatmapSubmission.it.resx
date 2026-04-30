@@ -125,10 +125,10 @@
     <value>Dove vuoi pubblicare la tua beatmap?</value>
   </data>
   <data name="beatmap_submission_target_wip" xml:space="preserve">
-    <value>Lavori in corso / Aiuto (incompleta, non pronta per la classifica)</value>
+    <value>Lavori in corso / Aiuto (incompleta, non pronta per la classificazione)</value>
   </data>
   <data name="beatmap_submission_target_pending" xml:space="preserve">
-    <value>In attesa (completa, pronta per la classifica)</value>
+    <value>In attesa (completa, pronta per la classificazione)</value>
   </data>
   <data name="notify_for_discussion_replies" xml:space="preserve">
     <value>Ricevi notifiche per le risposte alla discussione</value>
@@ -140,7 +140,7 @@
     <value>Nota: al fine di consentire agli utenti di tutte le versioni osu! di godere della tua beatmap, verrà esportata in un formato retrocompatibile. Anche se abbiamo fatto sforzi per garantire che il processo mantenga la beatmap giocabile nella sua forma prevista, alcuni dati relativi a funzionalità che le versioni precedenti di osu! non supportano potrebbero andare perduti.</value>
   </data>
   <data name="empty_beatmaps_cannot_be_submitted" xml:space="preserve">
-    <value>Le beatmap vuote non possono essere inviate.</value>
+    <value>Le beatmap vuote non possono essere caricate.</value>
   </data>
   <data name="update_beatmap" xml:space="preserve">
     <value>Aggiorna beatmap!</value>

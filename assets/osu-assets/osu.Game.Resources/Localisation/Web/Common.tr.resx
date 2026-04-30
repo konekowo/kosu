@@ -79,14 +79,14 @@
   <data name="badges.new" xml:space="preserve">
     <value>YENİ</value>
   </data>
-  <data name="buttons.admin" xml:space="preserve">
-    <value>Yönetici</value>
-  </data>
   <data name="buttons.authorise" xml:space="preserve">
     <value>Yetki ver</value>
   </data>
   <data name="buttons.authorising" xml:space="preserve">
     <value>İzin Veriliyor...</value>
+  </data>
+  <data name="buttons.back" xml:space="preserve">
+    <value>Geri</value>
   </data>
   <data name="buttons.back_to_previous" xml:space="preserve">
     <value>Bir önceki pozisyona dön</value>
@@ -232,6 +232,9 @@
   <data name="count.notifications" xml:space="preserve">
     <value>{0} bildirim|{0} bildirim</value>
   </data>
+  <data name="count.player" xml:space="preserve">
+    <value>{0} oyuncu|{0} oyuncu</value>
+  </data>
   <data name="count.plus_others" xml:space="preserve">
     <value>+ {0} tane daha!|+ {0} tane daha!</value>
   </data>
@@ -264,6 +267,12 @@
   </data>
   <data name="countdown.seconds" xml:space="preserve">
     <value>saniye</value>
+  </data>
+  <data name="datetime.month.php" xml:space="preserve">
+    <value> ay</value>
+  </data>
+  <data name="datetime.year.php" xml:space="preserve">
+    <value> yıl</value>
   </data>
   <data name="datetime.year_month.moment" xml:space="preserve">
     <value>MMMM YYYY</value>

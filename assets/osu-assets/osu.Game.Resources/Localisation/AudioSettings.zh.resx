@@ -94,13 +94,31 @@
   <data name="suggested_offset_note" xml:space="preserve">
     <value>玩一些谱面来让游戏计算一个合适的偏移！</value>
   </data>
+  <data name="suggested_offset_correct" xml:space="preserve">
+    <value>基于你最近的 {0} 次游玩，你的偏移量已经正确设定好了！</value>
+  </data>
   <data name="suggested_offset_value_received" xml:space="preserve">
-    <value>基于你最近的 {0} 场游戏，游戏推荐的偏移量是 {1} ms。</value>
+    <value>基于你最近的 {0} 次游玩，游戏推荐的偏移量是 {1} ms。</value>
   </data>
   <data name="apply_suggested_offset" xml:space="preserve">
     <value>使用推荐偏移</value>
   </data>
   <data name="offset_wizard" xml:space="preserve">
     <value>偏移设置向导</value>
+  </data>
+  <data name="adjust_beatmap_offset_automatically" xml:space="preserve">
+    <value>自动调整谱面偏移</value>
+  </data>
+  <data name="adjust_beatmap_offset_automatically_tooltip" xml:space="preserve">
+    <value>启用后，将自动应用上次游玩该谱面时所计算出的推荐偏移量。</value>
+  </data>
+  <data name="wasapi_label" xml:space="preserve">
+    <value>启用实验性音频模式</value>
+  </data>
+  <data name="wasapi_tooltip" xml:space="preserve">
+    <value>启用此选项后会尝试将音频引擎切换至低延迟模式。</value>
+  </data>
+  <data name="wasapi_notice" xml:space="preserve">
+    <value>由于音频延迟降低，启用此选项后你将需要调整音频偏移。通常建议将当前数值减少 20 至 60 毫秒。</value>
   </data>
 </root>

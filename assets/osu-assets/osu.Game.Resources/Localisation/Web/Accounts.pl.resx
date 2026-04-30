@@ -98,7 +98,7 @@
     <value>irc</value>
   </data>
   <data name="edit.legacy_api.title" xml:space="preserve">
-    <value>Stare API</value>
+    <value>API wersji pierwszej</value>
   </data>
   <data name="edit.password.current" xml:space="preserve">
     <value>obecne hasło</value>
@@ -172,6 +172,9 @@
   <data name="notifications.comment_reply" xml:space="preserve">
     <value>otrzymuj powiadomienia o odpowiedziach do twoich komentarzy</value>
   </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>otrzymuj powiadomienia o aktualnościach</value>
+  </data>
   <data name="notifications.title" xml:space="preserve">
     <value>Powiadomienia</value>
   </data>
@@ -190,6 +193,9 @@
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>wiadomości prywatne na czacie</value>
   </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>wiadomości na czacie zespołu</value>
+  </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>nowe komentarze</value>
   </data>
@@ -202,6 +208,9 @@
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>twórca</value>
   </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>aktualności</value>
+  </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>push</value>
   </data>
@@ -213,6 +222,9 @@
   </data>
   <data name="oauth.title" xml:space="preserve">
     <value>OAuth</value>
+  </data>
+  <data name="options.beatmapset_show_anime_cover" xml:space="preserve">
+    <value>Pokazuj okładki stylizowane anime w beatmapach</value>
   </data>
   <data name="options.beatmapset_show_nsfw" xml:space="preserve">
     <value>ukryj ostrzeżenia o treściach dla pełnoletnich w beatmapach</value>
@@ -251,10 +263,13 @@
     <value>ekran dotykowy</value>
   </data>
   <data name="privacy.friends_only" xml:space="preserve">
-    <value>blokuj prywatne wiadomości od osób spoza listy znajomych</value>
+    <value>blokuj wiadomości prywatne od osób spoza listy znajomych</value>
   </data>
   <data name="privacy.hide_online" xml:space="preserve">
     <value>ukryj swoją obecność online</value>
+  </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>jednoznaczne ze statusem „Nie przeszkadzać” w osu!lazer</value>
   </data>
   <data name="privacy.title" xml:space="preserve">
     <value>Prywatność</value>
@@ -282,6 +297,27 @@
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>zaktualizuj</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>Aplikacja uwierzytelniająca</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>Użyj aplikacji uwierzytelniającej zamiast e-mailu, aby się zweryfikować. Weryfikacja przez e-mail będzie nadal dostępna jako opcja zapasowa.</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>Dodaj aplikację uwierzytelniającą</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>status</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>Nie skonfigurowano</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>Skonfigurowano</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>Możesz zamknąć to okno</value>

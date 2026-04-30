@@ -122,7 +122,7 @@
     <value>已解决</value>
   </data>
   <data name="discussions.restore" xml:space="preserve">
-    <value>已修复</value>
+    <value>恢复</value>
   </data>
   <data name="discussions.show_deleted" xml:space="preserve">
     <value>显示已删除的消息</value>
@@ -499,6 +499,9 @@
   <data name="listing.search.options" xml:space="preserve">
     <value>更多搜索选项</value>
   </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>本页面显示的个人资料最高排名计数及结果基于你在谱面上获得的最高“标准化” （又称“lazer”）分数。</value>
+  </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
     <value>需要成为支持者才能按 {0} 筛选</value>
   </data>
@@ -570,6 +573,12 @@
   </data>
   <data name="listing.search.supporter_filter_quote.link_text" xml:space="preserve">
     <value>支持者</value>
+  </data>
+  <data name="listing.search.tag_picker.tooltip" xml:space="preserve">
+    <value>浏览玩家标签</value>
+  </data>
+  <data name="listing.search.tag_picker.prompt" xml:space="preserve">
+    <value>输入以搜索</value>
   </data>
   <data name="general.converts" xml:space="preserve">
     <value>包括转谱</value>

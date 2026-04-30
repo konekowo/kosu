@@ -71,16 +71,13 @@
     <value>, </value>
   </data>
   <data name="array_and.two_words_connector" xml:space="preserve">
-    <value> 와(과) </value>
+    <value> 그리고 </value>
   </data>
   <data name="array_and.last_word_connector" xml:space="preserve">
     <value>, 그리고 </value>
   </data>
   <data name="badges.new" xml:space="preserve">
     <value>NEW</value>
-  </data>
-  <data name="buttons.admin" xml:space="preserve">
-    <value>관리</value>
   </data>
   <data name="buttons.authorise" xml:space="preserve">
     <value>권한 부여</value>
@@ -235,6 +232,9 @@
   <data name="count.notifications" xml:space="preserve">
     <value>알림 {0}개</value>
   </data>
+  <data name="count.player" xml:space="preserve">
+    <value>{0}명의 플레이어</value>
+  </data>
   <data name="count.plus_others" xml:space="preserve">
     <value>+ {0} 기타!</value>
   </data>
@@ -267,6 +267,12 @@
   </data>
   <data name="countdown.seconds" xml:space="preserve">
     <value>초</value>
+  </data>
+  <data name="datetime.month.php" xml:space="preserve">
+    <value>월</value>
+  </data>
+  <data name="datetime.year.php" xml:space="preserve">
+    <value>년</value>
   </data>
   <data name="datetime.year_month.moment" xml:space="preserve">
     <value>YYYY년 MMMM</value>
@@ -335,10 +341,10 @@
     <value>%d분</value>
   </data>
   <data name="scoreboard_time.month" xml:space="preserve">
-    <value>%d달</value>
+    <value>%d개월</value>
   </data>
   <data name="scoreboard_time.months" xml:space="preserve">
-    <value>%d달</value>
+    <value>%d개월</value>
   </data>
   <data name="scoreboard_time.s" xml:space="preserve">
     <value>%d초</value>

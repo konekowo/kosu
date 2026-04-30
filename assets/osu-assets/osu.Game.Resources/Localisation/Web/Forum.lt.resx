@@ -166,6 +166,9 @@
   <data name="topic.go_to_latest" xml:space="preserve">
     <value>peržiūrėti naujausius įrašus</value>
   </data>
+  <data name="topic.go_to_unread" xml:space="preserve">
+    <value>peržiūrėti pirmą neskaitytą pranešimą</value>
+  </data>
   <data name="topic.has_replied" xml:space="preserve">
     <value>Jūs atsakėte į šią temą</value>
   </data>
@@ -456,78 +459,6 @@
   </data>
   <data name="topics.index.views" xml:space="preserve">
     <value>peržiūros</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0" xml:space="preserve">
-    <value>Pašalinti „pridėta“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0_done" xml:space="preserve">
-    <value>Pašalinta „pridėta“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1" xml:space="preserve">
-    <value>Pridėti „pridėta“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1_done" xml:space="preserve">
-    <value>Pridėta "pridėta" žyma</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0" xml:space="preserve">
-    <value>Pašalinti „priskirta“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0_done" xml:space="preserve">
-    <value>Pašalinta „priskirta“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1" xml:space="preserve">
-    <value>Pridėti „priskirta“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1_done" xml:space="preserve">
-    <value>Pridėta „priskirta“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0" xml:space="preserve">
-    <value>Pašalinti „patvirtinta“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0_done" xml:space="preserve">
-    <value>Pašalinta „patvirtinta“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1" xml:space="preserve">
-    <value>Pridėti „patvirtinta“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1_done" xml:space="preserve">
-    <value>Pridėta „patvirtinta“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0" xml:space="preserve">
-    <value>Pašalinti „dubliuota“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0_done" xml:space="preserve">
-    <value>Pašalinta „dubliuota“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1" xml:space="preserve">
-    <value>Pridėti „dubliuota“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1_done" xml:space="preserve">
-    <value>Pridėta „dubliuota“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0" xml:space="preserve">
-    <value>Pašalinti „negalima“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0_done" xml:space="preserve">
-    <value>Pašalinta „negalima“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1" xml:space="preserve">
-    <value>Pridėti „negalima“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1_done" xml:space="preserve">
-    <value>Pridėta „negalima“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0" xml:space="preserve">
-    <value>Pašalinti „išspręsta“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0_done" xml:space="preserve">
-    <value>Pašalinta „išspręsta“ žyma</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1" xml:space="preserve">
-    <value>Pridėti „išspręsta“ žymą</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1_done" xml:space="preserve">
-    <value>Pridėta „išspręsta“ žyma</value>
   </data>
   <data name="topics.lock.is_locked" xml:space="preserve">
     <value>Ši tema yra užrakinta ir negalima atsakyti joje</value>

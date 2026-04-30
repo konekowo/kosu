@@ -98,13 +98,13 @@
     <value>Interpret/Album</value>
   </data>
   <data name="mode.chart" xml:space="preserve">
-    <value>V záři reflektorů</value>
+    <value>Zvýrazněné</value>
   </data>
   <data name="mode.featured" xml:space="preserve">
     <value>Oficiální umělec</value>
   </data>
   <data name="mode.loved" xml:space="preserve">
-    <value>Projekt Oblíbené</value>
+    <value>Projekt oblíbených komunitou</value>
   </data>
   <data name="mode.standard" xml:space="preserve">
     <value>Klasické</value>

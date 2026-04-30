@@ -154,6 +154,9 @@
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>Titelbild in Originalgröße anzeigen</value>
   </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Admin-Seite anzeigen</value>
+  </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>Diese Beatmap wurde gelöscht.</value>
   </data>
@@ -256,6 +259,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>Sprache</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>Mappertags</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>Die Daten werden noch verarbeitet...</value>
   </data>
@@ -267,6 +273,9 @@
   </data>
   <data name="show.info.offset" xml:space="preserve">
     <value>Online-Offset</value>
+  </data>
+  <data name="show.info.pack_tags" xml:space="preserve">
+    <value>Beatmap-Pakete</value>
   </data>
   <data name="show.info.points-of-failure" xml:space="preserve">
     <value>Stellen, an denen Spieler gescheitert sind</value>
@@ -280,8 +289,11 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>Erfolgsrate</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>Tags</value>
+  <data name="show.info.success_rate_plays" xml:space="preserve">
+    <value>{0} aus {1} Spiel|{0} aus {1} Spielen</value>
+  </data>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>Nutzertags</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>Diese Beatmap enthält ein Video</value>
@@ -322,11 +334,14 @@
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
     <value>Du musst osu!supporter sein, um Freundes-, Länder-, oder Mod-Ranglisten zu sehen!</value>
   </data>
+  <data name="show.scoreboard.team" xml:space="preserve">
+    <value>Team-Rangliste</value>
+  </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>Punkte-Anzeige</value>
   </data>
   <data name="show.scoreboard.headers.accuracy" xml:space="preserve">
-    <value>Präzision</value>
+    <value>Genauigkeit</value>
   </data>
   <data name="show.scoreboard.headers.combo" xml:space="preserve">
     <value>Maximale Combo</value>
@@ -367,6 +382,9 @@
   <data name="show.scoreboard.no_scores.loading" xml:space="preserve">
     <value>Lade Scores...</value>
   </data>
+  <data name="show.scoreboard.no_scores.team" xml:space="preserve">
+    <value>Keiner aus deinem Team hat bisher einen Score auf dieser Beatmap erzielt!</value>
+  </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
     <value>Unranked Beatmap.</value>
   </data>
@@ -392,13 +410,13 @@
     <value>HP-Drain</value>
   </data>
   <data name="show.stats.accuracy" xml:space="preserve">
-    <value>Präzision</value>
+    <value>Genauigkeit</value>
   </data>
   <data name="show.stats.ar" xml:space="preserve">
     <value>Approach-Rate</value>
   </data>
   <data name="show.stats.stars" xml:space="preserve">
-    <value>Sternebewertung</value>
+    <value>Sterne</value>
   </data>
   <data name="show.stats.total_length" xml:space="preserve">
     <value>Länge (Drain length: {0})</value>
@@ -425,7 +443,13 @@
     <value>Nominierungen</value>
   </data>
   <data name="show.stats.playcount" xml:space="preserve">
-    <value>Playcount</value>
+    <value>Anzahl der Spiele</value>
+  </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>Unterstützt von</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>Noch keine Unterstützer</value>
   </data>
   <data name="show.status.ranked" xml:space="preserve">
     <value>Ranked</value>

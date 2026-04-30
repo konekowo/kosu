@@ -235,6 +235,12 @@
   <data name="login.beta.small" xml:space="preserve">
     <value>(osu!supporters will get in soon)</value>
   </data>
+  <data name="multiplayer.index.active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="multiplayer.index.ended" xml:space="preserve">
+    <value>Ended</value>
+  </data>
   <data name="ogp.modding_description" xml:space="preserve">
     <value>Beatmaps: {0}</value>
   </data>
@@ -292,26 +298,41 @@
   <data name="report.actions.cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="report.dmca.message_1._" xml:space="preserve">
+    <value>Please report copyright infringement through a DMCA claim to {0} as per {1}.</value>
+  </data>
+  <data name="report.dmca.message_1.policy" xml:space="preserve">
+    <value>the osu! copyright policy</value>
+  </data>
+  <data name="report.dmca.message_2" xml:space="preserve">
+    <value>This applies to cases where audio tracks, visual content or beatmap level content is used without correct permission.</value>
+  </data>
   <data name="report.options.cheating" xml:space="preserve">
     <value>Cheating</value>
   </data>
-  <data name="report.options.multiple_accounts" xml:space="preserve">
-    <value>Using multiple accounts</value>
+  <data name="report.options.copyright_infringement" xml:space="preserve">
+    <value>Copyright infringement</value>
+  </data>
+  <data name="report.options.inappropriate_chat" xml:space="preserve">
+    <value>Inappropriate chat behaviour</value>
   </data>
   <data name="report.options.insults" xml:space="preserve">
     <value>Insulting me / others</value>
   </data>
-  <data name="report.options.spam" xml:space="preserve">
-    <value>Spamming</value>
-  </data>
-  <data name="report.options.unwanted_content" xml:space="preserve">
-    <value>Linking inappropriate content</value>
+  <data name="report.options.multiple_accounts" xml:space="preserve">
+    <value>Using multiple accounts</value>
   </data>
   <data name="report.options.nonsense" xml:space="preserve">
     <value>Nonsense</value>
   </data>
   <data name="report.options.other" xml:space="preserve">
     <value>Other (type below)</value>
+  </data>
+  <data name="report.options.spam" xml:space="preserve">
+    <value>Spamming</value>
+  </data>
+  <data name="report.options.unwanted_content" xml:space="preserve">
+    <value>Inappropriate content</value>
   </data>
   <data name="restricted_banner.title" xml:space="preserve">
     <value>Your account has been restricted!</value>
@@ -550,6 +571,9 @@
   <data name="show.extra.historical.replays_watched_counts.count_label" xml:space="preserve">
     <value>Replays Watched</value>
   </data>
+  <data name="show.extra.historical.score_replay_stats.title" xml:space="preserve">
+    <value>Most Watched Replays</value>
+  </data>
   <data name="show.extra.kudosu.recent_entries" xml:space="preserve">
     <value>Recent Kudosu History</value>
   </data>
@@ -627,6 +651,9 @@
   </data>
   <data name="show.extra.posts.show_more" xml:space="preserve">
     <value>see more posts</value>
+  </data>
+  <data name="show.extra.ranked-play.title" xml:space="preserve">
+    <value>Ranked Play Matches</value>
   </data>
   <data name="show.extra.recent_activity.title" xml:space="preserve">
     <value>Recent</value>
@@ -745,6 +772,9 @@
   <data name="show.info.website" xml:space="preserve">
     <value>Website</value>
   </data>
+  <data name="show.matchmaking.title" xml:space="preserve">
+    <value>Ranked Play</value>
+  </data>
   <data name="show.not_found.reason_1" xml:space="preserve">
     <value>They may have changed their username.</value>
   </data>
@@ -799,8 +829,17 @@
   <data name="show.rank.highest" xml:space="preserve">
     <value>Highest rank: {0} on {1}</value>
   </data>
+  <data name="show.season_stats.division_top_percentage" xml:space="preserve">
+    <value>Top {0}</value>
+  </data>
+  <data name="show.season_stats.total_score" xml:space="preserve">
+    <value>Total score</value>
+  </data>
   <data name="show.stats.hit_accuracy" xml:space="preserve">
     <value>Hit Accuracy</value>
+  </data>
+  <data name="show.stats.hits_per_play" xml:space="preserve">
+    <value>Hits Per Play</value>
   </data>
   <data name="show.stats.level" xml:space="preserve">
     <value>Level {0}</value>

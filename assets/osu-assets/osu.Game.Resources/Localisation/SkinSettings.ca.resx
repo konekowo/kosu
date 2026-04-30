@@ -64,6 +64,9 @@
   <data name="current_skin" xml:space="preserve">
     <value>Skin actual</value>
   </data>
+  <data name="skin_name" xml:space="preserve">
+    <value>Nom de l'skin</value>
+  </data>
   <data name="skin_layout_editor" xml:space="preserve">
     <value>Editor de disseny de skins</value>
   </data>
@@ -71,7 +74,7 @@
     <value>Mida del cursor del joc</value>
   </data>
   <data name="auto_cursor_size" xml:space="preserve">
-    <value>Ajustar la mida del cursor del joc basat en el mapa actual</value>
+    <value>Ajusta la mida del cursor del joc segons el mapa actual</value>
   </data>
   <data name="gameplay_cursor_during_touch" xml:space="preserve">
     <value>Mostra el cursor del joc durant l'entrada tàctil</value>

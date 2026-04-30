@@ -163,4 +163,16 @@
   <data name="copy_link" xml:space="preserve">
     <value>Copy link</value>
   </data>
+  <data name="manage" xml:space="preserve">
+    <value>Manage...</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>Details...</value>
+  </data>
+  <data name="mapper" xml:space="preserve">
+    <value>Mapper</value>
+  </data>
+  <data name="delete_with_confrmation" xml:space="preserve">
+    <value>Delete...</value>
+  </data>
 </root>

@@ -154,6 +154,9 @@
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>View full size cover image</value>
   </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>View admin page</value>
+  </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>This beatmap has been deleted.</value>
   </data>
@@ -259,6 +262,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>Language</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>Mapper Tags</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>Data still being calculated...</value>
   </data>
@@ -270,6 +276,9 @@
   </data>
   <data name="show.info.offset" xml:space="preserve">
     <value>Online offset</value>
+  </data>
+  <data name="show.info.pack_tags" xml:space="preserve">
+    <value>Beatmap Packs</value>
   </data>
   <data name="show.info.points-of-failure" xml:space="preserve">
     <value>Points of Failure</value>
@@ -283,8 +292,11 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>Success Rate</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>Tags</value>
+  <data name="show.info.success_rate_plays" xml:space="preserve">
+    <value>{0} of {1} play|{0} of {1} plays</value>
+  </data>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>User Tags</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>This beatmap contains video</value>
@@ -438,6 +450,12 @@
   </data>
   <data name="show.stats.playcount" xml:space="preserve">
     <value>Playcount</value>
+  </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>Favourites</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>No favourites yet</value>
   </data>
   <data name="show.status.ranked" xml:space="preserve">
     <value>Ranked</value>

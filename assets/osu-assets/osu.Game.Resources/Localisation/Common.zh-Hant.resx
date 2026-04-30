@@ -76,6 +76,9 @@
   <data name="default" xml:space="preserve">
     <value>預設值</value>
   </data>
+  <data name="rename" xml:space="preserve">
+    <value>重新命名</value>
+  </data>
   <data name="export" xml:space="preserve">
     <value>匯出</value>
   </data>
@@ -159,5 +162,17 @@
   </data>
   <data name="copy_link" xml:space="preserve">
     <value>複製連結</value>
+  </data>
+  <data name="manage" xml:space="preserve">
+    <value>管理...</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>詳細資訊...</value>
+  </data>
+  <data name="mapper" xml:space="preserve">
+    <value>譜師</value>
+  </data>
+  <data name="delete_with_confrmation" xml:space="preserve">
+    <value>刪除……</value>
   </data>
 </root>

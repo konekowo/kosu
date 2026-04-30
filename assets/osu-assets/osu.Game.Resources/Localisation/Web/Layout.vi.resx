@@ -88,6 +88,9 @@
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>thảo luận</value>
   </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>Lịch sử phiên bản</value>
+  </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>danh sách</value>
   </data>
@@ -213,6 +216,9 @@
   </data>
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Quyền Riêng Tư</value>
+  </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Quy tắc</value>
   </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Trạng thái máy chủ</value>

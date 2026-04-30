@@ -67,6 +67,9 @@
   <data name="no_restricted_access" xml:space="preserve">
     <value>Non puoi fare questa azione mentre il tuo account è limitato.</value>
   </data>
+  <data name="param_too_large" xml:space="preserve">
+    <value>il parametro {0} ha un massimo di {1} oggetti|il parametro {0} ha un massimo di {1} oggetti</value>
+  </data>
   <data name="supporter_only" xml:space="preserve">
     <value>Devi essere un supporter per poter usare questa funzionalità.</value>
   </data>
@@ -87,12 +90,6 @@
   </data>
   <data name="account.profile-order.generic" xml:space="preserve">
     <value>Si è verificato un errore. Prova a ricaricare la pagina.</value>
-  </data>
-  <data name="beatmaps.invalid_mode" xml:space="preserve">
-    <value>Modalità specificata non valida.</value>
-  </data>
-  <data name="beatmaps.standard_converts_only" xml:space="preserve">
-    <value>Nessuno score disponibile per la modalità richiesta in questa difficoltà della beatmap.</value>
   </data>
   <data name="checkout.generic" xml:space="preserve">
     <value>Si è verificato un errore durante la preparazione del tuo checkout.</value>

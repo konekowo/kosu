@@ -103,6 +103,9 @@
   <data name="channels.list.title.public" xml:space="preserve">
     <value>Kanały</value>
   </data>
+  <data name="channels.list.title.team" xml:space="preserve">
+    <value>Zespół</value>
+  </data>
   <data name="form.title.announcement" xml:space="preserve">
     <value>Utwórz nowe ogłoszenie</value>
   </data>
@@ -138,15 +141,6 @@
   </data>
   <data name="input.send" xml:space="preserve">
     <value>Wyślij</value>
-  </data>
-  <data name="no-conversations.howto" xml:space="preserve">
-    <value>Rozpocznij konwersację poprzez profil lub kartę użytkownika.</value>
-  </data>
-  <data name="no-conversations.lazer" xml:space="preserve">
-    <value>Publiczne kanały, do których dołączysz poprzez &lt;a href="{0}"&gt;osu!lazer&lt;/a&gt;, również będą tutaj widoczne.</value>
-  </data>
-  <data name="no-conversations.title" xml:space="preserve">
-    <value>brak konwersacji</value>
   </data>
   <data name="join_channels.loading" xml:space="preserve">
     <value>Ładowanie listy kanałów...</value>

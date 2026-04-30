@@ -100,6 +100,9 @@
   <data name="action_type.news_post" xml:space="preserve">
     <value>haberler</value>
   </data>
+  <data name="action_type.team" xml:space="preserve">
+    <value>takım</value>
+  </data>
   <data name="action_type.user" xml:space="preserve">
     <value>profil</value>
   </data>
@@ -120,6 +123,9 @@
   </data>
   <data name="filters.news_post" xml:space="preserve">
     <value>gelişmeler</value>
+  </data>
+  <data name="filters.team" xml:space="preserve">
+    <value>takım</value>
   </data>
   <data name="filters.user" xml:space="preserve">
     <value>profil</value>
@@ -280,6 +286,18 @@
   <data name="item.channel.channel.pm.channel_message_group" xml:space="preserve">
     <value>{0} tarafından</value>
   </data>
+  <data name="item.channel.channel_team._" xml:space="preserve">
+    <value>Yeni takım mesajı</value>
+  </data>
+  <data name="item.channel.channel_team.team.channel_team" xml:space="preserve">
+    <value>{0} "{1}" diyor</value>
+  </data>
+  <data name="item.channel.channel_team.team.channel_team_compact" xml:space="preserve">
+    <value>{0} "{1}" diyor</value>
+  </data>
+  <data name="item.channel.channel_team.team.channel_team_group" xml:space="preserve">
+    <value>{0} "{1}" diyor</value>
+  </data>
   <data name="item.build._" xml:space="preserve">
     <value>Değişiklik kayıtları</value>
   </data>
@@ -316,6 +334,15 @@
   <data name="item.news_post.comment.comment_reply_compact" xml:space="preserve">
     <value>{0} "{1}" yanıtını verdi</value>
   </data>
+  <data name="item.news_post.news_post._" xml:space="preserve">
+    <value>Haberler ({0})</value>
+  </data>
+  <data name="item.news_post.news_post.news_post_new" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="item.news_post.news_post.news_post_new_compact" xml:space="preserve">
+    <value>{0}</value>
+  </data>
   <data name="item.forum_topic._" xml:space="preserve">
     <value>Forum konusu</value>
   </data>
@@ -327,6 +354,30 @@
   </data>
   <data name="item.forum_topic.forum_topic_reply.forum_topic_reply_compact" xml:space="preserve">
     <value>{0} yanıt verdi</value>
+  </data>
+  <data name="item.team.team_application._" xml:space="preserve">
+    <value>Takım katılım isteği</value>
+  </data>
+  <data name="item.team.team_application.team_application_accept" xml:space="preserve">
+    <value>Artık {0} takımının bir üyesisin</value>
+  </data>
+  <data name="item.team.team_application.team_application_accept_compact" xml:space="preserve">
+    <value>Artık {0} takımının bir üyesisin</value>
+  </data>
+  <data name="item.team.team_application.team_application_group" xml:space="preserve">
+    <value>Takıma katılma isteği güncellemeleri</value>
+  </data>
+  <data name="item.team.team_application.team_application_reject" xml:space="preserve">
+    <value>{0} takıma giriş isteğin reddedildi</value>
+  </data>
+  <data name="item.team.team_application.team_application_reject_compact" xml:space="preserve">
+    <value>{0} takımına giriş isteğiniz reddedildi</value>
+  </data>
+  <data name="item.team.team_application.team_application_store" xml:space="preserve">
+    <value>{0} takımına katılmak için istek gönderdi</value>
+  </data>
+  <data name="item.team.team_application.team_application_store_compact" xml:space="preserve">
+    <value>{0} takımına katılmak için istek gönderdi</value>
   </data>
   <data name="item.user.user_beatmapset_new._" xml:space="preserve">
     <value>Yeni beatmap</value>
@@ -360,6 +411,9 @@
   </data>
   <data name="item.user_achievement.user_achievement_unlock.user_achievement_unlock_group" xml:space="preserve">
     <value>Madalyalar açıldı!</value>
+  </data>
+  <data name="mail.news" xml:space="preserve">
+    <value>Haberler</value>
   </data>
   <data name="mail.beatmapset.beatmap_owner_change.beatmap_owner_change" xml:space="preserve">
     <value>Artık "{0}" beatmapinin bir konuğusunuz</value>
@@ -400,11 +454,14 @@
   <data name="mail.beatmapset.comment.comment_new" xml:space="preserve">
     <value>"{0}" beatmapinde yeni yorumlar mevcut</value>
   </data>
-  <data name="mail.channel.announcement.announce" xml:space="preserve">
-    <value>"{0}" içinde yeni bir duyuru var</value>
+  <data name="mail.channel.announcement.channel_announcement" xml:space="preserve">
+    <value>"{0}"da yeni bir duyuru var</value>
   </data>
-  <data name="mail.channel.channel.pm" xml:space="preserve">
-    <value>{0} kullanıcısından yeni bir mesaj geldi</value>
+  <data name="mail.channel.channel.channel_message" xml:space="preserve">
+    <value>{0}'dan yeni bir mesaj aldın</value>
+  </data>
+  <data name="mail.channel.channel_team.channel_team" xml:space="preserve">
+    <value>"{0}" takımından yeni bir mesaj var</value>
   </data>
   <data name="mail.build.comment.comment_new" xml:space="preserve">
     <value>"{0}" değişiklik kaydında yeni yorumlar mevcut</value>
@@ -414,6 +471,15 @@
   </data>
   <data name="mail.forum_topic.forum_topic_reply.forum_topic_reply" xml:space="preserve">
     <value>"{0}" konusunda yeni yanıtlar mevcut</value>
+  </data>
+  <data name="mail.team.team_application.team_application_accept" xml:space="preserve">
+    <value>Artık {0} takımının bir üyesisin</value>
+  </data>
+  <data name="mail.team.team_application.team_application_reject" xml:space="preserve">
+    <value>{0} takımına giriş isteğiniz reddedildi</value>
+  </data>
+  <data name="mail.team.team_application.team_application_store" xml:space="preserve">
+    <value>{0} takımına katılmak için istek gönderdi</value>
   </data>
   <data name="mail.user.user_beatmapset_new.user_beatmapset_new" xml:space="preserve">
     <value>{0} yeni beatmapler yaptı</value>

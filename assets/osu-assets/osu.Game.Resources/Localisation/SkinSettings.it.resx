@@ -64,6 +64,9 @@
   <data name="current_skin" xml:space="preserve">
     <value>Skin attuale</value>
   </data>
+  <data name="skin_name" xml:space="preserve">
+    <value>Nome skin</value>
+  </data>
   <data name="skin_layout_editor" xml:space="preserve">
     <value>Modifica skin</value>
   </data>
@@ -83,6 +86,6 @@
     <value>Colori beatmap</value>
   </data>
   <data name="beatmap_hitsounds" xml:space="preserve">
-    <value>Hitsound beatmap</value>
+    <value>Hitsound della beatmap</value>
   </data>
 </root>

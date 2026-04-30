@@ -88,6 +88,9 @@
   <data name="intro_sequence" xml:space="preserve">
     <value>Sequenza introduttiva</value>
   </data>
+  <data name="intro_random" xml:space="preserve">
+    <value>Casuale</value>
+  </data>
   <data name="background_source" xml:space="preserve">
     <value>Sorgente sfondo</value>
   </data>
@@ -102,6 +105,9 @@
   </data>
   <data name="right_mouse_scroll" xml:space="preserve">
     <value>Scorrimento assoluto con il tasto destro del mouse</value>
+  </data>
+  <data name="show_converts" xml:space="preserve">
+    <value>Mostra conversioni</value>
   </data>
   <data name="show_converted_beatmaps" xml:space="preserve">
     <value>Mostra beatmap convertite</value>
@@ -147,5 +153,20 @@
   </data>
   <data name="true_random" xml:space="preserve">
     <value>Completamente casuale</value>
+  </data>
+  <data name="selected_mods" xml:space="preserve">
+    <value>Mod Attive</value>
+  </data>
+  <data name="hold_for_menu" xml:space="preserve">
+    <value>tieni premuto per il menù</value>
+  </data>
+  <data name="press_for_menu" xml:space="preserve">
+    <value>premi per il menù</value>
+  </data>
+  <data name="device" xml:space="preserve">
+    <value>Dispositivo</value>
+  </data>
+  <data name="show_hidden" xml:space="preserve">
+    <value>Mostra nascosti</value>
   </data>
 </root>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="none" xml:space="preserve">
+    <value>그룹 기록을 찾을 수 없습니다!</value>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>그룹 기록 보기</value>
+  </data>
+  <data name="event.actor" xml:space="preserve">
+    <value>{0} 님에 의함</value>
+  </data>
+  <data name="event.message.group_add" xml:space="preserve">
+    <value>{0} 생성됨.</value>
+  </data>
+  <data name="event.message.group_remove" xml:space="preserve">
+    <value>{0} 삭제됨.</value>
+  </data>
+  <data name="event.message.group_rename" xml:space="preserve">
+    <value>{0}에서 {1}(으)로 명칭 변경.</value>
+  </data>
+  <data name="event.message.user_add" xml:space="preserve">
+    <value>{0} 님이 {1}에 추가됨.</value>
+  </data>
+  <data name="event.message.user_add_with_playmodes" xml:space="preserve">
+    <value>{0} 님이 {1}의 {2}에 추가됨.</value>
+  </data>
+  <data name="event.message.user_add_playmodes" xml:space="preserve">
+    <value>{0}(이)가 {1} 님의 {2} 멤버십에 추가됨.</value>
+  </data>
+  <data name="event.message.user_remove" xml:space="preserve">
+    <value>{0} 님이 {1}에서 제거됨.</value>
+  </data>
+  <data name="event.message.user_remove_playmodes" xml:space="preserve">
+    <value>{0}이(가) {1} 님의 {2} 멤버십에서 제거됨.</value>
+  </data>
+  <data name="event.message.user_set_default" xml:space="preserve">
+    <value>{0} 님의 기본 그룹이 {1}(으)로 설정됨.</value>
+  </data>
+  <data name="form.group" xml:space="preserve">
+    <value>그룹</value>
+  </data>
+  <data name="form.group_all" xml:space="preserve">
+    <value>모든 그룹</value>
+  </data>
+  <data name="form.max_date" xml:space="preserve">
+    <value>종료일</value>
+  </data>
+  <data name="form.min_date" xml:space="preserve">
+    <value>시작일</value>
+  </data>
+  <data name="form.user" xml:space="preserve">
+    <value>유저</value>
+  </data>
+  <data name="form.user_prompt" xml:space="preserve">
+    <value>닉네임 또는 ID</value>
+  </data>
+  <data name="staff_log._" xml:space="preserve">
+    <value>오래된 그룹 기록은 {0}에서 확인할 수 있습니다.</value>
+  </data>
+  <data name="staff_log.wiki_articles" xml:space="preserve">
+    <value>스태프 로그 위키 문서</value>
+  </data>
+</root>

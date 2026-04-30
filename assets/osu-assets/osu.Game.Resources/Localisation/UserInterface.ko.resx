@@ -88,6 +88,9 @@
   <data name="intro_sequence" xml:space="preserve">
     <value>인트로 화면</value>
   </data>
+  <data name="intro_random" xml:space="preserve">
+    <value>무작위</value>
+  </data>
   <data name="background_source" xml:space="preserve">
     <value>배경 이미지 소스</value>
   </data>
@@ -95,13 +98,16 @@
     <value>계절별 배경화면</value>
   </data>
   <data name="not_supporter_note" xml:space="preserve">
-    <value>이 설정은 osu! 서포터 태그가 있어야 변경할 수 있어요.</value>
+    <value>이 설정은 osu!supporter 태그가 있어야 변경할 수 있어요.</value>
   </data>
   <data name="song_select_header" xml:space="preserve">
-    <value>노래 선택</value>
+    <value>곡 선택</value>
   </data>
   <data name="right_mouse_scroll" xml:space="preserve">
     <value>마우스 오른쪽 클릭 후 드래그로 절대적인 위치로 스크롤</value>
+  </data>
+  <data name="show_converts" xml:space="preserve">
+    <value>변환 결과 보이기</value>
   </data>
   <data name="show_converted_beatmaps" xml:space="preserve">
     <value>변환된 비트맵 표시</value>
@@ -147,5 +153,20 @@
   </data>
   <data name="true_random" xml:space="preserve">
     <value>완전 무작위</value>
+  </data>
+  <data name="selected_mods" xml:space="preserve">
+    <value>선택된 모드</value>
+  </data>
+  <data name="hold_for_menu" xml:space="preserve">
+    <value>길게 눌러서 메뉴 보기</value>
+  </data>
+  <data name="press_for_menu" xml:space="preserve">
+    <value>눌러서 메뉴 보기</value>
+  </data>
+  <data name="device" xml:space="preserve">
+    <value>장치</value>
+  </data>
+  <data name="show_hidden" xml:space="preserve">
+    <value>숨긴 파일 표시</value>
   </data>
 </root>

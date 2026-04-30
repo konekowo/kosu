@@ -60,6 +60,11 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString HeaderBeatmapsetsDiscussions => new TranslatableString(getKey(@"header.beatmapsets.discussions"), @"discussion");
 
         /// <summary>
+        /// "version history"
+        /// </summary>
+        public static LocalisableString HeaderBeatmapsetsVersions => new TranslatableString(getKey(@"header.beatmapsets.versions"), @"version history");
+
+        /// <summary>
         /// "listing"
         /// </summary>
         public static LocalisableString HeaderChangelogIndex => new TranslatableString(getKey(@"header.changelog.index"), @"listing");
@@ -103,6 +108,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "playlists"
         /// </summary>
         public static LocalisableString HeaderUsersPlaylists => new TranslatableString(getKey(@"header.users.playlists"), @"playlists");
+
+        /// <summary>
+        /// "ranked play"
+        /// </summary>
+        public static LocalisableString HeaderUsersRankedPlay => new TranslatableString(getKey(@"header.users.ranked-play"), @"ranked play");
 
         /// <summary>
         /// "multiplayer"
@@ -273,6 +283,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Privacy"
         /// </summary>
         public static LocalisableString FooterLegalPrivacy => new TranslatableString(getKey(@"footer.legal.privacy"), @"Privacy");
+
+        /// <summary>
+        /// "Rules"
+        /// </summary>
+        public static LocalisableString FooterLegalRules => new TranslatableString(getKey(@"footer.legal.rules"), @"Rules");
 
         /// <summary>
         /// "Server Status"

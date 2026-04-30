@@ -95,14 +95,14 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString MarkAsReadBusy => new TranslatableString(getKey(@"mark_as_read.busy"), @"Marking as read...");
 
         /// <summary>
-        /// "Really delete post?"
+        /// "Are you sure you want to delete this post?"
         /// </summary>
-        public static LocalisableString PostConfirmDestroy => new TranslatableString(getKey(@"post.confirm_destroy"), @"Really delete post?");
+        public static LocalisableString PostConfirmDestroy => new TranslatableString(getKey(@"post.confirm_destroy"), @"Are you sure you want to delete this post?");
 
         /// <summary>
-        /// "Really restore post?"
+        /// "Are you sure you want to restore this post?"
         /// </summary>
-        public static LocalisableString PostConfirmRestore => new TranslatableString(getKey(@"post.confirm_restore"), @"Really restore post?");
+        public static LocalisableString PostConfirmRestore => new TranslatableString(getKey(@"post.confirm_restore"), @"Are you sure you want to restore this post?");
 
         /// <summary>
         /// "Last edited by {0} {1}, edited {2} time in total.|Last edited by {0} {1}, edited {2} times in total."
@@ -170,14 +170,14 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString SearchTotalPosts(LocalisableString postsCount) => new TranslatableString(getKey(@"search.total_posts"), @"{0} posts total", postsCount);
 
         /// <summary>
-        /// "Really delete topic?"
+        /// "Are you sure you want to delete this topic?"
         /// </summary>
-        public static LocalisableString TopicConfirmDestroy => new TranslatableString(getKey(@"topic.confirm_destroy"), @"Really delete topic?");
+        public static LocalisableString TopicConfirmDestroy => new TranslatableString(getKey(@"topic.confirm_destroy"), @"Are you sure you want to delete this topic?");
 
         /// <summary>
-        /// "Really restore topic?"
+        /// "Are you sure you want to restore this topic?"
         /// </summary>
-        public static LocalisableString TopicConfirmRestore => new TranslatableString(getKey(@"topic.confirm_restore"), @"Really restore topic?");
+        public static LocalisableString TopicConfirmRestore => new TranslatableString(getKey(@"topic.confirm_restore"), @"Are you sure you want to restore this topic?");
 
         /// <summary>
         /// "deleted topic"
@@ -678,186 +678,6 @@ namespace osu.Game.Resources.Localisation.Web
         /// "views"
         /// </summary>
         public static LocalisableString TopicsIndexViews => new TranslatableString(getKey(@"topics.index.views"), @"views");
-
-        /// <summary>
-        /// "Remove &quot;added&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagAddedTo0 => new TranslatableString(getKey(@"topics.issue_tag_added.to_0"), @"Remove ""added"" tag");
-
-        /// <summary>
-        /// "Removed &quot;added&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagAddedTo0Done => new TranslatableString(getKey(@"topics.issue_tag_added.to_0_done"), @"Removed ""added"" tag");
-
-        /// <summary>
-        /// "Add &quot;added&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagAddedTo1 => new TranslatableString(getKey(@"topics.issue_tag_added.to_1"), @"Add ""added"" tag");
-
-        /// <summary>
-        /// "Added &quot;added&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagAddedTo1Done => new TranslatableString(getKey(@"topics.issue_tag_added.to_1_done"), @"Added ""added"" tag");
-
-        /// <summary>
-        /// "Remove &quot;assigned&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagAssignedTo0 => new TranslatableString(getKey(@"topics.issue_tag_assigned.to_0"), @"Remove ""assigned"" tag");
-
-        /// <summary>
-        /// "Removed &quot;assigned&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagAssignedTo0Done => new TranslatableString(getKey(@"topics.issue_tag_assigned.to_0_done"), @"Removed ""assigned"" tag");
-
-        /// <summary>
-        /// "Add &quot;assigned&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagAssignedTo1 => new TranslatableString(getKey(@"topics.issue_tag_assigned.to_1"), @"Add ""assigned"" tag");
-
-        /// <summary>
-        /// "Added &quot;assigned&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagAssignedTo1Done => new TranslatableString(getKey(@"topics.issue_tag_assigned.to_1_done"), @"Added ""assigned"" tag");
-
-        /// <summary>
-        /// "Remove &quot;confirmed&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagConfirmedTo0 => new TranslatableString(getKey(@"topics.issue_tag_confirmed.to_0"), @"Remove ""confirmed"" tag");
-
-        /// <summary>
-        /// "Removed &quot;confirmed&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagConfirmedTo0Done => new TranslatableString(getKey(@"topics.issue_tag_confirmed.to_0_done"), @"Removed ""confirmed"" tag");
-
-        /// <summary>
-        /// "Add &quot;confirmed&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagConfirmedTo1 => new TranslatableString(getKey(@"topics.issue_tag_confirmed.to_1"), @"Add ""confirmed"" tag");
-
-        /// <summary>
-        /// "Added &quot;confirmed&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagConfirmedTo1Done => new TranslatableString(getKey(@"topics.issue_tag_confirmed.to_1_done"), @"Added ""confirmed"" tag");
-
-        /// <summary>
-        /// "Remove &quot;duplicate&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagDuplicateTo0 => new TranslatableString(getKey(@"topics.issue_tag_duplicate.to_0"), @"Remove ""duplicate"" tag");
-
-        /// <summary>
-        /// "Removed &quot;duplicate&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagDuplicateTo0Done => new TranslatableString(getKey(@"topics.issue_tag_duplicate.to_0_done"), @"Removed ""duplicate"" tag");
-
-        /// <summary>
-        /// "Add &quot;duplicate&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagDuplicateTo1 => new TranslatableString(getKey(@"topics.issue_tag_duplicate.to_1"), @"Add ""duplicate"" tag");
-
-        /// <summary>
-        /// "Added &quot;duplicate&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagDuplicateTo1Done => new TranslatableString(getKey(@"topics.issue_tag_duplicate.to_1_done"), @"Added ""duplicate"" tag");
-
-        /// <summary>
-        /// "Remove &quot;invalid&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagInvalidTo0 => new TranslatableString(getKey(@"topics.issue_tag_invalid.to_0"), @"Remove ""invalid"" tag");
-
-        /// <summary>
-        /// "Removed &quot;invalid&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagInvalidTo0Done => new TranslatableString(getKey(@"topics.issue_tag_invalid.to_0_done"), @"Removed ""invalid"" tag");
-
-        /// <summary>
-        /// "Add &quot;invalid&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagInvalidTo1 => new TranslatableString(getKey(@"topics.issue_tag_invalid.to_1"), @"Add ""invalid"" tag");
-
-        /// <summary>
-        /// "Added &quot;invalid&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagInvalidTo1Done => new TranslatableString(getKey(@"topics.issue_tag_invalid.to_1_done"), @"Added ""invalid"" tag");
-
-        /// <summary>
-        /// "Remove &quot;resolved&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagResolvedTo0 => new TranslatableString(getKey(@"topics.issue_tag_resolved.to_0"), @"Remove ""resolved"" tag");
-
-        /// <summary>
-        /// "Removed &quot;resolved&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagResolvedTo0Done => new TranslatableString(getKey(@"topics.issue_tag_resolved.to_0_done"), @"Removed ""resolved"" tag");
-
-        /// <summary>
-        /// "Add &quot;resolved&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagResolvedTo1 => new TranslatableString(getKey(@"topics.issue_tag_resolved.to_1"), @"Add ""resolved"" tag");
-
-        /// <summary>
-        /// "Added &quot;resolved&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagResolvedTo1Done => new TranslatableString(getKey(@"topics.issue_tag_resolved.to_1_done"), @"Added ""resolved"" tag");
-
-        /// <summary>
-        /// "Remove &quot;osu!lazer&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsulazerTo0 => new TranslatableString(getKey(@"topics.issue_tag_osulazer.to_0"), @"Remove ""osu!lazer"" tag");
-
-        /// <summary>
-        /// "Removed &quot;osu!lazer&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsulazerTo0Done => new TranslatableString(getKey(@"topics.issue_tag_osulazer.to_0_done"), @"Removed ""osu!lazer"" tag");
-
-        /// <summary>
-        /// "Add &quot;osu!lazer&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsulazerTo1 => new TranslatableString(getKey(@"topics.issue_tag_osulazer.to_1"), @"Add ""osu!lazer"" tag");
-
-        /// <summary>
-        /// "Added &quot;osu!lazer&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsulazerTo1Done => new TranslatableString(getKey(@"topics.issue_tag_osulazer.to_1_done"), @"Added ""osu!lazer"" tag");
-
-        /// <summary>
-        /// "Remove &quot;osu!stable&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsustableTo0 => new TranslatableString(getKey(@"topics.issue_tag_osustable.to_0"), @"Remove ""osu!stable"" tag");
-
-        /// <summary>
-        /// "Removed &quot;osu!stable&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsustableTo0Done => new TranslatableString(getKey(@"topics.issue_tag_osustable.to_0_done"), @"Removed ""osu!stable"" tag");
-
-        /// <summary>
-        /// "Add &quot;osu!stable&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsustableTo1 => new TranslatableString(getKey(@"topics.issue_tag_osustable.to_1"), @"Add ""osu!stable"" tag");
-
-        /// <summary>
-        /// "Added &quot;osu!stable&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsustableTo1Done => new TranslatableString(getKey(@"topics.issue_tag_osustable.to_1_done"), @"Added ""osu!stable"" tag");
-
-        /// <summary>
-        /// "Remove &quot;osu!web&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsuwebTo0 => new TranslatableString(getKey(@"topics.issue_tag_osuweb.to_0"), @"Remove ""osu!web"" tag");
-
-        /// <summary>
-        /// "Removed &quot;osu!web&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsuwebTo0Done => new TranslatableString(getKey(@"topics.issue_tag_osuweb.to_0_done"), @"Removed ""osu!web"" tag");
-
-        /// <summary>
-        /// "Add &quot;osu!web&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsuwebTo1 => new TranslatableString(getKey(@"topics.issue_tag_osuweb.to_1"), @"Add ""osu!web"" tag");
-
-        /// <summary>
-        /// "Added &quot;osu!web&quot; tag"
-        /// </summary>
-        public static LocalisableString TopicsIssueTagOsuwebTo1Done => new TranslatableString(getKey(@"topics.issue_tag_osuweb.to_1_done"), @"Added ""osu!web"" tag");
 
         /// <summary>
         /// "This topic is locked and can not be replied to"

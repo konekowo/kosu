@@ -80,7 +80,7 @@
     <value>Nav pieejami lejupielādes serveri.</value>
   </data>
   <data name="featured_artist_badge.label" xml:space="preserve">
-    <value>Attēlotais mākslinieks</value>
+    <value>Kontraktētais mākslinieks</value>
   </data>
   <data name="index.title" xml:space="preserve">
     <value>Ritma-mapju saraksts</value>
@@ -153,6 +153,9 @@
   </data>
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>Skatīt pilna izmēra bildes pārvalku</value>
+  </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Apskatīt adminu lapu</value>
   </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>Šī ritma-mape ir izdzēsta.</value>
@@ -256,6 +259,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>Valoda</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>Kartētāju Piekariņš</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>Rezultāti joprojām tiek aprēķināti...</value>
   </data>
@@ -280,8 +286,8 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>Izdošanās līmenis</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>Atzīme</value>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>Lietotāju Piekariņš</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>Šī ritma-mape satur video</value>
@@ -321,6 +327,9 @@
   </data>
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
     <value>Jums nepieciešams būt atbalstītājam, lai redzētu draugu un valsts rangus!</value>
+  </data>
+  <data name="show.scoreboard.team" xml:space="preserve">
+    <value>Komandas Novietojums</value>
   </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>Rezultātu apkopojums</value>
@@ -366,6 +375,9 @@
   </data>
   <data name="show.scoreboard.no_scores.loading" xml:space="preserve">
     <value>Ielādē rezultātus...</value>
+  </data>
+  <data name="show.scoreboard.no_scores.team" xml:space="preserve">
+    <value>Neviens no tavas komandas pagaidām nav uzstādījis rezultātu uz šīs ritma-kartes!</value>
   </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
     <value>Nevērtējama ritma-mape.</value>
@@ -426,6 +438,12 @@
   </data>
   <data name="show.stats.playcount" xml:space="preserve">
     <value>Reizes spēlēts</value>
+  </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>Iecienītās</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>Vēl nav iecienīto</value>
   </data>
   <data name="show.status.ranked" xml:space="preserve">
     <value>Ierindota</value>

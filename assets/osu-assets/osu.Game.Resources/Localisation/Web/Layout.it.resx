@@ -62,7 +62,7 @@
     <value>Riproduci in automatico la traccia successiva</value>
   </data>
   <data name="defaults.page_description" xml:space="preserve">
-    <value>osu! - Il ritmo è a distanza di un *click*!  Con Ouendan/EBA, Taiko e modalità di gioco originali con un editor di livelli dotato di ogni funzionalità.</value>
+    <value>osu! - Il ritmo è a distanza di un *clic*!  Con Ouendan/EBA, Taiko e modalità di gioco originali con un editor di livelli dotato di ogni funzionalità.</value>
   </data>
   <data name="header.admin.beatmapset" xml:space="preserve">
     <value>set di beatmap</value>
@@ -87,6 +87,9 @@
   </data>
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>discussione</value>
+  </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>cronologia versioni</value>
   </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>lista</value>
@@ -179,7 +182,7 @@
     <value>Home</value>
   </data>
   <data name="footer.general.changelog-index" xml:space="preserve">
-    <value>Note di rilascio</value>
+    <value>Changelog</value>
   </data>
   <data name="footer.general.beatmaps" xml:space="preserve">
     <value>Lista Beatmap</value>
@@ -197,7 +200,7 @@
     <value>Forum della Comunità</value>
   </data>
   <data name="footer.help.livestreams" xml:space="preserve">
-    <value>Live</value>
+    <value>Dirette streaming</value>
   </data>
   <data name="footer.help.report" xml:space="preserve">
     <value>Segnala un problema</value>
@@ -213,6 +216,9 @@
   </data>
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Privacy</value>
+  </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Regole</value>
   </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Stato del Server</value>
@@ -338,7 +344,7 @@
     <value>Squadra</value>
   </data>
   <data name="popup_search.initial" xml:space="preserve">
-    <value>Digita per cercare!</value>
+    <value>Scrivi per cercare!</value>
   </data>
   <data name="popup_search.retry" xml:space="preserve">
     <value>Ricerca fallita. Clicca per riprovare.</value>

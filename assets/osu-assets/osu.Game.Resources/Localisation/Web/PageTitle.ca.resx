@@ -127,6 +127,9 @@
   <data name="main.beatmapsets_controller.show" xml:space="preserve">
     <value>info del mapes</value>
   </data>
+  <data name="main.beatmapsets_controller.versions" xml:space="preserve">
+    <value>historial de versions del mapa</value>
+  </data>
   <data name="main.changelog_controller._" xml:space="preserve">
     <value>registre de canvis</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="main.contests_controller.judge" xml:space="preserve">
     <value>avaluació del concurs</value>
+  </data>
+  <data name="main.group_history_controller._" xml:space="preserve">
+    <value>historial del grup</value>
   </data>
   <data name="main.groups_controller.show" xml:space="preserve">
     <value>grups</value>
@@ -163,14 +169,14 @@
   <data name="main.home_controller.testflight" xml:space="preserve">
     <value>testflight</value>
   </data>
+  <data name="main.legacy_matches_controller._" xml:space="preserve">
+    <value>coincideix amb</value>
+  </data>
   <data name="main.legal_controller._" xml:space="preserve">
     <value>informació</value>
   </data>
   <data name="main.livestreams_controller._" xml:space="preserve">
     <value>transmissions en directe</value>
-  </data>
-  <data name="main.matches_controller._" xml:space="preserve">
-    <value>coincidències</value>
   </data>
   <data name="main.news_controller._" xml:space="preserve">
     <value>notícies</value>
@@ -193,6 +199,15 @@
   <data name="main.teams_controller._" xml:space="preserve">
     <value>equips</value>
   </data>
+  <data name="main.teams_controller.create" xml:space="preserve">
+    <value>Crea un equip</value>
+  </data>
+  <data name="main.teams_controller.edit" xml:space="preserve">
+    <value>configuració de l'equip</value>
+  </data>
+  <data name="main.teams_controller.leaderboard" xml:space="preserve">
+    <value>Taula de puntuacions de l'equip</value>
+  </data>
   <data name="main.teams_controller.show" xml:space="preserve">
     <value>info de l'equip</value>
   </data>
@@ -202,11 +217,14 @@
   <data name="main.user_cover_presets_controller._" xml:space="preserve">
     <value>preseleccions de la portada d'usuari</value>
   </data>
+  <data name="main.user_totp_controller._" xml:space="preserve">
+    <value>aplicació autenticadora</value>
+  </data>
   <data name="main.users_controller._" xml:space="preserve">
     <value>informació del jugador</value>
   </data>
   <data name="main.users_controller.create" xml:space="preserve">
-    <value>crear un compte</value>
+    <value>crea un compte</value>
   </data>
   <data name="main.users_controller.disabled" xml:space="preserve">
     <value>avís</value>
@@ -214,11 +232,17 @@
   <data name="main.wiki_controller._" xml:space="preserve">
     <value>wiki</value>
   </data>
+  <data name="multiplayer.rooms_controller.events" xml:space="preserve">
+    <value>historial de la sala</value>
+  </data>
   <data name="passport.authorization_controller._" xml:space="preserve">
     <value>autoritza l'aplicació</value>
   </data>
   <data name="store._" xml:space="preserve">
     <value>botiga</value>
+  </data>
+  <data name="teams.members_controller.index" xml:space="preserve">
+    <value>Membres de l'equip</value>
   </data>
   <data name="users.modding_history_controller._" xml:space="preserve">
     <value>informació del modder</value>

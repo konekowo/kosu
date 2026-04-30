@@ -88,6 +88,9 @@
   <data name="covers.destroy.confirm" xml:space="preserve">
     <value>Er du sikker på, at du vil fjerne coverbilledet?</value>
   </data>
+  <data name="forums.forums" xml:space="preserve">
+    <value>Fora</value>
+  </data>
   <data name="forums.latest_post" xml:space="preserve">
     <value>Seneste Opslag</value>
   </data>
@@ -117,6 +120,9 @@
   </data>
   <data name="post.posted_at" xml:space="preserve">
     <value>slået op på {0}</value>
+  </data>
+  <data name="post.posted_by_in" xml:space="preserve">
+    <value>skrevet af {0} i {1}</value>
   </data>
   <data name="post.actions.destroy" xml:space="preserve">
     <value>Slet opslag</value>
@@ -159,6 +165,9 @@
   </data>
   <data name="topic.go_to_latest" xml:space="preserve">
     <value>vis det seneste opslag</value>
+  </data>
+  <data name="topic.go_to_unread" xml:space="preserve">
+    <value>se første uløste indlæg</value>
   </data>
   <data name="topic.has_replied" xml:space="preserve">
     <value>Du har besvaret dette emne</value>
@@ -450,78 +459,6 @@
   </data>
   <data name="topics.index.views" xml:space="preserve">
     <value>visninger</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0" xml:space="preserve">
-    <value>Fjern "tilføjet" tag</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0_done" xml:space="preserve">
-    <value>Fjern "tilføjet" tag</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1" xml:space="preserve">
-    <value>Tilføj "tilføjet" tag</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1_done" xml:space="preserve">
-    <value>Tilføj "tilføjet" tag</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0" xml:space="preserve">
-    <value>Fjern "tildelt" tag</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0_done" xml:space="preserve">
-    <value>Fjern "tildelt" tag</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1" xml:space="preserve">
-    <value>Tilføj "tildelt" tag</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1_done" xml:space="preserve">
-    <value>Tilføj "tildelt" tag</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0" xml:space="preserve">
-    <value>Fjern "bekræftet" tag</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0_done" xml:space="preserve">
-    <value>Fjern "bekræftet" tag</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1" xml:space="preserve">
-    <value>Tilføj "bekræftet" tag</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1_done" xml:space="preserve">
-    <value>Tilføj "bekræftet" tag</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0" xml:space="preserve">
-    <value>Fjern "duplikeret" tag</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0_done" xml:space="preserve">
-    <value>Fjern "duplikeret" tag</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1" xml:space="preserve">
-    <value>Tilføj "duplikeret" tag</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1_done" xml:space="preserve">
-    <value>Tilføj "duplikeret" tag</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0" xml:space="preserve">
-    <value>Fjern "ugyldigt" tag</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0_done" xml:space="preserve">
-    <value>Fjern "ugyldigt" tag</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1" xml:space="preserve">
-    <value>Tilføj "ugyldigt" tag</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1_done" xml:space="preserve">
-    <value>Tilføj "ugyldigt" tag</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0" xml:space="preserve">
-    <value>Fjern "løst" tag</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0_done" xml:space="preserve">
-    <value>Fjern "løst" tag</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1" xml:space="preserve">
-    <value>Tilføj "løst" tag</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1_done" xml:space="preserve">
-    <value>Tilføj "løst" tag</value>
   </data>
   <data name="topics.lock.is_locked" xml:space="preserve">
     <value>Dette emne er arkiveret og kan ikke svares</value>

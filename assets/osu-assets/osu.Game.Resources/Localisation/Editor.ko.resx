@@ -64,6 +64,9 @@
   <data name="waveform_opacity" xml:space="preserve">
     <value>오디오 파형 불투명도</value>
   </data>
+  <data name="show_storyboard" xml:space="preserve">
+    <value>스토리보드 표시</value>
+  </data>
   <data name="show_hit_markers" xml:space="preserve">
     <value>히트 마커 표시</value>
   </data>
@@ -77,7 +80,7 @@
     <value>현재 지점으로 미리보기 맞추기</value>
   </data>
   <data name="adjust_existing_objects_on_timing_changes" xml:space="preserve">
-    <value>타이밍을 바꿀 때 이미 배치된 오브젝트를 이동</value>
+    <value>타이밍 변경 시에 이미 배치된 오브젝트들을 옮기기</value>
   </data>
   <data name="export_for_editing" xml:space="preserve">
     <value>편집용 (.olz)</value>
@@ -85,11 +88,14 @@
   <data name="export_for_compatibility" xml:space="preserve">
     <value>호환용 (.osz)</value>
   </data>
+  <data name="export_guest_difficulty" xml:space="preserve">
+    <value>게스트 난이도 (.osu)</value>
+  </data>
   <data name="create_new_difficulty" xml:space="preserve">
     <value>새 난이도 만들기</value>
   </data>
   <data name="change_difficulty" xml:space="preserve">
-    <value>난이도 변경하기</value>
+    <value>난이도 변경</value>
   </data>
   <data name="delete_difficulty" xml:space="preserve">
     <value>난이도 삭제</value>
@@ -101,19 +107,19 @@
     <value>비트맵 제출</value>
   </data>
   <data name="setup_screen" xml:space="preserve">
-    <value>setup</value>
+    <value>일반 설정</value>
   </data>
   <data name="compose_screen" xml:space="preserve">
-    <value>compose</value>
+    <value>채보</value>
   </data>
   <data name="design_screen" xml:space="preserve">
-    <value>design</value>
+    <value>디자인</value>
   </data>
   <data name="timing_screen" xml:space="preserve">
-    <value>timing</value>
+    <value>타이밍</value>
   </data>
   <data name="verify_screen" xml:space="preserve">
-    <value>verify</value>
+    <value>무결성 증명</value>
   </data>
   <data name="playback_speed" xml:space="preserve">
     <value>재생 속도</value>
@@ -125,25 +131,28 @@
     <value>{0:0.0}°</value>
   </data>
   <data name="rotation_snapped" xml:space="preserve">
-    <value>{0:0.0}° (스냅)</value>
+    <value>{0:0}° (스냅)</value>
   </data>
   <data name="limited_distance_snap_grid" xml:space="preserve">
-    <value>distance snap 배치를 현재 시간으로 제한</value>
+    <value>거리 스냅 배치를 현재 시점으로 제한</value>
   </data>
   <data name="contract_sidebars" xml:space="preserve">
-    <value>호버하지 않을 때는 사이드바 축소</value>
+    <value>호버하지 않을 때에는 사이드바 축소</value>
   </data>
   <data name="must_be_in_editor_to_handle_links" xml:space="preserve">
-    <value>편집기 링크를 처리하려면 편집 모드에 있어야합니다</value>
+    <value>편집기 링크를 다루려면 우선 편집 모드에 진입해야 합니다</value>
   </data>
   <data name="failed_to_parse_edtior_link" xml:space="preserve">
-    <value>에디터 링크를 파싱할 수 없습니다</value>
+    <value>에디터 링크 파싱에 실패했습니다</value>
   </data>
   <data name="timeline" xml:space="preserve">
     <value>타임라인</value>
   </data>
   <data name="timeline_show_timing_changes" xml:space="preserve">
     <value>타이밍 변경 표시</value>
+  </data>
+  <data name="Finish editing and import changes" xml:space="preserve">
+    <value>편집을 마무리하고 변경 사항을 불러오기</value>
   </data>
   <data name="timeline_show_breaks" xml:space="preserve">
     <value> 휴식 시간 표시</value>
@@ -174,5 +183,11 @@
   </data>
   <data name="open_discussion_page" xml:space="preserve">
     <value>비트맵 토론 페이지 열기</value>
+  </data>
+  <data name="check_current_difficulty" xml:space="preserve">
+    <value>현재 난이도</value>
+  </data>
+  <data name="check_entire_beatmap_set" xml:space="preserve">
+    <value>전체 비트맵 세트</value>
   </data>
 </root>

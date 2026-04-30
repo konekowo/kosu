@@ -85,6 +85,12 @@
   <data name="channels.create" xml:space="preserve">
     <value>kurti skelbimą</value>
   </data>
+  <data name="channels.join" xml:space="preserve">
+    <value>pridėti kanalą</value>
+  </data>
+  <data name="channels.none" xml:space="preserve">
+    <value>joks kanalas</value>
+  </data>
   <data name="channels.list.title.announce" xml:space="preserve">
     <value>Skelbimai</value>
   </data>
@@ -96,6 +102,9 @@
   </data>
   <data name="channels.list.title.public" xml:space="preserve">
     <value>Kanalai</value>
+  </data>
+  <data name="channels.list.title.team" xml:space="preserve">
+    <value>Komanda</value>
   </data>
   <data name="form.title.announcement" xml:space="preserve">
     <value>Sukurti Naują Skelbimą</value>
@@ -133,13 +142,7 @@
   <data name="input.send" xml:space="preserve">
     <value>Siųsti</value>
   </data>
-  <data name="no-conversations.howto" xml:space="preserve">
-    <value>Pradėkite pokalbį iš vartotojo profilio arba iššokančios kortelės.</value>
-  </data>
-  <data name="no-conversations.lazer" xml:space="preserve">
-    <value>Vieši kanalai prisijungti per &lt;a href="{0}"&gt;osu!lazer&lt;/a&gt; bus matomi ir čia.</value>
-  </data>
-  <data name="no-conversations.title" xml:space="preserve">
-    <value>kol kas pokalbių nėra</value>
+  <data name="join_channels.loading" xml:space="preserve">
+    <value>Kraunamas kanalų sąrašas...</value>
   </data>
 </root>

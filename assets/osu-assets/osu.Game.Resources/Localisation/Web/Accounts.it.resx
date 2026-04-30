@@ -74,7 +74,7 @@
     <value>Assicurati che la tua immagine di profilo aderisca alle {0}.&lt;br/&gt;Questo significa che dev'essere &lt;strong&gt;adatta a tutte le età&lt;/strong&gt; (quindi niente nudità, profanità o contenuti provocanti).</value>
   </data>
   <data name="edit.avatar.rules_link" xml:space="preserve">
-    <value>regole della comunità</value>
+    <value>considerazioni sui contenuti visivi</value>
   </data>
   <data name="edit.email.new" xml:space="preserve">
     <value>nuova email</value>
@@ -143,16 +143,16 @@
     <value>aggiorna</value>
   </data>
   <data name="github_user.info" xml:space="preserve">
-    <value>Se contribuisci nei repository open-source di osu!, collegare qui il tuo account GitHub assocerà il profilo osu! alle tue modifiche nelle note di rilascio. Gli account GitHub che non hanno ancora contribuito con osu! non possono essere collegati.</value>
+    <value>Se contribuisci nei repository open-source di osu!, puoi collegare qui il tuo account GitHub per associare le tue modifiche nel changelog al tuo profilo osu!. Gli account di GitHub che non hanno ancora contribuito con osu! non possono essere collegati.</value>
   </data>
   <data name="github_user.link" xml:space="preserve">
-    <value>Collega Account GitHub</value>
+    <value>Collega account GitHub</value>
   </data>
   <data name="github_user.title" xml:space="preserve">
     <value>GitHub</value>
   </data>
   <data name="github_user.unlink" xml:space="preserve">
-    <value>Scollega Account GitHub</value>
+    <value>Scollega account GitHub</value>
   </data>
   <data name="github_user.error.already_linked" xml:space="preserve">
     <value>Questo account GitHub è già associato a un altro utente.</value>
@@ -172,6 +172,9 @@
   <data name="notifications.comment_reply" xml:space="preserve">
     <value>ricevi notifiche per le risposte ai tuoi commenti</value>
   </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>ricevi notifiche per le nuove notizie</value>
+  </data>
   <data name="notifications.title" xml:space="preserve">
     <value>Notifiche</value>
   </data>
@@ -182,13 +185,16 @@
     <value>opzioni di notifica</value>
   </data>
   <data name="notifications.options.beatmap_owner_change" xml:space="preserve">
-    <value>difficoltà guest</value>
+    <value>difficoltà ospite</value>
   </data>
   <data name="notifications.options.beatmapset:modding" xml:space="preserve">
     <value>modding delle beatmap</value>
   </data>
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>messaggi privati</value>
+  </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>messaggi chat di squadra</value>
   </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>nuovi commenti</value>
@@ -202,6 +208,9 @@
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>mapper di beatmap</value>
   </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>nuove notizie</value>
+  </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>push</value>
   </data>
@@ -213,6 +222,9 @@
   </data>
   <data name="oauth.title" xml:space="preserve">
     <value>OAuth</value>
+  </data>
+  <data name="options.beatmapset_show_anime_cover" xml:space="preserve">
+    <value>mostra copertine beatmap contenenti lo stile anime</value>
   </data>
   <data name="options.beatmapset_show_nsfw" xml:space="preserve">
     <value>nascondi avvisi per i contenuti espliciti nelle beatmap</value>
@@ -256,6 +268,9 @@
   <data name="privacy.hide_online" xml:space="preserve">
     <value>nascondi il tuo stato online</value>
   </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>su osu!lazer, funziona come l'opzione "Mostrati offline"</value>
+  </data>
   <data name="privacy.title" xml:space="preserve">
     <value>Privacy</value>
   </data>
@@ -263,7 +278,7 @@
     <value>questo dispositivo</value>
   </data>
   <data name="security.end_session" xml:space="preserve">
-    <value>Termina Sessione</value>
+    <value>Termina sessione</value>
   </data>
   <data name="security.end_session_confirmation" xml:space="preserve">
     <value>Questo terminerà la sessione sul dispositivo selezionato. Vuoi continuare?</value>
@@ -282,6 +297,27 @@
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>aggiorna</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>Autenticatore</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>Utilizza un'app di autenticazione al posto dell'email per effettuare la verifica. La conferma tramite email rimarrà comunque come opzione di riserva.</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>Rimuovi</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>Inserisci app di autenticazione</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>stato</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>Non configurato</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>Configurato</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>Ora puoi chiudere questa scheda/finestra</value>

@@ -167,7 +167,7 @@
     <value>在這裡輸入以發表至整體 ({0})</value>
   </data>
   <data name="discussions.message_placeholder.generalall" xml:space="preserve">
-    <value>在這裡輸入以發表至整體(所有難度)</value>
+    <value>在這裡輸入以發表至整體（所有難度）</value>
   </data>
   <data name="discussions.message_placeholder.review" xml:space="preserve">
     <value>在這裡輸入以發表審核</value>
@@ -269,7 +269,7 @@
     <value>刪除</value>
   </data>
   <data name="discussions.review.embed.missing" xml:space="preserve">
-    <value>[該討論已移除]</value>
+    <value>[該討論已刪除]</value>
   </data>
   <data name="discussions.review.embed.unlink" xml:space="preserve">
     <value>取消連結</value>
@@ -499,6 +499,9 @@
   <data name="listing.search.options" xml:space="preserve">
     <value>更多搜尋選項</value>
   </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>個人資料的最佳評分數和該頁面上顯示的成績是根據你在圖譜上取得的最高 "標準化" (又稱為 "lazer") 分數來決定的。</value>
+  </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
     <value>使用 {0} 進行篩選需要有效的 osu!supporter 標籤</value>
   </data>
@@ -506,7 +509,7 @@
     <value>沒有結果</value>
   </data>
   <data name="listing.search.not-found-quote" xml:space="preserve">
-    <value>… 呃，什麼都沒找到。</value>
+    <value>...呃，什麼都沒找到。</value>
   </data>
   <data name="listing.search.filters.extra" xml:space="preserve">
     <value>其他資訊</value>
@@ -570,6 +573,12 @@
   </data>
   <data name="listing.search.supporter_filter_quote.link_text" xml:space="preserve">
     <value>osu! 贊助者標籤</value>
+  </data>
+  <data name="listing.search.tag_picker.tooltip" xml:space="preserve">
+    <value>搜尋玩家標籤</value>
+  </data>
+  <data name="listing.search.tag_picker.prompt" xml:space="preserve">
+    <value>請輸入以搜尋</value>
   </data>
   <data name="general.converts" xml:space="preserve">
     <value>包括轉換圖譜</value>

@@ -101,9 +101,24 @@
     <value>根据节拍给物件上色</value>
   </data>
   <data name="ruleset" xml:space="preserve">
-    <value>{0} 毫秒 ({1} 速)</value>
+    <value>{0} 毫秒 ({1:N1} 速)</value>
   </data>
   <data name="touch_control_scheme" xml:space="preserve">
     <value>触摸控制方案</value>
+  </data>
+  <data name="mobile_layout" xml:space="preserve">
+    <value>移动端布局</value>
+  </data>
+  <data name="portrait" xml:space="preserve">
+    <value>竖屏模式</value>
+  </data>
+  <data name="landscape" xml:space="preserve">
+    <value>横屏模式</value>
+  </data>
+  <data name="landscape_expanded_columns" xml:space="preserve">
+    <value>横屏模式（扩宽轨道）</value>
+  </data>
+  <data name="touch_overlay" xml:space="preserve">
+    <value>启用虚拟按键</value>
   </data>
 </root>

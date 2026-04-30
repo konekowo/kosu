@@ -131,7 +131,7 @@
     <value>Classificació entre amics</value>
   </data>
   <data name="support.perks.friend_ranking.description" xml:space="preserve">
-    <value>Mira com et compares amb els teus amics a la taula de classificació d'un mapa,  tant al joc com al lloc web.</value>
+    <value>Compareu resultats amb els amics a la taula de classificació d'un mapa, tant al joc com al lloc web.</value>
   </data>
   <data name="support.perks.country_ranking.title" xml:space="preserve">
     <value>Classificació nacional</value>
@@ -155,7 +155,7 @@
     <value>Més espai per pujades</value>
   </data>
   <data name="support.perks.upload_more.description" xml:space="preserve">
-    <value>Tindràs espais pendents per a  (per mapa classificat) fins a un màxim de 10.</value>
+    <value>Tindràs espais pendents per a mapes (per mapa classificat) fins a un màxim de 10.</value>
   </data>
   <data name="support.perks.early_access.title" xml:space="preserve">
     <value>Accés anticipat</value>
@@ -170,7 +170,7 @@
     <value>Destaca penjant una imatge de portada personalitzada o creant la secció "jo!" totalment personalitzable al teu perfil.</value>
   </data>
   <data name="support.perks.beatmap_filters.title" xml:space="preserve">
-    <value>Filtres de mapa</value>
+    <value>Filtres de beatmaps</value>
   </data>
   <data name="support.perks.beatmap_filters.description" xml:space="preserve">
     <value>Filtra les cerques de mapes per jugats i no jugats, o per rang obtingut.</value>
@@ -212,10 +212,10 @@
     <value>Podràs veure classificacions per països, amics o mods en partida.</value>
   </data>
   <data name="support.perks.more_favourites.title" xml:space="preserve">
-    <value>Més favorits</value>
+    <value>Més preferits</value>
   </data>
   <data name="support.perks.more_favourites.description" xml:space="preserve">
-    <value>El nombre màxim de beatmaps que pods marcar com a favorit augmenta de {0} &amp;rarr; {1}</value>
+    <value>El nombre màxim de mapes que pots marcar com a preferits augmenta de {0} &amp;rarr; {1}</value>
   </data>
   <data name="support.perks.more_friends.title" xml:space="preserve">
     <value>Més amics</value>
@@ -224,10 +224,10 @@
     <value>El nombre màxim d'amics que podeu tenir augmenta de {0} &amp;rarr; {1}</value>
   </data>
   <data name="support.perks.more_beatmaps.title" xml:space="preserve">
-    <value>Penja més beatmaps</value>
+    <value>Penja més mapes</value>
   </data>
   <data name="support.perks.more_beatmaps.description" xml:space="preserve">
-    <value>El nombre de beatmaps pendents que pots tenir alhora es calcula a partir d'un valor base més una bonificació addicional per cada beatmap classificat que tinguis actualment (fins a un límit).&lt;br/&gt;&lt;br/&gt;Normalment això és {0} més {1} per beatmap classificat (fins a {2}). Amb supporter, això augmenta a {3} més {4} per cada beatmap classificat (fins a {5}).</value>
+    <value>El nombre de mapes pendents que pots tenir alhora es calcula a partir d'un valor base més una bonificació addicional per cada mapa classificat que tinguis actualment (fins a un límit).&lt;br/&gt;&lt;br/&gt;Normalment això és {0} més {1} per beatmap classificat (fins a {2}). Amb supporter, això augmenta a {3} més {4} per cada mapa classificat (fins a {5}).</value>
   </data>
   <data name="support.perks.friend_filtering.title" xml:space="preserve">
     <value>Classificacions per amics</value>
@@ -235,11 +235,8 @@
   <data name="support.perks.friend_filtering.description" xml:space="preserve">
     <value>Competeix amb els teus amics i mira com et classifiques contra ells!</value>
   </data>
-  <data name="support.supporter_status.contribution" xml:space="preserve">
-    <value>Gràcies pel teu suport! Has contribuït {0} amb la compra de {1} tags!</value>
-  </data>
-  <data name="support.supporter_status.gifted" xml:space="preserve">
-    <value>Has regalat {0} de les teves compres (pel valor de {1}), que generós!</value>
+  <data name="support.supporter_status.contribution_with_duration" xml:space="preserve">
+    <value>Gràcies pel vostre suport! Fins ara heu contribuït am un total de {0} i això us otorga l'etiqueta de «supporter» durant {1}.</value>
   </data>
   <data name="support.supporter_status.not_yet" xml:space="preserve">
     <value>No has tingut mai l'etiqueta d'osu!supporter :(</value>
@@ -249,5 +246,11 @@
   </data>
   <data name="support.supporter_status.was_valid_until" xml:space="preserve">
     <value>La teva etiqueta d'osu!supporter va ser vàlida fins {0}.</value>
+  </data>
+  <data name="support.supporter_status.gifted._" xml:space="preserve">
+    <value>D'entre totes les vostres contribucions, heu donat un valor de {0} d'etiquetes a {1} que cobreixen {2}. És increïblement generós!</value>
+  </data>
+  <data name="support.supporter_status.gifted.users" xml:space="preserve">
+    <value>{0} other altre usuari|{0} altres usuaris</value>
   </data>
 </root>

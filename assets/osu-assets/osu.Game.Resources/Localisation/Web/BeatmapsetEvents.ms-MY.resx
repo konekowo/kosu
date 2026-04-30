@@ -98,10 +98,10 @@
     <value>Isu {0} oleh {1} ditanda selesai oleh {2}.</value>
   </data>
   <data name="event.kudosu_allow" xml:space="preserve">
-    <value>Penolakan kudosu bagi perbincangan {0} telah dipadam.</value>
+    <value>Penolakan kudosu untuk perbincangan {0} telah dipadam.</value>
   </data>
   <data name="event.kudosu_deny" xml:space="preserve">
-    <value>Kudosu ditolak bagi perbincangan {0}.</value>
+    <value>Kudosu ditolak untuk perbincangan {0}.</value>
   </data>
   <data name="event.kudosu_gain" xml:space="preserve">
     <value>Perbincangan {0} oleh {1} telah memperoleh undian yang mencukupi untuk kudosu.</value>
@@ -110,7 +110,7 @@
     <value>Perbincangan {0} oleh {1} telah kehilangan undian dan pemberian kudosu telah dipadam.</value>
   </data>
   <data name="event.kudosu_recalculate" xml:space="preserve">
-    <value>Pemberian kudosu bagi perbincangan {0} telah dikira semula.</value>
+    <value>Pemberian kudosu untuk perbincangan {0} telah dikira semula.</value>
   </data>
   <data name="event.language_edit" xml:space="preserve">
     <value>Bahasa diubah dari {0} ke {1}.</value>
@@ -125,13 +125,13 @@
     <value>Dicalonkan oleh {0} ({1}).</value>
   </data>
   <data name="event.nomination_reset" xml:space="preserve">
-    <value>Masalah baharu {0} ({1}) mencetuskan pengesetan semula pencalonan.</value>
+    <value>Masalah baharu {0} ({1}) mencetuskan penetapan semula pencalonan.</value>
   </data>
   <data name="event.nomination_reset_received" xml:space="preserve">
-    <value>Pencalonan oleh {0} diset semula oleh {1} ({2})</value>
+    <value>Pencalonan oleh {0} ditetap semula oleh {1} ({2})</value>
   </data>
   <data name="event.nomination_reset_received_profile" xml:space="preserve">
-    <value>Pencalonan diset semula oleh {0} ({1})</value>
+    <value>Pencalonan ditetap semula oleh {0} ({1})</value>
   </data>
   <data name="event.offset_edit" xml:space="preserve">
     <value>Imbangan dalam talian diubah dari {0} ke {1}.</value>
@@ -140,7 +140,7 @@
     <value>Peta rentak ini telah mencapai jumlah pencalonan yang diperlukan dan telah dilayakkan.</value>
   </data>
   <data name="event.rank" xml:space="preserve">
-    <value>Berperingkat.</value>
+    <value>Berpangkat.</value>
   </data>
   <data name="event.remove_from_loved" xml:space="preserve">
     <value>Dipadam dari Kegemaran oleh {0}. ({1})</value>
@@ -155,7 +155,7 @@
     <value>Ditanda selaku tidak senonoh</value>
   </data>
   <data name="index.title" xml:space="preserve">
-    <value>Peristiwa peta rentak</value>
+    <value>Peristiwa Peranggu Peta Rentak</value>
   </data>
   <data name="index.form.period" xml:space="preserve">
     <value>Tempoh</value>
@@ -227,10 +227,10 @@
     <value>Pencalonan</value>
   </data>
   <data name="type.nomination_reset" xml:space="preserve">
-    <value>Pengesetan semula pencalonan</value>
+    <value>Penetapan semula pencalonan</value>
   </data>
   <data name="type.nomination_reset_received" xml:space="preserve">
-    <value>Pengesetan semula pencalonan diterima</value>
+    <value>Penetapan semula pencalonan diterima</value>
   </data>
   <data name="type.nsfw_toggle" xml:space="preserve">
     <value>Tanda tidak senonoh</value>
@@ -242,7 +242,7 @@
     <value>Kelayakan</value>
   </data>
   <data name="type.rank" xml:space="preserve">
-    <value>Pemeringkatan</value>
+    <value>Pangkat</value>
   </data>
   <data name="type.remove_from_loved" xml:space="preserve">
     <value>Pemadaman Kegemaran</value>

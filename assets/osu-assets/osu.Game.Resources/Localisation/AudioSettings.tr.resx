@@ -71,7 +71,7 @@
     <value>Çıkış cihazı</value>
   </data>
   <data name="positional_hitsound_audio_level" xml:space="preserve">
-    <value>Hitsound stereo ayrımı</value>
+    <value>Hit sesi stereo ayrımı</value>
   </data>
   <data name="master_volume" xml:space="preserve">
     <value>Ana ses</value>
@@ -86,7 +86,7 @@
     <value>Müzik</value>
   </data>
   <data name="offset_header" xml:space="preserve">
-    <value>Ofset Düzenleme</value>
+    <value>Ofset ayarlaması</value>
   </data>
   <data name="audio_offset" xml:space="preserve">
     <value>Ses ofseti</value>
@@ -94,13 +94,31 @@
   <data name="suggested_offset_note" xml:space="preserve">
     <value>Önerilen bir ofset almak için birkaç beatmap oyna!</value>
   </data>
+  <data name="suggested_offset_correct" xml:space="preserve">
+    <value>Son {0} oynanışa göre, ofsetin doğru ayarlanmış!</value>
+  </data>
   <data name="suggested_offset_value_received" xml:space="preserve">
-    <value>Son {0} oyun(lar)a göre önerilen ofset {1} ms.</value>
+    <value>Son {0} oynanışa göre, önerilen ofset {1} ms.</value>
   </data>
   <data name="apply_suggested_offset" xml:space="preserve">
     <value>Önerilen ofseti uygula</value>
   </data>
   <data name="offset_wizard" xml:space="preserve">
     <value>Ofset sihirbazı</value>
+  </data>
+  <data name="adjust_beatmap_offset_automatically" xml:space="preserve">
+    <value>Beatmap ofsetini otomatik ayarla</value>
+  </data>
+  <data name="adjust_beatmap_offset_automatically_tooltip" xml:space="preserve">
+    <value>Etkinleştirildiğinde, son oynanan beatmapten önerilen ofset uygulanacak.</value>
+  </data>
+  <data name="wasapi_label" xml:space="preserve">
+    <value>Deneysel ses modunu kullan</value>
+  </data>
+  <data name="wasapi_tooltip" xml:space="preserve">
+    <value>Bu ses motorunu daha az gecikme modunda hazırlamaya çalışacak.</value>
+  </data>
+  <data name="wasapi_notice" xml:space="preserve">
+    <value>Gecikmenin azalmasından dolayı bu ayarı etkinleştirirken ses ofsetiniz yeniden ayarlanmalıdır. Genellikle bilinen değerlerinizden 20 - 60 ms eksiltmeniz beklenir.</value>
   </data>
 </root>

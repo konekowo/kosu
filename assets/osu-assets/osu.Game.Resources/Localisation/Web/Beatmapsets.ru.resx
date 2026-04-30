@@ -110,7 +110,7 @@
     <value>Вы должны быть полноправным номинатором, чтобы внести решающий голос по этому режиму игры.</value>
   </data>
   <data name="nominate.hybrid_requires_modes" xml:space="preserve">
-    <value>Для гибридных карт требуется, чтобы Вы выбрали по крайней мере один режим игры для номинации.</value>
+    <value>Чтобы номинировать карту-гибрид, необходимо выбрать по крайней мере один режим игры.</value>
   </data>
   <data name="nominate.incorrect_mode" xml:space="preserve">
     <value>У вас недостаточно прав для номинации по режиму {0}</value>
@@ -125,7 +125,7 @@
     <value>Требования к номинации уже выполнены.</value>
   </data>
   <data name="nominate.too_many_non_main_ruleset" xml:space="preserve">
-    <value>Требование номинации основного режима игры уже было выполнено.</value>
+    <value>Требование номинации неосновного режима игры уже было выполнено.</value>
   </data>
   <data name="nominate.dialog.confirmation" xml:space="preserve">
     <value>Вы уверены, что хотите номинировать эту карту?</value>
@@ -154,6 +154,9 @@
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>Открыть обложку в оригинальном размере</value>
   </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Открыть админ-панель</value>
+  </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>Эта карта была удалена.</value>
   </data>
@@ -170,7 +173,7 @@
     <value>войдите в аккаунт, чтобы добавить эту карту в избранные</value>
   </data>
   <data name="show.details.logged-out" xml:space="preserve">
-    <value>вы должны войти, чтобы начать скачивать карты!</value>
+    <value>вы должны войти в аккаунт, чтобы начать скачивать карты!</value>
   </data>
   <data name="show.details.mapped_by" xml:space="preserve">
     <value>автор {0}</value>
@@ -236,7 +239,7 @@
     <value>в разработке</value>
   </data>
   <data name="show.hype.disqualify._" xml:space="preserve">
-    <value>Если Вы обнаружили проблему у этой карты, пожалуйста, дисквалифицируйте её {0}.</value>
+    <value>Если вы обнаружили проблему у этой карты, пожалуйста, дисквалифицируйте её {0}.</value>
   </data>
   <data name="show.hype.report._" xml:space="preserve">
     <value>Если вы обнаружили проблему, связанную с этой картой, пожалуйста, сообщите об этом {0}, чтобы оповестить команду osu!.</value>
@@ -256,6 +259,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>Язык</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>Теги от маппера</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>Данные всё ещё обрабатываются...</value>
   </data>
@@ -267,6 +273,9 @@
   </data>
   <data name="show.info.offset" xml:space="preserve">
     <value>Онлайн-оффсет</value>
+  </data>
+  <data name="show.info.pack_tags" xml:space="preserve">
+    <value>В сборке карт</value>
   </data>
   <data name="show.info.points-of-failure" xml:space="preserve">
     <value>Диаграмма провалов</value>
@@ -280,8 +289,11 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>Процент прохождений</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>Теги</value>
+  <data name="show.info.success_rate_plays" xml:space="preserve">
+    <value>{0} из {1} игры|{0} из {1} игр|{0} из {1} игр</value>
+  </data>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>Теги от игроков</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>С видео</value>
@@ -320,7 +332,10 @@
     <value>Нажмите &lt;a href="{0}"&gt;сюда&lt;/a&gt; для просмотра всех возможностей, которые вы можете получить!</value>
   </data>
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
-    <value>Приобретите тег osu!supporter, чтобы получить доступ к рейтингу по друзьям, странам или модам!</value>
+    <value>Приобретите тег osu!supporter, чтобы получить доступ к рейтингу по друзьям, стране или модам!</value>
+  </data>
+  <data name="show.scoreboard.team" xml:space="preserve">
+    <value>Командный рейтинг</value>
   </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>Табло</value>
@@ -365,7 +380,10 @@
     <value>Пока рекордов нет. Поставите первый?</value>
   </data>
   <data name="show.scoreboard.no_scores.loading" xml:space="preserve">
-    <value>Рекорды загружаются...</value>
+    <value>Загрузка рекордов...</value>
+  </data>
+  <data name="show.scoreboard.no_scores.team" xml:space="preserve">
+    <value>Никто из вашей команды ещё не поставил рекорд на этой карте!</value>
   </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
     <value>Безрейтинговая карта.</value>
@@ -377,7 +395,7 @@
     <value>Ваш рекорд</value>
   </data>
   <data name="show.scoreboard.supporter_link._" xml:space="preserve">
-    <value>Нажмите {0} для просмотра всех возможностей, которые Вы можете получить!</value>
+    <value>Нажмите {0} для просмотра всех возможностей, которые вы можете получить!</value>
   </data>
   <data name="show.scoreboard.supporter_link.here" xml:space="preserve">
     <value>сюда</value>
@@ -426,6 +444,12 @@
   </data>
   <data name="show.stats.playcount" xml:space="preserve">
     <value>Количество игр</value>
+  </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>В избранных у игроков</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>Пока нет ни у кого в избранных</value>
   </data>
   <data name="show.status.ranked" xml:space="preserve">
     <value>Рейтинговая</value>

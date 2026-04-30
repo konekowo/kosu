@@ -103,6 +103,9 @@
   <data name="channels.list.title.public" xml:space="preserve">
     <value>チャンネル</value>
   </data>
+  <data name="channels.list.title.team" xml:space="preserve">
+    <value>チーム</value>
+  </data>
   <data name="form.title.announcement" xml:space="preserve">
     <value>お知らせを作成</value>
   </data>
@@ -138,15 +141,6 @@
   </data>
   <data name="input.send" xml:space="preserve">
     <value>送信</value>
-  </data>
-  <data name="no-conversations.howto" xml:space="preserve">
-    <value>ユーザープロフィールまたはユーザーカードのポップアップから会話を開始します。</value>
-  </data>
-  <data name="no-conversations.lazer" xml:space="preserve">
-    <value>あなたが&lt;a href="{0}"&gt;osu!lazer&lt;/a&gt;で参加している公開チャンネルもここに表示されます。</value>
-  </data>
-  <data name="no-conversations.title" xml:space="preserve">
-    <value>まだトークはありません</value>
   </data>
   <data name="join_channels.loading" xml:space="preserve">
     <value>チャンネル一覧を読み込んでいます...</value>

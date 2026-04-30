@@ -59,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="beatmap_offset" xml:space="preserve">
-    <value>Offset audio (per questa beatmap)</value>
+    <value>Offset audio (questa beatmap)</value>
   </data>
   <data name="previous_play" xml:space="preserve">
     <value>Partita precedente:</value>
@@ -68,12 +68,15 @@
     <value>Partita precedente troppo corta per la calibrazione</value>
   </data>
   <data name="calibrate_using_last_play" xml:space="preserve">
-    <value>Calibra utilizzando la scorsa partita</value>
+    <value>Calibra con la scorsa partita</value>
   </data>
   <data name="hit_objects_appear_later" xml:space="preserve">
     <value>(gli oggetti appaiono più tardi)</value>
   </data>
   <data name="hit_objects_appear_earlier" xml:space="preserve">
     <value>(gli oggetti appaiono prima)</value>
+  </data>
+  <data name="beatmap_offset_was_adjusted_to" xml:space="preserve">
+    <value>L'offset della beatmap è stato impostato a {0} ms.</value>
   </data>
 </root>

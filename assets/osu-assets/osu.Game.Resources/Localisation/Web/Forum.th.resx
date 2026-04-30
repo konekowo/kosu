@@ -166,6 +166,9 @@
   <data name="topic.go_to_latest" xml:space="preserve">
     <value>ดูโพสต์ล่าสุด</value>
   </data>
+  <data name="topic.go_to_unread" xml:space="preserve">
+    <value>ดูโพสต์ที่ยังไม่ได้อ่าน</value>
+  </data>
   <data name="topic.has_replied" xml:space="preserve">
     <value>คุณได้ตอบกลับการสนทนานี้</value>
   </data>
@@ -191,7 +194,7 @@
     <value>พิมพ์ที่นี่เพื่อตอบกลับ</value>
   </data>
   <data name="topic.reply_title_prefix" xml:space="preserve">
-    <value>รี</value>
+    <value>Re</value>
   </data>
   <data name="topic.started_by" xml:space="preserve">
     <value>โดย {0}</value>
@@ -456,78 +459,6 @@
   </data>
   <data name="topics.index.views" xml:space="preserve">
     <value>ดู</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0" xml:space="preserve">
-    <value>ลบแท็ก "เพิ่มแล้ว"</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0_done" xml:space="preserve">
-    <value>ลบแท็ก "เพิ่มแล้ว" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1" xml:space="preserve">
-    <value>เพิ่มแท็ก "เพิ่มแล้ว"</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1_done" xml:space="preserve">
-    <value>เพิ่มแท็ก "เพิ่มแล้ว" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0" xml:space="preserve">
-    <value>ลบแท็ก "กำหนดแล้ว"</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0_done" xml:space="preserve">
-    <value>ลบแท็ก "กำหนดแล้ว" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1" xml:space="preserve">
-    <value>เพิ่มแท็ก "กำหนดแล้ว"</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1_done" xml:space="preserve">
-    <value>เพิ่มแท็ก "กำหนดแล้ว" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0" xml:space="preserve">
-    <value>ลบแท็ก "ยืนยันแล้ว"</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0_done" xml:space="preserve">
-    <value>ลบแท็ก "ยืนยันแล้ว" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1" xml:space="preserve">
-    <value>เพิ่มแท็ก "ยืนยันแล้ว"</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1_done" xml:space="preserve">
-    <value>เพิ่มแท็ก "ยืนยันแล้ว" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0" xml:space="preserve">
-    <value>ลบแท็ก "ซ้ำ"</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0_done" xml:space="preserve">
-    <value>ลบแท็ก "ซ้ำ" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1" xml:space="preserve">
-    <value>เพิ่มแท็ก "ซ้ำ"</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1_done" xml:space="preserve">
-    <value>เพิ่มแท็ก "ซ้ำ" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0" xml:space="preserve">
-    <value>ลบแท็ก "โมฆะ"</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0_done" xml:space="preserve">
-    <value>ลบแท็ก "โมฆะ" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1" xml:space="preserve">
-    <value>เพิ่มแท็ก "โมฆะ"</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1_done" xml:space="preserve">
-    <value>เพิ่มแท็ก "โมฆะ" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0" xml:space="preserve">
-    <value>ลบแท็ก "แก้แล้ว"</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0_done" xml:space="preserve">
-    <value>ลบแท็ก "แก้แล้ว" แล้ว</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1" xml:space="preserve">
-    <value>เพิ่มแท็ก "แก้แล้ว"</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1_done" xml:space="preserve">
-    <value>เพิ่มแท็ก "แก้แล้ว" แล้ว</value>
   </data>
   <data name="topics.lock.is_locked" xml:space="preserve">
     <value>หัวข้อนี้ถูกล็อกและไม่สามารถตอบกลับได้</value>

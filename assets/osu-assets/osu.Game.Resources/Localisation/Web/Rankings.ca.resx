@@ -73,6 +73,12 @@
   <data name="daily_challenge.top_50p" xml:space="preserve">
     <value>Puntuació top 50%</value>
   </data>
+  <data name="daily_challenge.unavailable.future" xml:space="preserve">
+    <value>Encara no hi ha repte diari a la data especificada!</value>
+  </data>
+  <data name="daily_challenge.unavailable.past" xml:space="preserve">
+    <value>No hi ha repte diari a la data especificada!</value>
+  </data>
   <data name="filter.title" xml:space="preserve">
     <value>Mostra</value>
   </data>
@@ -88,11 +94,44 @@
   <data name="kudosu.used" xml:space="preserve">
     <value>Gastat</value>
   </data>
+  <data name="matchmaking.plays" xml:space="preserve">
+    <value>Jugades</value>
+  </data>
+  <data name="matchmaking.points" xml:space="preserve">
+    <value>Punts</value>
+  </data>
+  <data name="matchmaking.provisional" xml:space="preserve">
+    <value>No s'han jugat prou partides per a determinar bé la classificació.</value>
+  </data>
+  <data name="matchmaking.rating" xml:space="preserve">
+    <value>Valoració</value>
+  </data>
+  <data name="matchmaking.wins" xml:space="preserve">
+    <value>Victòries</value>
+  </data>
+  <data name="multiplayer.room_name" xml:space="preserve">
+    <value>Nom de la sala</value>
+  </data>
   <data name="performance.insufficient_history" xml:space="preserve">
     <value>Aquest usuari té menys de 30 dies d'historial de classificació recent.</value>
   </data>
-  <data name="type.charts" xml:space="preserve">
-    <value>en el focus (vell)</value>
+  <data name="top_plays.empty" xml:space="preserve">
+    <value>Les dades es calculen...</value>
+  </data>
+  <data name="top_plays.last_updated" xml:space="preserve">
+    <value>Actualitzat per últim cop</value>
+  </data>
+  <data name="playlists.charts" xml:space="preserve">
+    <value>destacats (antics)</value>
+  </data>
+  <data name="playlists.featured" xml:space="preserve">
+    <value>destacat</value>
+  </data>
+  <data name="playlists.season_room" xml:space="preserve">
+    <value>sala de temporada</value>
+  </data>
+  <data name="playlists.seasons" xml:space="preserve">
+    <value>temporades</value>
   </data>
   <data name="type.country" xml:space="preserve">
     <value>país</value>
@@ -100,20 +139,23 @@
   <data name="type.daily_challenge" xml:space="preserve">
     <value>repte diari</value>
   </data>
+  <data name="type.global" xml:space="preserve">
+    <value>global</value>
+  </data>
   <data name="type.kudosu" xml:space="preserve">
     <value>kudosu</value>
   </data>
-  <data name="type.multiplayer" xml:space="preserve">
-    <value>multijugador</value>
+  <data name="type.matchmaking" xml:space="preserve">
+    <value>partides ràpides</value>
   </data>
-  <data name="type.performance" xml:space="preserve">
-    <value>rendiment</value>
+  <data name="type.playlists" xml:space="preserve">
+    <value>llistes d'àudio</value>
   </data>
-  <data name="type.score" xml:space="preserve">
-    <value>puntuació</value>
+  <data name="type.team" xml:space="preserve">
+    <value>equip</value>
   </data>
-  <data name="type.seasons" xml:space="preserve">
-    <value>temporades</value>
+  <data name="type.top_plays" xml:space="preserve">
+    <value>més jugades</value>
   </data>
   <data name="seasons.empty" xml:space="preserve">
     <value>Encara no hi ha sales en aquesta temporada.</value>
@@ -124,8 +166,14 @@
   <data name="seasons.room_count" xml:space="preserve">
     <value>Nombre de llistes de reproducció</value>
   </data>
+  <data name="seasons.summary" xml:space="preserve">
+    <value>Mostra el resum de la temporada</value>
+  </data>
   <data name="seasons.url" xml:space="preserve">
     <value>Mostra més informació sobre la temporada.</value>
+  </data>
+  <data name="seasons.validation.not_enough_factors" xml:space="preserve">
+    <value>no hi ha prou factors de puntuació per a un càlcul adequat</value>
   </data>
   <data name="spotlight.end_date" xml:space="preserve">
     <value>Data de finalització</value>
@@ -148,6 +196,12 @@
   <data name="stat.country" xml:space="preserve">
     <value>País</value>
   </data>
+  <data name="stat.division" xml:space="preserve">
+    <value>Divisió</value>
+  </data>
+  <data name="stat.members" xml:space="preserve">
+    <value>Membres</value>
+  </data>
   <data name="stat.play_count" xml:space="preserve">
     <value>Nombre de partides</value>
   </data>
@@ -161,9 +215,9 @@
     <value>Puntuació classificada</value>
   </data>
   <data name="stat.average_score" xml:space="preserve">
-    <value>Mitjana. Puntuació</value>
+    <value>Puntuació Mitj.</value>
   </data>
   <data name="stat.average_performance" xml:space="preserve">
-    <value>Mitjana. Perfecte.</value>
+    <value>Mitj. Rend.</value>
   </data>
 </root>

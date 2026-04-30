@@ -100,6 +100,9 @@
   <data name="search.title" xml:space="preserve">
     <value>Tìm Kiếm</value>
   </data>
+  <data name="search.artist_track.more_simple" xml:space="preserve">
+    <value>Hiển thị thêm bài của nghệ sĩ nổi bật theo kết quả tìm kiếm</value>
+  </data>
   <data name="search.beatmapset.login_required" xml:space="preserve">
     <value>Đăng nhập để tìm beatmap</value>
   </data>
@@ -145,17 +148,29 @@
   <data name="search.mode.all" xml:space="preserve">
     <value>tất cả</value>
   </data>
+  <data name="search.mode.artist_track" xml:space="preserve">
+    <value>nhạc của nghệ sĩ nổi bật</value>
+  </data>
   <data name="search.mode.beatmapset" xml:space="preserve">
     <value>beatmap</value>
   </data>
   <data name="search.mode.forum_post" xml:space="preserve">
     <value>diễn đàn</value>
   </data>
+  <data name="search.mode.team" xml:space="preserve">
+    <value>đội</value>
+  </data>
   <data name="search.mode.user" xml:space="preserve">
     <value>người chơi</value>
   </data>
   <data name="search.mode.wiki_page" xml:space="preserve">
     <value>wiki</value>
+  </data>
+  <data name="search.team.login_required" xml:space="preserve">
+    <value>Đăng nhập để tìm đội</value>
+  </data>
+  <data name="search.team.more_simple" xml:space="preserve">
+    <value>Hiển thị thêm kết quả tìm kiếm đội</value>
   </data>
   <data name="search.user.login_required" xml:space="preserve">
     <value>Đăng nhập để tìm người dùng</value>
@@ -181,23 +196,11 @@
   <data name="search.wiki_page.title" xml:space="preserve">
     <value>Wiki</value>
   </data>
-  <data name="download.action" xml:space="preserve">
-    <value>Tải xuống osu!</value>
-  </data>
-  <data name="download.action_lazer" xml:space="preserve">
-    <value>Tải xuông osu!(lazer)</value>
-  </data>
-  <data name="download.action_lazer_description" xml:space="preserve">
-    <value>bản cập nhật lớn tiếp theo của osu!</value>
-  </data>
   <data name="download.action_lazer_info" xml:space="preserve">
     <value>nhấp vào đây để biết thêm thông tin</value>
   </data>
-  <data name="download.action_lazer_title" xml:space="preserve">
-    <value>thử osu!(lazer)</value>
-  </data>
-  <data name="download.action_title" xml:space="preserve">
-    <value>tải xuống osu!</value>
+  <data name="download.download" xml:space="preserve">
+    <value>Tải xuống</value>
   </data>
   <data name="download.for_os" xml:space="preserve">
     <value>dành cho {0}</value>
@@ -220,8 +223,14 @@
   <data name="download.quick_start_guide" xml:space="preserve">
     <value>hướng dẫn nhanh</value>
   </data>
-  <data name="download.tagline" xml:space="preserve">
-    <value>hãy&lt;br&gt;bắt đầu!</value>
+  <data name="download.stable_text" xml:space="preserve">
+    <value>nếu bạn đang tìm cái cũ hơn</value>
+  </data>
+  <data name="download.tagline_1" xml:space="preserve">
+    <value>hãy giúp bạn</value>
+  </data>
+  <data name="download.tagline_2" xml:space="preserve">
+    <value>bắt đầu!</value>
   </data>
   <data name="download.video-guide" xml:space="preserve">
     <value>hướng dẫn bằng video</value>
@@ -283,6 +292,9 @@
   <data name="user.header.stats.online" xml:space="preserve">
     <value>Người Chơi Đang Online</value>
   </data>
+  <data name="user.beatmaps.daily_challenge" xml:space="preserve">
+    <value>Thử thách beatmap hàng ngày</value>
+  </data>
   <data name="user.beatmaps.new" xml:space="preserve">
     <value>Beatmap Được Xếp Hạng Mới</value>
   </data>
@@ -292,6 +304,9 @@
   <data name="user.beatmaps.by_user" xml:space="preserve">
     <value>bởi {0}</value>
   </data>
+  <data name="user.beatmaps.resets" xml:space="preserve">
+    <value>đặt lại sau {0}</value>
+  </data>
   <data name="user.buttons.download" xml:space="preserve">
     <value>Tải Xuống osu!</value>
   </data>
@@ -300,5 +315,11 @@
   </data>
   <data name="user.buttons.store" xml:space="preserve">
     <value>osu!store</value>
+  </data>
+  <data name="user.livestream.title" xml:space="preserve">
+    <value>Livestream nổi bật</value>
+  </data>
+  <data name="user.show.admin.page" xml:space="preserve">
+    <value>Mở bảng điều khiển quản trị viên</value>
   </data>
 </root>

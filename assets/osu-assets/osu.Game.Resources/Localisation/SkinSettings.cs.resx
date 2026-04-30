@@ -64,6 +64,9 @@
   <data name="current_skin" xml:space="preserve">
     <value>Aktuální skin</value>
   </data>
+  <data name="skin_name" xml:space="preserve">
+    <value>Jméno skinu</value>
+  </data>
   <data name="skin_layout_editor" xml:space="preserve">
     <value>Editor rozložení skinu</value>
   </data>
@@ -74,7 +77,7 @@
     <value>Upravit velikost herního kurzoru podle aktuální beatmapy</value>
   </data>
   <data name="gameplay_cursor_during_touch" xml:space="preserve">
-    <value>Zobrazit kurzor během hraní na dotikových obrazovkách</value>
+    <value>Zobrazit kurzor během hraní na dotykových obrazovkách</value>
   </data>
   <data name="beatmap_skins" xml:space="preserve">
     <value>Skiny beatmap</value>

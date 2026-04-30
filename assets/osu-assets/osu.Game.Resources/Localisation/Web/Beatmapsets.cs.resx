@@ -154,6 +154,9 @@
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>Zobrazit plnou velikost úvodního obrázku</value>
   </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Zobrazit administrátorskou stránku</value>
+  </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>Tato beatmapa byla odstraněna.</value>
   </data>
@@ -203,7 +206,7 @@
     <value>schváleno {0}</value>
   </data>
   <data name="show.details_date.loved" xml:space="preserve">
-    <value>oblíbeno {0}</value>
+    <value>oblíbeno komunitou {0}</value>
   </data>
   <data name="show.details_date.qualified" xml:space="preserve">
     <value>kvalifikováno {0}</value>
@@ -221,7 +224,7 @@
     <value>Máte příliš map v oblibených! Než to budete zkoušet znova, nějakou odstraňte.</value>
   </data>
   <data name="show.hype.action" xml:space="preserve">
-    <value>Podpoř tuto mapu, pokud sis užili její hraní, a pomoz jí postoupit do &lt;strong&gt;Schváleného&lt;/strong&gt; stavu.</value>
+    <value>Podpoř tuto mapu, pokud sis užili její hraní, a pomoz jí postoupit do &lt;strong&gt;Hodnoceného&lt;/strong&gt; stavu.</value>
   </data>
   <data name="show.hype.current._" xml:space="preserve">
     <value>Tato mapa je právě {0}.</value>
@@ -230,10 +233,10 @@
     <value>čekající</value>
   </data>
   <data name="show.hype.current.status.qualified" xml:space="preserve">
-    <value>kvalifikované</value>
+    <value>kvalifikovaná</value>
   </data>
   <data name="show.hype.current.status.wip" xml:space="preserve">
-    <value>rozpracované</value>
+    <value>rozdělaná</value>
   </data>
   <data name="show.hype.disqualify._" xml:space="preserve">
     <value>Pokud najdete problém s touto mapou, diskvalifikujte ji prosím {0}.</value>
@@ -256,6 +259,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>Jazyk</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>Označení od autora</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>Data se vypočítávají...</value>
   </data>
@@ -267,6 +273,9 @@
   </data>
   <data name="show.info.offset" xml:space="preserve">
     <value>Online offset</value>
+  </data>
+  <data name="show.info.pack_tags" xml:space="preserve">
+    <value>Balíčky beatmap</value>
   </data>
   <data name="show.info.points-of-failure" xml:space="preserve">
     <value>Body neúspěchů</value>
@@ -280,8 +289,11 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>Úspěšnost</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>Tagy</value>
+  <data name="show.info.success_rate_plays" xml:space="preserve">
+    <value>{0} z {1} zahrání|{0} ze {1} zahrání|{0} z {1} zahrání</value>
+  </data>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>Označení od uživatelů</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>Tato beatmapa obsahuje video</value>
@@ -321,6 +333,9 @@
   </data>
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
     <value>Pro zobrazení národních žebříčků a žebříčků přátel potřebujete funkci Supportera!</value>
+  </data>
+  <data name="show.scoreboard.team" xml:space="preserve">
+    <value>Žebříček týmu</value>
   </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>Tabulka výsledků</value>
@@ -367,8 +382,11 @@
   <data name="show.scoreboard.no_scores.loading" xml:space="preserve">
     <value>Načítání skóre...</value>
   </data>
+  <data name="show.scoreboard.no_scores.team" xml:space="preserve">
+    <value>Nikdo z tvého týmu na této mapě zatím žádné skóre nenahrál!</value>
+  </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
-    <value>Neschválená beatmapa.</value>
+    <value>Nehodnocená beatmapa.</value>
   </data>
   <data name="show.scoreboard.score.first" xml:space="preserve">
     <value>V čele</value>
@@ -427,28 +445,34 @@
   <data name="show.stats.playcount" xml:space="preserve">
     <value>Počet zahrání</value>
   </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>V oblíbených</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>Nikdo ještě nepřidal do oblíbených</value>
+  </data>
   <data name="show.status.ranked" xml:space="preserve">
-    <value>Schválené</value>
+    <value>Hodnocená</value>
   </data>
   <data name="show.status.approved" xml:space="preserve">
-    <value>Schválené</value>
+    <value>Schválená</value>
   </data>
   <data name="show.status.loved" xml:space="preserve">
-    <value>Oblíbené</value>
+    <value>Oblíbená komunitou</value>
   </data>
   <data name="show.status.qualified" xml:space="preserve">
-    <value>Kvalifikované</value>
+    <value>Kvalifikovaná</value>
   </data>
   <data name="show.status.wip" xml:space="preserve">
-    <value>Nedodělané</value>
+    <value>Rozdělaná</value>
   </data>
   <data name="show.status.pending" xml:space="preserve">
-    <value>Nevyřízené</value>
+    <value>Čekající</value>
   </data>
   <data name="show.status.graveyard" xml:space="preserve">
     <value>Hřbitov</value>
   </data>
   <data name="spotlight_badge.label" xml:space="preserve">
-    <value>Zvýraznění</value>
+    <value>Zvýrazněná</value>
   </data>
 </root>

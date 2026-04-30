@@ -79,9 +79,6 @@
   <data name="badges.new" xml:space="preserve">
     <value>NOWE</value>
   </data>
-  <data name="buttons.admin" xml:space="preserve">
-    <value>Administrator</value>
-  </data>
   <data name="buttons.authorise" xml:space="preserve">
     <value>Autoryzuj</value>
   </data>
@@ -235,6 +232,9 @@
   <data name="count.notifications" xml:space="preserve">
     <value>{0} powiadomienie|{0} powiadomienia|{0} powiadomień</value>
   </data>
+  <data name="count.player" xml:space="preserve">
+    <value>{0} gracz|{0} gracze|{0} graczy</value>
+  </data>
   <data name="count.plus_others" xml:space="preserve">
     <value>+ jeszcze {0}!</value>
   </data>
@@ -267,6 +267,12 @@
   </data>
   <data name="countdown.seconds" xml:space="preserve">
     <value>sekund</value>
+  </data>
+  <data name="datetime.month.php" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="datetime.year.php" xml:space="preserve">
+    <value>y</value>
   </data>
   <data name="datetime.year_month.moment" xml:space="preserve">
     <value>MMMM YYYY</value>

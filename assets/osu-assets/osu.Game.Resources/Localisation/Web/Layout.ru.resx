@@ -65,7 +65,7 @@
     <value>osu! - Ритм всего лишь в *клике* от тебя! С Ouendan/EBA, Taiko и оригинальными режимами игры, а также многофункциональным редактором карт.</value>
   </data>
   <data name="header.admin.beatmapset" xml:space="preserve">
-    <value>набор карт</value>
+    <value>карта</value>
   </data>
   <data name="header.admin.beatmapset_covers" xml:space="preserve">
     <value>обложки карт</value>
@@ -83,10 +83,13 @@
     <value>список</value>
   </data>
   <data name="header.beatmapsets.show" xml:space="preserve">
-    <value>основная</value>
+    <value>главная</value>
   </data>
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>обсуждение</value>
+  </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>история версий</value>
   </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>список</value>
@@ -119,7 +122,7 @@
     <value>мультиплеер</value>
   </data>
   <data name="header.users.show" xml:space="preserve">
-    <value>основная</value>
+    <value>главная</value>
   </data>
   <data name="gallery.close" xml:space="preserve">
     <value>Закрыть (Esc)</value>
@@ -213,6 +216,9 @@
   </data>
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Конфиденциальность</value>
+  </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Правила</value>
   </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Статус серверов</value>

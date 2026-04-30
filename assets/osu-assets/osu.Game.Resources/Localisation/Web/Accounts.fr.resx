@@ -172,6 +172,9 @@
   <data name="notifications.comment_reply" xml:space="preserve">
     <value>recevoir des notifications pour des réponses à vos commentaires</value>
   </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>recevoir des notifications pour les articles d'actualité</value>
+  </data>
   <data name="notifications.title" xml:space="preserve">
     <value>Notifications</value>
   </data>
@@ -190,6 +193,9 @@
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>messages privés</value>
   </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>messages d'équipe</value>
+  </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>nouveaux commentaires</value>
   </data>
@@ -202,6 +208,9 @@
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>créateur de beatmap</value>
   </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>articles d'actualité</value>
+  </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>push</value>
   </data>
@@ -213,6 +222,9 @@
   </data>
   <data name="oauth.title" xml:space="preserve">
     <value>OAuth</value>
+  </data>
+  <data name="options.beatmapset_show_anime_cover" xml:space="preserve">
+    <value>afficher les couvertures de beatmap de style anime</value>
   </data>
   <data name="options.beatmapset_show_nsfw" xml:space="preserve">
     <value>masquer les avertissements de contenu explicite dans les beatmaps</value>
@@ -256,6 +268,9 @@
   <data name="privacy.hide_online" xml:space="preserve">
     <value>masquer votre présence en ligne</value>
   </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>vous fera apparaître hors-ligne sur osu!lazer si activé</value>
+  </data>
   <data name="privacy.title" xml:space="preserve">
     <value>Confidentialité</value>
   </data>
@@ -282,6 +297,27 @@
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>mettre à jour</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>Application d'authentification</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>Utiliser une application d'authentification au lieu de la vérification par courriel. La vérification par courriel est toujours disponible en tant qu'option de recours.</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>Retirer</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>Ajouter une application d'authentification</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>statut</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>Non configuré</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>Configuré</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>Vous pouvez désormais fermer cet onglet/cette fenêtre</value>

@@ -154,6 +154,9 @@
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>Afficher la taille réelle de l'image de couverture</value>
   </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Voir la page admin</value>
+  </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>Cette beatmap a été supprimée.</value>
   </data>
@@ -179,7 +182,7 @@
     <value>guest difficulty par {0}</value>
   </data>
   <data name="show.details.unfavourite" xml:space="preserve">
-    <value>Retirer ce beatmapset des favoris</value>
+    <value>Retirer cette beatmap des favoris</value>
   </data>
   <data name="show.details.updated_timeago" xml:space="preserve">
     <value>dernière mise à jour le {0}</value>
@@ -256,6 +259,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>Langue</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>Tags du mappeur</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>Les données sont encore en cours de calcul...</value>
   </data>
@@ -267,6 +273,9 @@
   </data>
   <data name="show.info.offset" xml:space="preserve">
     <value>Décalage en ligne</value>
+  </data>
+  <data name="show.info.pack_tags" xml:space="preserve">
+    <value>Packs de Beatmaps</value>
   </data>
   <data name="show.info.points-of-failure" xml:space="preserve">
     <value>Répartition des échecs</value>
@@ -280,8 +289,11 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>Taux de réussite</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>Tags</value>
+  <data name="show.info.success_rate_plays" xml:space="preserve">
+    <value>{0} sur {1} partie|{0} sur {1} parties</value>
+  </data>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>Tags des joueurs</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>Cette beatmap contient une vidéo</value>
@@ -321,6 +333,9 @@
   </data>
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
     <value>Vous devez être un osu!supporter pour accéder aux classements par pays, amis et mods spécifiques !</value>
+  </data>
+  <data name="show.scoreboard.team" xml:space="preserve">
+    <value>Classement d'équipe</value>
   </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>Classement</value>
@@ -367,6 +382,9 @@
   <data name="show.scoreboard.no_scores.loading" xml:space="preserve">
     <value>Chargement des scores...</value>
   </data>
+  <data name="show.scoreboard.no_scores.team" xml:space="preserve">
+    <value>Personne n'a encore réalisé de score dans votre équipe !</value>
+  </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
     <value>Beatmap non classée.</value>
   </data>
@@ -395,7 +413,7 @@
     <value>Précision</value>
   </data>
   <data name="show.stats.ar" xml:space="preserve">
-    <value>Taux d'approche</value>
+    <value>Vitesse d'approche</value>
   </data>
   <data name="show.stats.stars" xml:space="preserve">
     <value>Difficulté en étoiles</value>
@@ -426,6 +444,12 @@
   </data>
   <data name="show.stats.playcount" xml:space="preserve">
     <value>Nombre de parties</value>
+  </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>Favoris</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>Aucun favori pour le moment</value>
   </data>
   <data name="show.status.ranked" xml:space="preserve">
     <value>Classée</value>

@@ -70,6 +70,9 @@
   <data name="applications.store.ok" xml:space="preserve">
     <value>Alăturarea în echipa a fost solicitată.</value>
   </data>
+  <data name="card.members" xml:space="preserve">
+    <value>un membru|{0} membrii|{0} de membrii</value>
+  </data>
   <data name="create.submit" xml:space="preserve">
     <value>Creează Echipă</value>
   </data>
@@ -157,26 +160,44 @@
   <data name="members.index.title" xml:space="preserve">
     <value>Gestionare Membri</value>
   </data>
+  <data name="members.index.applications.accept_confirm" xml:space="preserve">
+    <value>Adăugați utilizatorul {0} la echipă?</value>
+  </data>
+  <data name="members.index.applications.created_at" xml:space="preserve">
+    <value>Solicitat La</value>
+  </data>
   <data name="members.index.applications.empty" xml:space="preserve">
     <value>Nici o cerere de înscriere în acest moment.</value>
   </data>
   <data name="members.index.applications.empty_slots" xml:space="preserve">
     <value>Locuri disponibile</value>
   </data>
+  <data name="members.index.applications.empty_slots_overflow" xml:space="preserve">
+    <value>un utilizator în plus|{0} utilizatori în plus|{0} de utilizatori în plus</value>
+  </data>
+  <data name="members.index.applications.reject_confirm" xml:space="preserve">
+    <value>Refuzați cererea de înscriere de la utilizatorul {0}?</value>
+  </data>
   <data name="members.index.applications.title" xml:space="preserve">
     <value>Cereri de Înscriere</value>
-  </data>
-  <data name="members.index.applications.created_at" xml:space="preserve">
-    <value>Solicitat La</value>
-  </data>
-  <data name="members.index.table.status" xml:space="preserve">
-    <value>Status</value>
   </data>
   <data name="members.index.table.joined_at" xml:space="preserve">
     <value>Data Înscrierii</value>
   </data>
   <data name="members.index.table.remove" xml:space="preserve">
     <value>Elimină</value>
+  </data>
+  <data name="members.index.table.remove_confirm" xml:space="preserve">
+    <value>Eliminați utilizatorul {0} din echipă?</value>
+  </data>
+  <data name="members.index.table.set_leader" xml:space="preserve">
+    <value>Transferați conducerea echipei</value>
+  </data>
+  <data name="members.index.table.set_leader_confirm" xml:space="preserve">
+    <value>Transferați conducerea echipei către utilizatorul {0}?</value>
+  </data>
+  <data name="members.index.table.status" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="members.index.table.title" xml:space="preserve">
     <value>Membrii Actuali</value>
@@ -186,6 +207,9 @@
   </data>
   <data name="members.index.status.status_1" xml:space="preserve">
     <value>Activ</value>
+  </data>
+  <data name="members.set_leader.success" xml:space="preserve">
+    <value>Utilizatorul {0} este acum liderul echipei.</value>
   </data>
   <data name="part.ok" xml:space="preserve">
     <value>Ai părăsit echipa ;_;</value>
@@ -214,11 +238,20 @@
   <data name="show.members.owner" xml:space="preserve">
     <value>Liderul Echipei</value>
   </data>
+  <data name="show.sections.about" xml:space="preserve">
+    <value>Despre Noi!</value>
+  </data>
   <data name="show.sections.info" xml:space="preserve">
     <value>Info</value>
   </data>
   <data name="show.sections.members" xml:space="preserve">
     <value>Membri</value>
+  </data>
+  <data name="show.statistics.leader" xml:space="preserve">
+    <value>Liderul Echipei</value>
+  </data>
+  <data name="show.statistics.rank" xml:space="preserve">
+    <value>Rang</value>
   </data>
   <data name="store.ok" xml:space="preserve">
     <value>Echipă creată.</value>

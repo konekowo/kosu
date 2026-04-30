@@ -65,13 +65,16 @@
     <value>URL tidak valid atau metode permintaan tidak tepat.</value>
   </data>
   <data name="no_restricted_access" xml:space="preserve">
-    <value>Kamu tidak dapat melakukan tindakan ini ketika akunmu sedang di-restrict.</value>
+    <value>Kamu tidak bisa melakukan tindakan ini ketika akunmu sedang di-restrict.</value>
+  </data>
+  <data name="param_too_large" xml:space="preserve">
+    <value>Parameter {0} hanya bisa mengandung maksimal {1} item|Parameter {0} hanya bisa mengandung maksimal {1} item</value>
   </data>
   <data name="supporter_only" xml:space="preserve">
     <value>Kamu harus menjadi osu!supporter untuk menggunakan fitur ini.</value>
   </data>
   <data name="unknown" xml:space="preserve">
-    <value>Terdapat masalah yang tidak diketahui.</value>
+    <value>Terjadi kesalahan yang tidak diketahui.</value>
   </data>
   <data name="codes.http-401" xml:space="preserve">
     <value>Silakan masuk untuk melanjutkan.</value>
@@ -88,20 +91,14 @@
   <data name="account.profile-order.generic" xml:space="preserve">
     <value>Terdapat suatu masalah. Cobalah untuk memuat ulang halaman.</value>
   </data>
-  <data name="beatmaps.invalid_mode" xml:space="preserve">
-    <value>Mode permainan yang ditentukan tidak valid.</value>
-  </data>
-  <data name="beatmaps.standard_converts_only" xml:space="preserve">
-    <value>Tidak ada skor yang tersedia untuk mode permainan yang diminta pada tingkat kesulitan ini.</value>
-  </data>
   <data name="checkout.generic" xml:space="preserve">
-    <value>Terjadi kesalahan dalam mempersiapkan proses checkout.</value>
+    <value>Terjadi kesalahan pada saat mempersiapkan proses checkout.</value>
   </data>
   <data name="scores.invalid_id" xml:space="preserve">
     <value>ID skor tidak valid.</value>
   </data>
   <data name="search.default" xml:space="preserve">
-    <value>Tidak ada hasil pencarian yang dapat diperoleh. Silakan coba lagi nanti.</value>
+    <value>Tidak ada hasil pencarian yang bisa diperoleh. Silakan coba lagi nanti.</value>
   </data>
   <data name="search.invalid_cursor_exception" xml:space="preserve">
     <value>Parameter kursor yang ditentukan tidak valid.</value>
@@ -110,6 +107,6 @@
     <value>Aktivitas pencarian saat ini sedang lebih sibuk dari biasanya. Silakan coba lagi nanti.</value>
   </data>
   <data name="user_report.recently_reported" xml:space="preserve">
-    <value>Kamu telah melaporkan hal ini baru-baru ini.</value>
+    <value>Kamu sudah melaporkan hal ini baru-baru ini.</value>
   </data>
 </root>

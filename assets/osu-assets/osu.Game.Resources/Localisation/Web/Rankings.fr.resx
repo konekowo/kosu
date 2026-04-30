@@ -73,6 +73,12 @@
   <data name="daily_challenge.top_50p" xml:space="preserve">
     <value>Score du Top 50%</value>
   </data>
+  <data name="daily_challenge.unavailable.future" xml:space="preserve">
+    <value>Pas de défi du jour à cette date pour le moment !</value>
+  </data>
+  <data name="daily_challenge.unavailable.past" xml:space="preserve">
+    <value>Pas de défi du jour à cette date !</value>
+  </data>
   <data name="filter.title" xml:space="preserve">
     <value>Afficher</value>
   </data>
@@ -88,11 +94,44 @@
   <data name="kudosu.used" xml:space="preserve">
     <value>Utilisés</value>
   </data>
+  <data name="matchmaking.plays" xml:space="preserve">
+    <value>Parties</value>
+  </data>
+  <data name="matchmaking.points" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="matchmaking.provisional" xml:space="preserve">
+    <value>Le joueur n'a pas joué suffisamment de matchs pour déterminer un classement précis</value>
+  </data>
+  <data name="matchmaking.rating" xml:space="preserve">
+    <value>Pts Classement</value>
+  </data>
+  <data name="matchmaking.wins" xml:space="preserve">
+    <value>Victoires</value>
+  </data>
+  <data name="multiplayer.room_name" xml:space="preserve">
+    <value>Nom de la salle</value>
+  </data>
   <data name="performance.insufficient_history" xml:space="preserve">
     <value>Ce joueur a moins de 30 jours d'activité dans le classement.</value>
   </data>
-  <data name="type.charts" xml:space="preserve">
+  <data name="top_plays.empty" xml:space="preserve">
+    <value>Calcul des données en cours...</value>
+  </data>
+  <data name="top_plays.last_updated" xml:space="preserve">
+    <value>Dernière mise à jour </value>
+  </data>
+  <data name="playlists.charts" xml:space="preserve">
     <value>spotlights (ancien)</value>
+  </data>
+  <data name="playlists.featured" xml:space="preserve">
+    <value>mis en avant</value>
+  </data>
+  <data name="playlists.season_room" xml:space="preserve">
+    <value>salle (saison) </value>
+  </data>
+  <data name="playlists.seasons" xml:space="preserve">
+    <value>saisons</value>
   </data>
   <data name="type.country" xml:space="preserve">
     <value>pays</value>
@@ -100,20 +139,23 @@
   <data name="type.daily_challenge" xml:space="preserve">
     <value>défi du jour</value>
   </data>
+  <data name="type.global" xml:space="preserve">
+    <value>global</value>
+  </data>
   <data name="type.kudosu" xml:space="preserve">
     <value>kudosu</value>
   </data>
-  <data name="type.multiplayer" xml:space="preserve">
-    <value>multijoueur</value>
+  <data name="type.matchmaking" xml:space="preserve">
+    <value>partie rapide</value>
   </data>
-  <data name="type.performance" xml:space="preserve">
-    <value>performance</value>
+  <data name="type.playlists" xml:space="preserve">
+    <value>playlists</value>
   </data>
-  <data name="type.score" xml:space="preserve">
-    <value>score</value>
+  <data name="type.team" xml:space="preserve">
+    <value>équipe</value>
   </data>
-  <data name="type.seasons" xml:space="preserve">
-    <value>saisons</value>
+  <data name="type.top_plays" xml:space="preserve">
+    <value>meilleures performances</value>
   </data>
   <data name="seasons.empty" xml:space="preserve">
     <value>Il n'y a pas encore de salles pour cette saison.</value>
@@ -123,6 +165,9 @@
   </data>
   <data name="seasons.room_count" xml:space="preserve">
     <value>Nombre de playlists</value>
+  </data>
+  <data name="seasons.summary" xml:space="preserve">
+    <value>Voir le résumé de la saison</value>
   </data>
   <data name="seasons.url" xml:space="preserve">
     <value>Afficher plus d'informations sur cette saison.</value>
@@ -153,6 +198,9 @@
   </data>
   <data name="stat.division" xml:space="preserve">
     <value>Division</value>
+  </data>
+  <data name="stat.members" xml:space="preserve">
+    <value>Membres</value>
   </data>
   <data name="stat.play_count" xml:space="preserve">
     <value>Nombres de parties</value>

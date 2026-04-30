@@ -100,6 +100,9 @@
   <data name="search.title" xml:space="preserve">
     <value>搜尋</value>
   </data>
+  <data name="search.artist_track.more_simple" xml:space="preserve">
+    <value>查看更多精選藝術家曲目的搜尋結果</value>
+  </data>
   <data name="search.beatmapset.login_required" xml:space="preserve">
     <value>登入以搜尋圖譜</value>
   </data>
@@ -145,17 +148,29 @@
   <data name="search.mode.all" xml:space="preserve">
     <value>所有</value>
   </data>
+  <data name="search.mode.artist_track" xml:space="preserve">
+    <value>精選藝術家曲目</value>
+  </data>
   <data name="search.mode.beatmapset" xml:space="preserve">
     <value>圖譜</value>
   </data>
   <data name="search.mode.forum_post" xml:space="preserve">
     <value>論壇</value>
   </data>
+  <data name="search.mode.team" xml:space="preserve">
+    <value>團隊</value>
+  </data>
   <data name="search.mode.user" xml:space="preserve">
     <value>玩家</value>
   </data>
   <data name="search.mode.wiki_page" xml:space="preserve">
     <value>wiki</value>
+  </data>
+  <data name="search.team.login_required" xml:space="preserve">
+    <value>登入以搜尋隊伍</value>
+  </data>
+  <data name="search.team.more_simple" xml:space="preserve">
+    <value>查看更多團隊搜尋結果</value>
   </data>
   <data name="search.user.login_required" xml:space="preserve">
     <value>登入以搜尋玩家</value>
@@ -181,23 +196,11 @@
   <data name="search.wiki_page.title" xml:space="preserve">
     <value>Wiki</value>
   </data>
-  <data name="download.action" xml:space="preserve">
-    <value>下載 osu!</value>
-  </data>
-  <data name="download.action_lazer" xml:space="preserve">
-    <value>下載 osu!(lazer)</value>
-  </data>
-  <data name="download.action_lazer_description" xml:space="preserve">
-    <value>osu! 的下一個大更新</value>
-  </data>
   <data name="download.action_lazer_info" xml:space="preserve">
     <value>點此來了解更多</value>
   </data>
-  <data name="download.action_lazer_title" xml:space="preserve">
-    <value>試用 osu!(lazer)</value>
-  </data>
-  <data name="download.action_title" xml:space="preserve">
-    <value>下載 osu!</value>
+  <data name="download.download" xml:space="preserve">
+    <value>下載</value>
   </data>
   <data name="download.for_os" xml:space="preserve">
     <value>{0} 版</value>
@@ -220,8 +223,14 @@
   <data name="download.quick_start_guide" xml:space="preserve">
     <value>三步開始遊玩 osu!</value>
   </data>
-  <data name="download.tagline" xml:space="preserve">
-    <value>讓我們&lt;br&gt;開始吧！</value>
+  <data name="download.stable_text" xml:space="preserve">
+    <value>如果你正在尋找舊版本</value>
+  </data>
+  <data name="download.tagline_1" xml:space="preserve">
+    <value>讓我們</value>
+  </data>
+  <data name="download.tagline_2" xml:space="preserve">
+    <value>開始吧！</value>
   </data>
   <data name="download.video-guide" xml:space="preserve">
     <value>影片教學</value>
@@ -283,6 +292,9 @@
   <data name="user.header.stats.online" xml:space="preserve">
     <value>線上使用者</value>
   </data>
+  <data name="user.beatmaps.daily_challenge" xml:space="preserve">
+    <value>每日挑戰圖譜</value>
+  </data>
   <data name="user.beatmaps.new" xml:space="preserve">
     <value>新進榜圖譜</value>
   </data>
@@ -292,6 +304,9 @@
   <data name="user.beatmaps.by_user" xml:space="preserve">
     <value>由 {0}</value>
   </data>
+  <data name="user.beatmaps.resets" xml:space="preserve">
+    <value>重設時間：{0}</value>
+  </data>
   <data name="user.buttons.download" xml:space="preserve">
     <value>下載 osu!</value>
   </data>
@@ -300,5 +315,11 @@
   </data>
   <data name="user.buttons.store" xml:space="preserve">
     <value>osu! 商店</value>
+  </data>
+  <data name="user.livestream.title" xml:space="preserve">
+    <value>精選直播</value>
+  </data>
+  <data name="user.show.admin.page" xml:space="preserve">
+    <value>開啟管理控制台</value>
   </data>
 </root>

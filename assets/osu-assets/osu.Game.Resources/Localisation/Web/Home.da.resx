@@ -100,6 +100,9 @@
   <data name="search.title" xml:space="preserve">
     <value>Søg</value>
   </data>
+  <data name="search.artist_track.more_simple" xml:space="preserve">
+    <value>Se flere søgeresultater for sange af fremhævede kunstnere</value>
+  </data>
   <data name="search.beatmapset.login_required" xml:space="preserve">
     <value>Log ind for at søge efter brugere
 </value>
@@ -134,6 +137,9 @@
   <data name="search.forum_post.label.forum_children" xml:space="preserve">
     <value>inkluder subforummer</value>
   </data>
+  <data name="search.forum_post.label.include_deleted" xml:space="preserve">
+    <value>inkluder slettede opslag</value>
+  </data>
   <data name="search.forum_post.label.topic_id" xml:space="preserve">
     <value>emne #</value>
   </data>
@@ -143,17 +149,29 @@
   <data name="search.mode.all" xml:space="preserve">
     <value>alt</value>
   </data>
+  <data name="search.mode.artist_track" xml:space="preserve">
+    <value>fremhævet kunster spor</value>
+  </data>
   <data name="search.mode.beatmapset" xml:space="preserve">
     <value>beatmap</value>
   </data>
   <data name="search.mode.forum_post" xml:space="preserve">
     <value>forum</value>
   </data>
+  <data name="search.mode.team" xml:space="preserve">
+    <value>hold</value>
+  </data>
   <data name="search.mode.user" xml:space="preserve">
     <value>bruger</value>
   </data>
   <data name="search.mode.wiki_page" xml:space="preserve">
     <value>wiki</value>
+  </data>
+  <data name="search.team.login_required" xml:space="preserve">
+    <value>Log ind for at søge efter hold</value>
+  </data>
+  <data name="search.team.more_simple" xml:space="preserve">
+    <value>Vis flere hold søgeresultater</value>
   </data>
   <data name="search.user.login_required" xml:space="preserve">
     <value>Log ind for at søge efter brugere
@@ -180,23 +198,11 @@
   <data name="search.wiki_page.title" xml:space="preserve">
     <value>Wiki</value>
   </data>
-  <data name="download.action" xml:space="preserve">
-    <value>Download osu!</value>
-  </data>
-  <data name="download.action_lazer" xml:space="preserve">
-    <value>Hent osu!(lazer)</value>
-  </data>
-  <data name="download.action_lazer_description" xml:space="preserve">
-    <value>den næste store opdatering til osu!</value>
-  </data>
   <data name="download.action_lazer_info" xml:space="preserve">
     <value>tjek denne side for mere information</value>
   </data>
-  <data name="download.action_lazer_title" xml:space="preserve">
-    <value>prøv osu!(lazer)</value>
-  </data>
-  <data name="download.action_title" xml:space="preserve">
-    <value>hent osu!</value>
+  <data name="download.download" xml:space="preserve">
+    <value>Hent</value>
   </data>
   <data name="download.for_os" xml:space="preserve">
     <value>for {0}</value>
@@ -216,8 +222,17 @@
   <data name="download.other_os" xml:space="preserve">
     <value>andre platforme</value>
   </data>
-  <data name="download.tagline" xml:space="preserve">
-    <value>lad os få&lt;br&gt;dig i gang!</value>
+  <data name="download.quick_start_guide" xml:space="preserve">
+    <value>opstartsvejledning</value>
+  </data>
+  <data name="download.stable_text" xml:space="preserve">
+    <value>hvis du leder efter den ældre udgave</value>
+  </data>
+  <data name="download.tagline_1" xml:space="preserve">
+    <value>lad os få dig</value>
+  </data>
+  <data name="download.tagline_2" xml:space="preserve">
+    <value>i gang!</value>
   </data>
   <data name="download.video-guide" xml:space="preserve">
     <value>video-guide</value>
@@ -279,6 +294,9 @@
   <data name="user.header.stats.online" xml:space="preserve">
     <value>Online Brugere</value>
   </data>
+  <data name="user.beatmaps.daily_challenge" xml:space="preserve">
+    <value>Daglige Udfordring Beatmap</value>
+  </data>
   <data name="user.beatmaps.new" xml:space="preserve">
     <value>Nye Rangerede Beatmaps</value>
   </data>
@@ -288,6 +306,9 @@
   <data name="user.beatmaps.by_user" xml:space="preserve">
     <value>af {0}</value>
   </data>
+  <data name="user.beatmaps.resets" xml:space="preserve">
+    <value>nulstiller {0}</value>
+  </data>
   <data name="user.buttons.download" xml:space="preserve">
     <value>Hent osu!</value>
   </data>
@@ -296,5 +317,11 @@
   </data>
   <data name="user.buttons.store" xml:space="preserve">
     <value>osu!store</value>
+  </data>
+  <data name="user.livestream.title" xml:space="preserve">
+    <value>Fremhævet Livestream</value>
+  </data>
+  <data name="user.show.admin.page" xml:space="preserve">
+    <value>Åbn administratorkonsol</value>
   </data>
 </root>

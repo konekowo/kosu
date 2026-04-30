@@ -70,6 +70,9 @@
   <data name="applications.store.ok" xml:space="preserve">
     <value>Požádáno o připojení k týmu.</value>
   </data>
+  <data name="card.members" xml:space="preserve">
+    <value>{0} člen|{0} členové|{0} členů</value>
+  </data>
   <data name="create.submit" xml:space="preserve">
     <value>Vytvořit tým</value>
   </data>
@@ -157,26 +160,44 @@
   <data name="members.index.title" xml:space="preserve">
     <value>Spravovat členy</value>
   </data>
+  <data name="members.index.applications.accept_confirm" xml:space="preserve">
+    <value>Přidat uživatele {0} do týmu?</value>
+  </data>
+  <data name="members.index.applications.created_at" xml:space="preserve">
+    <value>Žádost vytvořena</value>
+  </data>
   <data name="members.index.applications.empty" xml:space="preserve">
     <value>Momentálně nemáte žádné žádosti o připojení.</value>
   </data>
   <data name="members.index.applications.empty_slots" xml:space="preserve">
     <value>Dostupná místa</value>
   </data>
+  <data name="members.index.applications.empty_slots_overflow" xml:space="preserve">
+    <value>{0} uživatel nad limit|{0} uživatelé nad limit|{0} uživatelů nad limit</value>
+  </data>
+  <data name="members.index.applications.reject_confirm" xml:space="preserve">
+    <value>Odmítnout žádost o připojení od uživatele {0}?</value>
+  </data>
   <data name="members.index.applications.title" xml:space="preserve">
     <value>Žádosti o připojení</value>
-  </data>
-  <data name="members.index.applications.created_at" xml:space="preserve">
-    <value>Žádost vytvořena</value>
-  </data>
-  <data name="members.index.table.status" xml:space="preserve">
-    <value>Stav</value>
   </data>
   <data name="members.index.table.joined_at" xml:space="preserve">
     <value>Členem od</value>
   </data>
   <data name="members.index.table.remove" xml:space="preserve">
     <value>Odebrat</value>
+  </data>
+  <data name="members.index.table.remove_confirm" xml:space="preserve">
+    <value>Odebrat uživatele {0} z týmu?</value>
+  </data>
+  <data name="members.index.table.set_leader" xml:space="preserve">
+    <value>Převést vedení týmu</value>
+  </data>
+  <data name="members.index.table.set_leader_confirm" xml:space="preserve">
+    <value>Převést vedení týmu na uživatele {0}?</value>
+  </data>
+  <data name="members.index.table.status" xml:space="preserve">
+    <value>Stav</value>
   </data>
   <data name="members.index.table.title" xml:space="preserve">
     <value>Aktuální členové</value>
@@ -186,6 +207,9 @@
   </data>
   <data name="members.index.status.status_1" xml:space="preserve">
     <value>Aktivní</value>
+  </data>
+  <data name="members.set_leader.success" xml:space="preserve">
+    <value>Uživatel {0} je nyní vedoucím týmu.</value>
   </data>
   <data name="part.ok" xml:space="preserve">
     <value>Opustil jsi tento tým ;_;</value>
@@ -214,11 +238,29 @@
   <data name="show.members.owner" xml:space="preserve">
     <value>Vedoucí týmu</value>
   </data>
+  <data name="show.sections.about" xml:space="preserve">
+    <value>O nás!</value>
+  </data>
   <data name="show.sections.info" xml:space="preserve">
     <value>Info</value>
   </data>
   <data name="show.sections.members" xml:space="preserve">
     <value>Členové</value>
+  </data>
+  <data name="show.statistics.empty_slots" xml:space="preserve">
+    <value>{0} slot k dispozici|{0} sloty k dispozici|{0} slotů k dispozici</value>
+  </data>
+  <data name="show.statistics.first_places" xml:space="preserve">
+    <value>Prvních míst</value>
+  </data>
+  <data name="show.statistics.leader" xml:space="preserve">
+    <value>Vedoucí týmu</value>
+  </data>
+  <data name="show.statistics.rank" xml:space="preserve">
+    <value>Umístění</value>
+  </data>
+  <data name="show.statistics.ranked_beatmapsets" xml:space="preserve">
+    <value>Hodnocených beatmap</value>
   </data>
   <data name="store.ok" xml:space="preserve">
     <value>Tým vytvořen.</value>

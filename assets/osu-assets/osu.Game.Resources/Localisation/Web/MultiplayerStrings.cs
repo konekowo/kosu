@@ -10,14 +10,24 @@ namespace osu.Game.Resources.Localisation.Web
         private const string prefix = @"osu.Game.Resources.Localisation.Web.Multiplayer";
 
         /// <summary>
-        /// "No osu!(lazer) {0} games played yet!"
+        /// "Not currently in any in-progress osu!(lazer) {0} games!"
         /// </summary>
-        public static LocalisableString EmptyDefault(LocalisableString typeGroup) => new TranslatableString(getKey(@"empty._"), @"No osu!(lazer) {0} games played yet!", typeGroup);
+        public static LocalisableString EmptyActive(LocalisableString typeGroup) => new TranslatableString(getKey(@"empty.active"), @"Not currently in any in-progress osu!(lazer) {0} games!", typeGroup);
+
+        /// <summary>
+        /// "Not in any completed osu!(lazer) {0} games yet!"
+        /// </summary>
+        public static LocalisableString EmptyEnded(LocalisableString typeGroup) => new TranslatableString(getKey(@"empty.ended"), @"Not in any completed osu!(lazer) {0} games yet!", typeGroup);
 
         /// <summary>
         /// "playlist"
         /// </summary>
         public static LocalisableString EmptyPlaylists => new TranslatableString(getKey(@"empty.playlists"), @"playlist");
+
+        /// <summary>
+        /// "ranked play"
+        /// </summary>
+        public static LocalisableString EmptyRankedPlay => new TranslatableString(getKey(@"empty.ranked-play"), @"ranked play");
 
         /// <summary>
         /// "multiplayer"
@@ -50,6 +60,16 @@ namespace osu.Game.Resources.Localisation.Web
         public static LocalisableString RoomTimeLeft(LocalisableString time) => new TranslatableString(getKey(@"room.time_left"), @"{0} left", time);
 
         /// <summary>
+        /// "View History"
+        /// </summary>
+        public static LocalisableString RoomViewHistory => new TranslatableString(getKey(@"room.view_history"), @"View History");
+
+        /// <summary>
+        /// "View Summary"
+        /// </summary>
+        public static LocalisableString RoomViewSummary => new TranslatableString(getKey(@"room.view_summary"), @"View Summary");
+
+        /// <summary>
         /// "Duration is too long."
         /// </summary>
         public static LocalisableString RoomErrorsDurationTooLong => new TranslatableString(getKey(@"room.errors.duration_too_long"), @"Duration is too long.");
@@ -58,6 +78,11 @@ namespace osu.Game.Resources.Localisation.Web
         /// "Room name is too long."
         /// </summary>
         public static LocalisableString RoomErrorsNameTooLong => new TranslatableString(getKey(@"room.errors.name_too_long"), @"Room name is too long.");
+
+        /// <summary>
+        /// "Too many playlist items."
+        /// </summary>
+        public static LocalisableString RoomErrorsTooManyPlaylistItems => new TranslatableString(getKey(@"room.errors.too_many_playlist_items"), @"Too many playlist items.");
 
         /// <summary>
         /// "active"

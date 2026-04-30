@@ -62,7 +62,7 @@
     <value>Zarządzanie</value>
   </data>
   <data name="select_directory" xml:space="preserve">
-    <value>Wybierz folder</value>
+    <value>Wybierz katalog</value>
   </data>
   <data name="migration_in_progress" xml:space="preserve">
     <value>Migracja w toku</value>
@@ -77,10 +77,7 @@
     <value>Wybierz nową lokalizację</value>
   </data>
   <data name="target_directory_already_installed_osu" xml:space="preserve">
-    <value>Wygląda na to, że w katalogu docelowym jest już zainstalowane osu!. Czy chcesz zamiast tego użyć tych danych?</value>
-  </data>
-  <data name="restart_and_re_open_required_for_completion" xml:space="preserve">
-    <value>Aby ukończyć tę operację, osu! zostanie zamknięte. Otwórz grę ponownie, aby zacząć korzystać z nowej lokalizacji danych.</value>
+    <value>Wygląda na to, że w katalogu docelowym jest już zainstalowane osu!. Czy chcesz zamiast tego użyć tych danych? osu! zostanie uruchomione ponownie.</value>
   </data>
   <data name="delete_all_beatmaps" xml:space="preserve">
     <value>Usuń WSZYSTKIE beatmapy</value>
@@ -89,7 +86,7 @@
     <value>Usuń WSZYSTKIE wideo z beatmap</value>
   </data>
   <data name="reset_all_offsets" xml:space="preserve">
-    <value>Zresetuj WSZYSTKIE opóźnienia beatmap</value>
+    <value>Zresetuj WSZYSTKIE opóźnienia dźwięku beatmap</value>
   </data>
   <data name="delete_all_scores" xml:space="preserve">
     <value>Usuń WSZYSTKIE wyniki</value>

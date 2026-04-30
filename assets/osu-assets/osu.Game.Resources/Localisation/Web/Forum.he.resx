@@ -229,6 +229,9 @@
   <data name="topic.jump.previous" xml:space="preserve">
     <value>לך 10 פוסטים אחורה</value>
   </data>
+  <data name="topic.logs.columns.date" xml:space="preserve">
+    <value>תאריך</value>
+  </data>
   <data name="topic.post_edit.cancel" xml:space="preserve">
     <value>בטל</value>
   </data>
@@ -330,78 +333,6 @@
   </data>
   <data name="topics.index.views" xml:space="preserve">
     <value>צפיות</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0" xml:space="preserve">
-    <value>הסר תג "נוסף"</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0_done" xml:space="preserve">
-    <value>נוסר תג "נוסף"</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1" xml:space="preserve">
-    <value>הוסף תג "נוסף"</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1_done" xml:space="preserve">
-    <value>נוסף תג "נוסף"</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0" xml:space="preserve">
-    <value>הסר תג "הוקצה"</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0_done" xml:space="preserve">
-    <value>נוסר תג "הוקצה"</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1" xml:space="preserve">
-    <value>הוסף תג "הוקצה"</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1_done" xml:space="preserve">
-    <value>נוסף תג "הוקצה"</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0" xml:space="preserve">
-    <value>הסר תג "אושר"</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0_done" xml:space="preserve">
-    <value>נוסר תג "אושר"</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1" xml:space="preserve">
-    <value>הוסף תג "אושר"</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1_done" xml:space="preserve">
-    <value>נוסף תג "אושר"</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0" xml:space="preserve">
-    <value>הסר תג "כפול"</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0_done" xml:space="preserve">
-    <value>נוסר תג "כפול"</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1" xml:space="preserve">
-    <value>הוסף תג "כפול"</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1_done" xml:space="preserve">
-    <value>נוסף תג "כפול"</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0" xml:space="preserve">
-    <value>הסר תג "לא חוקי"</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0_done" xml:space="preserve">
-    <value>נוסר תג "לא חוקי"</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1" xml:space="preserve">
-    <value>הוסף תג "לא חוקי"</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1_done" xml:space="preserve">
-    <value>נוסף תג "לא חוקי"</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0" xml:space="preserve">
-    <value>הסר תג "נפתר"</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0_done" xml:space="preserve">
-    <value>נוסר תג "נפתר"</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1" xml:space="preserve">
-    <value>הוסף תג "נפתר"</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1_done" xml:space="preserve">
-    <value>נוסף תג "נפתר"</value>
   </data>
   <data name="topics.lock.is_locked" xml:space="preserve">
     <value>נושא זה נעול ולא ניתן להגיב בו</value>

@@ -154,6 +154,9 @@
   <data name="show.admin.full_size_cover" xml:space="preserve">
     <value>Перегляд зображення повнорозмірної обкладинки</value>
   </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Переглянути сторінку адміністратора</value>
+  </data>
   <data name="show.deleted_banner.title" xml:space="preserve">
     <value>Ця мапа була видалена.</value>
   </data>
@@ -256,6 +259,9 @@
   <data name="show.info.language" xml:space="preserve">
     <value>Мова</value>
   </data>
+  <data name="show.info.mapper_tags" xml:space="preserve">
+    <value>Теги мапера</value>
+  </data>
   <data name="show.info.no_scores" xml:space="preserve">
     <value>Дані все ще обробляються...</value>
   </data>
@@ -267,6 +273,9 @@
   </data>
   <data name="show.info.offset" xml:space="preserve">
     <value>Онлайн офсет</value>
+  </data>
+  <data name="show.info.pack_tags" xml:space="preserve">
+    <value>Збірки бітмап</value>
   </data>
   <data name="show.info.points-of-failure" xml:space="preserve">
     <value>Шкала провалів</value>
@@ -280,8 +289,11 @@
   <data name="show.info.success-rate" xml:space="preserve">
     <value>Шанс успіху</value>
   </data>
-  <data name="show.info.tags" xml:space="preserve">
-    <value>Теги</value>
+  <data name="show.info.success_rate_plays" xml:space="preserve">
+    <value>{0} з {1} гри|{0} з {1} ігор</value>
+  </data>
+  <data name="show.info.user_tags" xml:space="preserve">
+    <value>Теги користувача</value>
   </data>
   <data name="show.info.video" xml:space="preserve">
     <value>Бітмапа містить відео</value>
@@ -321,6 +333,9 @@
   </data>
   <data name="show.scoreboard.supporter-only" xml:space="preserve">
     <value>Ви повинні мати osu!supporter для перегляду рейтингів по друзях, країні та модах!</value>
+  </data>
+  <data name="show.scoreboard.team" xml:space="preserve">
+    <value>Рейтинг в команді</value>
   </data>
   <data name="show.scoreboard.title" xml:space="preserve">
     <value>Табло</value>
@@ -366,6 +381,9 @@
   </data>
   <data name="show.scoreboard.no_scores.loading" xml:space="preserve">
     <value>Результати завантажуються...</value>
+  </data>
+  <data name="show.scoreboard.no_scores.team" xml:space="preserve">
+    <value>Ніхто з вашої команди ще не грав на цій мапі!</value>
   </data>
   <data name="show.scoreboard.no_scores.unranked" xml:space="preserve">
     <value>Нерейтингова мапа.</value>
@@ -426,6 +444,12 @@
   </data>
   <data name="show.stats.playcount" xml:space="preserve">
     <value>Кількість ігор</value>
+  </data>
+  <data name="show.stats.favourites" xml:space="preserve">
+    <value>Вподобані</value>
+  </data>
+  <data name="show.stats.no_favourites" xml:space="preserve">
+    <value>Поки немає вподобаних</value>
   </data>
   <data name="show.status.ranked" xml:space="preserve">
     <value>Рейтингова</value>

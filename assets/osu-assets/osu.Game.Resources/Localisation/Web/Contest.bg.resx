@@ -100,8 +100,14 @@
   <data name="judge_results.score" xml:space="preserve">
     <value>Резултат</value>
   </data>
+  <data name="judge_results.score_std" xml:space="preserve">
+    <value>Стандартизиран резултат</value>
+  </data>
   <data name="judge_results.total_score" xml:space="preserve">
     <value>общ резултат</value>
+  </data>
+  <data name="judge_results.total_score_std" xml:space="preserve">
+    <value>общ стандартизиран резултат</value>
   </data>
   <data name="voting.judge_link" xml:space="preserve">
     <value>Вие сте жури в този конкурс. Оценете текущите записи!</value>
@@ -154,15 +160,6 @@
   <data name="entry.download" xml:space="preserve">
     <value>Изтегляне на .osz</value>
   </data>
-  <data name="entry.wrong_type.art" xml:space="preserve">
-    <value>Само файлове с .jpg или .png формат се приемат за този конкурс.</value>
-  </data>
-  <data name="entry.wrong_type.beatmap" xml:space="preserve">
-    <value>Само файл с .osu формат се приема за този конкурс.</value>
-  </data>
-  <data name="entry.wrong_type.music" xml:space="preserve">
-    <value>Само файл с .mp3 формат се приема за този конкурс.</value>
-  </data>
   <data name="entry.wrong_dimensions" xml:space="preserve">
     <value>Записите за това състезание трябва да са {0}{1}</value>
   </data>
@@ -180,6 +177,9 @@
   </data>
   <data name="vote.points" xml:space="preserve">
     <value>{0} точка|{0} точки</value>
+  </data>
+  <data name="vote.points_float" xml:space="preserve">
+    <value>{0} точки</value>
   </data>
   <data name="dates.ended" xml:space="preserve">
     <value>Приключи на {0}</value>
@@ -201,5 +201,8 @@
   </data>
   <data name="states.results" xml:space="preserve">
     <value>Резултатите са обявени</value>
+  </data>
+  <data name="show.admin.page" xml:space="preserve">
+    <value>Преглед на информация и записи</value>
   </data>
 </root>

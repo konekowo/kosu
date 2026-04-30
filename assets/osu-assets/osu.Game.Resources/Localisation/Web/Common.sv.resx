@@ -79,14 +79,14 @@
   <data name="badges.new" xml:space="preserve">
     <value>NYTT</value>
   </data>
-  <data name="buttons.admin" xml:space="preserve">
-    <value>Admin</value>
-  </data>
   <data name="buttons.authorise" xml:space="preserve">
     <value>Auktorisera</value>
   </data>
   <data name="buttons.authorising" xml:space="preserve">
     <value>Auktoriserar...</value>
+  </data>
+  <data name="buttons.back" xml:space="preserve">
+    <value>Tillbaka</value>
   </data>
   <data name="buttons.back_to_previous" xml:space="preserve">
     <value>Återgå till tidigare position</value>
@@ -191,7 +191,7 @@
     <value>Skicka</value>
   </data>
   <data name="buttons.unpin" xml:space="preserve">
-    <value>ofäst </value>
+    <value>lossa</value>
   </data>
   <data name="buttons.update" xml:space="preserve">
     <value>Uppdatera</value>
@@ -232,6 +232,9 @@
   <data name="count.notifications" xml:space="preserve">
     <value>{0} avisering|{0} aviseringar  </value>
   </data>
+  <data name="count.player" xml:space="preserve">
+    <value>{0} spelare|{0} spelare</value>
+  </data>
   <data name="count.plus_others" xml:space="preserve">
     <value>+ {0} övrig!|+ {0} övriga!</value>
   </data>
@@ -264,6 +267,12 @@
   </data>
   <data name="countdown.seconds" xml:space="preserve">
     <value>sekunder</value>
+  </data>
+  <data name="datetime.month.php" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="datetime.year.php" xml:space="preserve">
+    <value>å</value>
   </data>
   <data name="datetime.year_month.moment" xml:space="preserve">
     <value>MMMM YYYY</value>

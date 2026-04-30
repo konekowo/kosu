@@ -88,6 +88,9 @@
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>discussió</value>
   </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>historial de versions</value>
+  </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>llistat</value>
   </data>
@@ -217,6 +220,9 @@
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Privacitat</value>
   </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Normes</value>
+  </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Estat del servidor</value>
   </data>
@@ -335,7 +341,7 @@
     <value>Puntuació clàssica</value>
   </data>
   <data name="popup_user.links.scoring_mode_toggle_tooltip" xml:space="preserve">
-    <value>Ajusta els valors de la puntuació per a simular la puntuació clàssic sense límits.</value>
+    <value>Ajusta els valors de la puntuació per a simular la puntuació clàssica sense límits.</value>
   </data>
   <data name="popup_user.links.team" xml:space="preserve">
     <value>El Meu Equip</value>

@@ -79,14 +79,14 @@
   <data name="target_directory_already_installed_osu" xml:space="preserve">
     <value>O diretório de destino já parece ter um osu! instalar. Use esses dados?</value>
   </data>
-  <data name="restart_and_re_open_required_for_completion" xml:space="preserve">
-    <value>Para concluir esta operação, osu! vai fechar. Abra-o novamente para usar o novo local de dados.</value>
-  </data>
   <data name="delete_all_beatmaps" xml:space="preserve">
     <value>Apagar TODOS os beatmaps</value>
   </data>
   <data name="delete_all_beatmap_videos" xml:space="preserve">
     <value>Exclua todos os vídeos do beatmap</value>
+  </data>
+  <data name="reset_all_offsets" xml:space="preserve">
+    <value>Redefinir TODOS os offsets de beatmap</value>
   </data>
   <data name="delete_all_scores" xml:space="preserve">
     <value>Apagar TODAS as pontuações</value>

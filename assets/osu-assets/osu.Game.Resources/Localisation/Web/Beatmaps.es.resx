@@ -499,6 +499,9 @@
   <data name="listing.search.options" xml:space="preserve">
     <value>Más opciones de búsqueda</value>
   </data>
+  <data name="listing.search.rank_filter_note" xml:space="preserve">
+    <value>Los grados y los resultados que aparecen en esta página se basan en tus puntuaciones «estandarizadas» (también conocidas como puntuaciones de «lazer») más altas en los mapas.</value>
+  </data>
   <data name="listing.search.supporter_filter" xml:space="preserve">
     <value>Filtrar por {0} requiere una etiqueta de osu!supporter activa</value>
   </data>
@@ -570,6 +573,12 @@
   </data>
   <data name="listing.search.supporter_filter_quote.link_text" xml:space="preserve">
     <value>etiqueta de osu!supporter</value>
+  </data>
+  <data name="listing.search.tag_picker.tooltip" xml:space="preserve">
+    <value>explora las etiquetas de los usuarios</value>
+  </data>
+  <data name="listing.search.tag_picker.prompt" xml:space="preserve">
+    <value>escribe para buscar</value>
   </data>
   <data name="general.converts" xml:space="preserve">
     <value>Incluir mapas convertidos</value>

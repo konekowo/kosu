@@ -71,7 +71,7 @@
     <value>Mapes</value>
   </data>
   <data name="beatmaps.download" xml:space="preserve">
-    <value>descarrega la plantilla de mapa</value>
+    <value>descarrega la plantilla del mapa</value>
   </data>
   <data name="beatmaps.download-na" xml:space="preserve">
     <value>La plantilla del mapa encara no està disponible</value>

@@ -103,6 +103,9 @@
   <data name="channels.list.title.public" xml:space="preserve">
     <value>Canais</value>
   </data>
+  <data name="channels.list.title.team" xml:space="preserve">
+    <value>Equipe</value>
+  </data>
   <data name="form.title.announcement" xml:space="preserve">
     <value>Criar Novo Anúncio</value>
   </data>
@@ -138,15 +141,6 @@
   </data>
   <data name="input.send" xml:space="preserve">
     <value>Enviar</value>
-  </data>
-  <data name="no-conversations.howto" xml:space="preserve">
-    <value>Comece uma conversa através do perfil ou pelo cartão do usuário.</value>
-  </data>
-  <data name="no-conversations.lazer" xml:space="preserve">
-    <value>Canais públicos que você entrar via &lt;a href="{0}"&gt;osu!lazer&lt;/a&gt; também serão visíveis aqui.</value>
-  </data>
-  <data name="no-conversations.title" xml:space="preserve">
-    <value>sem conversas no momento</value>
   </data>
   <data name="join_channels.loading" xml:space="preserve">
     <value>Carregando lista de canais...</value>

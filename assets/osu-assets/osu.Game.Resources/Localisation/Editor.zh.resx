@@ -64,6 +64,9 @@
   <data name="waveform_opacity" xml:space="preserve">
     <value>波形不透明度</value>
   </data>
+  <data name="show_storyboard" xml:space="preserve">
+    <value>显示故事板</value>
+  </data>
   <data name="show_hit_markers" xml:space="preserve">
     <value>标明物件圆圈</value>
   </data>
@@ -84,6 +87,9 @@
   </data>
   <data name="export_for_compatibility" xml:space="preserve">
     <value>兼容优先 (.osz)</value>
+  </data>
+  <data name="export_guest_difficulty" xml:space="preserve">
+    <value>客串难度 (.osu)</value>
   </data>
   <data name="create_new_difficulty" xml:space="preserve">
     <value>创建新难度</value>
@@ -128,10 +134,10 @@
     <value>{0:0}° (吸附网格)</value>
   </data>
   <data name="limited_distance_snap_grid" xml:space="preserve">
-    <value>间距锁定时，限制物件的时间点</value>
+    <value>使用间距锁定时限制物件时间点</value>
   </data>
   <data name="contract_sidebars" xml:space="preserve">
-    <value>光标未悬停至侧边栏上时，收起侧边栏</value>
+    <value>自动收起侧边栏</value>
   </data>
   <data name="must_be_in_editor_to_handle_links" xml:space="preserve">
     <value>必须在编辑器界面内处理编辑器链接</value>
@@ -144,6 +150,9 @@
   </data>
   <data name="timeline_show_timing_changes" xml:space="preserve">
     <value>显示时间轴变化</value>
+  </data>
+  <data name="Finish editing and import changes" xml:space="preserve">
+    <value>完成编辑并导入这些更改</value>
   </data>
   <data name="timeline_show_breaks" xml:space="preserve">
     <value>显示休息段</value>
@@ -161,18 +170,24 @@
     <value>移除最近的书签</value>
   </data>
   <data name="seek_to_previous_bookmark" xml:space="preserve">
-    <value>前往上一个书签</value>
+    <value>移至上一书签</value>
   </data>
   <data name="seek_to_next_bookmark" xml:space="preserve">
-    <value>前往下一个书签</value>
+    <value>移至下一书签</value>
   </data>
   <data name="reset_bookmarks" xml:space="preserve">
-    <value>重置书签</value>
+    <value>删除所有书签</value>
   </data>
   <data name="open_info_page" xml:space="preserve">
-    <value>打开谱面信息页</value>
+    <value>打开谱面详情页</value>
   </data>
   <data name="open_discussion_page" xml:space="preserve">
     <value>打开谱面讨论页</value>
+  </data>
+  <data name="check_current_difficulty" xml:space="preserve">
+    <value>当前难度</value>
+  </data>
+  <data name="check_entire_beatmap_set" xml:space="preserve">
+    <value>整个谱面</value>
   </data>
 </root>

@@ -65,7 +65,7 @@
     <value>Togol tindanan sosial</value>
   </data>
   <data name="reset_input_settings" xml:space="preserve">
-    <value>Set semula tetapan masukan</value>
+    <value>Tetap semula tetapan masukan</value>
   </data>
   <data name="toggle_toolbar" xml:space="preserve">
     <value>Togol palang alat</value>
@@ -77,10 +77,10 @@
     <value>Togol senarai peta rentak</value>
   </data>
   <data name="increase_volume" xml:space="preserve">
-    <value>Tingkatkan kelantangan</value>
+    <value>Lantangkan</value>
   </data>
   <data name="decrease_volume" xml:space="preserve">
-    <value>Kurangkan kelantangan</value>
+    <value>Redupkan</value>
   </data>
   <data name="toggle_mute" xml:space="preserve">
     <value>Togol redam</value>
@@ -89,7 +89,7 @@
     <value>Langkau adegan "cut"</value>
   </data>
   <data name="quick_retry" xml:space="preserve">
-    <value>Cuba lagi cepat (tahan)</value>
+    <value>Pintasan cuba lagi (tahan)</value>
   </data>
   <data name="take_screenshot" xml:space="preserve">
     <value>Tangkap layar</value>
@@ -101,16 +101,16 @@
     <value>Kembali</value>
   </data>
   <data name="increase_scroll_speed" xml:space="preserve">
-    <value>Tingkatkan kelajuan tatal</value>
+    <value>Lajukan penatalan</value>
   </data>
   <data name="decrease_scroll_speed" xml:space="preserve">
-    <value>Kurangkan kelajuan tatal</value>
+    <value>Perlahankan penatalan</value>
   </data>
   <data name="select" xml:space="preserve">
     <value>Pilih</value>
   </data>
   <data name="quick_exit" xml:space="preserve">
-    <value>Keluar cepat (tahan)</value>
+    <value>Pintasan keluar (tahan)</value>
   </data>
   <data name="music_next" xml:space="preserve">
     <value>Runut seterusnya</value>
@@ -130,11 +130,20 @@
   <data name="select_next" xml:space="preserve">
     <value>Pilihan berikutnya</value>
   </data>
-  <data name="select_previous_group" xml:space="preserve">
-    <value>Pilih kumpulan sebelumnya</value>
+  <data name="activate_previous_set" xml:space="preserve">
+    <value>Giatkan set sebelumnya</value>
   </data>
-  <data name="select_next_group" xml:space="preserve">
-    <value>Pilih kumpulan seterusnya</value>
+  <data name="activate_next_set" xml:space="preserve">
+    <value>Giatkan set seterusnya</value>
+  </data>
+  <data name="expand_previous_group" xml:space="preserve">
+    <value>Kembangkan kumpulan sebelumnya</value>
+  </data>
+  <data name="expand_next_group" xml:space="preserve">
+    <value>Kembangkan kumpulan seterusnya</value>
+  </data>
+  <data name="toggle_current_group" xml:space="preserve">
+    <value>Togol pengembangan kumpulan semasa</value>
   </data>
   <data name="home" xml:space="preserve">
     <value>Menu Utama</value>
@@ -179,7 +188,7 @@
     <value>Tahan untuk papar pandu</value>
   </data>
   <data name="random_skin" xml:space="preserve">
-    <value>Kulit rawak</value>
+    <value>Rupa rawak</value>
   </data>
   <data name="toggle_pause_replay" xml:space="preserve">
     <value>Jeda / sambung ulangan</value>
@@ -188,7 +197,7 @@
     <value>Togol antara muka dalam mainan</value>
   </data>
   <data name="toggle_in_game_leaderboard" xml:space="preserve">
-    <value>Togol carta kedudukan dalam mainan</value>
+    <value>Togol papan pendahulu dalam mainan</value>
   </data>
   <data name="toggle_mod_selection" xml:space="preserve">
     <value>Buka/tutup tempat pemilihan mod</value>
@@ -203,7 +212,7 @@
     <value>Mandir</value>
   </data>
   <data name="toggle_beatmap_options" xml:space="preserve">
-    <value>Pilihan Beatmap</value>
+    <value>Pilihan Peta Rentak</value>
   </data>
   <data name="editor_verify_mode" xml:space="preserve">
     <value>Mod pengesahan</value>
@@ -233,28 +242,28 @@
     <value>Kitarkan pembahagi lekat rentak seterusnya</value>
   </data>
   <data name="toggle_skin_editor" xml:space="preserve">
-    <value>Togol penyunting kulit</value>
+    <value>Togol penyunting rupa</value>
   </data>
   <data name="toggle_fps_counter" xml:space="preserve">
     <value>Togol pengira FPS</value>
   </data>
   <data name="previous_volume_meter" xml:space="preserve">
-    <value>Meter volum sebelumnya</value>
+    <value>Jangka lantang sebelumnya</value>
   </data>
   <data name="next_volume_meter" xml:space="preserve">
-    <value>Meter volum seterusnya</value>
+    <value>Jangka lantang seterusnya</value>
   </data>
   <data name="seek_replay_forward" xml:space="preserve">
-    <value>Jangkau mundar ulangan</value>
+    <value>Mara ulangan</value>
   </data>
   <data name="seek_replay_backward" xml:space="preserve">
-    <value>Jangkau ulangan ke belakang</value>
+    <value>Undur ulangan</value>
   </data>
   <data name="step_replay_forward" xml:space="preserve">
-    <value>Jangkau mundar ulangan sebingkai</value>
+    <value>Mara ulangan sebingkai</value>
   </data>
   <data name="step_replay_backward" xml:space="preserve">
-    <value>Langkah ulangan ke belakang sebingkai</value>
+    <value>Undur ulangan sebingkai</value>
   </data>
   <data name="toggle_chat_focus" xml:space="preserve">
     <value>Togol tumpuan bualan</value>
@@ -281,22 +290,22 @@
     <value>Togol kawalan skala</value>
   </data>
   <data name="editor_test_play_toggle_autoplay" xml:space="preserve">
-    <value>Aktifkan mod automatik</value>
+    <value>Togol automain</value>
   </data>
   <data name="editor_test_play_toggle_quick_pause" xml:space="preserve">
     <value>Togol jeda cepat</value>
   </data>
   <data name="editor_test_play_quick_exit_to_initial_time" xml:space="preserve">
-    <value>Keluar cepat ke masa permulaan</value>
+    <value>Pintasan keluar ke masa permulaan</value>
   </data>
   <data name="editor_test_play_quick_exit_to_current_time" xml:space="preserve">
-    <value>Keluar cepat ke masa semasa</value>
+    <value>Pintasan keluar ke masa semasa</value>
   </data>
   <data name="increase_mod_speed" xml:space="preserve">
-    <value>Tingkatkan kelajuan penyesuai</value>
+    <value>Lajukan penyesuai</value>
   </data>
   <data name="decrease_mod_speed" xml:space="preserve">
-    <value>Kurangkan kelajuan penyesuai</value>
+    <value>Perlahankan penyesuai</value>
   </data>
   <data name="editor_seek_to_previous_hit_object" xml:space="preserve">
     <value>Mencari objek hit sebelumnya</value>
@@ -327,5 +336,8 @@
   </data>
   <data name="editor_toggle_move_control" xml:space="preserve">
     <value>Togol kawalan gerakan</value>
+  </data>
+  <data name="editor_discard_unsaved_changes" xml:space="preserve">
+    <value>Hilangkan perubahan yang tidak disimpan</value>
   </data>
 </root>

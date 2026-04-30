@@ -70,11 +70,14 @@
   <data name="applications.store.ok" xml:space="preserve">
     <value>Beitrittsanfrage abgesendet.</value>
   </data>
+  <data name="card.members" xml:space="preserve">
+    <value>{0} Mitglied|{0} Mitglieder</value>
+  </data>
   <data name="create.submit" xml:space="preserve">
     <value>Team erstellen</value>
   </data>
   <data name="create.form.name_help" xml:space="preserve">
-    <value>Dein Teamname. Der Name kann nicht mehr geändert werden.</value>
+    <value>Dein Teamname. Der Name kann derzeit nicht geändert werden.</value>
   </data>
   <data name="create.form.short_name_help" xml:space="preserve">
     <value>Maximal 4 Zeichen.</value>
@@ -83,7 +86,7 @@
     <value>Ein neues Team anlegen</value>
   </data>
   <data name="create.intro.description" xml:space="preserve">
-    <value>Spiele zusammen mit Freunden, egal ob bereits erfahrene Spieler oder Anfänger. Du bist aktuell in keinem Team. Tritt einem existierendem Team bei, indem du die Teamseite besuchst oder hier dein eigenes Team erstellst.</value>
+    <value>Spiele zusammen mit Freunden, egal ob bereits erfahrene Spieler oder Anfänger. Du bist aktuell in keinem Team. Tritt einem existierenden Team bei, indem du die Teamseite besuchst oder hier dein eigenes Team erstellst.</value>
   </data>
   <data name="create.intro.title" xml:space="preserve">
     <value>Team!</value>
@@ -157,26 +160,44 @@
   <data name="members.index.title" xml:space="preserve">
     <value>Mitglieder verwalten</value>
   </data>
+  <data name="members.index.applications.accept_confirm" xml:space="preserve">
+    <value>{0} zum Team hinzufügen?</value>
+  </data>
+  <data name="members.index.applications.created_at" xml:space="preserve">
+    <value>Anfrage am</value>
+  </data>
   <data name="members.index.applications.empty" xml:space="preserve">
     <value>Keine Beitrittsanfragen zurzeit.</value>
   </data>
   <data name="members.index.applications.empty_slots" xml:space="preserve">
     <value>Verfügbare Plätze</value>
   </data>
+  <data name="members.index.applications.empty_slots_overflow" xml:space="preserve">
+    <value>{0} Benutzer zu viel|{0} Benutzer zu viel</value>
+  </data>
+  <data name="members.index.applications.reject_confirm" xml:space="preserve">
+    <value>Beitrittsanfrage von {0} ablehnen?</value>
+  </data>
   <data name="members.index.applications.title" xml:space="preserve">
     <value>Beitrittsanfragen</value>
-  </data>
-  <data name="members.index.applications.created_at" xml:space="preserve">
-    <value>Anfrage am</value>
-  </data>
-  <data name="members.index.table.status" xml:space="preserve">
-    <value>Status</value>
   </data>
   <data name="members.index.table.joined_at" xml:space="preserve">
     <value>Beitrittsdatum</value>
   </data>
   <data name="members.index.table.remove" xml:space="preserve">
     <value>Entfernen</value>
+  </data>
+  <data name="members.index.table.remove_confirm" xml:space="preserve">
+    <value>{0} aus dem Team entfernen?</value>
+  </data>
+  <data name="members.index.table.set_leader" xml:space="preserve">
+    <value>Teamleitung übertragen</value>
+  </data>
+  <data name="members.index.table.set_leader_confirm" xml:space="preserve">
+    <value>Teamführung auf {0} übertragen?</value>
+  </data>
+  <data name="members.index.table.status" xml:space="preserve">
+    <value>Status</value>
   </data>
   <data name="members.index.table.title" xml:space="preserve">
     <value>Aktuelle Mitglieder</value>
@@ -186,6 +207,9 @@
   </data>
   <data name="members.index.status.status_1" xml:space="preserve">
     <value>Aktiv</value>
+  </data>
+  <data name="members.set_leader.success" xml:space="preserve">
+    <value>{0} ist jetzt Teamleiter.</value>
   </data>
   <data name="part.ok" xml:space="preserve">
     <value>Team verlassen ;_;</value>
@@ -214,11 +238,29 @@
   <data name="show.members.owner" xml:space="preserve">
     <value>Teamleiter</value>
   </data>
+  <data name="show.sections.about" xml:space="preserve">
+    <value>Über uns!</value>
+  </data>
   <data name="show.sections.info" xml:space="preserve">
     <value>Info</value>
   </data>
   <data name="show.sections.members" xml:space="preserve">
     <value>Mitglieder</value>
+  </data>
+  <data name="show.statistics.empty_slots" xml:space="preserve">
+    <value>{0} Platz verfügbar|{0} Plätze verfügbar</value>
+  </data>
+  <data name="show.statistics.first_places" xml:space="preserve">
+    <value>Auf dem ersten Platz</value>
+  </data>
+  <data name="show.statistics.leader" xml:space="preserve">
+    <value>Teamleiter</value>
+  </data>
+  <data name="show.statistics.rank" xml:space="preserve">
+    <value>Rang</value>
+  </data>
+  <data name="show.statistics.ranked_beatmapsets" xml:space="preserve">
+    <value>Gerankte Beatmaps</value>
   </data>
   <data name="store.ok" xml:space="preserve">
     <value>Team erstellt.</value>

@@ -59,7 +59,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="edit.title_compact" xml:space="preserve">
-    <value>opções da conta</value>
+    <value>configurações da conta</value>
   </data>
   <data name="edit.username" xml:space="preserve">
     <value>nome de usuário</value>
@@ -68,13 +68,13 @@
     <value>Avatar</value>
   </data>
   <data name="edit.avatar.reset" xml:space="preserve">
-    <value>reiniciar</value>
+    <value>redefinir</value>
   </data>
   <data name="edit.avatar.rules" xml:space="preserve">
-    <value>Por favor tenha certeza que seu avatar respeite {0}.&lt;br/&gt;Isso significa que deve ser &lt;strong&gt;adequado para todas as idades&lt;/strong&gt;. ou seja, sem nudez, palavrões ou conteúdo sugestivo.</value>
+    <value>Por favor, tenha certeza que seu avatar respeite {0}.&lt;br/&gt;Isso significa que deve ser &lt;strong&gt;adequado para todas as idades&lt;/strong&gt;, ou seja, sem nudez e sem conteúdo ofensivo ou sugestivo.</value>
   </data>
   <data name="edit.avatar.rules_link" xml:space="preserve">
-    <value>as regras da comunidade</value>
+    <value>as Considerações de conteúdo visual</value>
   </data>
   <data name="edit.email.new" xml:space="preserve">
     <value>novo email</value>
@@ -86,7 +86,7 @@
     <value>Email</value>
   </data>
   <data name="edit.email.locked._" xml:space="preserve">
-    <value>Por favor, contate {0} se precisar atualizar o seu email.</value>
+    <value>Por favor, contate a {0} se precisar atualizar o seu email.</value>
   </data>
   <data name="edit.email.locked.accounts" xml:space="preserve">
     <value>equipe de suporte de contas</value>
@@ -155,13 +155,13 @@
     <value>Desconectar conta do GitHub</value>
   </data>
   <data name="github_user.error.already_linked" xml:space="preserve">
-    <value>Esta conta do GitHub já está conectada a um usuário diferente.</value>
+    <value>Esta conta do GitHub já está vinculada a um usuário diferente.</value>
   </data>
   <data name="github_user.error.no_contribution" xml:space="preserve">
     <value>Não é possível vincular a conta GitHub sem qualquer histórico de contribuição nos repositórios do osu!.</value>
   </data>
   <data name="github_user.error.unverified_email" xml:space="preserve">
-    <value>Por favor, verifique seu e-mail principal no GitHub e tente vincular sua conta novamente.</value>
+    <value>Por favor, verifique seu e-mail principal no GitHub e, após isso, tente vincular sua conta novamente.</value>
   </data>
   <data name="notifications.beatmapset_discussion_qualified_problem" xml:space="preserve">
     <value>receber notificações para novos problemas em beatmaps qualificados dos seguintes modos</value>
@@ -171,6 +171,9 @@
   </data>
   <data name="notifications.comment_reply" xml:space="preserve">
     <value>receber notificações das respostas aos seus comentários</value>
+  </data>
+  <data name="notifications.news_post" xml:space="preserve">
+    <value>receber notificações para novos posts</value>
   </data>
   <data name="notifications.title" xml:space="preserve">
     <value>Notificações</value>
@@ -190,6 +193,9 @@
   <data name="notifications.options.channel_message" xml:space="preserve">
     <value>mensagens privadas</value>
   </data>
+  <data name="notifications.options.channel_team" xml:space="preserve">
+    <value>mensagens do bate-papo do time</value>
+  </data>
   <data name="notifications.options.comment_new" xml:space="preserve">
     <value>novos comentários</value>
   </data>
@@ -202,6 +208,9 @@
   <data name="notifications.options.mapping" xml:space="preserve">
     <value>mapper do beatmap</value>
   </data>
+  <data name="notifications.options.news_post" xml:space="preserve">
+    <value>novos posts</value>
+  </data>
   <data name="notifications.options.push" xml:space="preserve">
     <value>push</value>
   </data>
@@ -213,6 +222,9 @@
   </data>
   <data name="oauth.title" xml:space="preserve">
     <value>OAuth</value>
+  </data>
+  <data name="options.beatmapset_show_anime_cover" xml:space="preserve">
+    <value>mostrar capas de beatmaps no estilo anime</value>
   </data>
   <data name="options.beatmapset_show_nsfw" xml:space="preserve">
     <value>ocultar avisos para conteúdo explícito em beatmaps</value>
@@ -251,10 +263,13 @@
     <value>touch</value>
   </data>
   <data name="privacy.friends_only" xml:space="preserve">
-    <value>Bloquear mensagens de pessoas que não estão na sua lista de amigos</value>
+    <value>bloquear mensagens de pessoas que não estão na sua lista de amigos</value>
   </data>
   <data name="privacy.hide_online" xml:space="preserve">
     <value>esconder sua presença online</value>
+  </data>
+  <data name="privacy.hide_online_info" xml:space="preserve">
+    <value>isso corresponde ao modo "aparecer offline" no osu!lazer</value>
   </data>
   <data name="privacy.title" xml:space="preserve">
     <value>Privacidade</value>
@@ -275,13 +290,34 @@
     <value>Segurança</value>
   </data>
   <data name="security.web_sessions" xml:space="preserve">
-    <value>web sessão</value>
+    <value>sessões web</value>
   </data>
   <data name="update_email.update" xml:space="preserve">
     <value>atualizar</value>
   </data>
   <data name="update_password.update" xml:space="preserve">
     <value>atualizar</value>
+  </data>
+  <data name="user_totp.title" xml:space="preserve">
+    <value>Autenticador</value>
+  </data>
+  <data name="user_totp.usage_note" xml:space="preserve">
+    <value>Use um app de autenticação no lugar do seu email para verificação. A verificação por email continuará disponível como uma segunda opção.</value>
+  </data>
+  <data name="user_totp.button.remove" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="user_totp.button.setup" xml:space="preserve">
+    <value>Adicionar autenticador</value>
+  </data>
+  <data name="user_totp.status.label" xml:space="preserve">
+    <value>status</value>
+  </data>
+  <data name="user_totp.status.not_set" xml:space="preserve">
+    <value>Não configurado</value>
+  </data>
+  <data name="user_totp.status.set" xml:space="preserve">
+    <value>Configurado</value>
   </data>
   <data name="verification_completed.text" xml:space="preserve">
     <value>Você já pode fechar esta aba/janela</value>

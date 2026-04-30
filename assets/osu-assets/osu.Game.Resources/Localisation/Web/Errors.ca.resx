@@ -67,6 +67,9 @@
   <data name="no_restricted_access" xml:space="preserve">
     <value>No pots fer aquesta acció mentre el teu compte es troba restringit.</value>
   </data>
+  <data name="param_too_large" xml:space="preserve">
+    <value>El paràmetre {0} té un màxim d'{1} ítem|El paràmetre {0} té un màxim de {1} ítems</value>
+  </data>
   <data name="supporter_only" xml:space="preserve">
     <value>Has de ser un osu!supporter per a fer servir aquesta funció.</value>
   </data>
@@ -87,12 +90,6 @@
   </data>
   <data name="account.profile-order.generic" xml:space="preserve">
     <value>S'ha produït un error. Intenta refrescar la pàgina.</value>
-  </data>
-  <data name="beatmaps.invalid_mode" xml:space="preserve">
-    <value>El mode especificat no és vàlid.</value>
-  </data>
-  <data name="beatmaps.standard_converts_only" xml:space="preserve">
-    <value>No hi ha puntuacions disponibles per al mode sol·licitat en aquesta dificultat.</value>
   </data>
   <data name="checkout.generic" xml:space="preserve">
     <value>S'ha produït un error mentre preparàvem la teva compra.</value>

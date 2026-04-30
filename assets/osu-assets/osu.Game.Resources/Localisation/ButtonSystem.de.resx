@@ -88,6 +88,15 @@
   <data name="daily_challenge" xml:space="preserve">
     <value>tägliche herausforderung</value>
   </data>
+  <data name="lounge" xml:space="preserve">
+    <value>Räume</value>
+  </data>
+  <data name="quick_play" xml:space="preserve">
+    <value>Quick-Play</value>
+  </data>
+  <data name="ranked_play" xml:space="preserve">
+    <value>Ranked Play</value>
+  </data>
   <data name="mobile_disclaimer_header" xml:space="preserve">
     <value>Das Entwicklerteam möchte dir etwas Wichtiges mitteilen!</value>
   </data>
@@ -97,5 +106,8 @@
 Die Spielerfahrung wird nicht perfekt sein und hat hier und da möglicherweise seine Ecken und Kanten.
 
 Bitte habe Verständnis dafür während wir das Spiel immer weiter verbessern!</value>
+  </data>
+  <data name="mobile_disclaimer_ok_button" xml:space="preserve">
+    <value>Verstanden</value>
   </data>
 </root>

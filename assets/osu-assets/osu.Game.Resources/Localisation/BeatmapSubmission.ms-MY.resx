@@ -83,7 +83,7 @@
     <value>Mengeksport peta rentak untuk keserasian...</value>
   </data>
   <data name="preparing" xml:space="preserve">
-    <value>Menyediakan untuk dimuat naik...</value>
+    <value>Menyiapkan untuk dimuat naik...</value>
   </data>
   <data name="uploading" xml:space="preserve">
     <value>Memuat naik kandungan peta rentak...</value>
@@ -98,10 +98,10 @@
     <value>Semak garis panduan penggunaan kandungan untuk maklumat lanjut</value>
   </data>
   <data name="beatmap_ranking_criteria" xml:space="preserve">
-    <value>Ukur tara pemeringkatan peta rentak</value>
+    <value>Ukur tara penarafan Berpangkat peta rentak</value>
   </data>
   <data name="beatmap_ranking_criteria_description" xml:space="preserve">
-    <value>Anda tidak pasti jika memenuhi garis panduan? Semak senarai dan percepatkan proses pemeringkatan!</value>
+    <value>Anda tidak pasti jika memenuhi garis panduan? Semak senarai dan percepatkan proses penarafan Berpangkat!</value>
   </data>
   <data name="submission_process" xml:space="preserve">
     <value>Proses penyerahan</value>
@@ -113,7 +113,7 @@
     <value>Forum bantuan pemetaan</value>
   </data>
   <data name="mapping_help_forum_description" xml:space="preserve">
-    <value>Mempunyai soalan tentang pemetaan dan penyerahan? Tanyalah di forum!</value>
+    <value>Ada soalan tentang pemetaan dan penyerahan? Tanyalah di forum!</value>
   </data>
   <data name="modding_queues_forum" xml:space="preserve">
     <value>Forum giliran penyelarasan</value>
@@ -125,10 +125,10 @@
     <value>Di manakah anda ingin menghantar peta rentak anda?</value>
   </data>
   <data name="beatmap_submission_target_wip" xml:space="preserve">
-    <value>Kerja Sedang Berjalan / Bantuan (tidak lengkap, tidak sedia untuk pemeringkatan)</value>
+    <value>Kerja Sedang Berjalan / Bantuan (tidak lengkap, tidak sedia untuk berpangkat)</value>
   </data>
   <data name="beatmap_submission_target_pending" xml:space="preserve">
-    <value>Tergantung (lengkap, sedia untuk pemeringkatan)</value>
+    <value>Tergantung (lengkap, sedia untuk berpangkat)</value>
   </data>
   <data name="notify_for_discussion_replies" xml:space="preserve">
     <value>Terima pemberitahuan untuk balasan perbincangan</value>
@@ -137,7 +137,7 @@
     <value>Muatkan dalam pelayar setelah penyerahan</value>
   </data>
   <data name="legacy_export_disclaimer" xml:space="preserve">
-    <value>Catatan: Untuk membolehkan pengguna semua versi osu! menikmati peta rentak anda, peta rentak tersebut akan dieksport dalam format yang serasi ke belakang. Walaupun kami telah berusaha untuk memastikan proses ini mengekalkan peta rentak ini dalam bentuk asal, sebahagian data yang berkaitan dengan ciri yang  tidak disokong oleh versi-versi sebelumnya osu! mungkin akan hilang.</value>
+    <value>Catatan: Untuk membolehkan pengguna semua versi osu! menikmati peta rentak anda, peta rentak tersebut akan dieksport dalam format yang serasi ke bawah. Walaupun kami telah berusaha untuk memastikan proses ini mengekalkan peta rentak ini dalam bentuk asal, sebahagian data yang berkaitan dengan ciri yang  tidak disokong oleh versi-versi sebelumnya osu! mungkin akan hilang.</value>
   </data>
   <data name="empty_beatmaps_cannot_be_submitted" xml:space="preserve">
     <value>Peta rentak kosong tidak boleh diserah.</value>

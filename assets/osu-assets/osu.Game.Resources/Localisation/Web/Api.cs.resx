@@ -71,24 +71,30 @@
     <value>Chovat se jako chat bot.</value>
   </data>
   <data name="scopes.identify" xml:space="preserve">
-    <value>Indentifikovat vás a prohlížet váš veřejný profil.</value>
+    <value>Identifikovat tě a prohlížet tvůj veřejný profil.</value>
   </data>
   <data name="scopes.chat.read" xml:space="preserve">
-    <value>Číst za vás zprávy.</value>
+    <value>Číst zprávy tvým jménem.</value>
   </data>
   <data name="scopes.chat.write" xml:space="preserve">
-    <value>Posílejte zprávy vaším jménem.</value>
+    <value>Posílat zprávy tvým jménem.</value>
   </data>
   <data name="scopes.chat.write_manage" xml:space="preserve">
-    <value>Připojovat se a odcházet z kanálů za vás.</value>
+    <value>Připojovat se a odcházet z kanálů tvým jménem.</value>
   </data>
   <data name="scopes.forum.write" xml:space="preserve">
-    <value>Vytvořte a upravujte témata fóra a příspěvky vaším jménem.</value>
+    <value>Vytvářet a upravovat témata fóra a příspěvky tvým jménem.</value>
+  </data>
+  <data name="scopes.forum.write_manage" xml:space="preserve">
+    <value>Spravovat témata fóra a příspěvky tvým jménem.</value>
   </data>
   <data name="scopes.friends.read" xml:space="preserve">
     <value>Vidět, koho sledujete.</value>
   </data>
+  <data name="scopes.multiplayer.write_manage" xml:space="preserve">
+    <value>Vytvářet a spravovat místnosti her pro více hráčů tvým jménem.</value>
+  </data>
   <data name="scopes.public" xml:space="preserve">
-    <value>Číst veřejná data vaším jménem.</value>
+    <value>Číst veřejná data tvým jménem.</value>
   </data>
 </root>

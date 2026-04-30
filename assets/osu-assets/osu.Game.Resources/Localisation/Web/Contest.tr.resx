@@ -100,8 +100,14 @@
   <data name="judge_results.score" xml:space="preserve">
     <value>Skor</value>
   </data>
+  <data name="judge_results.score_std" xml:space="preserve">
+    <value>Standardize puan</value>
+  </data>
   <data name="judge_results.total_score" xml:space="preserve">
     <value>toplam skor</value>
+  </data>
+  <data name="judge_results.total_score_std" xml:space="preserve">
+    <value>toplam standardize puan</value>
   </data>
   <data name="voting.judge_link" xml:space="preserve">
     <value>Bu yarışmanın jürisi sensin. Yapımları değerlendir!</value>
@@ -154,15 +160,6 @@
   <data name="entry.download" xml:space="preserve">
     <value>.osz indir</value>
   </data>
-  <data name="entry.wrong_type.art" xml:space="preserve">
-    <value>Bu yarışma için sadece .jpg ve .png dosyaları kabul edilir.</value>
-  </data>
-  <data name="entry.wrong_type.beatmap" xml:space="preserve">
-    <value>Bu yarışma için sadece .osu dosyaları kabul edilir.</value>
-  </data>
-  <data name="entry.wrong_type.music" xml:space="preserve">
-    <value>Bu yarışma için sadece .mp3 dosyaları kabul edilir.</value>
-  </data>
   <data name="entry.wrong_dimensions" xml:space="preserve">
     <value>Bu yarışma için başvurular şu şekilde olmalıdır: {0}{1}</value>
   </data>
@@ -180,6 +177,9 @@
   </data>
   <data name="vote.points" xml:space="preserve">
     <value>{0} puan|{0} puan</value>
+  </data>
+  <data name="vote.points_float" xml:space="preserve">
+    <value>{0} noktalar</value>
   </data>
   <data name="dates.ended" xml:space="preserve">
     <value>{0} tarihinde sona erdi</value>

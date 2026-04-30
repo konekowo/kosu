@@ -100,6 +100,9 @@
   <data name="search.title" xml:space="preserve">
     <value>Hae</value>
   </data>
+  <data name="search.artist_track.more_simple" xml:space="preserve">
+    <value>Näytä lisää esitellyn artistin kappaleita</value>
+  </data>
   <data name="search.beatmapset.login_required" xml:space="preserve">
     <value>Kirjaudu sisään hakeaksesi rytmikarttoja</value>
   </data>
@@ -145,17 +148,29 @@
   <data name="search.mode.all" xml:space="preserve">
     <value>kaikki</value>
   </data>
+  <data name="search.mode.artist_track" xml:space="preserve">
+    <value>esittelyartistin kappale</value>
+  </data>
   <data name="search.mode.beatmapset" xml:space="preserve">
     <value>beatmap</value>
   </data>
   <data name="search.mode.forum_post" xml:space="preserve">
     <value>foorumi</value>
   </data>
+  <data name="search.mode.team" xml:space="preserve">
+    <value>tiimi</value>
+  </data>
   <data name="search.mode.user" xml:space="preserve">
     <value>pelaaja</value>
   </data>
   <data name="search.mode.wiki_page" xml:space="preserve">
     <value>wiki</value>
+  </data>
+  <data name="search.team.login_required" xml:space="preserve">
+    <value>Kirjaudu sisään etsiäksesi tiimejä</value>
+  </data>
+  <data name="search.team.more_simple" xml:space="preserve">
+    <value>Näytä lisää tiimihakujen tuloksia</value>
   </data>
   <data name="search.user.login_required" xml:space="preserve">
     <value>Kirjaudu sisään käyttääksesi käyttäjähakua</value>
@@ -181,23 +196,11 @@
   <data name="search.wiki_page.title" xml:space="preserve">
     <value>Wiki</value>
   </data>
-  <data name="download.action" xml:space="preserve">
-    <value>Lataa osu!</value>
-  </data>
-  <data name="download.action_lazer" xml:space="preserve">
-    <value>Lataa osu!(lazer)</value>
-  </data>
-  <data name="download.action_lazer_description" xml:space="preserve">
-    <value>seuraava suuri päivitys osu!un</value>
-  </data>
   <data name="download.action_lazer_info" xml:space="preserve">
     <value>lisätietoja saat täältä</value>
   </data>
-  <data name="download.action_lazer_title" xml:space="preserve">
-    <value>kokeile osu!(lazer)ia</value>
-  </data>
-  <data name="download.action_title" xml:space="preserve">
-    <value>lataa osu!</value>
+  <data name="download.download" xml:space="preserve">
+    <value>Lataa</value>
   </data>
   <data name="download.for_os" xml:space="preserve">
     <value>käyttöjärjestelmälle: {0}</value>
@@ -220,8 +223,14 @@
   <data name="download.quick_start_guide" xml:space="preserve">
     <value>pikakäyttöohjeet</value>
   </data>
-  <data name="download.tagline" xml:space="preserve">
-    <value>laitetaan sinut&lt;br&gt;liikkeelle!</value>
+  <data name="download.stable_text" xml:space="preserve">
+    <value>jos etsit vanhempia</value>
+  </data>
+  <data name="download.tagline_1" xml:space="preserve">
+    <value>laitetaan sinut</value>
+  </data>
+  <data name="download.tagline_2" xml:space="preserve">
+    <value>alkuun!</value>
   </data>
   <data name="download.video-guide" xml:space="preserve">
     <value>video-opas</value>
@@ -283,6 +292,9 @@
   <data name="user.header.stats.online" xml:space="preserve">
     <value>Käyttäjiä paikalla</value>
   </data>
+  <data name="user.beatmaps.daily_challenge" xml:space="preserve">
+    <value>Päivän haasterytmikartta</value>
+  </data>
   <data name="user.beatmaps.new" xml:space="preserve">
     <value>Uudet rankatut rytmikartat</value>
   </data>
@@ -292,6 +304,9 @@
   <data name="user.beatmaps.by_user" xml:space="preserve">
     <value>tehnyt {0}</value>
   </data>
+  <data name="user.beatmaps.resets" xml:space="preserve">
+    <value>nollautuu {0}</value>
+  </data>
   <data name="user.buttons.download" xml:space="preserve">
     <value>Lataa osu!</value>
   </data>
@@ -300,5 +315,11 @@
   </data>
   <data name="user.buttons.store" xml:space="preserve">
     <value>osu!kauppa</value>
+  </data>
+  <data name="user.livestream.title" xml:space="preserve">
+    <value>Suositeltu Livelähetys</value>
+  </data>
+  <data name="user.show.admin.page" xml:space="preserve">
+    <value>Avaa hallintakonsoli</value>
   </data>
 </root>

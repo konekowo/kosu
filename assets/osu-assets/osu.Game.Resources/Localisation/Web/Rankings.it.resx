@@ -73,6 +73,12 @@
   <data name="daily_challenge.top_50p" xml:space="preserve">
     <value>Top 50% Punteggi</value>
   </data>
+  <data name="daily_challenge.unavailable.future" xml:space="preserve">
+    <value>Ancora nessuna sfida giornaliera nella data specificata!</value>
+  </data>
+  <data name="daily_challenge.unavailable.past" xml:space="preserve">
+    <value>Nessuna sfida giornaliera nella data specificata!</value>
+  </data>
   <data name="filter.title" xml:space="preserve">
     <value>Mostra</value>
   </data>
@@ -88,11 +94,44 @@
   <data name="kudosu.used" xml:space="preserve">
     <value>Spesi</value>
   </data>
-  <data name="performance.insufficient_history" xml:space="preserve">
-    <value>Questo utente ha un recente storico di classifica inferiore a 30 giorni.</value>
+  <data name="matchmaking.plays" xml:space="preserve">
+    <value>Partite</value>
   </data>
-  <data name="type.charts" xml:space="preserve">
+  <data name="matchmaking.points" xml:space="preserve">
+    <value>Punti</value>
+  </data>
+  <data name="matchmaking.provisional" xml:space="preserve">
+    <value>Non ci sono partite sufficienti per una valutazione precisa</value>
+  </data>
+  <data name="matchmaking.rating" xml:space="preserve">
+    <value>Valutazione</value>
+  </data>
+  <data name="matchmaking.wins" xml:space="preserve">
+    <value>Vittorie</value>
+  </data>
+  <data name="multiplayer.room_name" xml:space="preserve">
+    <value>Nome stanza</value>
+  </data>
+  <data name="performance.insufficient_history" xml:space="preserve">
+    <value>Questo utente ha uno storico recente nelle classifiche inferiore a 30 giorni.</value>
+  </data>
+  <data name="top_plays.empty" xml:space="preserve">
+    <value>I dati sono in fase di calcolo...</value>
+  </data>
+  <data name="top_plays.last_updated" xml:space="preserve">
+    <value>Ultimo aggiornamento</value>
+  </data>
+  <data name="playlists.charts" xml:space="preserve">
     <value>spotlight (archivio)</value>
+  </data>
+  <data name="playlists.featured" xml:space="preserve">
+    <value>in evidenza</value>
+  </data>
+  <data name="playlists.season_room" xml:space="preserve">
+    <value>stanza della stagione</value>
+  </data>
+  <data name="playlists.seasons" xml:space="preserve">
+    <value>stagioni</value>
   </data>
   <data name="type.country" xml:space="preserve">
     <value>paese</value>
@@ -100,29 +139,35 @@
   <data name="type.daily_challenge" xml:space="preserve">
     <value>sfida giornaliera</value>
   </data>
+  <data name="type.global" xml:space="preserve">
+    <value>globale</value>
+  </data>
   <data name="type.kudosu" xml:space="preserve">
     <value>kudosu</value>
   </data>
-  <data name="type.multiplayer" xml:space="preserve">
-    <value>multigiocatore</value>
+  <data name="type.matchmaking" xml:space="preserve">
+    <value>quick play</value>
   </data>
-  <data name="type.performance" xml:space="preserve">
-    <value>performance</value>
+  <data name="type.playlists" xml:space="preserve">
+    <value>playlist</value>
   </data>
-  <data name="type.score" xml:space="preserve">
-    <value>punteggio</value>
+  <data name="type.team" xml:space="preserve">
+    <value>squadra</value>
   </data>
-  <data name="type.seasons" xml:space="preserve">
-    <value>stagioni</value>
+  <data name="type.top_plays" xml:space="preserve">
+    <value>migliori partite</value>
   </data>
   <data name="seasons.empty" xml:space="preserve">
-    <value>Non ci sono ancora posti per questa stagione.</value>
+    <value>Non ci sono ancora partite per questa stagione.</value>
   </data>
   <data name="seasons.ongoing" xml:space="preserve">
     <value>Questa stagione è ancora in corso (verranno aggiunte altre playlist).</value>
   </data>
   <data name="seasons.room_count" xml:space="preserve">
     <value>Conteggio playlist</value>
+  </data>
+  <data name="seasons.summary" xml:space="preserve">
+    <value>Vedi Riepilogo Stagione</value>
   </data>
   <data name="seasons.url" xml:space="preserve">
     <value>Mostra ulteriori informazioni su quella stagione.</value>
@@ -131,16 +176,16 @@
     <value>non ci sono indicatori sufficienti per il calcolo</value>
   </data>
   <data name="spotlight.end_date" xml:space="preserve">
-    <value>Data Fine</value>
+    <value>Data fine</value>
   </data>
   <data name="spotlight.map_count" xml:space="preserve">
-    <value>N° Beatmap</value>
+    <value>Mappe</value>
   </data>
   <data name="spotlight.participants" xml:space="preserve">
     <value>Partecipanti</value>
   </data>
   <data name="spotlight.start_date" xml:space="preserve">
-    <value>Data Inizio</value>
+    <value>Data inizio</value>
   </data>
   <data name="stat.accuracy" xml:space="preserve">
     <value>Precisione</value>
@@ -153,6 +198,9 @@
   </data>
   <data name="stat.division" xml:space="preserve">
     <value>Divisione</value>
+  </data>
+  <data name="stat.members" xml:space="preserve">
+    <value>Membri</value>
   </data>
   <data name="stat.play_count" xml:space="preserve">
     <value>Partite Giocate</value>

@@ -166,6 +166,9 @@
   <data name="topic.go_to_latest" xml:space="preserve">
     <value>праглядзець апошні допіс</value>
   </data>
+  <data name="topic.go_to_unread" xml:space="preserve">
+    <value>перайсці да першага непрачытанага адказу</value>
+  </data>
   <data name="topic.has_replied" xml:space="preserve">
     <value>Вы адказалі на гэтую тэму</value>
   </data>
@@ -456,78 +459,6 @@
   </data>
   <data name="topics.index.views" xml:space="preserve">
     <value>праглядаў</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0" xml:space="preserve">
-    <value>Выдаліць тэг «дадана»</value>
-  </data>
-  <data name="topics.issue_tag_added.to_0_done" xml:space="preserve">
-    <value>Тэг «дадана» выдалены</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1" xml:space="preserve">
-    <value>Дадаць тэг «дадана»</value>
-  </data>
-  <data name="topics.issue_tag_added.to_1_done" xml:space="preserve">
-    <value>Тэг «дадана» даданы</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0" xml:space="preserve">
-    <value>Выдаліць тэг «прысвоена»</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_0_done" xml:space="preserve">
-    <value>Тэг «прысвоена» выдалены</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1" xml:space="preserve">
-    <value>Дадаць тэг «прысвоена»</value>
-  </data>
-  <data name="topics.issue_tag_assigned.to_1_done" xml:space="preserve">
-    <value>Тэг «прысвоена» даданы</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0" xml:space="preserve">
-    <value>Выдаліць тэг «пацверджана»</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_0_done" xml:space="preserve">
-    <value>Тэг «пацверджана» выдалены</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1" xml:space="preserve">
-    <value>Дадаць тэг «пацверджана»</value>
-  </data>
-  <data name="topics.issue_tag_confirmed.to_1_done" xml:space="preserve">
-    <value>Тэг «пацверджана» даданы</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0" xml:space="preserve">
-    <value>Выдаліць тэг «дублікат»</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_0_done" xml:space="preserve">
-    <value>Тэг «дублікат» выдалены</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1" xml:space="preserve">
-    <value>Дадаць тэг «дублікат»</value>
-  </data>
-  <data name="topics.issue_tag_duplicate.to_1_done" xml:space="preserve">
-    <value>Тэг «дублікат» даданы</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0" xml:space="preserve">
-    <value>Выдаліць тэг «нядзейна»</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_0_done" xml:space="preserve">
-    <value>Выдаліць тэг «нядзейна»</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1" xml:space="preserve">
-    <value>Дадаць тэг «нядзейна»</value>
-  </data>
-  <data name="topics.issue_tag_invalid.to_1_done" xml:space="preserve">
-    <value>Дабаўлены тэг "нядзейна"</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0" xml:space="preserve">
-    <value>Выдаліць тэг «вырашана»</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_0_done" xml:space="preserve">
-    <value>Тэг «вырашана» выдалены</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1" xml:space="preserve">
-    <value>Дадаць тэг «вырашана»</value>
-  </data>
-  <data name="topics.issue_tag_resolved.to_1_done" xml:space="preserve">
-    <value>Тэг «вырашана» даданы</value>
   </data>
   <data name="topics.lock.is_locked" xml:space="preserve">
     <value>Гэтая тэма заблакаваная і адказваць у ёй немагчыма</value>

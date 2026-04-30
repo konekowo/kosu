@@ -88,6 +88,9 @@
   <data name="header.beatmapsets.discussions" xml:space="preserve">
     <value>tartışma</value>
   </data>
+  <data name="header.beatmapsets.versions" xml:space="preserve">
+    <value>sürüm geçmişi</value>
+  </data>
   <data name="header.changelog.index" xml:space="preserve">
     <value>katalog</value>
   </data>
@@ -214,6 +217,9 @@
   <data name="footer.legal.privacy" xml:space="preserve">
     <value>Gizlilik</value>
   </data>
+  <data name="footer.legal.rules" xml:space="preserve">
+    <value>Kurallar</value>
+  </data>
   <data name="footer.legal.server_status" xml:space="preserve">
     <value>Sunucu Durumu</value>
   </data>
@@ -333,6 +339,9 @@
   </data>
   <data name="popup_user.links.scoring_mode_toggle_tooltip" xml:space="preserve">
     <value>Skorları klasik sınırsız skorlamaya benzeyecek şekilde ayarla</value>
+  </data>
+  <data name="popup_user.links.team" xml:space="preserve">
+    <value>Takımım</value>
   </data>
   <data name="popup_search.initial" xml:space="preserve">
     <value>Aramak için yaz!</value>

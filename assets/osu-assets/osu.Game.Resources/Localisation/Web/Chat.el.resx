@@ -85,6 +85,12 @@
   <data name="channels.create" xml:space="preserve">
     <value>δημιουργία ανακοίνωσης</value>
   </data>
+  <data name="channels.join" xml:space="preserve">
+    <value>συμμετοχή σε κανάλι</value>
+  </data>
+  <data name="channels.none" xml:space="preserve">
+    <value>κανένα κανάλι</value>
+  </data>
   <data name="channels.list.title.announce" xml:space="preserve">
     <value>Ανακοινώσεις</value>
   </data>
@@ -96,6 +102,9 @@
   </data>
   <data name="channels.list.title.public" xml:space="preserve">
     <value>Κανάλια</value>
+  </data>
+  <data name="channels.list.title.team" xml:space="preserve">
+    <value>Ομάδα</value>
   </data>
   <data name="form.title.announcement" xml:space="preserve">
     <value>Δημιουργία Νέας Ανακοίνωσης</value>
@@ -133,13 +142,7 @@
   <data name="input.send" xml:space="preserve">
     <value>Αποστολή</value>
   </data>
-  <data name="no-conversations.howto" xml:space="preserve">
-    <value>Ξεκινήστε συνομιλίες από προφίλ χρήστη ή usercard παράθυρο.</value>
-  </data>
-  <data name="no-conversations.lazer" xml:space="preserve">
-    <value>Δημόσια κανάλια που συνδέεστε μέσω του &lt;a href="{0}"&gt;osu!lazer&lt;/a&gt; θα επίσης εμφανίζονται εδώ.</value>
-  </data>
-  <data name="no-conversations.title" xml:space="preserve">
-    <value>δεν υπάρχουν συνομιλίες</value>
+  <data name="join_channels.loading" xml:space="preserve">
+    <value>Φόρτωση λίστας καναλιών...</value>
   </data>
 </root>

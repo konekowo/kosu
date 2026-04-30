@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="none" xml:space="preserve">
+    <value>未找到群組歷史！</value>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>查看群組歷史</value>
+  </data>
+  <data name="event.actor" xml:space="preserve">
+    <value>操作員：{0}</value>
+  </data>
+  <data name="event.message.group_add" xml:space="preserve">
+    <value>建立{0}。</value>
+  </data>
+  <data name="event.message.group_remove" xml:space="preserve">
+    <value>已刪除{0}。</value>
+  </data>
+  <data name="event.message.group_rename" xml:space="preserve">
+    <value>{0} 已被重新命名為 {1}。</value>
+  </data>
+  <data name="event.message.user_add" xml:space="preserve">
+    <value>{0} 已加入 {1}。</value>
+  </data>
+  <data name="event.message.user_add_with_playmodes" xml:space="preserve">
+    <value>{0} 已成為 {1} 模式的 {2} 。</value>
+  </data>
+  <data name="event.message.user_add_playmodes" xml:space="preserve">
+    <value>已新增 {0} 模式到 {1} 於 {2} 的身分中 。</value>
+  </data>
+  <data name="event.message.user_remove" xml:space="preserve">
+    <value>{0} 已退出 {1}。</value>
+  </data>
+  <data name="event.message.user_remove_playmodes" xml:space="preserve">
+    <value>已自 {0} 於 {1} 的身分中移除 {2} 模式。</value>
+  </data>
+  <data name="event.message.user_set_default" xml:space="preserve">
+    <value>{0} 的預設群組已設定為 {1} 。</value>
+  </data>
+  <data name="form.group" xml:space="preserve">
+    <value>群組</value>
+  </data>
+  <data name="form.group_all" xml:space="preserve">
+    <value>所有群組</value>
+  </data>
+  <data name="form.max_date" xml:space="preserve">
+    <value>至</value>
+  </data>
+  <data name="form.min_date" xml:space="preserve">
+    <value>從</value>
+  </data>
+  <data name="form.user" xml:space="preserve">
+    <value>使用者</value>
+  </data>
+  <data name="form.user_prompt" xml:space="preserve">
+    <value>使用者名稱或ID</value>
+  </data>
+  <data name="staff_log._" xml:space="preserve">
+    <value>更早期的群組歷史可以在 {0} 中找到。</value>
+  </data>
+  <data name="staff_log.wiki_articles" xml:space="preserve">
+    <value>工作人員日誌</value>
+  </data>
+</root>

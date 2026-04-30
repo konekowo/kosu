@@ -205,6 +205,9 @@
   <data name="forum.post.edit.no_forum_access" xml:space="preserve">
     <value>Nie posiadasz dostępu do tego forum.</value>
   </data>
+  <data name="forum.post.edit.no_permission" xml:space="preserve">
+    <value>Nie posiadasz uprawnień do edytowania.</value>
+  </data>
   <data name="forum.post.edit.not_owner" xml:space="preserve">
     <value>Tylko autor posta może go edytować.</value>
   </data>
@@ -318,6 +321,9 @@
   </data>
   <data name="team.part.not_member" xml:space="preserve">
     <value>Nie jesteś członkiem tego zespołu.</value>
+  </data>
+  <data name="team.store.require_supporter_tag" xml:space="preserve">
+    <value>Do utworzenia zespołu wymagany jest aktywny status donatora osu!.</value>
   </data>
   <data name="user.page.edit.locked" xml:space="preserve">
     <value>Strona użytkownika została zablokowana.</value>

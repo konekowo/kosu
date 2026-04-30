@@ -235,6 +235,12 @@
   <data name="login.beta.small" xml:space="preserve">
     <value>(osu!atbalstītāji drīz pienāks klāt)</value>
   </data>
+  <data name="multiplayer.index.active" xml:space="preserve">
+    <value>Aktīvs</value>
+  </data>
+  <data name="multiplayer.index.ended" xml:space="preserve">
+    <value>Beidzies</value>
+  </data>
   <data name="ogp.modding_description" xml:space="preserve">
     <value>Ritma-mapes {0}</value>
   </data>
@@ -292,26 +298,41 @@
   <data name="report.actions.cancel" xml:space="preserve">
     <value>Atcelt</value>
   </data>
+  <data name="report.dmca.message_1._" xml:space="preserve">
+    <value>Lūdzu pasūdzēties par autortiesību politiku pārkāpumu, nosūtot DMCA prasību uz {0} saskaņā ar {1}.</value>
+  </data>
+  <data name="report.dmca.message_1.policy" xml:space="preserve">
+    <value>osu! autortiesību politika</value>
+  </data>
+  <data name="report.dmca.message_2" xml:space="preserve">
+    <value>Šis tiek piemērots visiem gadijumiem, kad audioieraksta vizuālais saturs vai ritma-kartes līmeis tiek izmantots bez pareizajām atļaujām.</value>
+  </data>
   <data name="report.options.cheating" xml:space="preserve">
     <value>Netīra spēle / Krāpšanās</value>
   </data>
-  <data name="report.options.multiple_accounts" xml:space="preserve">
-    <value>Izmanto vairākus kontus</value>
+  <data name="report.options.copyright_infringement" xml:space="preserve">
+    <value>Autortiesību pārkāpums</value>
+  </data>
+  <data name="report.options.inappropriate_chat" xml:space="preserve">
+    <value>Nepiedienīga uzvedība tērzētavā</value>
   </data>
   <data name="report.options.insults" xml:space="preserve">
-    <value>Mani / citus apvainoja</value>
+    <value>Mani / Citus aizvainoja</value>
   </data>
-  <data name="report.options.spam" xml:space="preserve">
-    <value>Spams</value>
-  </data>
-  <data name="report.options.unwanted_content" xml:space="preserve">
-    <value>Pievieno neatbilstošu saturu</value>
+  <data name="report.options.multiple_accounts" xml:space="preserve">
+    <value>Izmanto vairākus kontus</value>
   </data>
   <data name="report.options.nonsense" xml:space="preserve">
     <value>Bezsakars</value>
   </data>
   <data name="report.options.other" xml:space="preserve">
     <value>Cits (norādīt zemāk)</value>
+  </data>
+  <data name="report.options.spam" xml:space="preserve">
+    <value>Spams</value>
+  </data>
+  <data name="report.options.unwanted_content" xml:space="preserve">
+    <value>Pievieno neatbilstošu saturu</value>
   </data>
   <data name="restricted_banner.title" xml:space="preserve">
     <value>Jūsu konts tika ierobežots!</value>
@@ -326,7 +347,7 @@
     <value>{0} gadus vecs</value>
   </data>
   <data name="show.change_avatar" xml:space="preserve">
-    <value>mainīt profila attēlu!</value>
+    <value>mainīt sava profila attēlu!</value>
   </data>
   <data name="show.first_members" xml:space="preserve">
     <value>Šeit kopš paša sākuma</value>
@@ -793,8 +814,17 @@
   <data name="show.rank.highest" xml:space="preserve">
     <value>Augstākais novietojums: {0} {1}</value>
   </data>
+  <data name="show.season_stats.division_top_percentage" xml:space="preserve">
+    <value>Top {0}</value>
+  </data>
+  <data name="show.season_stats.total_score" xml:space="preserve">
+    <value>Kopējais punktu skaits</value>
+  </data>
   <data name="show.stats.hit_accuracy" xml:space="preserve">
     <value>Trāpījuma Precizitāte</value>
+  </data>
+  <data name="show.stats.hits_per_play" xml:space="preserve">
+    <value>Sitieni Katrā Mēģinājumā</value>
   </data>
   <data name="show.stats.level" xml:space="preserve">
     <value>Līmenis {0}</value>
