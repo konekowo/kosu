@@ -106,6 +106,9 @@ export class Loader {
                     this.seasonalBackgroundsNum = index + 1;
                 }
 
+                client.free()
+                options.free()
+
                 resolve();
             } catch (error) {
                 console.warn("Could not fetch seasonal backgrounds.", error);
