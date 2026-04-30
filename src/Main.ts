@@ -152,9 +152,26 @@ export class Main {
         try {
             this.doPointerLock = true;
             // @ts-ignore
-            Main.app.canvas.requestPointerLock({
+            const promise = Main.app.canvas.requestPointerLock({
                 unadjustedMovement: true,
             });
+
+            // @ts-ignore
+            if (!promise) {
+                console.warn("Disabling mouse acceleration is not supported!");
+                return;
+            }
+
+
+            // @ts-ignore
+            promise.then(() => console.log("Pointer is locked."))
+                .catch((error: { name: string; }) => {
+                    if (error.name === "NotSupportedError") {
+                        console.warn("Disabling mouse acceleration is not supported on this platform!")
+                        Main.app.canvas.requestPointerLock();
+                    }
+                });
+
         } catch (e) {
             console.warn("Failed to lock cursor, error:", e);
             this.doPointerLock = false;
